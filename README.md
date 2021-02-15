@@ -101,6 +101,7 @@ For technical details, please see the paper cited below.
 
 ## FAQs
   - Why don't you release the binaries used to train and evaluate DeepReflect (other than ground-truth samples)?
-    - We cannot release malware binaries because of our contractual agreement with those who provided them to us.
+    - We cannot release malware binaries because of our agreement with those who provided them to us.
+      - If you're looking for malware binaries, you might consider the [SOREL dataset](https://github.com/sophos-ai/SOREL-20M)
     - We cannot release benign binaries because of copyright rules.
     - We do, however, release our extracted features so models can be trained from scratch.

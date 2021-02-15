@@ -1,0 +1,5 @@
+CloseHandle
+CompareObjectHandles
+DuplicateHandle
+GetHandleInformation
+SetHandleInformation
