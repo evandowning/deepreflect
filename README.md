@@ -1,13 +1,14 @@
 # DeepReflect
 This tool identifies functions within malware PE binaries which differ from benign PE binaries. That is, it detects malicious functions within malware binaries.
 
-Additionally, it clusters extracted malicious functionalities from malware samples so the analyst can incrementally label each cluster (reviewing a small set of samples per cluster), and automatically identify known functions they have seen in the past. This allows the analyst to focus on new emerging malware behaviors in their malware feed.
+It clusters extracted malicious functionalities from malware samples so the analyst can incrementally label each cluster (reviewing a small set of samples per cluster), and automatically identify known functions they have seen in the past. This allows the analyst to focus on new emerging malware behaviors in their malware feed.
 
 For technical details, please see the paper cited below.
 
 **Overview**:
   - Input: unpacked malware PE binary
-  - Output: list of all functions in binary along with their reconstruction error values
+  - Middle: list of all functions in binary along with their reconstruction error values
+  - Output: choosing a threshold, identifies regions of interest (i.e., suspected malicious functions)
 
 **Usage**: Using ground-truth malware binaries, choose an error value threshold which gives the analyst their desired results (tune to favor increasing TPR or decreasing FPR).
 
@@ -27,7 +28,7 @@ For technical details, please see the paper cited below.
     - Tested on Debian 10 (Buster)
     - Python 3 (tested with Python 3.7.3) and pip
     - virtualenvwrapper (optional, but recommended)
-    - BinaryNinja (used only to extract features from binaries)
+    - BinaryNinja (used only to extract features and function information from binaries)
   - Setup:
     ```
     $ git clone https://github.com/evandowning/deepreflect.git
@@ -39,6 +40,7 @@ For technical details, please see the paper cited below.
 ## Usage
   - Obtain unpacked benign and malicious PE file datasets
     - I put benign unpacked binaries in `/data/benign_unipacker/` and malicious unpacked binaries in `/data/malicious_unipacker/` because I unpacked them via unipacker.
+    - Under each directory is a subdirectory of the family label. I.e., `/data/benign_unipacker/benign/`, `/data/malicious_unipacker/virut/`, `/data/malicious_unipacker/zbot/`, etc.
   - Extract BinaryNinja DB file
     ```
     (dr) $ find /data/benign_unipacker -type f > samples_benign_unipacker.txt
@@ -46,18 +48,24 @@ For technical details, please see the paper cited below.
     (dr) $ time parallel --memfree 2G --retries 10 -a commands_benign_unipacker_bndb.txt 2> error.txt > output.txt
     ```
   - Extracting features:
-    - ```
-      (dr) $ find /data/benign_unipacker_bndb -type f > samples_benign_unipacker_bndb.txt
-      (dr) $ ./write_commands_acfg_plus_binja.sh samples_benign_unipacker_bndb.txt benign_unipacker_bndb_acfg_plus/ > commands_benign_unipacker_bndb_acfg_plus.txt
-      (dr) $ time parallel --memfree 2G --retries 10 -a commands_benign_unipacker_bndb_acfg_plus.txt 2> error.txt > output.txt
+    ```
+    (dr) $ find /data/benign_unipacker_bndb -type f > samples_benign_unipacker_bndb.txt
+    (dr) $ ./write_commands_acfg_plus_binja.sh samples_benign_unipacker_bndb.txt benign_unipacker_bndb_acfg_plus/ > commands_benign_unipacker_bndb_acfg_plus.txt
+    (dr) $ time parallel --memfree 2G --retries 10 -a commands_benign_unipacker_bndb_acfg_plus.txt 2> error.txt > output.txt
 
-      (dr) $ find benign_unipacker_bndb_acfg_plus -type f > samples_benign_unipacker_bndb_acfg_plus.txt
-      (dr) $ ./write_commands_acfg_plus_feature.sh samples_benign_unipacker_bndb_acfg_plus.txt benign_unipacker_bndb_acfg_plus_feature/ > commands_benign_unipacker_bndb_acfg_plus_feature.txt
-      (dr) $ time parallel --memfree 2G --retries 10 -a commands_benign_unipacker_bndb_acfg_plus_feature.txt 2> error.txt > output.txt
-      ```
+    (dr) $ find benign_unipacker_bndb_acfg_plus -type f > samples_benign_unipacker_bndb_acfg_plus.txt
+    (dr) $ ./write_commands_acfg_plus_feature.sh samples_benign_unipacker_bndb_acfg_plus.txt benign_unipacker_bndb_acfg_plus_feature/ > commands_benign_unipacker_bndb_acfg_plus_feature.txt
+    (dr) $ time parallel --memfree 2G --retries 10 -a commands_benign_unipacker_bndb_acfg_plus_feature.txt 2> error.txt > output.txt
+    ```
+  - Extract function-related data from BinaryNinja DB files
+    ```
+    (dr) $ find /data/malicious_unipacker_bndb/ -type f > samples_bndb.txt
+    (dr) $ time ./write_commands_get_function.sh samples_bndb.txt /data/malicious_unipacker_bndb_function/ > commands_get_function.txt
+    (dr) $ time parallel --memfree 4G --retries 10 -a commands_get_function.txt 2> parallel_get_function_stderr.txt > parallel_get_function_stdout.txt
+    ```
   - Train autoencoder:
     ```
-    (dr) $ python split_final.py /data/benign_unipacker_bndb_acfg_plus_feature/ train.txt test.txt
+    (dr) $ python split.py /data/benign_unipacker_bndb_acfg_plus_feature/ train.txt test.txt
     (dr) $ for fn in 'train.txt' 'test.txt' 'valid.txt'; do shuf $fn > tmp.txt; mv tmp.txt $fn; done
 
     # Check that benign samples use all features:
@@ -75,13 +83,6 @@ For technical details, please see the paper cited below.
                                                          --model ./models/autoencoder_benign_unipacker_plus/m2_normalize_24_12.h5 \
                                                          --normalize True \
                                                          --output /data/malicious_unipacker_bndb_acfg_plus_feature_error/ 2> autoencoder_eval_all_stderr.txt
-    ```
-  - Extract function-related data from BinaryNinja DB files
-    ```
-    (dr) $ find /data/malicious_unipacker_bndb/ -type f > samples_bndb.txt
-    (dr) $ time ./write_commands_get_function.sh samples_bndb.txt /data/malicious_unipacker_bndb_function/ > commands_get_function.txt
-    (dr) $ time parallel --memfree 4G --retries 10 -a commands_get_function.txt 2> parallel_get_function_stderr.txt > parallel_get_function_stdout.txt
-
     ```
   - Extract regions of interest:
     ```
@@ -102,4 +103,4 @@ For technical details, please see the paper cited below.
   - Why don't you release the binaries used to train and evaluate DeepReflect (other than ground-truth samples)?
     - We cannot release malware binaries because of our contractual agreement with those who provided them to us.
     - We cannot release benign binaries because of copyright rules.
-    - We do, however, release our extracted features so you can still train your own models from scratch.
+    - We do, however, release our extracted features so models can be trained from scratch.

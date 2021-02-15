@@ -1,0 +1,14 @@
+0x100038c0 mal-ncStartNetworkConnectivity
+0x10003e10 mal-ncPipeProxy
+0x10007480 mal-tswhttpTransportSend
+0x10006c80 mal-tspipesTransportSend
+0x10006610 mal-tsgenWorkerThread
+0x10006050 mal-thrServerAnswerParser
+0x0 mal-thrMailslotMessageProcessing
+0x0 mal-mwSendMailslotMessageToDomain
+0x0 mal-mwSendMailslotMessageToMainDomain
+0x0 mal-mwSendMailslotMessageToAllDomains
+0x10005e00 mal-tsgenAssignChunksResults
+0x10008310 mal-_tswhttpMakeQuery
+0x10007770 mal-tswhttpEnumUserProxy
+0x100075d0 mal-tswhttpInitTransport

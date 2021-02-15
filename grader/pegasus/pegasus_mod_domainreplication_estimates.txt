@@ -1,0 +1,4794 @@
+mod_LogonPasswords/lpprocess.cpp : lp_getProcessBasicInformation
+
+mod_LogonPasswords/lpprocess.cpp : lp_getPeb
+
+mod_LogonPasswords/lpprocess.cpp : lp_getVeryBasicModulesListForProcess
+
+mod_LogonPasswords/lpprocess.cpp : lp_getUnicodeStringOfProcess
+
+mod_LogonPasswords/mod_LogonPasswords.c : modInitImports
+
+mod_LogonPasswords/mod_LogonPasswords.c : thrModuleRun
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_100048c0
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10006260
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008ac0
+common_call: 1 |  sub_100096c0
+
+mod_LogonPasswords/mod_LogonPasswords.c : DllEntry
+common_call: 1 |  sub_100015d0
+common_call: 1 |  sub_10001630
+common_call: 2 |  sub_100029f0
+common_call: 2 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10003fb0
+common_call: 1 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 2 |  sub_10008c10
+common_call: 1 |  sub_10008fa0
+common_call: 2 |  sub_10009280
+common_call: 1 |  sub_10009560
+
+mod_LogonPasswords/LogonPasswords.cpp : lpGetDebugPrivileges
+common_call: 1 |  sub_100015d0
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_10001cc0
+common_call: 2 |  sub_100029f0
+common_call: 2 |  sub_10002d60
+common_call: 2 |  sub_10002e10
+common_call: 2 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_10003fb0
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 2 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 2 |  sub_10007da0
+common_call: 2 |  sub_100081e0
+common_call: 1 |  sub_10008c10
+common_call: 2 |  sub_10008fa0
+common_call: 2 |  sub_10009280
+common_call: 1 |  sub_10009560
+common_call: 1 |  sub_100096c0
+
+mod_LogonPasswords/LogonPasswords.cpp : _lpGetPIDByHash
+common_call: 1 |  sub_100015d0
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_10001cc0
+common_call: 2 |  sub_100029f0
+common_call: 2 |  sub_10002d60
+common_call: 2 |  sub_10002e10
+common_call: 2 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_10003fb0
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 2 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 2 |  sub_10007da0
+common_call: 2 |  sub_100081e0
+common_call: 1 |  sub_10008c10
+common_call: 2 |  sub_10008fa0
+common_call: 2 |  sub_10009280
+common_call: 1 |  sub_10009560
+common_call: 1 |  sub_100096c0
+
+mod_LogonPasswords/LogonPasswords.cpp : _lpDupModuleInfo
+common_call: 1 |  sub_100031f0
+common_call: 1 |  sub_10003bb0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_10004fb0
+common_call: 1 |  sub_10005600
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10006910
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_100085d0
+common_call: 1 |  sub_100086b0
+common_call: 1 |  sub_10008c10
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_100096c0
+common_call: 1 |  sub_10009d40
+
+mod_LogonPasswords/LogonPasswords.cpp : _lpFreeModuleInfo
+
+mod_LogonPasswords/LogonPasswords.cpp : cbLSASSModuleListCallback
+
+mod_LogonPasswords/LogonPasswords.cpp : lpReadLSASSModulesInfo
+
+mod_LogonPasswords/LogonPasswords.cpp : lpLsaInitializeProtectedMemory_NT6
+
+mod_LogonPasswords/LogonPasswords.cpp : lpLsaCleanupProtectedMemory_NT6
+
+mod_LogonPasswords/LogonPasswords.cpp : lpgetPtrFromLinkedListByLuid
+
+mod_LogonPasswords/LogonPasswords.cpp : lpgetPtrFromAVLByLuid
+
+mod_LogonPasswords/LogonPasswords.cpp : lpgetPtrFromAVLByLuidRec
+
+mod_LogonPasswords/LogonPasswords.cpp : lpReadLSASSEncryptionKeys
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_100096c0
+
+mod_LogonPasswords/LogonPasswords.cpp : lpGetVersion
+
+mod_LogonPasswords/LogonPasswords.cpp : lploadLsaSrv
+
+mod_LogonPasswords/LogonPasswords.cpp : lploadRsaEnh
+
+mod_LogonPasswords/LogonPasswords.cpp : isBadStringToken
+common_call: 1 |  sub_100014e0
+common_call: 1 |  sub_10001560
+common_call: 1 |  sub_10001830
+common_call: 1 |  sub_100018a0
+common_call: 1 |  sub_10001a70
+common_call: 1 |  sub_10002980
+common_call: 1 |  sub_10003b40
+
+mod_LogonPasswords/LogonPasswords.cpp : lpgenericCredsToStream
+
+mod_LogonPasswords/LogonPasswords.cpp : lpDumpLogonPasswords
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_100096c0
+
+mod_LogonPasswords/lpmemory.cpp : new
+
+mod_LogonPasswords/lpmemory.cpp : delete
+
+mod_LogonPasswords/lpmemory.cpp : new[]
+
+mod_LogonPasswords/lpmemory.cpp : delete[]
+
+mod_LogonPasswords/lpmemory.cpp : delete
+
+mod_LogonPasswords/lpmemory.cpp : lp_readMemory
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_100096c0
+
+mod_LogonPasswords/lpmemory.cpp : lp_searchMemory
+
+mod_LogonPasswords/lpmemory.cpp : lp_searchMemory
+
+mod_LogonPasswords/lpmemory.cpp : lp_genericPatternSearch
+
+mod_LogonPasswords/sec_pkg/tspkg.cpp : ts_InitGlobals
+
+mod_LogonPasswords/sec_pkg/tspkg.cpp : searchTSPKGFuncs
+
+mod_LogonPasswords/sec_pkg/tspkg.cpp : getTsPkgLogonData
+
+mod_LogonPasswords/sec_pkg/msv1_0.cpp : mod_mimikatz_sekurlsa_msv1_0::getMSV
+
+mod_LogonPasswords/sec_pkg/msv1_0.cpp : mod_mimikatz_sekurlsa_msv1_0::searchLogonSessionList
+
+mod_LogonPasswords/sec_pkg/msv1_0.cpp : mod_mimikatz_sekurlsa_msv1_0::getMSVLogonData
+
+mod_LogonPasswords/sec_pkg/msv1_0.cpp : mod_mimikatz_sekurlsa_msv1_0::decryptAndDisplayCredsBlock
+
+mod_LogonPasswords/sec_pkg/msv1_0.cpp : mod_mimikatz_sekurlsa_msv1_0::NlpMakeRelativeOrAbsoluteString
+
+mod_LogonPasswords/sec_pkg/wdigest.cpp : wdig_InitGlobals
+
+mod_LogonPasswords/sec_pkg/wdigest.cpp : searchWDigestEntryList
+
+mod_LogonPasswords/sec_pkg/wdigest.cpp : getWDigestLogonData
+
+mod_LogonPasswords/sec_pkg/kerberos.cpp : kerb_InitGlobals
+
+mod_LogonPasswords/sec_pkg/kerberos.cpp : searchKerberosFuncs
+
+mod_LogonPasswords/sec_pkg/kerberos.cpp : getKerberosLogonData
+
+mod_LogonPasswords/sec_pkg/ssp.cpp : ssp_InitGlobals
+
+mod_LogonPasswords/sec_pkg/ssp.cpp : searchSSPEntryList
+
+mod_LogonPasswords/sec_pkg/ssp.cpp : getSSPLogonData
+
+mod_LogonPasswords/sec_pkg/livessp.cpp : lssp_InitGlobals
+
+mod_LogonPasswords/sec_pkg/livessp.cpp : searchLiveGlobalLogonSessionList
+
+mod_LogonPasswords/sec_pkg/livessp.cpp : getLiveSSPLogonData
+
+inc/DataCallbackManager.cpp : DataCallbackManager_resolve
+common_call: 1 |  sub_100014e0
+common_call: 1 |  sub_10001560
+common_call: 1 |  sub_10001830
+common_call: 1 |  sub_100018a0
+common_call: 1 |  sub_10001a70
+common_call: 1 |  sub_10002980
+common_call: 1 |  sub_10003b40
+
+inc/DataCallbackManager.cpp : DataCallbackManager_imports
+
+inc/DataCallbackManager.cpp : dcmInit
+common_call: 1 |  sub_10001fa0
+common_call: 1 |  sub_100029f0
+
+inc/DataCallbackManager.cpp : *pNtQIT)
+
+inc/DataCallbackManager.cpp : myGetThreadId
+common_call: 1 |  sub_100015d0
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 2 |  sub_10003fb0
+common_call: 1 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008c10
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_10009560
+
+inc/DataCallbackManager.cpp : dcmEnterEnum
+common_call: 1 |  sub_10002030
+common_call: 1 |  sub_10002130
+common_call: 1 |  sub_10002210
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_100048c0
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10006260
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008ac0
+common_call: 1 |  sub_100096c0
+
+inc/DataCallbackManager.cpp : dcmLeaveEnum
+common_call: 1 |  sub_10002030
+common_call: 1 |  sub_10002130
+common_call: 1 |  sub_10002210
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003739
+
+inc/DataCallbackManager.cpp : dcmAddDataCallback
+
+inc/DataCallbackManager.cpp : dcmRemoveDataCallback
+
+inc/DataCallbackManager.cpp : dcmCallbacksCount
+
+inc/DataCallbackManager.cpp : dcmDoEnum
+
+inc/DataCallbackManager.cpp : cdDataCallbacksCaller
+common_call: 1 |  sub_100014e0
+common_call: 1 |  sub_10001560
+common_call: 1 |  sub_10001830
+common_call: 1 |  sub_100018a0
+common_call: 1 |  sub_10001a70
+common_call: 1 |  sub_10002980
+common_call: 1 |  sub_10003b40
+
+inc/DataCallbackManager.cpp : dcmGetServerCallback
+
+inc/CryptoStrings.c : CryptoStrings_resolve
+common_call: 1 |  sub_100014e0
+common_call: 1 |  sub_10001560
+common_call: 1 |  sub_10001830
+common_call: 1 |  sub_100018a0
+common_call: 1 |  sub_10001a70
+common_call: 1 |  sub_10002980
+common_call: 1 |  sub_10003b40
+
+inc/CryptoStrings.c : CryptoStrings_imports
+
+inc/CryptoStrings.c : __cs_dexor_buff
+
+inc/CryptoStrings.c : __cs_memcpyz
+
+inc/CryptoStrings.c : __cs_gen_xor_byte
+
+inc/CryptoStrings.c : __cs_decrypt_step2
+
+inc/CryptoStrings.c : __CRSTRDecrypt
+
+inc/CryptoStrings.c : __cs_AtoW
+
+inc/RegFuncs.cpp : RegCreatePath
+common_call: 3 |  sub_10003bb0
+common_call: 2 |  sub_10003d90
+common_call: 2 |  sub_10003e90
+
+inc/RegFuncs.cpp : RegWriteDWORD
+common_call: 2 |  sub_10003bb0
+common_call: 4 |  sub_10003d90
+common_call: 2 |  sub_10003e90
+
+inc/RegFuncs.cpp : RegRemoveValue
+common_call: 2 |  sub_10003bb0
+common_call: 2 |  sub_10003d90
+common_call: 4 |  sub_10003e90
+
+inc/RegFuncs.cpp : RegRemoveKey
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_100096c0
+
+inc/MyStringRoutines.c : MyStringRoutines_resolve
+common_call: 1 |  sub_100014e0
+common_call: 1 |  sub_10001560
+common_call: 1 |  sub_10001830
+common_call: 1 |  sub_100018a0
+common_call: 1 |  sub_10001a70
+common_call: 1 |  sub_10002980
+common_call: 1 |  sub_10003b40
+
+inc/MyStringRoutines.c : MyStringRoutines_imports
+
+inc/MyStringRoutines.c : sr_replacechar
+common_call: 1 |  sub_100031f0
+common_call: 1 |  sub_10003bb0
+common_call: 1 |  sub_10004fb0
+common_call: 1 |  sub_10005600
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_10008c10
+
+inc/MyStringRoutines.c : sr_replacelastchar
+common_call: 1 |  sub_100031f0
+common_call: 1 |  sub_10003bb0
+common_call: 1 |  sub_10004fb0
+common_call: 1 |  sub_10005600
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_10008c10
+
+inc/MyStringRoutines.c : sr_genRandomChars
+
+inc/MyStringRoutines.c : sr_genRandomCharsRG
+
+inc/MyStringRoutines.c : sr_genRandomCharsRG_h
+
+inc/MyStringRoutines.c : sr_findlastchar
+common_call: 1 |  sub_100031f0
+common_call: 1 |  sub_10003bb0
+common_call: 1 |  sub_10004fb0
+common_call: 1 |  sub_10005600
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_10008c10
+
+inc/MyStringRoutines.c : sr_findchar
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_10001b00
+
+inc/MyStringRoutines.c : sr_lowercase
+
+inc/LocalStorage.cpp : lsInitLocalStorage
+
+inc/Wow64Jump.cpp : wjReadFileContents
+common_call: 1 |  sub_100015d0
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 2 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 2 |  sub_10003fb0
+common_call: 3 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 2 |  sub_10005ee0
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007da0
+common_call: 3 |  sub_100081e0
+common_call: 1 |  sub_10008c10
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_10009560
+
+inc/Wow64Jump.cpp : wjPlantRSEFile
+common_call: 2 |  sub_100015d0
+common_call: 2 |  sub_10001630
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 4 |  sub_10002e10
+common_call: 2 |  sub_10003420
+common_call: 2 |  sub_10003739
+common_call: 1 |  sub_10003fb0
+common_call: 2 |  sub_100043b0
+common_call: 1 |  sub_100048c0
+common_call: 1 |  sub_10005750
+common_call: 4 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 1 |  sub_10006260
+common_call: 1 |  sub_100071f0
+common_call: 3 |  sub_10007da0
+common_call: 4 |  sub_100081e0
+common_call: 1 |  sub_10008ac0
+common_call: 1 |  sub_10008c10
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_10009560
+common_call: 1 |  sub_100096c0
+
+inc/Wow64Jump.cpp : _wjMakeTmpName
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_100096c0
+
+inc/Wow64Jump.cpp : wjMakeProcess
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_100096c0
+
+inc/Wow64Jump.cpp : wjWow64JumpTo64
+common_call: 1 |  sub_100015d0
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10003fb0
+common_call: 1 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 2 |  sub_100071f0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008c10
+common_call: 1 |  sub_10008fa0
+common_call: 2 |  sub_10009280
+common_call: 1 |  sub_10009560
+common_call: 1 |  sub_100096c0
+
+inc/HashDeriveFuncs.cpp : i64CalcTargetMachineHash
+
+inc/HashedStrings.c : HashedStrings_imports
+
+inc/HashedStrings.c : HashStringA_const
+
+inc/HashedStrings.c : HashBin_const
+
+inc/HashedStrings.c : HashBin
+
+inc/HashedStrings.c : HashStringA
+
+inc/HashedStrings.c : HashStringW_const
+
+inc/HashedStrings.c : HashStringW
+
+inc/WorkDispatcher.cpp : wdStartModule
+
+inc/WorkDispatcher.cpp : wdStartModules
+
+inc/WorkDispatcher.cpp : _wdFillGlobals
+
+inc/WorkDispatcher.cpp : thrFileRemover
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_100048c0
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10006260
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008ac0
+common_call: 1 |  sub_100096c0
+
+inc/WorkDispatcher.cpp : wdCheckNeedFileRemoval
+common_call: 1 |  sub_100015d0
+common_call: 1 |  sub_10001630
+common_call: 2 |  sub_100029f0
+common_call: 2 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10003fb0
+common_call: 1 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 2 |  sub_10008c10
+common_call: 1 |  sub_10008fa0
+common_call: 2 |  sub_10009280
+common_call: 1 |  sub_10009560
+
+inc/WorkDispatcher.cpp : thrSelfTermination
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_100048c0
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10006260
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008ac0
+common_call: 1 |  sub_100096c0
+
+inc/WorkDispatcher.cpp : wdcbTerminationCommand
+common_call: 1 |  sub_100015d0
+common_call: 1 |  sub_10001630
+common_call: 2 |  sub_100029f0
+common_call: 2 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10003fb0
+common_call: 1 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 2 |  sub_10008c10
+common_call: 1 |  sub_10008fa0
+common_call: 2 |  sub_10009280
+common_call: 1 |  sub_10009560
+
+inc/WorkDispatcher.cpp : wdTerminateOtherRunning
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_100048c0
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10006260
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008ac0
+common_call: 1 |  sub_100096c0
+
+inc/WorkDispatcher.cpp : WorkDispatcherInit
+
+inc/MailslotWorks.cpp : MailslotWorks_resolve
+common_call: 1 |  sub_100014e0
+common_call: 1 |  sub_10001560
+common_call: 1 |  sub_10001830
+common_call: 1 |  sub_100018a0
+common_call: 1 |  sub_10001a70
+common_call: 1 |  sub_10002980
+common_call: 1 |  sub_10003b40
+
+inc/MailslotWorks.cpp : MailslotWorks_imports
+
+inc/MailslotWorks.cpp : _mwGenMailslotName
+common_call: 1 |  sub_10001910
+common_call: 3 |  sub_100031f0
+common_call: 2 |  sub_10003bb0
+common_call: 1 |  sub_10004570
+common_call: 2 |  sub_10004d40
+common_call: 3 |  sub_10004fb0
+common_call: 3 |  sub_10005600
+common_call: 1 |  sub_100059f0
+common_call: 2 |  sub_10006910
+common_call: 3 |  sub_10007ad0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100085d0
+common_call: 2 |  sub_100086b0
+common_call: 2 |  sub_10008c10
+common_call: 1 |  sub_10009280
+common_call: 2 |  sub_100096c0
+common_call: 2 |  sub_10009d40
+
+inc/MailslotWorks.cpp : thrMailslotMessageProcessing
+common_call: 1 |  sub_100015d0
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 3 |  sub_10003420
+common_call: 2 |  sub_10003739
+common_call: 1 |  sub_10003fb0
+common_call: 2 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 2 |  sub_10005ee0
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007da0
+common_call: 2 |  sub_100081e0
+common_call: 1 |  sub_10008ac0
+common_call: 1 |  sub_10008c10
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_10009560
+common_call: 1 |  sub_100096c0
+
+inc/MailslotWorks.cpp : mwInitMailslotServer
+common_call: 1 |  sub_100015d0
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_10001cc0
+common_call: 4 |  sub_100029f0
+common_call: 3 |  sub_10002d60
+common_call: 3 |  sub_10002e10
+common_call: 2 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_10003fb0
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 2 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 2 |  sub_10007da0
+common_call: 2 |  sub_100081e0
+common_call: 2 |  sub_10008c10
+common_call: 2 |  sub_10008fa0
+common_call: 3 |  sub_10009280
+common_call: 1 |  sub_10009560
+common_call: 1 |  sub_100096c0
+
+inc/MailslotWorks.cpp : mwSendMailslotMessageToDomain
+common_call: 3 |  sub_100015d0
+common_call: 2 |  sub_10001630
+common_call: 1 |  sub_10001cc0
+common_call: 2 |  sub_100029f0
+common_call: 2 |  sub_10002d60
+common_call: 4 |  sub_10002e10
+common_call: 2 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 2 |  sub_10003fb0
+common_call: 2 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 2 |  sub_10005750
+common_call: 3 |  sub_100059f0
+common_call: 2 |  sub_10005ee0
+common_call: 2 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 4 |  sub_10007da0
+common_call: 4 |  sub_100081e0
+common_call: 1 |  sub_10008c10
+common_call: 2 |  sub_10008fa0
+common_call: 2 |  sub_10009280
+common_call: 1 |  sub_10009560
+common_call: 1 |  sub_100096c0
+
+inc/MailslotWorks.cpp : mwSendMailslotMessageToMainDomain
+
+inc/MailslotWorks.cpp : _mwDomainEnumCallback
+common_call: 1 |  sub_10001910
+common_call: 2 |  sub_100031f0
+common_call: 1 |  sub_10003bb0
+common_call: 1 |  sub_10004570
+common_call: 2 |  sub_10004d40
+common_call: 2 |  sub_10004fb0
+common_call: 2 |  sub_10005600
+common_call: 1 |  sub_100059f0
+common_call: 2 |  sub_10006910
+common_call: 2 |  sub_10007ad0
+common_call: 1 |  sub_100085d0
+common_call: 2 |  sub_100086b0
+common_call: 1 |  sub_10008c10
+common_call: 1 |  sub_10009280
+common_call: 2 |  sub_100096c0
+common_call: 2 |  sub_10009d40
+
+inc/MailslotWorks.cpp : mwSendMailslotMessageToAllDomains
+
+inc/NetMessageEnvelope.cpp : nmeXorBuffer
+
+inc/NetMessageEnvelope.cpp : nmeMakeEnvelope
+
+inc/NetMessageEnvelope.cpp : nmeCheckRemoveEnvelope
+
+inc/MyStreams.c : msFreeStream
+
+inc/MyStreams.c : msWriteStream
+
+inc/MyStreams.c : msReadStream
+
+inc/MyStreams.c : msInitStream_
+
+inc/MyStreams.c : msInitStream_dbg
+
+inc/SecureClean.cpp : scFillRandom
+
+inc/SecureClean.cpp : scOverwriteFile
+common_call: 1 |  sub_100015d0
+common_call: 2 |  sub_10001630
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 3 |  sub_10002e10
+common_call: 2 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 4 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 2 |  sub_100059f0
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 3 |  sub_10007da0
+common_call: 3 |  sub_100081e0
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_100096c0
+
+inc/SecureClean.cpp : scRenameDeleteFile
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_100096c0
+
+inc/SecureClean.cpp : scChkRemoveReadOnly
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_100096c0
+
+inc/SecureClean.cpp : scSecureDeleteFile
+common_call: 1 |  sub_100015d0
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_10001cc0
+common_call: 2 |  sub_100029f0
+common_call: 2 |  sub_10002d60
+common_call: 2 |  sub_10002e10
+common_call: 2 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 3 |  sub_10003fb0
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 2 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 2 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 2 |  sub_10007da0
+common_call: 3 |  sub_100081e0
+common_call: 1 |  sub_10008c10
+common_call: 2 |  sub_10008fa0
+common_call: 2 |  sub_10009280
+common_call: 1 |  sub_10009560
+common_call: 1 |  sub_100096c0
+
+inc/WOW64Detect.cpp : IsX64Windows
+
+inc/PELoader.cpp : *my_memcpy
+
+inc/PELoader.cpp : my_lstrcpy
+
+inc/PELoader.cpp : PeSupAlign
+
+inc/PELoader.cpp : LoaderProcessRelocs
+
+inc/PELoader.cpp : LoaderProcessImports
+
+inc/PELoader.cpp : LoaderProcessImports
+
+inc/PELoader.cpp : PELoad
+
+inc/PELoader.cpp : PELoad
+
+inc/dbg.c : _dbgDumpToFile
+common_call: 3 |  sub_100015d0
+common_call: 2 |  sub_10001630
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 3 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 2 |  sub_10003fb0
+common_call: 1 |  sub_100043b0
+common_call: 2 |  sub_10005750
+common_call: 3 |  sub_100059f0
+common_call: 2 |  sub_10005ee0
+common_call: 1 |  sub_100071f0
+common_call: 3 |  sub_10007da0
+common_call: 3 |  sub_100081e0
+common_call: 1 |  sub_10008c10
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_10009560
+
+inc/dbg.c : _dbgOutString
+common_call: 3 |  sub_1000146d
+common_call: 3 |  sub_100014e0
+common_call: 3 |  sub_10001560
+common_call: 2 |  sub_100015d0
+common_call: 16 | common_string: 2 |  sub_10001630
+common_call: 1 |  sub_100017e0
+common_call: 3 |  sub_10001830
+common_call: 3 |  sub_100018a0
+common_call: 3 |  sub_10001910
+common_call: 3 |  sub_10001a70
+common_call: 5 |  sub_10001b00
+common_call: 3 |  sub_10001cc0
+common_call: 2 |  sub_10001f40
+common_call: 3 |  sub_10001fa0
+common_call: 3 |  sub_10002030
+common_call: 1 |  sub_10002130
+common_call: 3 |  sub_10002210
+common_call: 3 |  sub_10002430
+common_call: 3 |  sub_10002530
+common_call: 3 |  sub_10002630
+common_call: 3 |  sub_10002700
+common_call: 3 |  sub_10002860
+common_call: 3 |  sub_10002980
+common_call: 4 |  sub_100029f0
+common_call: 4 |  sub_10002d60
+common_call: 6 |  sub_10002e10
+common_call: 3 |  sub_100031f0
+common_call: 4 |  sub_10003420
+common_call: 4 |  sub_10003739
+common_call: 3 |  sub_10003850
+common_call: 3 |  sub_10003b40
+common_call: 3 |  sub_10003bb0
+common_call: 3 |  sub_10003d90
+common_call: 3 |  sub_10003e90
+common_call: 3 |  sub_10003f40
+common_call: 4 |  sub_10003fb0
+common_call: 5 |  sub_100043b0
+common_call: 3 |  sub_10004570
+common_call: 3 |  sub_10004790
+common_call: 3 |  sub_100048c0
+common_call: 3 |  sub_10004a00
+common_call: 3 |  sub_10004d40
+common_call: 3 |  sub_10004fb0
+common_call: 3 |  sub_10005600
+common_call: 4 |  sub_10005750
+common_call: 5 |  sub_100059f0
+common_call: 4 |  sub_10005ee0
+common_call: 4 |  sub_10006260
+common_call: 3 |  sub_10006460
+common_call: 3 |  sub_100065c0
+common_call: 3 |  sub_10006960
+common_call: 3 |  sub_10006dc0
+common_call: 3 |  sub_10007090
+common_call: 4 |  sub_100071f0
+common_call: 3 |  sub_10007690
+common_call: 3 |  sub_10007ad0
+common_call: 3 |  sub_10007d00
+common_call: 5 |  sub_10007da0
+common_call: 5 |  sub_100081e0
+common_call: 3 |  sub_100085d0
+common_call: 3 |  sub_100086b0
+common_call: 4 |  sub_10008ac0
+common_call: 4 |  sub_10008c10
+common_call: 3 |  sub_10008d00
+common_call: 3 |  sub_10008dc0
+common_call: 3 |  sub_10008e60
+common_call: 4 |  sub_10008fa0
+common_call: 4 |  sub_10009280
+common_call: 4 |  sub_10009560
+common_call: 3 |  sub_100096c0
+common_call: 3 |  sub_10009d40
+
+inc/DynImports.c : bInitDynImports
+common_call: 1 |  sub_10001fa0
+common_call: 1 |  sub_100029f0
+
+inc/DynImports.c : diHashName
+common_call: 2 |  sub_100031f0
+common_call: 2 |  sub_10003bb0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004d40
+common_call: 2 |  sub_10004fb0
+common_call: 2 |  sub_10005600
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10006910
+common_call: 1 |  sub_10007690
+common_call: 2 |  sub_10007ad0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100085d0
+common_call: 1 |  sub_100086b0
+common_call: 2 |  sub_10008c10
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_100096c0
+common_call: 1 |  sub_10009d40
+
+inc/DynImports.c : GetModuleHandleByHash
+
+inc/DynImports.c : LoadLibraryByHash
+common_call: 2 |  sub_10002030
+common_call: 2 |  sub_10002130
+common_call: 2 |  sub_10002210
+common_call: 2 |  sub_10003420
+common_call: 1 |  sub_10003739
+
+inc/DynImports.c : diGetSystemDllsPath
+
+inc/DynImports.c : diEnumExports
+
+inc/DynImports.c : diLoadAPI
+
+inc/DynImports.c : LoadAPIs
+
+inc/EmbeddedResources.cpp : EmbeddedResources_resolve
+common_call: 1 |  sub_100014e0
+common_call: 1 |  sub_10001560
+common_call: 1 |  sub_10001830
+common_call: 1 |  sub_100018a0
+common_call: 1 |  sub_10001a70
+common_call: 1 |  sub_10002980
+common_call: 1 |  sub_10003b40
+
+inc/EmbeddedResources.cpp : EmbeddedResources_imports
+
+inc/EmbeddedResources.cpp : Scramble
+
+inc/EmbeddedResources.cpp : _erEasyDeScramble
+
+inc/EmbeddedResources.cpp : _erRandomPEModifications
+
+inc/EmbeddedResources.cpp : _erMakeChunkOptions
+
+inc/EmbeddedResources.cpp : _erGetParamsFromOptions
+
+inc/EmbeddedResources.cpp : erQueryFile
+
+inc/EmbeddedResources.cpp : erUnpackResourceBuffer
+
+inc/EmbeddedResources.cpp : erCalcEmbResourcesPackLen
+
+inc/EmbeddedResources.cpp : erGetStarterBinpackLen
+
+inc/EmbeddedResources.cpp : erGetClearItemLen
+
+inc/EmbeddedResources.cpp : erGetSerializedEmbResources
+
+inc/EmbeddedResources.cpp : erGetStarterBinpack
+
+inc/EmbeddedResources.cpp : _erCheckInitChunkList
+common_call: 1 |  sub_10001fa0
+common_call: 1 |  sub_100029f0
+
+inc/EmbeddedResources.cpp : *_erFindChunk
+
+inc/EmbeddedResources.cpp : *_erEnumFromChunk
+
+inc/EmbeddedResources.cpp : erRegisterBinaryChunk
+
+inc/EmbeddedResources.cpp : erRegisterModules
+
+inc/RandomGen.c : RndClass_resolve
+common_call: 1 |  sub_100014e0
+common_call: 1 |  sub_10001560
+common_call: 1 |  sub_10001830
+common_call: 1 |  sub_100018a0
+common_call: 1 |  sub_10001a70
+common_call: 1 |  sub_10002980
+common_call: 1 |  sub_10003b40
+
+inc/RandomGen.c : RndClass_imports
+
+inc/RandomGen.c : rgNew
+common_call: 1 |  sub_1000146d
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_10001b00
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10006260
+common_call: 1 |  sub_10008ac0
+
+inc/RandomGen.c : rgInitSeed
+
+inc/RandomGen.c : rgInitSeedFromTime
+common_call: 1 |  sub_1000146d
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_10001b00
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10006260
+common_call: 1 |  sub_10008ac0
+
+inc/RandomGen.c : rgGetRndDWORD
+
+inc/RandomGen.c : rgGetRnd
+
+inc/DomainListMachines.cpp : DomainListMachines_resolve
+common_call: 1 |  sub_100014e0
+common_call: 1 |  sub_10001560
+common_call: 1 |  sub_10001830
+common_call: 1 |  sub_100018a0
+common_call: 1 |  sub_10001a70
+common_call: 1 |  sub_10002980
+common_call: 1 |  sub_10003b40
+
+inc/DomainListMachines.cpp : DomainListMachines_imports
+
+inc/DomainListMachines.cpp : dlmEnumV1
+
+inc/DomainListMachines.cpp : _dlmWnetParseStructure
+
+inc/DomainListMachines.cpp : _dlmWnetEnumFunc
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_100096c0
+
+inc/DomainListMachines.cpp : dlmEnumV2
+
+inc/PipeWorks.cpp : PipeWorks_resolve
+common_call: 1 |  sub_100014e0
+common_call: 1 |  sub_10001560
+common_call: 1 |  sub_10001830
+common_call: 1 |  sub_100018a0
+common_call: 1 |  sub_10001a70
+common_call: 1 |  sub_10002980
+common_call: 1 |  sub_10003b40
+
+inc/PipeWorks.cpp : PipeWorks_imports
+
+inc/PipeWorks.cpp : _pwGenPipeName
+
+inc/PipeWorks.cpp : thrPipeClientConnectionDispatch
+common_call: 2 |  sub_100015d0
+common_call: 2 |  sub_10001630
+common_call: 1 |  sub_10001cc0
+common_call: 2 |  sub_10002030
+common_call: 2 |  sub_10002130
+common_call: 2 |  sub_10002210
+common_call: 2 |  sub_100029f0
+common_call: 2 |  sub_10002d60
+common_call: 5 |  sub_10002e10
+common_call: 8 |  sub_10003420
+common_call: 5 |  sub_10003739
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_10003fb0
+common_call: 3 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 2 |  sub_10005750
+common_call: 3 |  sub_100059f0
+common_call: 2 |  sub_10005ee0
+common_call: 2 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 4 |  sub_10007da0
+common_call: 5 |  sub_100081e0
+common_call: 1 |  sub_10008ac0
+common_call: 1 |  sub_10008c10
+common_call: 2 |  sub_10008fa0
+common_call: 2 |  sub_10009280
+common_call: 1 |  sub_10009560
+common_call: 2 |  sub_100096c0
+
+inc/PipeWorks.cpp : _pwMakeEveryoneDACL
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 3 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 3 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_100096c0
+
+inc/PipeWorks.cpp : pwInitPipeServer
+common_call: 1 |  sub_100015d0
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_10001fa0
+common_call: 6 |  sub_100029f0
+common_call: 3 |  sub_10002d60
+common_call: 3 |  sub_10002e10
+common_call: 2 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_10003fb0
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 2 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 2 |  sub_10007da0
+common_call: 2 |  sub_100081e0
+common_call: 2 |  sub_10008c10
+common_call: 2 |  sub_10008fa0
+common_call: 3 |  sub_10009280
+common_call: 1 |  sub_10009560
+common_call: 1 |  sub_100096c0
+
+inc/PipeWorks.cpp : pwInitPipeServerAsync
+common_call: 1 |  sub_100015d0
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_10001cc0
+common_call: 3 |  sub_100029f0
+common_call: 3 |  sub_10002d60
+common_call: 2 |  sub_10002e10
+common_call: 2 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_10003fb0
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 2 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 2 |  sub_10007da0
+common_call: 2 |  sub_100081e0
+common_call: 2 |  sub_10008c10
+common_call: 2 |  sub_10008fa0
+common_call: 3 |  sub_10009280
+common_call: 1 |  sub_10009560
+common_call: 1 |  sub_100096c0
+
+inc/PipeWorks.cpp : _pwRemotePipeCheckSend
+common_call: 1 |  sub_1000146d
+common_call: 2 |  sub_100015d0
+common_call: 3 |  sub_10001630
+common_call: 1 |  sub_10001b00
+common_call: 1 |  sub_10001cc0
+common_call: 3 |  sub_100029f0
+common_call: 2 |  sub_10002d60
+common_call: 8 |  sub_10002e10
+common_call: 5 |  sub_10003420
+common_call: 3 |  sub_10003739
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_10003fb0
+common_call: 3 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_100048c0
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 2 |  sub_10005750
+common_call: 4 |  sub_100059f0
+common_call: 2 |  sub_10005ee0
+common_call: 2 |  sub_10006260
+common_call: 2 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 4 |  sub_10007da0
+common_call: 6 |  sub_100081e0
+common_call: 2 |  sub_10008ac0
+common_call: 1 |  sub_10008c10
+common_call: 2 |  sub_10008fa0
+common_call: 2 |  sub_10009280
+common_call: 1 |  sub_10009560
+common_call: 2 |  sub_100096c0
+
+inc/PipeWorks.cpp : pwIsRemotePipeWorkingTimeout
+
+inc/mem.c : my_alloc
+common_call: 1 |  sub_100014e0
+common_call: 1 |  sub_10001560
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_10001830
+common_call: 1 |  sub_100018a0
+common_call: 1 |  sub_10001910
+common_call: 1 |  sub_10001a70
+common_call: 1 |  sub_10001b00
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_10001f40
+common_call: 1 |  sub_10001fa0
+common_call: 1 |  sub_10002030
+common_call: 1 |  sub_10002130
+common_call: 1 |  sub_10002210
+common_call: 1 |  sub_10002430
+common_call: 1 |  sub_10002530
+common_call: 1 |  sub_10002630
+common_call: 1 |  sub_10002700
+common_call: 1 |  sub_10002860
+common_call: 1 |  sub_10002980
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_100031f0
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003b40
+common_call: 1 |  sub_10003bb0
+common_call: 1 |  sub_10003d90
+common_call: 1 |  sub_10003e90
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_10003fb0
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_100048c0
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_10004fb0
+common_call: 1 |  sub_10005600
+common_call: 1 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 1 |  sub_10006260
+common_call: 1 |  sub_10006460
+common_call: 1 |  sub_100065c0
+common_call: 1 |  sub_10006960
+common_call: 1 |  sub_10006dc0
+common_call: 1 |  sub_10007090
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007d00
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_100085d0
+common_call: 1 |  sub_100086b0
+common_call: 1 |  sub_10008ac0
+common_call: 1 |  sub_10008c10
+common_call: 1 |  sub_10008d00
+common_call: 1 |  sub_10008dc0
+common_call: 1 |  sub_10008e60
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_10009560
+common_call: 1 |  sub_100096c0
+common_call: 1 |  sub_10009d40
+
+inc/mem.c : my_free
+common_call: 1 |  sub_100014e0
+common_call: 1 |  sub_10001560
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_10001830
+common_call: 1 |  sub_100018a0
+common_call: 1 |  sub_10001910
+common_call: 1 |  sub_10001a70
+common_call: 1 |  sub_10001b00
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_10001fa0
+common_call: 1 |  sub_10002030
+common_call: 1 |  sub_10002210
+common_call: 1 |  sub_10002430
+common_call: 1 |  sub_10002530
+common_call: 1 |  sub_10002630
+common_call: 1 |  sub_10002700
+common_call: 1 |  sub_10002860
+common_call: 1 |  sub_10002980
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_100031f0
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003b40
+common_call: 1 |  sub_10003bb0
+common_call: 1 |  sub_10003d90
+common_call: 1 |  sub_10003e90
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_10003fb0
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_100048c0
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_10004fb0
+common_call: 1 |  sub_10005600
+common_call: 1 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 1 |  sub_10006260
+common_call: 1 |  sub_10006460
+common_call: 1 |  sub_100065c0
+common_call: 1 |  sub_10006960
+common_call: 1 |  sub_10006dc0
+common_call: 1 |  sub_10007090
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007d00
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_100085d0
+common_call: 1 |  sub_100086b0
+common_call: 1 |  sub_10008ac0
+common_call: 1 |  sub_10008c10
+common_call: 1 |  sub_10008d00
+common_call: 1 |  sub_10008dc0
+common_call: 1 |  sub_10008e60
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_10009560
+common_call: 1 |  sub_100096c0
+common_call: 1 |  sub_10009d40
+
+inc/mem.c : my_alloc
+common_call: 1 |  sub_1000146d
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_10001b00
+common_call: 1 |  sub_10001fa0
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10006260
+common_call: 1 |  sub_10008ac0
+
+inc/mem.c : __mem_dbg_checkinit
+common_call: 1 |  sub_1000146d
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_10001b00
+common_call: 1 |  sub_10001fa0
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10006260
+common_call: 1 |  sub_10008ac0
+
+inc/mem.c : mmRemoveFromList
+common_call: 1 |  sub_100014e0
+common_call: 1 |  sub_10001560
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_10001830
+common_call: 1 |  sub_100018a0
+common_call: 1 |  sub_10001910
+common_call: 1 |  sub_10001a70
+common_call: 1 |  sub_10001b00
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_10001fa0
+common_call: 3 |  sub_10002030
+common_call: 2 |  sub_10002130
+common_call: 3 |  sub_10002210
+common_call: 1 |  sub_10002430
+common_call: 1 |  sub_10002530
+common_call: 1 |  sub_10002630
+common_call: 1 |  sub_10002700
+common_call: 1 |  sub_10002860
+common_call: 1 |  sub_10002980
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_100031f0
+common_call: 3 |  sub_10003420
+common_call: 2 |  sub_10003739
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003b40
+common_call: 1 |  sub_10003bb0
+common_call: 1 |  sub_10003d90
+common_call: 1 |  sub_10003e90
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_10003fb0
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_100048c0
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_10004fb0
+common_call: 1 |  sub_10005600
+common_call: 1 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 1 |  sub_10006260
+common_call: 1 |  sub_10006460
+common_call: 1 |  sub_100065c0
+common_call: 1 |  sub_10006960
+common_call: 1 |  sub_10006dc0
+common_call: 1 |  sub_10007090
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007d00
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_100085d0
+common_call: 1 |  sub_100086b0
+common_call: 1 |  sub_10008ac0
+common_call: 1 |  sub_10008c10
+common_call: 1 |  sub_10008d00
+common_call: 1 |  sub_10008dc0
+common_call: 1 |  sub_10008e60
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_10009560
+common_call: 1 |  sub_100096c0
+common_call: 1 |  sub_10009d40
+
+inc/mem.c : mmAddToList
+common_call: 1 |  sub_100014e0
+common_call: 1 |  sub_10001560
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_10001830
+common_call: 1 |  sub_100018a0
+common_call: 1 |  sub_10001910
+common_call: 1 |  sub_10001a70
+common_call: 1 |  sub_10001b00
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_10001f40
+common_call: 1 |  sub_10001fa0
+common_call: 3 |  sub_10002030
+common_call: 3 |  sub_10002130
+common_call: 3 |  sub_10002210
+common_call: 1 |  sub_10002430
+common_call: 1 |  sub_10002530
+common_call: 1 |  sub_10002630
+common_call: 1 |  sub_10002700
+common_call: 1 |  sub_10002860
+common_call: 1 |  sub_10002980
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_100031f0
+common_call: 3 |  sub_10003420
+common_call: 2 |  sub_10003739
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003b40
+common_call: 1 |  sub_10003bb0
+common_call: 1 |  sub_10003d90
+common_call: 1 |  sub_10003e90
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_10003fb0
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_100048c0
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_10004fb0
+common_call: 1 |  sub_10005600
+common_call: 1 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 1 |  sub_10006260
+common_call: 1 |  sub_10006460
+common_call: 1 |  sub_100065c0
+common_call: 1 |  sub_10006960
+common_call: 1 |  sub_10006dc0
+common_call: 1 |  sub_10007090
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007d00
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_100085d0
+common_call: 1 |  sub_100086b0
+common_call: 1 |  sub_10008ac0
+common_call: 1 |  sub_10008c10
+common_call: 1 |  sub_10008d00
+common_call: 1 |  sub_10008dc0
+common_call: 1 |  sub_10008e60
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_10009560
+common_call: 1 |  sub_100096c0
+common_call: 1 |  sub_10009d40
+
+inc/mem.c : my_alloc_int
+common_call: 1 |  sub_1000146d
+common_call: 1 |  sub_100014e0
+common_call: 1 |  sub_10001560
+common_call: 3 |  sub_10001630
+common_call: 1 |  sub_10001830
+common_call: 1 |  sub_100018a0
+common_call: 1 |  sub_10001910
+common_call: 1 |  sub_10001a70
+common_call: 3 |  sub_10001b00
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_10001f40
+common_call: 1 |  sub_10001fa0
+common_call: 1 |  sub_10002030
+common_call: 1 |  sub_10002130
+common_call: 1 |  sub_10002210
+common_call: 1 |  sub_10002430
+common_call: 1 |  sub_10002530
+common_call: 1 |  sub_10002630
+common_call: 1 |  sub_10002700
+common_call: 1 |  sub_10002860
+common_call: 1 |  sub_10002980
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 2 |  sub_10002e10
+common_call: 1 |  sub_100031f0
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003b40
+common_call: 1 |  sub_10003bb0
+common_call: 1 |  sub_10003d90
+common_call: 1 |  sub_10003e90
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_10003fb0
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_100048c0
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_10004fb0
+common_call: 1 |  sub_10005600
+common_call: 1 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 2 |  sub_10006260
+common_call: 1 |  sub_10006460
+common_call: 1 |  sub_100065c0
+common_call: 1 |  sub_10006960
+common_call: 1 |  sub_10006dc0
+common_call: 1 |  sub_10007090
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007d00
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_100085d0
+common_call: 1 |  sub_100086b0
+common_call: 2 |  sub_10008ac0
+common_call: 1 |  sub_10008c10
+common_call: 1 |  sub_10008d00
+common_call: 1 |  sub_10008dc0
+common_call: 1 |  sub_10008e60
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_10009560
+common_call: 1 |  sub_100096c0
+common_call: 1 |  sub_10009d40
+
+inc/mem.c : _memCheckGuardPage
+
+inc/mem.c : my_free_int
+common_call: 1 |  sub_100014e0
+common_call: 1 |  sub_10001560
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_10001830
+common_call: 1 |  sub_100018a0
+common_call: 1 |  sub_10001910
+common_call: 1 |  sub_10001a70
+common_call: 1 |  sub_10001b00
+common_call: 3 |  sub_10001cc0
+common_call: 1 |  sub_10001fa0
+common_call: 1 |  sub_10002030
+common_call: 2 |  sub_10002210
+common_call: 1 |  sub_10002430
+common_call: 1 |  sub_10002530
+common_call: 1 |  sub_10002630
+common_call: 1 |  sub_10002700
+common_call: 1 |  sub_10002860
+common_call: 1 |  sub_10002980
+common_call: 2 |  sub_100029f0
+common_call: 2 |  sub_10002d60
+common_call: 2 |  sub_10002e10
+common_call: 1 |  sub_100031f0
+common_call: 2 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 2 |  sub_10003850
+common_call: 1 |  sub_10003b40
+common_call: 1 |  sub_10003bb0
+common_call: 1 |  sub_10003d90
+common_call: 1 |  sub_10003e90
+common_call: 2 |  sub_10003f40
+common_call: 1 |  sub_10003fb0
+common_call: 2 |  sub_100043b0
+common_call: 2 |  sub_10004570
+common_call: 2 |  sub_10004790
+common_call: 1 |  sub_100048c0
+common_call: 2 |  sub_10004a00
+common_call: 2 |  sub_10004d40
+common_call: 1 |  sub_10004fb0
+common_call: 1 |  sub_10005600
+common_call: 1 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 1 |  sub_10006260
+common_call: 1 |  sub_10006460
+common_call: 1 |  sub_100065c0
+common_call: 1 |  sub_10006960
+common_call: 1 |  sub_10006dc0
+common_call: 1 |  sub_10007090
+common_call: 2 |  sub_100071f0
+common_call: 2 |  sub_10007690
+common_call: 2 |  sub_10007ad0
+common_call: 1 |  sub_10007d00
+common_call: 2 |  sub_10007da0
+common_call: 2 |  sub_100081e0
+common_call: 1 |  sub_100085d0
+common_call: 1 |  sub_100086b0
+common_call: 1 |  sub_10008ac0
+common_call: 1 |  sub_10008c10
+common_call: 1 |  sub_10008d00
+common_call: 1 |  sub_10008dc0
+common_call: 1 |  sub_10008e60
+common_call: 2 |  sub_10008fa0
+common_call: 2 |  sub_10009280
+common_call: 1 |  sub_10009560
+common_call: 2 |  sub_100096c0
+common_call: 1 |  sub_10009d40
+
+inc/mem.c : memDumpChunks
+common_call: 1 |  sub_10001cc0
+common_call: 2 |  sub_10002030
+common_call: 2 |  sub_10002130
+common_call: 3 |  sub_10002210
+common_call: 2 |  sub_10003420
+common_call: 1 |  sub_10003739
+
+inc/mem.c : memPrintAllocationListDialog
+common_call: 2 |  sub_100014e0
+common_call: 2 |  sub_10001560
+common_call: 2 |  sub_10001630
+common_call: 2 |  sub_10001830
+common_call: 2 |  sub_100018a0
+common_call: 2 |  sub_10001910
+common_call: 2 |  sub_10001a70
+common_call: 2 |  sub_10001b00
+common_call: 2 |  sub_10001cc0
+common_call: 3 | common_string: 2 |  sub_10001f40
+common_call: 2 |  sub_10001fa0
+common_call: 2 |  sub_10002030
+common_call: 1 |  sub_10002130
+common_call: 2 |  sub_10002210
+common_call: 2 |  sub_10002430
+common_call: 2 |  sub_10002530
+common_call: 2 |  sub_10002630
+common_call: 2 |  sub_10002700
+common_call: 2 |  sub_10002860
+common_call: 2 |  sub_10002980
+common_call: 2 |  sub_100029f0
+common_call: 2 |  sub_10002d60
+common_call: 2 |  sub_10002e10
+common_call: 2 |  sub_100031f0
+common_call: 2 |  sub_10003420
+common_call: 2 |  sub_10003739
+common_call: 2 |  sub_10003850
+common_call: 2 |  sub_10003b40
+common_call: 2 |  sub_10003bb0
+common_call: 2 |  sub_10003d90
+common_call: 2 |  sub_10003e90
+common_call: 2 |  sub_10003f40
+common_call: 2 |  sub_10003fb0
+common_call: 2 |  sub_100043b0
+common_call: 2 |  sub_10004570
+common_call: 2 |  sub_10004790
+common_call: 2 |  sub_100048c0
+common_call: 2 |  sub_10004a00
+common_call: 2 |  sub_10004d40
+common_call: 2 |  sub_10004fb0
+common_call: 2 |  sub_10005600
+common_call: 2 |  sub_10005750
+common_call: 2 |  sub_100059f0
+common_call: 2 |  sub_10005ee0
+common_call: 2 |  sub_10006260
+common_call: 2 |  sub_10006460
+common_call: 2 |  sub_100065c0
+common_call: 2 |  sub_10006960
+common_call: 2 |  sub_10006dc0
+common_call: 2 |  sub_10007090
+common_call: 2 |  sub_100071f0
+common_call: 2 |  sub_10007690
+common_call: 2 |  sub_10007ad0
+common_call: 2 |  sub_10007d00
+common_call: 2 |  sub_10007da0
+common_call: 2 |  sub_100081e0
+common_call: 2 |  sub_100085d0
+common_call: 2 |  sub_100086b0
+common_call: 2 |  sub_10008ac0
+common_call: 2 |  sub_10008c10
+common_call: 2 |  sub_10008d00
+common_call: 2 |  sub_10008dc0
+common_call: 2 |  sub_10008e60
+common_call: 2 |  sub_10008fa0
+common_call: 2 |  sub_10009280
+common_call: 2 |  sub_10009560
+common_call: 2 |  sub_100096c0
+common_call: 2 |  sub_10009d40
+
+inc/CredManager.cpp : CredManager_resolve
+common_call: 1 |  sub_100014e0
+common_call: 1 |  sub_10001560
+common_call: 1 |  sub_10001830
+common_call: 1 |  sub_100018a0
+common_call: 1 |  sub_10001a70
+common_call: 1 |  sub_10002980
+common_call: 1 |  sub_10003b40
+
+inc/CredManager.cpp : CredManager_imports
+
+inc/CredManager.cpp : _cmCheckInitInternals
+common_call: 1 |  sub_10001fa0
+common_call: 1 |  sub_100029f0
+
+inc/CredManager.cpp : _cmChainAddChunk
+
+inc/CredManager.cpp : _cmChainRemoveChunk
+
+inc/CredManager.cpp : _cmEnumRecords
+common_call: 2 |  sub_10002030
+common_call: 2 |  sub_10002130
+common_call: 2 |  sub_10002210
+common_call: 2 |  sub_10003420
+common_call: 1 |  sub_10003739
+
+inc/CredManager.cpp : _cmcbChainContains
+
+inc/CredManager.cpp : _cmChainContainsChunk
+
+inc/CredManager.cpp : cmebEncode
+
+inc/CredManager.cpp : cmebEncodeW
+common_call: 1 |  sub_100031f0
+common_call: 1 |  sub_10003bb0
+common_call: 1 |  sub_10004fb0
+common_call: 1 |  sub_10005600
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_10008c10
+
+inc/CredManager.cpp : cmebDecode
+
+inc/CredManager.cpp : cmebDecodeW
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_100096c0
+
+inc/CredManager.cpp : _cmcbSelectMinLastSent
+
+inc/CredManager.cpp : __ft2li
+
+inc/CredManager.cpp : __li2ft
+
+inc/CredManager.cpp : cmMailslotBroadcastInProcessingDataCallback
+
+inc/CredManager.cpp : _cmGetXorByte
+
+inc/CredManager.cpp : _cmDoXor
+
+inc/CredManager.cpp : _cmSerializeCredData
+
+inc/CredManager.cpp : _cmBroadcastChunk
+
+inc/CredManager.cpp : _cmcbSerializeAll
+
+inc/CredManager.cpp : _cmSendSerializedCredsBuffer
+
+inc/CredManager.cpp : thrcmCredBroadcaster
+common_call: 1 |  sub_1000146d
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_10001b00
+common_call: 1 |  sub_10001cc0
+common_call: 2 |  sub_10002030
+common_call: 2 |  sub_10002130
+common_call: 3 |  sub_10002210
+common_call: 2 |  sub_10002e10
+common_call: 3 |  sub_10003420
+common_call: 2 |  sub_10003739
+common_call: 1 |  sub_100048c0
+common_call: 1 |  sub_100059f0
+common_call: 2 |  sub_10006260
+common_call: 1 |  sub_100081e0
+common_call: 3 |  sub_10008ac0
+common_call: 2 |  sub_100096c0
+
+inc/CredManager.cpp : cmStartupNetworkBroadcaster
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10008c10
+common_call: 1 |  sub_10009280
+
+inc/CredManager.cpp : _cmIsFileTimeGreater
+
+inc/CredManager.cpp : _cmcbAddCredentialsEnum
+
+inc/CredManager.cpp : cmftNow
+
+inc/CredManager.cpp : cmAddCredentials
+common_call: 1 |  sub_10001910
+common_call: 1 |  sub_10001cc0
+common_call: 2 |  sub_10002030
+common_call: 2 |  sub_10002130
+common_call: 2 |  sub_10002210
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 3 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 2 |  sub_10004d40
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_100096c0
+
+inc/CredManager.cpp : _cmIsHashInContext
+
+inc/CredManager.cpp : _cmcbGetCredentialsForDomain
+common_call: 1 |  sub_100031f0
+common_call: 1 |  sub_10003bb0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_10004fb0
+common_call: 1 |  sub_10005600
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10006910
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_100085d0
+common_call: 1 |  sub_100086b0
+common_call: 1 |  sub_10008c10
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_100096c0
+common_call: 1 |  sub_10009d40
+
+inc/CredManager.cpp : cmGetCredentialsForDomain
+
+inc/CryptRoutines.cpp : cryptCalcHashSHA
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_100096c0
+
+inc/CryptRoutines.cpp : _cryptCheckInitContext
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_100096c0
+
+inc/CryptRoutines.cpp : cryptEncryptStream
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_100096c0
+
+inc/CryptRoutines.cpp : cryptDecryptBuffer
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_100096c0
+
+inc/ProcessInjectMP.cpp : pimpCheckInitObj
+
+inc/ProcessInjectMP.cpp : GetEP
+
+inc/ProcessInjectMP.cpp : GetSizeOfImage
+
+inc/ProcessInjectMP.cpp : _pimpGetSizeOfImage
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_100096c0
+
+inc/ProcessInjectMP.cpp : PlaceShellcodeAndJmp
+
+inc/ProcessInjectMP.cpp : DbgPrint
+
+inc/ProcessInjectMP.cpp : bIsWindowsXP
+
+inc/ProcessInjectMP.cpp : AttemptSvchostInjection
+common_call: 1 |  sub_10001910
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 2 |  sub_10002e10
+common_call: 1 |  sub_100031f0
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_100048c0
+common_call: 1 |  sub_10004a00
+common_call: 2 |  sub_10004d40
+common_call: 1 |  sub_10004fb0
+common_call: 1 |  sub_10005600
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10006260
+common_call: 1 |  sub_10006910
+common_call: 2 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 2 |  sub_10007ad0
+common_call: 1 |  sub_10007da0
+common_call: 2 |  sub_100081e0
+common_call: 1 |  sub_100086b0
+common_call: 1 |  sub_10008ac0
+common_call: 2 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 3 |  sub_100096c0
+common_call: 1 |  sub_10009d40
+
+inc/machineid.cpp : rol
+
+inc/machineid.cpp : _myHashStringW
+
+inc/machineid.cpp : _hwsFirstVolumeModelHash
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003bb0
+common_call: 1 |  sub_10003d90
+common_call: 1 |  sub_10003e90
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_100096c0
+
+inc/machineid.cpp : i64MakeMachineID
+
+inc/LZ4/bench.c : BMK_SetBlocksize
+
+inc/LZ4/bench.c : BMK_SetNbIterations
+
+inc/LZ4/bench.c : BMK_GetMilliStart
+
+inc/LZ4/bench.c : BMK_GetMilliSpan
+
+inc/LZ4/bench.c : BMK_checksum_MMH3A
+
+inc/LZ4/bench.c : BMK_findMaxMem
+
+inc/LZ4/bench.c : BMK_GetFileSize
+
+inc/LZ4/bench.c : BMK_benchFile
+
+inc/LZ4/lz4demo.c : usage
+
+inc/LZ4/lz4demo.c : badusage
+
+inc/LZ4/lz4demo.c : get_fileHandle
+
+inc/LZ4/lz4demo.c : compress_file
+
+inc/LZ4/lz4demo.c : decode_file
+
+inc/LZ4/lz4demo.c : main
+
+inc/LZ4/lz4.c : LZ4_NbCommonBytes
+
+inc/LZ4/lz4.c : LZ4_NbCommonBytes
+
+inc/LZ4/lz4.c : LZ4_compressBound
+
+RemoteServiceExe/rse.c : PipeCallback
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_100096c0
+
+RemoteServiceExe/rse.c : SvcCtrlHandler
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_100048c0
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10006260
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008ac0
+common_call: 1 |  sub_100096c0
+
+RemoteServiceExe/rse.c : ServiceMain
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_100096c0
+
+RemoteServiceExe/rse.c : RegisterAsService
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_100096c0
+
+RemoteServiceExe/rse.c : rseCheckCompanionFile
+common_call: 1 |  sub_100015d0
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_10001cc0
+common_call: 2 |  sub_100029f0
+common_call: 2 |  sub_10002d60
+common_call: 2 |  sub_10002e10
+common_call: 3 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 2 |  sub_10003fb0
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 3 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 2 |  sub_10005ee0
+common_call: 2 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 2 |  sub_10007da0
+common_call: 4 |  sub_100081e0
+common_call: 1 |  sub_10008c10
+common_call: 2 |  sub_10008fa0
+common_call: 2 |  sub_10009280
+common_call: 1 |  sub_10009560
+common_call: 1 |  sub_100096c0
+
+RemoteServiceExe/rse.c : main
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_100048c0
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10006260
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008ac0
+common_call: 1 |  sub_100096c0
+
+InstallDispatcherDll/idd.c : DllEntry
+
+InstallDispatcherDll/Install_Injection.cpp : instInjection
+
+InstallDispatcherDll/PrivEsc.cpp : VectoredHandler
+common_call: 1 |  sub_1000146d
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10008ac0
+common_call: 1 |  sub_100096c0
+
+InstallDispatcherDll/PrivEsc.cpp : thrpeRunner
+common_call: 1 |  sub_1000146d
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10008ac0
+common_call: 1 |  sub_100096c0
+
+InstallDispatcherDll/PrivEsc.cpp : privescDo
+common_call: 1 |  sub_100015d0
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_10001cc0
+common_call: 3 |  sub_100029f0
+common_call: 3 |  sub_10002d60
+common_call: 2 |  sub_10002e10
+common_call: 2 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_10003fb0
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 3 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 2 |  sub_10007da0
+common_call: 2 |  sub_100081e0
+common_call: 2 |  sub_10008c10
+common_call: 2 |  sub_10008fa0
+common_call: 5 |  sub_10009280
+common_call: 1 |  sub_10009560
+common_call: 2 |  sub_100096c0
+
+mod_DomainReplication/RDP.cpp : WSAStartup
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_100071f0
+common_call: 2 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_100096c0
+
+mod_DomainReplication/RDP.cpp : _rdpIsOpen
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_100071f0
+common_call: 2 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_100096c0
+
+mod_DomainReplication/RDP.cpp : _rdpSelectTargetFilename
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_100096c0
+
+mod_DomainReplication/RDP.cpp : _rdpEncodeHexByte
+
+mod_DomainReplication/RDP.cpp : _rdpEncodeToHex
+
+mod_DomainReplication/RDP.cpp : _rdpMakeRDPConnectionFile
+common_call: 2 |  sub_100015d0
+common_call: 2 |  sub_10001630
+common_call: 1 |  sub_10001cc0
+common_call: 2 |  sub_100029f0
+common_call: 2 |  sub_10002d60
+common_call: 4 |  sub_10002e10
+common_call: 1 |  sub_100031f0
+common_call: 3 |  sub_10003420
+common_call: 2 |  sub_10003739
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003bb0
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_10003fb0
+common_call: 3 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004ce0
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_10004fb0
+common_call: 1 |  sub_10005600
+common_call: 1 |  sub_10005750
+common_call: 3 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 2 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 2 |  sub_10007ad0
+common_call: 7 |  sub_10007da0
+common_call: 4 |  sub_100081e0
+common_call: 2 |  sub_10008c10
+common_call: 2 |  sub_10008fa0
+common_call: 2 |  sub_10009280
+common_call: 1 |  sub_10009560
+common_call: 1 |  sub_100096c0
+
+mod_DomainReplication/RDP.cpp : _rdpPutFile
+common_call: 2 |  sub_100015d0
+common_call: 2 |  sub_10001630
+common_call: 1 |  sub_10001cc0
+common_call: 2 |  sub_100029f0
+common_call: 2 |  sub_10002d60
+common_call: 5 |  sub_10002e10
+common_call: 4 |  sub_10003420
+common_call: 2 |  sub_10003739
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 2 |  sub_10003fb0
+common_call: 3 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_100048c0
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 3 |  sub_10005750
+common_call: 4 |  sub_100059f0
+common_call: 2 |  sub_10005ee0
+common_call: 1 |  sub_10006260
+common_call: 2 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 4 |  sub_10007da0
+common_call: 7 |  sub_100081e0
+common_call: 1 |  sub_10008ac0
+common_call: 1 |  sub_10008c10
+common_call: 2 |  sub_10008fa0
+common_call: 2 |  sub_10009280
+common_call: 1 |  sub_10009560
+common_call: 2 |  sub_100096c0
+
+mod_DomainReplication/RDP.cpp : _rdpEncodeTsclientPath
+
+mod_DomainReplication/RDP.cpp : _rdpMakeInstallerFiles
+
+mod_DomainReplication/RDP.cpp : thrrdpFileRemover
+common_call: 1 |  sub_1000146d
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_10001b00
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 3 |  sub_10002e10
+common_call: 2 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_100048c0
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_100059f0
+common_call: 2 |  sub_10006260
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007da0
+common_call: 2 |  sub_100081e0
+common_call: 3 |  sub_10008ac0
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 3 |  sub_100096c0
+
+mod_DomainReplication/RDP.cpp : _rdpRemoveFile
+common_call: 1 |  sub_100015d0
+common_call: 1 |  sub_10001630
+common_call: 2 |  sub_100029f0
+common_call: 2 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10003fb0
+common_call: 1 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 2 |  sub_10008c10
+common_call: 1 |  sub_10008fa0
+common_call: 2 |  sub_10009280
+common_call: 1 |  sub_10009560
+
+mod_DomainReplication/RDP.cpp : _rdpWriteMstscAllowDriveMappingRegistrySetting
+
+mod_DomainReplication/RDP.cpp : _rdpRemoveMstscAllowDriveMappingRegistrySetting
+
+mod_DomainReplication/RDP.cpp : _rdpWipeMRUs
+
+mod_DomainReplication/RDP.cpp : _rdpRunMstsc
+common_call: 1 |  sub_100015d0
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_10001cc0
+common_call: 2 |  sub_100029f0
+common_call: 2 |  sub_10002d60
+common_call: 2 |  sub_10002e10
+common_call: 2 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_10003fb0
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 2 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 2 |  sub_10007da0
+common_call: 2 |  sub_100081e0
+common_call: 1 |  sub_10008c10
+common_call: 2 |  sub_10008fa0
+common_call: 2 |  sub_10009280
+common_call: 1 |  sub_10009560
+common_call: 1 |  sub_100096c0
+
+mod_DomainReplication/RDP.cpp : rdpAttemptReplication
+common_call: 1 |  sub_100015d0
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_10001cc0
+common_call: 2 |  sub_100029f0
+common_call: 2 |  sub_10002d60
+common_call: 2 |  sub_10002e10
+common_call: 2 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_10003fb0
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 4 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 2 |  sub_10007da0
+common_call: 2 |  sub_100081e0
+common_call: 1 |  sub_10008c10
+common_call: 2 |  sub_10008fa0
+common_call: 3 |  sub_10009280
+common_call: 1 |  sub_10009560
+common_call: 2 |  sub_100096c0
+
+mod_DomainReplication/DomainReplication.cpp : drIsSelfMachine
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_100096c0
+
+mod_DomainReplication/DomainReplication.cpp : drConnection
+
+mod_DomainReplication/DomainReplication.cpp : _drGenRemoteName
+
+mod_DomainReplication/DomainReplication.cpp : drReadFileContents
+common_call: 1 |  sub_100015d0
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 2 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 2 |  sub_10003fb0
+common_call: 3 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 2 |  sub_10005ee0
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007da0
+common_call: 3 |  sub_100081e0
+common_call: 1 |  sub_10008c10
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_10009560
+
+mod_DomainReplication/DomainReplication.cpp : drInitEveryoneREsa
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 3 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 5 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_100096c0
+
+mod_DomainReplication/DomainReplication.cpp : drFreeEveryoneREsa
+common_call: 2 |  sub_10004ce0
+common_call: 1 |  sub_10007da0
+
+mod_DomainReplication/DomainReplication.cpp : drPlantRSEFile
+common_call: 2 |  sub_100015d0
+common_call: 2 |  sub_10001630
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 4 |  sub_10002e10
+common_call: 2 |  sub_10003420
+common_call: 2 |  sub_10003739
+common_call: 1 |  sub_10003fb0
+common_call: 2 |  sub_100043b0
+common_call: 1 |  sub_100048c0
+common_call: 1 |  sub_10005750
+common_call: 4 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 1 |  sub_10006260
+common_call: 1 |  sub_100071f0
+common_call: 3 |  sub_10007da0
+common_call: 4 |  sub_100081e0
+common_call: 1 |  sub_10008ac0
+common_call: 1 |  sub_10008c10
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_10009560
+common_call: 1 |  sub_100096c0
+
+mod_DomainReplication/DomainReplication.cpp : drQueryRemoteArch
+common_call: 1 |  sub_100015d0
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 2 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10003fb0
+common_call: 2 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 2 |  sub_10005ee0
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007da0
+common_call: 2 |  sub_100081e0
+common_call: 1 |  sub_10008c10
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_10009560
+
+mod_DomainReplication/DomainReplication.cpp : drRemoteAdminExec
+
+mod_DomainReplication/DomainReplication.cpp : drRemoveFileTimeout
+common_call: 1 |  sub_1000146d
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_10001b00
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 3 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_100048c0
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_100059f0
+common_call: 2 |  sub_10006260
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007da0
+common_call: 2 |  sub_100081e0
+common_call: 2 |  sub_10008ac0
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 2 |  sub_100096c0
+
+mod_DomainReplication/DomainReplication.cpp : drPrepareSendStarterBinpack
+
+mod_DomainReplication/DomainReplication.cpp : drAttemptAdminReplication
+
+mod_DomainReplication/DomainReplication.cpp : _drMkUsernameMod
+
+mod_DomainReplication/DomainReplication.cpp : drAttemptReplication
+
+mod_DomainReplication/DomainReplication.cpp : fnEnumFunc
+
+mod_DomainReplication/DomainReplication.cpp : infStartDomainReplication
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_100048c0
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10006260
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008ac0
+common_call: 1 |  sub_100096c0
+
+mod_DomainReplication/mod_DomainReplication.c : modInitImports
+
+mod_DomainReplication/mod_DomainReplication.c : thrModuleRun
+
+mod_DomainReplication/mod_DomainReplication.c : DllEntry
+common_call: 1 |  sub_100015d0
+common_call: 1 |  sub_10001630
+common_call: 2 |  sub_100029f0
+common_call: 2 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10003fb0
+common_call: 1 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 2 |  sub_10008c10
+common_call: 1 |  sub_10008fa0
+common_call: 2 |  sub_10009280
+common_call: 1 |  sub_10009560
+
+mod_DomainReplication/WMI.c : drRemoteExec
+common_call: 3 |  sub_10009d40
+
+mod_DomainReplication/WMI.c : wmiStartRemoteProcess
+common_call: 3 |  sub_10009d40
+
+mod_DomainReplication/SCM.cpp : _drCleanupRemoteServiceThreadParams
+common_call: 1 |  sub_100015d0
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10003fb0
+common_call: 1 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008c10
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_10009560
+
+mod_DomainReplication/SCM.cpp : drRemoteExec
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 2 |  sub_10002e10
+common_call: 2 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_100048c0
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10006260
+common_call: 2 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007da0
+common_call: 2 |  sub_100081e0
+common_call: 2 |  sub_10008ac0
+common_call: 1 |  sub_10008fa0
+common_call: 3 |  sub_10009280
+common_call: 8 |  sub_100096c0
+
+mod_DomainReplication/SCM.cpp : startup
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 2 |  sub_10002e10
+common_call: 2 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_100048c0
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10006260
+common_call: 2 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007da0
+common_call: 2 |  sub_100081e0
+common_call: 2 |  sub_10008ac0
+common_call: 1 |  sub_10008fa0
+common_call: 3 |  sub_10009280
+common_call: 8 |  sub_100096c0
+
+mod_DomainReplication/SCM.cpp : ADMIN$
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 2 |  sub_10002e10
+common_call: 2 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_100048c0
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10006260
+common_call: 2 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007da0
+common_call: 2 |  sub_100081e0
+common_call: 2 |  sub_10008ac0
+common_call: 1 |  sub_10008fa0
+common_call: 3 |  sub_10009280
+common_call: 8 |  sub_100096c0
+
+mod_DomainReplication/SCM.cpp : _drthrRemoteService
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 2 |  sub_10002e10
+common_call: 2 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_100048c0
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10006260
+common_call: 2 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007da0
+common_call: 2 |  sub_100081e0
+common_call: 2 |  sub_10008ac0
+common_call: 1 |  sub_10008fa0
+common_call: 3 |  sub_10009280
+common_call: 8 |  sub_100096c0
+
+mod_DomainReplication/SCM.cpp : StartService
+common_call: 1 |  sub_100015d0
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_10001cc0
+common_call: 3 |  sub_100029f0
+common_call: 3 |  sub_10002d60
+common_call: 2 |  sub_10002e10
+common_call: 2 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_10003fb0
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 3 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 2 |  sub_10007da0
+common_call: 2 |  sub_100081e0
+common_call: 2 |  sub_10008c10
+common_call: 2 |  sub_10008fa0
+common_call: 6 |  sub_10009280
+common_call: 1 |  sub_10009560
+common_call: 3 |  sub_100096c0
+
+mod_DomainReplication/SCM.cpp : scmStartRemoteFileAsServiceAsync
+common_call: 1 |  sub_100015d0
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_10001cc0
+common_call: 3 |  sub_100029f0
+common_call: 3 |  sub_10002d60
+common_call: 2 |  sub_10002e10
+common_call: 2 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_10003fb0
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 3 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 2 |  sub_10007da0
+common_call: 2 |  sub_100081e0
+common_call: 2 |  sub_10008c10
+common_call: 2 |  sub_10008fa0
+common_call: 6 |  sub_10009280
+common_call: 1 |  sub_10009560
+common_call: 3 |  sub_100096c0
+
+LZ4_pack/main.c : ReadFileContents
+common_call: 1 |  sub_100015d0
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 2 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 2 |  sub_10003fb0
+common_call: 3 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 2 |  sub_10005ee0
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007da0
+common_call: 3 |  sub_100081e0
+common_call: 1 |  sub_10008c10
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_10009560
+
+LZ4_pack/main.c : WriteFileContents
+common_call: 2 |  sub_100015d0
+common_call: 2 |  sub_10001630
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 3 |  sub_10002e10
+common_call: 2 |  sub_10003420
+common_call: 2 |  sub_10003739
+common_call: 1 |  sub_10003fb0
+common_call: 2 |  sub_100043b0
+common_call: 1 |  sub_10005750
+common_call: 3 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 1 |  sub_100071f0
+common_call: 3 |  sub_10007da0
+common_call: 3 |  sub_100081e0
+common_call: 1 |  sub_10008c10
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_10009560
+
+LZ4_pack/main.c : Scramble
+
+LZ4_pack/main.c : EasyScramble
+
+LZ4_pack/main.c : DoPack
+
+LZ4_pack/main.c : main
+
+mod_KBRI/kbriDataParser.cpp : _kdpMatchSignature
+
+mod_KBRI/kbriDataParser.cpp : kdpFindPattern
+
+mod_KBRI/kbriDataParser.cpp : kdpFindPatternsArray
+
+mod_KBRI/kbriDataParser.cpp : kdpGetChunk
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_10001b00
+
+mod_KBRI/kbriDataParser.cpp : kdpGetValueFromField
+
+mod_KBRI/kbriDataParser.cpp : kdpReplaceAfter
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_10001b00
+
+mod_KBRI/kbriDataParser.cpp : kdpMergeReplacement
+
+mod_KBRI/kbriDataParser.cpp : kdpCheckReplaceChunk
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_10001b00
+
+mod_KBRI/kbriDataParser.cpp : kdpParseDataInt
+common_call: 1 |  sub_100014e0
+common_call: 1 |  sub_10001560
+common_call: 1 |  sub_10001830
+common_call: 1 |  sub_100018a0
+common_call: 1 |  sub_10001a70
+common_call: 1 |  sub_10002980
+common_call: 1 |  sub_10003b40
+
+mod_KBRI/kbriDataParser.cpp : kdpParseData
+common_call: 1 |  sub_100015d0
+common_call: 1 |  sub_10001630
+common_call: 2 |  sub_100029f0
+common_call: 2 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10003fb0
+common_call: 1 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 2 |  sub_100071f0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 2 |  sub_10008c10
+common_call: 1 |  sub_10008fa0
+common_call: 4 |  sub_10009280
+common_call: 1 |  sub_10009560
+common_call: 1 |  sub_100096c0
+
+mod_KBRI/kbriDataParser.cpp : kdpInit
+
+mod_KBRI/KBRI.cpp : kbriScanInjectCmdProcess
+common_call: 1 |  sub_100015d0
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_10001cc0
+common_call: 2 |  sub_100029f0
+common_call: 2 |  sub_10002d60
+common_call: 2 |  sub_10002e10
+common_call: 2 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_10003fb0
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 2 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 2 |  sub_10007da0
+common_call: 2 |  sub_100081e0
+common_call: 1 |  sub_10008c10
+common_call: 2 |  sub_10008fa0
+common_call: 2 |  sub_10009280
+common_call: 1 |  sub_10009560
+common_call: 1 |  sub_100096c0
+
+mod_KBRI/KBRI.cpp : kbriStartInjMonitor
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_100048c0
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10006260
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008ac0
+common_call: 1 |  sub_100096c0
+
+mod_KBRI/kbriTargetAccManager.cpp : tamInit
+common_call: 1 |  sub_10001fa0
+common_call: 1 |  sub_100029f0
+
+mod_KBRI/kbriTargetAccManager.cpp : tamInit
+common_call: 1 |  sub_10001fa0
+common_call: 1 |  sub_100029f0
+
+mod_KBRI/kbriTargetAccManager.cpp : _tamEnter
+common_call: 1 |  sub_10002030
+common_call: 1 |  sub_10002130
+common_call: 1 |  sub_10002210
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_100048c0
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10006260
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008ac0
+common_call: 1 |  sub_100096c0
+
+mod_KBRI/kbriTargetAccManager.cpp : _tamEncryptCreds
+
+mod_KBRI/kbriTargetAccManager.cpp : tamAddUpdateRecord
+
+mod_KBRI/kbriTargetAccManager.cpp : tamRemoveRecord
+
+mod_KBRI/kbriTargetAccManager.cpp : thrServerNotifyCaller
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10008ac0
+common_call: 1 |  sub_100096c0
+
+mod_KBRI/kbriTargetAccManager.cpp : tamIssueServerNotify
+common_call: 1 |  sub_100014e0
+common_call: 1 |  sub_10001560
+common_call: 1 |  sub_100015d0
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_10001830
+common_call: 1 |  sub_100018a0
+common_call: 1 |  sub_10001a70
+common_call: 1 |  sub_10002980
+common_call: 2 |  sub_100029f0
+common_call: 2 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10003b40
+common_call: 1 |  sub_10003fb0
+common_call: 1 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 2 |  sub_10008c10
+common_call: 1 |  sub_10008fa0
+common_call: 2 |  sub_10009280
+common_call: 1 |  sub_10009560
+
+mod_KBRI/kbriTargetAccManager.cpp : tamGetCredsBySum
+
+mod_KBRI/kbriTargetAccManager.cpp : _tamRemoveInitialEncoding
+
+mod_KBRI/kbriTargetAccManager.cpp : tamDecodeCreds
+
+mod_KBRI/kbriTargetAccManager.cpp : tamFreeDecodedCreds
+
+mod_KBRI/kbriTargetAccManager.cpp : thrtamTAccsQuery
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_100048c0
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10006260
+common_call: 1 |  sub_100081e0
+common_call: 2 |  sub_10008ac0
+common_call: 2 |  sub_100096c0
+
+mod_KBRI/kbriTargetAccManager.cpp : tamParseItem
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_10002210
+
+mod_KBRI/kbriTargetAccManager.cpp : tamParseRemovedItem
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_10002210
+
+mod_KBRI/kbriTargetAccManager.cpp : cbTAListParser
+
+mod_KBRI/kbriTargetAccManager.cpp : tamStartTAccsQueryThread
+common_call: 1 |  sub_100015d0
+common_call: 1 |  sub_10001630
+common_call: 2 |  sub_100029f0
+common_call: 2 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10003fb0
+common_call: 1 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 2 |  sub_10008c10
+common_call: 1 |  sub_10008fa0
+common_call: 2 |  sub_10009280
+common_call: 1 |  sub_10009560
+
+mod_KBRI/kbriList.cpp : kbriInitList
+common_call: 1 |  sub_10001fa0
+common_call: 1 |  sub_100029f0
+
+mod_KBRI/kbriList.cpp : kbriAddInjectedPid
+common_call: 2 |  sub_10002030
+common_call: 2 |  sub_10002130
+common_call: 2 |  sub_10002210
+common_call: 2 |  sub_10003420
+common_call: 1 |  sub_10003739
+
+mod_KBRI/kbriList.cpp : kbriClearScannedFlag
+common_call: 2 |  sub_10002030
+common_call: 2 |  sub_10002130
+common_call: 2 |  sub_10002210
+common_call: 2 |  sub_10003420
+common_call: 1 |  sub_10003739
+
+mod_KBRI/kbriList.cpp : kbriRemoveNotScanned
+common_call: 2 |  sub_10002030
+common_call: 2 |  sub_10002130
+common_call: 2 |  sub_10002210
+common_call: 2 |  sub_10003420
+common_call: 1 |  sub_10003739
+
+mod_KBRI/kbriInject.cpp : kbriPrepareInjBuffer
+
+mod_KBRI/kbriInject.cpp : kbriPatchInjBufferOffsets
+
+mod_KBRI/kbriInject.cpp : kbriAttemptInject
+common_call: 1 |  sub_100015d0
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_10001cc0
+common_call: 2 |  sub_100029f0
+common_call: 2 |  sub_10002d60
+common_call: 2 |  sub_10002e10
+common_call: 2 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_10003fb0
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 2 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 2 |  sub_10007da0
+common_call: 2 |  sub_100081e0
+common_call: 1 |  sub_10008c10
+common_call: 2 |  sub_10008fa0
+common_call: 2 |  sub_10009280
+common_call: 1 |  sub_10009560
+common_call: 1 |  sub_100096c0
+
+mod_KBRI/kbriGeneratePurpose.cpp : kgpcat
+
+mod_KBRI/kbriGeneratePurpose.cpp : kgpRndModifyTime
+
+mod_KBRI/kbriGeneratePurpose.cpp : kgpAppendDate
+common_call: 1 |  sub_1000146d
+common_call: 1 |  sub_100014e0
+common_call: 1 |  sub_10001560
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_10001830
+common_call: 1 |  sub_100018a0
+common_call: 1 |  sub_10001910
+common_call: 1 |  sub_10001a70
+common_call: 1 |  sub_10001b00
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_10001f40
+common_call: 1 |  sub_10001fa0
+common_call: 1 |  sub_10002030
+common_call: 1 |  sub_10002210
+common_call: 1 |  sub_10002430
+common_call: 1 |  sub_10002530
+common_call: 1 |  sub_10002630
+common_call: 1 |  sub_10002700
+common_call: 1 |  sub_10002860
+common_call: 1 |  sub_10002980
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_100031f0
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003b40
+common_call: 1 |  sub_10003bb0
+common_call: 1 |  sub_10003d90
+common_call: 1 |  sub_10003e90
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_10003fb0
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_100048c0
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_10004fb0
+common_call: 1 |  sub_10005600
+common_call: 1 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 1 |  sub_10006260
+common_call: 1 |  sub_10006460
+common_call: 1 |  sub_100065c0
+common_call: 1 |  sub_10006960
+common_call: 1 |  sub_10006dc0
+common_call: 1 |  sub_10007090
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007d00
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_100085d0
+common_call: 1 |  sub_100086b0
+common_call: 1 |  sub_10008ac0
+common_call: 1 |  sub_10008c10
+common_call: 1 |  sub_10008d00
+common_call: 1 |  sub_10008dc0
+common_call: 1 |  sub_10008e60
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_10009560
+common_call: 1 |  sub_100096c0
+common_call: 1 |  sub_10009d40
+
+mod_KBRI/kbriGeneratePurpose.cpp : kgpRoundx10Cents
+
+mod_KBRI/kbriGeneratePurpose.cpp : kgpAppendSalesTax
+common_call: 1 |  sub_100014e0
+common_call: 1 |  sub_10001560
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_10001830
+common_call: 1 |  sub_100018a0
+common_call: 1 |  sub_10001910
+common_call: 1 |  sub_10001a70
+common_call: 1 |  sub_10001b00
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_10001f40
+common_call: 1 |  sub_10001fa0
+common_call: 1 |  sub_10002030
+common_call: 1 |  sub_10002210
+common_call: 1 |  sub_10002430
+common_call: 1 |  sub_10002530
+common_call: 1 |  sub_10002630
+common_call: 1 |  sub_10002700
+common_call: 1 |  sub_10002860
+common_call: 1 |  sub_10002980
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_100031f0
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003b40
+common_call: 1 |  sub_10003bb0
+common_call: 1 |  sub_10003d90
+common_call: 1 |  sub_10003e90
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_10003fb0
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_100048c0
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_10004fb0
+common_call: 1 |  sub_10005600
+common_call: 1 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 1 |  sub_10006260
+common_call: 1 |  sub_10006460
+common_call: 1 |  sub_100065c0
+common_call: 1 |  sub_10006960
+common_call: 1 |  sub_10006dc0
+common_call: 1 |  sub_10007090
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007d00
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_100085d0
+common_call: 1 |  sub_100086b0
+common_call: 1 |  sub_10008ac0
+common_call: 1 |  sub_10008c10
+common_call: 1 |  sub_10008d00
+common_call: 1 |  sub_10008dc0
+common_call: 1 |  sub_10008e60
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_10009560
+common_call: 1 |  sub_100096c0
+common_call: 1 |  sub_10009d40
+
+mod_KBRI/kbriGeneratePurpose.cpp : kgpGeneratePurpose
+common_call: 1 |  sub_1000146d
+common_call: 1 |  sub_100014e0
+common_call: 1 |  sub_10001560
+common_call: 2 |  sub_10001630
+common_call: 1 |  sub_10001830
+common_call: 1 |  sub_100018a0
+common_call: 1 |  sub_10001910
+common_call: 1 |  sub_10001a70
+common_call: 2 |  sub_10001b00
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_10001f40
+common_call: 1 |  sub_10001fa0
+common_call: 1 |  sub_10002030
+common_call: 1 |  sub_10002210
+common_call: 1 |  sub_10002430
+common_call: 1 |  sub_10002530
+common_call: 1 |  sub_10002630
+common_call: 1 |  sub_10002700
+common_call: 1 |  sub_10002860
+common_call: 1 |  sub_10002980
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 2 |  sub_10002e10
+common_call: 1 |  sub_100031f0
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003b40
+common_call: 1 |  sub_10003bb0
+common_call: 1 |  sub_10003d90
+common_call: 1 |  sub_10003e90
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_10003fb0
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_100048c0
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_10004fb0
+common_call: 1 |  sub_10005600
+common_call: 1 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 2 |  sub_10006260
+common_call: 1 |  sub_10006460
+common_call: 1 |  sub_100065c0
+common_call: 1 |  sub_10006960
+common_call: 1 |  sub_10006dc0
+common_call: 1 |  sub_10007090
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007d00
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_100085d0
+common_call: 1 |  sub_100086b0
+common_call: 2 |  sub_10008ac0
+common_call: 1 |  sub_10008c10
+common_call: 1 |  sub_10008d00
+common_call: 1 |  sub_10008dc0
+common_call: 1 |  sub_10008e60
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_10009560
+common_call: 1 |  sub_100096c0
+common_call: 1 |  sub_10009d40
+
+mod_KBRI/mod_KBRI.c : modInitImports
+
+mod_KBRI/mod_KBRI.c : bCheckAllowedToRun
+
+mod_KBRI/mod_KBRI.c : thrModuleRun
+
+mod_KBRI/mod_KBRI.c : DllEntry
+common_call: 1 |  sub_100015d0
+common_call: 1 |  sub_10001630
+common_call: 2 |  sub_100029f0
+common_call: 2 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10003fb0
+common_call: 1 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 2 |  sub_10008c10
+common_call: 1 |  sub_10008fa0
+common_call: 2 |  sub_10009280
+common_call: 1 |  sub_10009560
+
+mod_KBRI/kbriController.cpp : _kcMakeEveryoneDACL
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 3 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 3 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_100096c0
+
+mod_KBRI/kbriController.cpp : thrkcPipeClientConnectionDispatch
+common_call: 2 |  sub_100015d0
+common_call: 2 |  sub_10001630
+common_call: 1 |  sub_10001cc0
+common_call: 2 |  sub_100029f0
+common_call: 2 |  sub_10002d60
+common_call: 5 |  sub_10002e10
+common_call: 6 |  sub_10003420
+common_call: 4 |  sub_10003739
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_10003fb0
+common_call: 3 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 2 |  sub_10005750
+common_call: 3 |  sub_100059f0
+common_call: 2 |  sub_10005ee0
+common_call: 2 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 4 |  sub_10007da0
+common_call: 5 |  sub_100081e0
+common_call: 1 |  sub_10008ac0
+common_call: 1 |  sub_10008c10
+common_call: 2 |  sub_10008fa0
+common_call: 2 |  sub_10009280
+common_call: 1 |  sub_10009560
+common_call: 2 |  sub_100096c0
+
+mod_KBRI/kbriController.cpp : thrkcPipeServer
+common_call: 1 |  sub_100015d0
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_10001cc0
+common_call: 5 |  sub_100029f0
+common_call: 3 |  sub_10002d60
+common_call: 3 |  sub_10002e10
+common_call: 3 |  sub_10003420
+common_call: 2 |  sub_10003739
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_10003fb0
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 2 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 2 |  sub_10007da0
+common_call: 2 |  sub_100081e0
+common_call: 1 |  sub_10008ac0
+common_call: 2 |  sub_10008c10
+common_call: 2 |  sub_10008fa0
+common_call: 3 |  sub_10009280
+common_call: 1 |  sub_10009560
+common_call: 2 |  sub_100096c0
+
+mod_KBRI/kbriController.cpp : kcStartController
+common_call: 1 |  sub_100015d0
+common_call: 1 |  sub_10001630
+common_call: 2 |  sub_100029f0
+common_call: 2 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10003fb0
+common_call: 1 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 2 |  sub_10008c10
+common_call: 1 |  sub_10008fa0
+common_call: 2 |  sub_10009280
+common_call: 1 |  sub_10009560
+
+Shellcode/shellcode.c : GetProcAddressWithHash
+
+Shellcode/shellcode.c : *my_memset
+
+Shellcode/shellcode.c : _shEasyDeScramble
+
+Shellcode/shellcode.c : main
+
+mod_NetworkConnectivity/transport_WinHTTP.cpp : tswhttpEnumUserProxy
+common_call: 1 |  sub_10003bb0
+common_call: 1 |  sub_10003d90
+common_call: 1 |  sub_10003e90
+
+mod_NetworkConnectivity/transport_WinHTTP.cpp : cbProxyEnum
+
+mod_NetworkConnectivity/transport_WinHTTP.cpp : _tswhttpClose
+
+mod_NetworkConnectivity/transport_WinHTTP.cpp : _tswhttpPrepareUserAgent
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_100096c0
+
+mod_NetworkConnectivity/transport_WinHTTP.cpp : _tswhttpOpen
+common_call: 1 |  sub_100014e0
+common_call: 1 |  sub_10001560
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_10001830
+common_call: 1 |  sub_100018a0
+common_call: 1 |  sub_10001910
+common_call: 1 |  sub_10001a70
+common_call: 1 |  sub_10001b00
+common_call: 2 |  sub_10001cc0
+common_call: 1 |  sub_10001fa0
+common_call: 1 |  sub_10002030
+common_call: 1 |  sub_10002210
+common_call: 1 |  sub_10002430
+common_call: 1 |  sub_10002530
+common_call: 1 |  sub_10002630
+common_call: 1 |  sub_10002700
+common_call: 1 |  sub_10002860
+common_call: 1 |  sub_10002980
+common_call: 2 |  sub_100029f0
+common_call: 2 |  sub_10002d60
+common_call: 2 |  sub_10002e10
+common_call: 1 |  sub_100031f0
+common_call: 2 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 2 |  sub_10003850
+common_call: 1 |  sub_10003b40
+common_call: 1 |  sub_10003bb0
+common_call: 1 |  sub_10003d90
+common_call: 1 |  sub_10003e90
+common_call: 2 |  sub_10003f40
+common_call: 1 |  sub_10003fb0
+common_call: 2 |  sub_100043b0
+common_call: 2 |  sub_10004570
+common_call: 2 |  sub_10004790
+common_call: 1 |  sub_100048c0
+common_call: 2 |  sub_10004a00
+common_call: 2 |  sub_10004d40
+common_call: 1 |  sub_10004fb0
+common_call: 1 |  sub_10005600
+common_call: 1 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 1 |  sub_10006260
+common_call: 1 |  sub_10006460
+common_call: 1 |  sub_100065c0
+common_call: 1 |  sub_10006960
+common_call: 1 |  sub_10006dc0
+common_call: 1 |  sub_10007090
+common_call: 2 |  sub_100071f0
+common_call: 2 |  sub_10007690
+common_call: 2 |  sub_10007ad0
+common_call: 1 |  sub_10007d00
+common_call: 2 |  sub_10007da0
+common_call: 2 |  sub_100081e0
+common_call: 1 |  sub_100085d0
+common_call: 1 |  sub_100086b0
+common_call: 1 |  sub_10008ac0
+common_call: 1 |  sub_10008c10
+common_call: 1 |  sub_10008d00
+common_call: 1 |  sub_10008dc0
+common_call: 1 |  sub_10008e60
+common_call: 2 |  sub_10008fa0
+common_call: 2 |  sub_10009280
+common_call: 1 |  sub_10009560
+common_call: 2 |  sub_100096c0
+common_call: 1 |  sub_10009d40
+
+mod_NetworkConnectivity/transport_WinHTTP.cpp : _tswhttpEncodePOST
+common_call: 1 |  sub_100014e0
+common_call: 1 |  sub_10001560
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_10001830
+common_call: 1 |  sub_100018a0
+common_call: 1 |  sub_10001910
+common_call: 1 |  sub_10001a70
+common_call: 1 |  sub_10001b00
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_10001f40
+common_call: 1 |  sub_10001fa0
+common_call: 1 |  sub_10002030
+common_call: 1 |  sub_10002210
+common_call: 1 |  sub_10002430
+common_call: 1 |  sub_10002530
+common_call: 1 |  sub_10002630
+common_call: 1 |  sub_10002700
+common_call: 1 |  sub_10002860
+common_call: 1 |  sub_10002980
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_100031f0
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003b40
+common_call: 1 |  sub_10003bb0
+common_call: 1 |  sub_10003d90
+common_call: 1 |  sub_10003e90
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_10003fb0
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_100048c0
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_10004fb0
+common_call: 1 |  sub_10005600
+common_call: 1 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 1 |  sub_10006260
+common_call: 1 |  sub_10006460
+common_call: 1 |  sub_100065c0
+common_call: 1 |  sub_10006960
+common_call: 1 |  sub_10006dc0
+common_call: 1 |  sub_10007090
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007ce0
+common_call: 1 |  sub_10007d00
+common_call: 2 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_100085d0
+common_call: 1 |  sub_100086b0
+common_call: 1 |  sub_10008ac0
+common_call: 1 |  sub_10008c10
+common_call: 1 |  sub_10008d00
+common_call: 1 |  sub_10008dc0
+common_call: 1 |  sub_10008e60
+common_call: 2 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_10009560
+common_call: 1 |  sub_100096c0
+common_call: 1 |  sub_10009d40
+
+mod_NetworkConnectivity/transport_WinHTTP.cpp : _tswhttpMakeQuery
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_100096c0
+
+mod_NetworkConnectivity/transport_WinHTTP.cpp : _tswhttpSelectLegitimateHttpsUrl
+
+mod_NetworkConnectivity/transport_WinHTTP.cpp : _tswhttpTestConnection
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_100048c0
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10006260
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008ac0
+common_call: 1 |  sub_100096c0
+
+mod_NetworkConnectivity/transport_WinHTTP.cpp : tswhttpInitTransport
+
+mod_NetworkConnectivity/transport_WinHTTP.cpp : tswhttpDisposeTransport
+
+mod_NetworkConnectivity/transport_WinHTTP.cpp : tswhttpWaitQueryLimits
+common_call: 1 |  sub_1000146d
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_10001b00
+common_call: 2 |  sub_10002e10
+common_call: 1 |  sub_100048c0
+common_call: 1 |  sub_100059f0
+common_call: 2 |  sub_10006260
+common_call: 1 |  sub_100081e0
+common_call: 2 |  sub_10008ac0
+common_call: 1 |  sub_100096c0
+
+mod_NetworkConnectivity/transport_WinHTTP.cpp : tswhttpTransportSend
+
+mod_NetworkConnectivity/mod_NetworkConnectivity.c : modInitImports
+
+mod_NetworkConnectivity/mod_NetworkConnectivity.c : thrModuleRun
+
+mod_NetworkConnectivity/mod_NetworkConnectivity.c : DllEntry
+common_call: 1 |  sub_100015d0
+common_call: 1 |  sub_10001630
+common_call: 2 |  sub_100029f0
+common_call: 2 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10003fb0
+common_call: 1 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 2 |  sub_10008c10
+common_call: 1 |  sub_10008fa0
+common_call: 2 |  sub_10009280
+common_call: 1 |  sub_10009560
+
+mod_NetworkConnectivity/NetworkConnectivity.cpp : nmlAddUpdateRecord
+common_call: 1 |  sub_1000146d
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_10001b00
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10006260
+common_call: 1 |  sub_10008ac0
+
+mod_NetworkConnectivity/NetworkConnectivity.cpp : nmlUnlink
+
+mod_NetworkConnectivity/NetworkConnectivity.cpp : nmlGetFreshestItem
+common_call: 2 |  sub_10002030
+common_call: 2 |  sub_10002130
+common_call: 2 |  sub_10002210
+common_call: 2 |  sub_10003420
+common_call: 1 |  sub_10003739
+
+mod_NetworkConnectivity/NetworkConnectivity.cpp : ncPipeProxy
+common_call: 1 |  sub_10002030
+common_call: 1 |  sub_10002130
+common_call: 1 |  sub_10002210
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003739
+
+mod_NetworkConnectivity/NetworkConnectivity.cpp : ncNetworkSendHandler
+
+mod_NetworkConnectivity/NetworkConnectivity.cpp : ncGetMachineHash
+
+mod_NetworkConnectivity/NetworkConnectivity.cpp : thrKnockChunkAdder
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_100048c0
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10006260
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008ac0
+common_call: 1 |  sub_100096c0
+
+mod_NetworkConnectivity/NetworkConnectivity.cpp : ncStartNetworkConnectivity
+common_call: 1 |  sub_100015d0
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_10001fa0
+common_call: 3 |  sub_100029f0
+common_call: 2 |  sub_10002d60
+common_call: 2 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10003fb0
+common_call: 1 |  sub_100048c0
+common_call: 1 |  sub_10005750
+common_call: 2 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 1 |  sub_10006260
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007da0
+common_call: 2 |  sub_100081e0
+common_call: 1 |  sub_10008ac0
+common_call: 2 |  sub_10008c10
+common_call: 1 |  sub_10008fa0
+common_call: 2 |  sub_10009280
+common_call: 1 |  sub_10009560
+common_call: 1 |  sub_100096c0
+
+mod_NetworkConnectivity/transport_Generic.cpp : tsgenWaitForWorkhours
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_100048c0
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10006260
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008ac0
+common_call: 1 |  sub_100096c0
+
+mod_NetworkConnectivity/transport_Generic.cpp : _tsgenIsChunkHandleValid
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_10002210
+
+mod_NetworkConnectivity/transport_Generic.cpp : _tsgenEnterLock
+common_call: 1 |  sub_10002030
+common_call: 1 |  sub_10002130
+common_call: 1 |  sub_10002210
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_100048c0
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10006260
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008ac0
+common_call: 1 |  sub_100096c0
+
+mod_NetworkConnectivity/transport_Generic.cpp : _tsgenFindRemoveVolatileChunk
+
+mod_NetworkConnectivity/transport_Generic.cpp : _tsgenFindUpdateVolatileChunk
+
+mod_NetworkConnectivity/transport_Generic.cpp : tsgenAddOutgoingChunk
+common_call: 1 |  sub_1000146d
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_10001b00
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10006260
+common_call: 1 |  sub_10008ac0
+
+mod_NetworkConnectivity/transport_Generic.cpp : _tsgenRemoveDisposeChunk
+
+mod_NetworkConnectivity/transport_Generic.cpp : tsgenQueryOutgoingChunkStatus
+
+mod_NetworkConnectivity/transport_Generic.cpp : tsgenUpdateChunksStatus
+
+mod_NetworkConnectivity/transport_Generic.cpp : _tsgenBasicEnvelopeCheck
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_10002210
+
+mod_NetworkConnectivity/transport_Generic.cpp : _tsgenAssignSingleChunkResult
+common_call: 1 |  sub_1000146d
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_10001b00
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10006260
+common_call: 1 |  sub_10008ac0
+
+mod_NetworkConnectivity/transport_Generic.cpp : tsgenAssignChunksResults
+
+mod_NetworkConnectivity/transport_Generic.cpp : thrServerAnswerParser
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_10002210
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10008ac0
+common_call: 1 |  sub_100096c0
+
+mod_NetworkConnectivity/transport_Generic.cpp : _tsgenParseAnswerForServerCommands
+common_call: 1 |  sub_100015d0
+common_call: 1 |  sub_10001630
+common_call: 2 |  sub_100029f0
+common_call: 2 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10003fb0
+common_call: 1 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 2 |  sub_10008c10
+common_call: 1 |  sub_10008fa0
+common_call: 2 |  sub_10009280
+common_call: 1 |  sub_10009560
+
+mod_NetworkConnectivity/transport_Generic.cpp : _tsgenRemoveOutdatedChunks
+common_call: 1 |  sub_1000146d
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_10001b00
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10006260
+common_call: 1 |  sub_10008ac0
+
+mod_NetworkConnectivity/transport_Generic.cpp : _tsgenSerializeChunk
+
+mod_NetworkConnectivity/transport_Generic.cpp : tsgenFormOutgoingPackage
+
+mod_NetworkConnectivity/transport_Generic.cpp : _tsgenLockTransport
+common_call: 2 |  sub_10002030
+common_call: 2 |  sub_10002130
+common_call: 2 |  sub_10002210
+common_call: 1 |  sub_10002e10
+common_call: 2 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_100048c0
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10006260
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008ac0
+common_call: 1 |  sub_100096c0
+
+mod_NetworkConnectivity/transport_Generic.cpp : tsgenWorkerThread
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_100048c0
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10006260
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008ac0
+common_call: 1 |  sub_100096c0
+
+mod_NetworkConnectivity/transport_Generic.cpp : tsgenAssignTransport
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10008c10
+common_call: 1 |  sub_10009280
+
+mod_NetworkConnectivity/transport_Generic.cpp : tsgenInit
+common_call: 1 |  sub_10001fa0
+common_call: 2 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10008c10
+common_call: 1 |  sub_10009280
+
+mod_NetworkConnectivity/transport_Generic.cpp : tsgenSelectTransport
+common_call: 2 |  sub_10002030
+common_call: 2 |  sub_10002130
+common_call: 2 |  sub_10002210
+common_call: 1 |  sub_10002e10
+common_call: 2 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_100048c0
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10006260
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008ac0
+common_call: 1 |  sub_100096c0
+
+mod_NetworkConnectivity/transport_Pipes.cpp : tspipesFindWorkingPipeProxyFromCachedList
+
+mod_NetworkConnectivity/transport_Pipes.cpp : tspipesDisposeTransport
+
+mod_NetworkConnectivity/transport_Pipes.cpp : tspipesTransportSend
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_100048c0
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10006260
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008ac0
+common_call: 1 |  sub_100096c0
+
+mod_NetworkConnectivity/transport_Pipes.cpp : tspipesInitTransport
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_100048c0
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10006260
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008ac0
+common_call: 1 |  sub_100096c0
+
+WorkDispatcherDll/wdd.c : DllEntry
+
+WorkDispatcherDll/wdd.c : DllRegisterServer
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_100048c0
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10006260
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008ac0
+common_call: 1 |  sub_100096c0
+
+InstallerExe/inst.c : _objname
+
+InstallerExe/inst.c : VectoredHandler
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10008ac0
+common_call: 1 |  sub_100096c0
+
+InstallerExe/inst.c : main
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_100048c0
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10006260
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008ac0
+common_call: 1 |  sub_100096c0
+
+shared/CommStructures.cpp : CommStructures_resolve
+
+shared/CommStructures.cpp : CommStructures_imports
+
+shared/CommStructures.cpp : _cmsCheckInitGlobals
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_100031f0
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003bb0
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_100043b0
+common_call: 2 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 2 |  sub_10004d40
+common_call: 1 |  sub_10004fb0
+common_call: 1 |  sub_10005600
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10006910
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 2 |  sub_10007ad0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_100085d0
+common_call: 1 |  sub_100086b0
+common_call: 1 |  sub_10008c10
+common_call: 1 |  sub_10008fa0
+common_call: 2 |  sub_10009280
+common_call: 2 |  sub_100096c0
+common_call: 1 |  sub_10009d40
+
+shared/CommStructures.cpp : cmsReportInternetAccessStatus
+
+shared/CommStructures.cpp : cmsFillInnerEnvelope
+common_call: 1 |  sub_1000146d
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_10001b00
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10006260
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10008ac0
+
+shared/CommStructures.cpp : *cmsAllocInitInnerEnvelope
+
+mod_KBRI_hd/ldasm.cpp : cflags
+
+mod_KBRI_hd/ldasm.cpp : cflags_ex
+
+mod_KBRI_hd/ldasm.cpp : ldasm
+
+mod_KBRI_hd/APIHook.c : llWriteProcessMemory
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_10002210
+
+mod_KBRI_hd/APIHook.c : patch_function
+
+mod_KBRI_hd/APIHook.c : hkHook
+
+mod_KBRI_hd/khdProcessing.cpp : kpCheckExt
+common_call: 1 |  sub_100014e0
+common_call: 1 |  sub_10001560
+common_call: 1 |  sub_10001830
+common_call: 1 |  sub_100018a0
+common_call: 1 |  sub_10001a70
+common_call: 1 |  sub_10002980
+common_call: 1 |  sub_10003b40
+
+mod_KBRI_hd/khdProcessing.cpp : kpCheckFilename
+common_call: 1 |  sub_100031f0
+common_call: 1 |  sub_10003bb0
+common_call: 1 |  sub_10004fb0
+common_call: 1 |  sub_10005600
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_10008c10
+
+mod_KBRI_hd/khdProcessing.cpp : kpQueryController
+common_call: 2 |  sub_100015d0
+common_call: 2 |  sub_10001630
+common_call: 1 |  sub_10001cc0
+common_call: 3 |  sub_100029f0
+common_call: 2 |  sub_10002d60
+common_call: 6 |  sub_10002e10
+common_call: 5 |  sub_10003420
+common_call: 3 |  sub_10003739
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_10003fb0
+common_call: 3 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 2 |  sub_10005750
+common_call: 3 |  sub_100059f0
+common_call: 2 |  sub_10005ee0
+common_call: 2 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 4 |  sub_10007da0
+common_call: 5 |  sub_100081e0
+common_call: 1 |  sub_10008c10
+common_call: 2 |  sub_10008fa0
+common_call: 2 |  sub_10009280
+common_call: 1 |  sub_10009560
+common_call: 1 |  sub_100096c0
+
+mod_KBRI_hd/khdProcessing.cpp : kpCheckFile
+common_call: 1 |  sub_100015d0
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_10001cc0
+common_call: 2 |  sub_100029f0
+common_call: 2 |  sub_10002d60
+common_call: 2 |  sub_10002e10
+common_call: 3 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 2 |  sub_10003fb0
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 3 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 2 |  sub_10005ee0
+common_call: 2 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 2 |  sub_10007da0
+common_call: 4 |  sub_100081e0
+common_call: 1 |  sub_10008c10
+common_call: 2 |  sub_10008fa0
+common_call: 2 |  sub_10009280
+common_call: 1 |  sub_10009560
+common_call: 1 |  sub_100096c0
+
+mod_KBRI_hd/KBRI_hd.cpp : khdCheckThreadContext
+
+mod_KBRI_hd/KBRI_hd.cpp : khdSetOtherThreadsState
+common_call: 2 |  sub_1000146d
+common_call: 1 |  sub_100015d0
+common_call: 3 |  sub_10001630
+common_call: 1 |  sub_10001cc0
+common_call: 2 |  sub_100029f0
+common_call: 2 |  sub_10002d60
+common_call: 2 |  sub_10002e10
+common_call: 2 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_10003fb0
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 2 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 2 |  sub_10007da0
+common_call: 2 |  sub_100081e0
+common_call: 1 |  sub_10008c10
+common_call: 2 |  sub_10008fa0
+common_call: 2 |  sub_10009280
+common_call: 1 |  sub_10009560
+common_call: 1 |  sub_100096c0
+
+mod_KBRI_hd/KBRI_hd.cpp : hk_MoveFileExW
+common_call: 2 |  sub_100015d0
+common_call: 2 |  sub_10001630
+common_call: 1 |  sub_10001cc0
+common_call: 2 |  sub_100029f0
+common_call: 2 |  sub_10002d60
+common_call: 4 |  sub_10002e10
+common_call: 3 |  sub_10003420
+common_call: 2 |  sub_10003739
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 2 |  sub_10003fb0
+common_call: 3 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_10005750
+common_call: 3 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 2 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 4 |  sub_10007da0
+common_call: 4 |  sub_100081e0
+common_call: 1 |  sub_10008c10
+common_call: 2 |  sub_10008fa0
+common_call: 2 |  sub_10009280
+common_call: 1 |  sub_10009560
+common_call: 1 |  sub_100096c0
+
+mod_KBRI_hd/KBRI_hd.cpp : khdRemoveHooks
+
+mod_KBRI_hd/KBRI_hd.cpp : khdSetHooks
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_100048c0
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10006260
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008ac0
+common_call: 1 |  sub_100096c0
+
+mod_KBRI_hd/mod_KBRI_hd.c : kbAreUniq
+
+mod_KBRI_hd/mod_KBRI_hd.c : DllEntry
+
+mod_CmdExec/mod_CmdExec.c : modInitImports
+
+mod_CmdExec/mod_CmdExec.c : cbCommandDispatcher
+
+mod_CmdExec/mod_CmdExec.c : thrModuleRun
+
+mod_CmdExec/mod_CmdExec.c : DllEntry
+common_call: 1 |  sub_100015d0
+common_call: 1 |  sub_10001630
+common_call: 2 |  sub_100029f0
+common_call: 2 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10003fb0
+common_call: 1 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 2 |  sub_10008c10
+common_call: 1 |  sub_10008fa0
+common_call: 2 |  sub_10009280
+common_call: 1 |  sub_10009560
+
+mod_CmdExec/ceGeneric.cpp : cmFormAnswer
+common_call: 1 |  sub_100014e0
+common_call: 1 |  sub_10001560
+common_call: 1 |  sub_10001830
+common_call: 1 |  sub_100018a0
+common_call: 1 |  sub_10001a70
+common_call: 1 |  sub_10002980
+common_call: 1 |  sub_10003b40
+
+mod_CmdExec/ceGeneric.cpp : cmFormAnswerSpecificErr
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_100096c0
+
+mod_CmdExec/ceGeneric.cpp : _cmdCreateStdPipes
+common_call: 1 |  sub_10001cc0
+common_call: 2 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 2 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 3 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 3 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_100096c0
+
+mod_CmdExec/ceGeneric.cpp : _cmdFreeStdPipes
+common_call: 1 |  sub_100015d0
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10003fb0
+common_call: 1 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008c10
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_10009560
+
+mod_CmdExec/ceGeneric.cpp : thrSafeExec
+common_call: 1 |  sub_100015d0
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_10001cc0
+common_call: 2 |  sub_100029f0
+common_call: 2 |  sub_10002d60
+common_call: 2 |  sub_10002e10
+common_call: 3 |  sub_10003420
+common_call: 2 |  sub_10003739
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_10003fb0
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 2 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 2 |  sub_10007da0
+common_call: 2 |  sub_100081e0
+common_call: 1 |  sub_10008ac0
+common_call: 1 |  sub_10008c10
+common_call: 3 |  sub_10008fa0
+common_call: 3 |  sub_10009280
+common_call: 1 |  sub_10009560
+common_call: 2 |  sub_100096c0
+common_call: 1 |  sub_10009d40
+
+mod_CmdExec/ceGeneric.cpp : _cmdSafeExec
+common_call: 1 |  sub_100015d0
+common_call: 1 |  sub_10001630
+common_call: 2 |  sub_100029f0
+common_call: 2 |  sub_10002d60
+common_call: 2 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10003fb0
+common_call: 1 |  sub_100048c0
+common_call: 1 |  sub_10005750
+common_call: 2 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 1 |  sub_10006260
+common_call: 2 |  sub_100071f0
+common_call: 1 |  sub_10007da0
+common_call: 2 |  sub_100081e0
+common_call: 1 |  sub_10008ac0
+common_call: 2 |  sub_10008c10
+common_call: 1 |  sub_10008fa0
+common_call: 3 |  sub_10009280
+common_call: 1 |  sub_10009560
+common_call: 2 |  sub_100096c0
+
+mod_CmdExec/ceDllMemory.cpp : _dmCheckInitContext
+common_call: 1 |  sub_10001fa0
+common_call: 1 |  sub_100029f0
+
+mod_CmdExec/ceDllMemory.cpp : _dmCheckInitContext
+common_call: 1 |  sub_10001fa0
+common_call: 1 |  sub_100029f0
+
+mod_CmdExec/ceDllMemory.cpp : _dmAddHash
+
+mod_CmdExec/ceDllMemory.cpp : isMemRunningAlready
+
+mod_CmdExec/ceDllMemory.cpp : cmdDllMemory
+
+mod_CmdExec/ceDiskExec.cpp : deGenTmp
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_100096c0
+
+mod_CmdExec/ceDiskExec.cpp : dePlaceFile
+common_call: 2 |  sub_100015d0
+common_call: 2 |  sub_10001630
+common_call: 1 |  sub_10001cc0
+common_call: 2 |  sub_100029f0
+common_call: 2 |  sub_10002d60
+common_call: 5 |  sub_10002e10
+common_call: 4 |  sub_10003420
+common_call: 2 |  sub_10003739
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_10003fb0
+common_call: 3 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_100048c0
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 2 |  sub_10005750
+common_call: 4 |  sub_100059f0
+common_call: 2 |  sub_10005ee0
+common_call: 1 |  sub_10006260
+common_call: 2 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 4 |  sub_10007da0
+common_call: 6 |  sub_100081e0
+common_call: 1 |  sub_10008ac0
+common_call: 1 |  sub_10008c10
+common_call: 2 |  sub_10008fa0
+common_call: 2 |  sub_10009280
+common_call: 1 |  sub_10009560
+common_call: 2 |  sub_100096c0
+
+mod_CmdExec/ceDiskExec.cpp : thrdeRemoveCleanup
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_100048c0
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10006260
+common_call: 1 |  sub_100071f0
+common_call: 1 |  sub_100081e0
+common_call: 2 |  sub_10008ac0
+common_call: 1 |  sub_10009280
+common_call: 3 |  sub_100096c0
+
+mod_CmdExec/ceDiskExec.cpp : cmdDiskExec
+common_call: 1 |  sub_100015d0
+common_call: 1 |  sub_10001630
+common_call: 1 |  sub_10001cc0
+common_call: 3 |  sub_100029f0
+common_call: 3 |  sub_10002d60
+common_call: 2 |  sub_10002e10
+common_call: 2 |  sub_10003420
+common_call: 1 |  sub_10003739
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_10003fb0
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_10005750
+common_call: 1 |  sub_100059f0
+common_call: 1 |  sub_10005ee0
+common_call: 2 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 2 |  sub_10007da0
+common_call: 2 |  sub_100081e0
+common_call: 2 |  sub_10008c10
+common_call: 2 |  sub_10008fa0
+common_call: 3 |  sub_10009280
+common_call: 1 |  sub_10009560
+common_call: 1 |  sub_100096c0
+
+mod_CmdExec/ceShellScript.cpp : _cshMakeUtf8
+common_call: 1 |  sub_10001cc0
+common_call: 1 |  sub_100029f0
+common_call: 1 |  sub_10002d60
+common_call: 1 |  sub_10002e10
+common_call: 1 |  sub_10003420
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 1 |  sub_100071f0
+common_call: 2 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 1 |  sub_10007da0
+common_call: 1 |  sub_100081e0
+common_call: 1 |  sub_10008fa0
+common_call: 1 |  sub_10009280
+common_call: 1 |  sub_100096c0
+
+mod_CmdExec/ceShellScript.cpp : cmdShellScript
+common_call: 2 |  sub_100015d0
+common_call: 2 |  sub_10001630
+common_call: 1 |  sub_10001cc0
+common_call: 2 |  sub_100029f0
+common_call: 2 |  sub_10002d60
+common_call: 5 |  sub_10002e10
+common_call: 4 |  sub_10003420
+common_call: 2 |  sub_10003739
+common_call: 1 |  sub_10003850
+common_call: 1 |  sub_10003f40
+common_call: 1 |  sub_10003fb0
+common_call: 3 |  sub_100043b0
+common_call: 1 |  sub_10004570
+common_call: 1 |  sub_10004790
+common_call: 1 |  sub_100048c0
+common_call: 1 |  sub_10004a00
+common_call: 1 |  sub_10004d40
+common_call: 2 |  sub_10005750
+common_call: 4 |  sub_100059f0
+common_call: 2 |  sub_10005ee0
+common_call: 1 |  sub_10006260
+common_call: 4 |  sub_100071f0
+common_call: 1 |  sub_10007690
+common_call: 1 |  sub_10007ad0
+common_call: 4 |  sub_10007da0
+common_call: 6 |  sub_100081e0
+common_call: 1 |  sub_10008ac0
+common_call: 1 |  sub_10008c10
+common_call: 2 |  sub_10008fa0
+common_call: 3 |  sub_10009280
+common_call: 1 |  sub_10009560
+common_call: 3 |  sub_100096c0
+

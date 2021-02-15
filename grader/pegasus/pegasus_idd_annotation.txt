@@ -1,0 +1,6 @@
+0x10005160 mal-instInjection
+0x0 ben-VectoredHandler
+0x10005720 mal-thrpeRunner
+0x10005310 mal-privescDo
+0x10003ad0 mal-AttemptSvchostInjection
+0x0 mal-PlaceShellcodeAndJmp

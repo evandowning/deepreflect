@@ -1,0 +1,16 @@
+0x0 ben-modeInitImports
+0x10006000 mal-cbCommandDispatcher
+0x0 ben-thrModuleRun
+0x100061f0 ben-DllEntry
+0x0 ben-cmFormAnswer
+0x0 ben-cmFormAnswerSpecificErr
+0x0 ben-_cmdCreateStdPipes
+0x0 ben-_cmdFreeStdPipes
+0x10004f50 mal-thrSafeExec
+0x10005300 mal-_cmdSafeExec
+0x0 ben-deGenTmp
+0x10003d40 mal-dePlaceFile
+0x0 ben-thrdeRemoveCleanup
+0x10003830 mal-cmdDiskExec
+0x0 ben-_cshMakeUtf8
+0x10005500 mal-cmdShellScript

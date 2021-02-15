@@ -1,0 +1,409 @@
+The transfer of control in the original installer is as follows:
+Shellcode -> InstallDispatcherDll
+
+The transfer of control in the new process goes according to the scheme:
+Shellcode -> WorkDispatcherDll -> all other modules
+
+
+
+Installerexe
+Initial Installation Project
+    Isn't interesting. Just a main module for injecting code into processes.
+    Everything gets packed into there.
+
+InstallDispatcherDll
+Installer module injects into a new process
+    - Files:
+        - idd.c
+            - nothing interesting, just entry point
+        - Install_Injection.cpp
+            - injects data from shellcode
+            - only one function (instInjection) calls "AttemptSvchostInjection()"
+                - definitely malicious
+        - PrivEsc.cpp
+            - VectoredHandler
+                - not malicious
+            - thrpeRunner
+                - executes exploit within process
+            - privescDo
+                - puts shellcode inside process
+                - calls thrpeRunner()
+                - performs privilege escalation via exploit
+        - ../inc/CryptoStrings.c
+            - in and of itself, not malicious. just decryption stuff
+        - ../inc/dbg.c
+            - debugging routines. not malicious
+        - ../inc/mem.c
+            - custom memory allocation routines. not malicious
+        - ../inc/ProcessInjectMP.cpp
+            - process injection routine
+            - AttemptSvchostInjection() - performs injection
+                - malicious
+            - PlaceShellcodeAndJmp() - maps shellcode to process
+        - ../inc/DynImports.c
+            - dynamically loads API calls via their hash values
+            - not malicious, just evasive and obscure
+        - ../inc/HashedStrings.c
+            - searches hashed strings. not malicious
+        - ../inc/MyStringRoutines.c
+            - more strings manipulations. not malicious
+        - ../inc/RandomGen.c
+            - random number generator. not malicious
+
+
+mod_CmdExec
+Module for launching commands from the panel (new process, command in the console, etc.)
+    - mod_CmdExec.c
+        - modInitImports - initializes functions (just calls into internal functions)
+        - cbCommandDispatcher
+            - carries out commands given by C&C server
+        - thrModuleRun
+            - just assigns a callback to cbCommandDispatcher()
+        - DllEntry
+            - entry point of module. calls modInitImports() & begins worker
+              thread to receive commands
+    - ceGeneric.cpp
+        - cmFormAnswer
+            - creates command
+        - cmFormAnswerSpecificErr
+        - _cmdCreateStdPipes
+            - creates pipes for communication
+        - _cmdFreeStdPipes
+            - removes pipes
+        - thrSafeExec
+            - executes sent command
+        - _cmdSafeExec
+            - creates thread for thrSafeExec()
+    - ceDllMemory.cpp
+        - just memory management stuff - not malicious
+    - ceDiskExec.cpp
+        - deGenTmp - creates tmp file - not malicious
+        - dePlaceFile - creates file - not malicious
+        - thrdeRemoveCleanup - waits for process to terminate and removes file
+                               and deallocates structure
+        - cmdDiskExec - drops and executes file - malicious
+    - ceShellScript.cpp
+        - _cshMakeUtf8 - not malicious
+        - cmdShellScript - writes command to stdin (which will get execute)
+                           & reads stdout
+    - ..\inc\RandomGen.c
+        - see above (not malicious)
+    - ..\inc\CryptoStrings.c
+        - see above (not malicious)
+    - ..\inc\dbg.c
+        - see above (not malicious)
+    - ..\inc\HashedStrings.c
+        - see above (not malicious)
+    - ..\inc\mem.c
+        - see above (not malicious)
+    - ..\inc\MyStringRoutines.c
+        - see above (not malicious)
+    - ..\inc\DataCallbackManager.cpp
+        - retrieves callbacks and data - not malicious
+    - ..\inc\MyStreams.c
+        - streams implementation - not malicious
+    - ..\shared\CommStructures.cpp
+        - communications structures
+            - gets domain and machine name
+            - saves internet connection state
+        - not malicious
+    - ..\inc\PELoader.cpp
+        - loads executable contents from header file (contains modules)
+        - not malicious
+    - ..\inc\SecureClean.cpp
+        - cleans up memory and disk to erase tracks of malware
+        - not malicious
+
+mod_DomainReplication
+Domain self-distribution module
+    - RDP.cpp
+        - _rdpIsOpen
+            - resolves NetBIOS name - not malicious
+        - _rdpSelectTargetFilename
+        - _rdpEncodeHexByte
+        - _rdpEncodeToHex
+        - _rdpMakeRDPConnectionFile
+            - creates file via RDP - not malicious
+        - _rdpPutFile
+            - creates file for read/execute - not malicious
+        - _rdpEncodeTsclientPath
+        - _rdpMakeInstallerFiles
+            - creates file - not malicious
+        - thrrdpFileRemover
+            - removes files - not malicious
+        - _rdpRemoveFile
+            - removes files - not malicious
+        - _rdpWriteMstscAllowDriveMappingRegistrySetting
+            - allows connection of all drives - not malicious
+        - _rdpRemoveMstscAllowDriveMappingRegistrySetting
+        - _rdpWipeMRUs
+        - _rdpRunMstsc
+        - rdpAttemptReplication
+            - attempts to replicate to machine via rdp
+            - malicious
+    - DomainReplication.cpp
+        - drIsSelfMachine
+        - drConnection
+        - _drGenRemoteName
+        - drReadFileContents
+        - drInitEveryoneREsa
+        - drFreeEveryoneREsa
+        - drPlantRSEFile
+            - drops file
+            - malicious
+        - drQueryRemoteArch
+        - drRemoteAdminExec
+            - performs remote execution
+            - malicious
+        - drRemoveFileTimeout
+        - drPrepareSendStarterBinpack
+        - drAttemptAdminReplication
+            - attempts replication
+            - malicious
+        - _drMkUsernameMod
+        - drAttemptReplication
+            - attempts replication
+            - malicious
+        - fnEnumFunc
+        - infStartDomainReplication
+    - mod_DomainReplication.c
+        - nothing interesting here. just initializations and runs
+    - WMI.c
+        - wmiStartRemoteProcess
+            - called by drRemoteExec()
+            - malicious
+    - SCM.cpp
+        - _drCleanupRemoteServiceThreadParams
+        - _drthrRemoteService
+            - remotely execute file
+            - malicious
+        - scmStartRemoteFileAsServiceAsync
+            - interacts with remote machine's SCM
+            - call _drthrRemoteService() and _drCleanupRemoteServiceThreadParams()
+    - ..\inc\RandomGen.c
+        - see above (not malicious)
+    - ..\inc\CryptoStrings.c
+        - see above (not malicious)
+    - ..\inc\dbg.c
+        - see above (not malicious)
+    - ..\inc\HashedStrings.c
+        - see above (not malicious)
+    - ..\inc\mem.c
+        - see above (not malicious)
+    - ..\inc\MyStringRoutines.c
+        - see above (not malicious)
+    - ..\inc\PipeWorks.cpp
+        - thrPipeClientConnectionDispatch
+            - pipe connection dispatcher
+            - malicious
+        - _pwMakeEveryoneDACL modifies SECURITY_ATTRIBUTES to allow access
+          from any user/level
+            - malicious
+        - pwInitPipeServer
+            - create pipe for connections
+            - malicious
+    - ..\inc\DomainListMachines.cpp
+        - just enumerates machines
+        - not malicious
+    - ..\inc\CredManager.cpp
+        - keeps track of harvested credentials
+        - not malicious
+    - ..\inc\EmbeddedResources.cpp
+        - registers binary chunks
+        - not malicious
+    - ..\inc\MyStreams.c
+        - see above (not malicious)
+    - ..\inc\HashDeriveFuncs.cpp
+        - generates hash values
+        - not malicious
+    - ..\inc\RegFuncs.cpp
+        - registry key functionalities
+        - not malicious
+    - ..\inc\SecureClean.cpp
+        - see above (not malicious)
+
+mod_LogonPasswords
+Password search module, rewritten and revised mimikatz code
+    - lpprocess.cpp
+        - get process information
+        - not malicious
+    - mod_LogonPasswords.c
+        - modInitImports
+        - thrModuleRun
+            - main routine
+            - calls lpDumpLogonPasswords()
+            - while it calls the main malicious functionality, I think the
+              function to dump passwords is itself is malicious enough
+        - DllEntry
+    - LogonPasswords.cpp - functionality pretty much copied from mimikatz
+        - lpGetDebugPrivileges
+            - just privileges to be debug privileges
+            - malicious because it's privilege escalation
+        - _lpGetPIDByHash
+            - scans process list by its name hash
+            - not malicious
+        - _lpDupModuleInfo
+            - duplicates structure
+            - not malicious
+        - _lpFreeModuleInfo
+            - frees structure
+            - not malicious
+        - cbLSASSModuleListCallback
+        - lpReadLSASSModulesInfo
+        - lpLsaInitializeProtectedMemory_NT6
+            - initializes protected memory
+            - not malicious
+        - lpLsaCleanupProtectedMemory_NT6
+            - cleans up protected memory
+            - not malicious
+        - lpgetPtrFromLinkedListByLuid
+        - lpgetPtrFromAVLByLuid
+        - lpgetPtrFromAVLByLuidRec
+        - lpReadLSASSEncryptionKeys
+            - reads encryption keys
+            - malicious
+        - lpGetVersion
+            - gets version of OS
+            - not malicious
+        - lploadLsaSrv
+        - lploadRsaEnh
+        - isBadStringToken
+        - lpgenericCredsToStream
+            - Called by sec_pkg analyzers when password is detected.
+            - not malicious
+        - lpDumpLogonPasswords
+            - dumps lsass's passwords
+            - calls modules retrieving logon data from various other services
+            - malicious
+    - lpmemory.cpp
+        - functions for memory management and searching through memory
+        - not malicious
+    - sec_pkg\tspkg.cpp
+        - getTsPkgLogonData
+            - malicious
+    - sec_pkg\kerberos.cpp
+        - getKerberosLogonData
+            - malicious
+    - sec_pkg\wdigest.cpp
+        - getWDigestLogonData
+            - malicious
+    - sec_pkg\ssp.cpp
+        - getSSPLogonDat
+            - malicious
+    - sec_pkg\livessp.cpp
+        - getLiveSSPLogonData
+            - malicious
+    - ..\shared\CommStructures.cpp
+        - not malicious (see above)
+    - ..\inc\DataCallbackManager.cpp
+        - not malicious (see above)
+    - ..\inc\RandomGen.c
+        - not malicious (see above)
+    - ..\inc\CryptoStrings.c
+        - not malicious (see above)
+    - ..\inc\dbg.c
+        - not malicious (see above)
+    - ..\inc\HashedStrings.c
+        - not malicious (see above)
+    - ..\inc\mem.c
+        - not malicious (see above)
+    - ..\inc\MyStringRoutines.c
+        - not malicious (see above)
+    - ..\inc\PipeWorks.cpp
+        - only resolve() function was compiled into it, so nothing malicious
+          here was compiled into the binary
+    - ..\inc\DomainListMachines.cpp
+        - not malicious (see above)
+    - ..\inc\CredManager.cpp
+        - not malicious (see above)
+
+mod_NetworkConnectivity
+Network communication module, including through pipes for machines with closed access to the network
+    - mod_NetworkConnectivity.c
+        - just initialization
+        - launches the malicious action but not the individual ones
+        - not malicious enough
+    - NetworkConnectivity.cpp
+        - ncStartNetworkConnectivity
+            - manages connections
+            - malicious
+        - ncPipeProxy
+            - responds on broadcasted mailslots messages
+            - malicious
+    - transport_WinHTTP.cpp
+        - tswhttpTransportSend
+            - sends data via HTTP
+            - malicious
+    - transport_Pipes.cpp
+        - tspipesTransportSend
+            - sends data through pipes
+            - malicious
+    - transport_Generic.cpp
+        - tsgenWorkerThread
+            - periodically query for a list of records and send to server
+            - malicious
+        - thrServerAnswerParser
+            - server link thread
+            - malicious
+    - ..\inc\RandomGen.c
+        - not malicious (see above)
+    - ..\inc\CryptoStrings.c
+        - not malicious (see above)
+    - ..\inc\dbg.c
+        - not malicious (see above)
+    - ..\inc\HashedStrings.c
+        - not malicious (see above)
+    - ..\inc\mem.c
+        - not malicious (see above)
+    - ..\inc\MyStringRoutines.c
+        - not malicious (see above)
+    - ..\inc\PipeWorks.cpp
+        - not malicious (see above)
+    - ..\inc\DomainListMachines.cpp
+        - not malicious (see above)
+    - ..\inc\CredManager.cpp
+        - not malicious (see above)
+    - ..\inc\EmbeddedResources.cpp
+        - not malicious (see above)
+    - ..\inc\MyStreams.c
+        - not malicious (see above)
+    - ..\inc\DataCallbackManager.cpp
+        - not malicious (see above)
+    - ..\inc\CryptRoutines.cpp
+        - encryption/decryption routines
+        - not malicious
+    - ..\inc\MailslotWorks.cpp
+        - communications via mailslot
+            - malicious
+            - can't find this in binary though...
+        - thrMailslotMessageProcessing
+        - mwSendMailslotMessageToDomain
+        - mwSendMailslotMessageToMainDomain
+        - mwSendMailslotMessageToAllDomains
+    - ..\shared\CommStructures.cpp
+        - not malicious (see above)
+    - ..\inc\NetMessageEnvelope.cpp
+        - Function to encoding and decoding messages circulating in local
+          network via different transports (pipes, mailslots, etc)
+        - not malicious
+
+RemoteServiceExe
+A special executable file that is dropped onto a remote system during distribution in the domain
+    - rse.c
+        - PipeCallback
+            - copies buffer (shellcode) into memory and executes
+            - malicious
+        - RegisterAsService
+            - calls this to avoid a "warning" showing up in the event logs
+            - not malicious
+
+Shellcode
+Shellcode for loading and running attached libraries
+    Resolves API calls by their hash at runtime.
+    No good features to extract here.
+
+WorkDispatcherDll
+System core module
+    - wdd.c
+        - just loads other modules
+        - not malicious

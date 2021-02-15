@@ -1,0 +1,5317 @@
+HTTP_Server_Thread
+common_call: 1 |  sub_4021f5
+common_call: 1 |  sub_402eda
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_4089a8
+common_call: 1 | common_string: 1 |  sub_409cb8
+common_call: 1 |  sub_40b9fc
+common_call: 1 |  sub_40c68b
+common_call: 1 |  sub_415064
+common_call: 1 |  sub_415b2d
+common_call: 1 |  sub_415d84
+common_call: 1 |  sub_42322c
+common_call: 1 |  sub_423b46
+common_call: 1 |  sub_424218
+common_call: 1 |  sub_42468b
+common_call: 1 |  sub_425470
+common_call: 1 |  sub_427394
+common_call: 1 |  sub_42868c
+common_call: 1 |  sub_429688
+common_call: 1 |  sub_429fd0
+common_call: 1 |  sub_42b36c
+
+HTTP_Header
+common_call: 1 |  sub_4021f5
+common_call: 1 |  sub_402eda
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_4089a8
+common_call: 1 | common_string: 2 |  sub_409cb8
+common_call: 1 |  sub_40b9fc
+common_call: 1 |  sub_40c68b
+common_call: 1 |  sub_415064
+common_call: 1 |  sub_415b2d
+common_call: 1 |  sub_415d84
+common_call: 1 |  sub_42322c
+common_call: 1 |  sub_423b46
+common_call: 1 |  sub_424218
+common_call: 1 |  sub_42468b
+common_call: 1 |  sub_425470
+common_call: 1 |  sub_427394
+common_call: 1 |  sub_42868c
+common_string: 1 |  sub_4290ea
+common_call: 1 |  sub_429688
+common_call: 1 |  sub_429fd0
+common_call: 1 |  sub_42b36c
+
+Check_Requested_File
+common_call: 1 |  sub_401170
+common_call: 2 |  sub_40179d
+common_call: 2 |  sub_4021f5
+common_string: 1 |  sub_40343c
+common_call: 1 |  sub_4037b8
+common_call: 1 |  sub_404eb0
+common_call: 3 | common_string: 1 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 2 |  sub_408430
+common_call: 1 |  sub_4090fb
+common_call: 1 |  sub_4093f5
+common_call: 5 | common_string: 3 |  sub_40a6eb
+common_call: 1 | common_string: 1 |  sub_40ab57
+common_call: 2 |  sub_40b629
+common_call: 1 |  sub_40c3f1
+common_call: 1 |  sub_40c68b
+common_call: 2 |  sub_40ccf2
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f390
+common_call: 1 |  sub_40f4bd
+common_call: 1 |  sub_40f753
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_412eeb
+common_string: 1 |  sub_412f73
+common_call: 3 |  sub_4133cc
+common_call: 1 |  sub_413956
+common_call: 3 |  sub_414264
+common_call: 1 |  sub_415064
+common_call: 1 |  sub_415744
+common_call: 1 |  sub_41583e
+common_call: 1 |  sub_415d0a
+common_call: 3 | common_string: 1 |  sub_41633c
+common_call: 1 |  sub_416c2f
+common_call: 1 |  sub_416eb5
+common_call: 2 |  sub_417182
+common_call: 2 |  sub_42322c
+common_call: 1 |  sub_4239dc
+common_call: 1 |  sub_423a99
+common_call: 1 |  sub_423b46
+common_call: 2 |  sub_423d7d
+common_call: 2 |  sub_42468b
+common_call: 3 |  sub_4252f2
+common_call: 1 |  sub_426460
+common_call: 2 |  sub_42664c
+common_call: 1 |  sub_426965
+common_call: 2 |  sub_427394
+common_call: 3 |  sub_428058
+common_call: 1 |  sub_428f60
+common_call: 1 |  sub_429fd0
+common_call: 1 |  sub_42af8c
+common_call: 1 |  sub_4366a0
+common_call: 1 |  sub_436f40
+common_call: 1 |  sub_436fc0
+common_call: 1 |  sub_437000
+common_call: 1 |  sub_437030
+common_call: 1 |  sub_437070
+common_call: 1 |  sub_4370e0
+common_call: 1 |  sub_437340
+common_call: 1 |  sub_437440
+common_call: 1 |  sub_4376a0
+common_call: 1 |  sub_437730
+common_call: 1 |  sub_437890
+common_call: 1 |  sub_437990
+common_call: 1 |  sub_437a30
+common_call: 1 |  sub_437ac0
+common_call: 1 |  sub_437b80
+
+GetFiles
+common_call: 1 |  sub_401170
+common_call: 1 |  sub_40179d
+common_call: 1 |  sub_4021f5
+common_call: 1 |  sub_402ace
+common_call: 1 |  sub_402bae
+common_call: 1 | common_string: 1 |  sub_40343c
+common_call: 2 |  sub_404eb0
+common_call: 1 | common_string: 1 |  sub_405ad0
+common_call: 1 |  sub_407f99
+common_call: 1 |  sub_40823b
+common_call: 2 |  sub_408430
+common_call: 2 |  sub_408773
+common_call: 1 |  sub_4089a8
+common_call: 2 |  sub_4090fb
+common_call: 1 |  sub_40963c
+common_call: 1 |  sub_409730
+common_call: 1 | common_string: 1 |  sub_40a6eb
+common_call: 5 | common_string: 4 |  sub_40ab57
+common_call: 1 |  sub_40b7fd
+common_call: 1 |  sub_40b9fc
+common_call: 2 |  sub_40c3f1
+common_call: 1 |  sub_40c4f4
+common_call: 1 |  sub_40c68b
+common_call: 1 |  sub_40ccf2
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f61b
+common_call: 2 |  sub_40f9fc
+common_call: 1 |  sub_40fec8
+common_call: 2 |  sub_412a24
+common_call: 1 |  sub_412eeb
+common_call: 1 |  sub_4133cc
+common_call: 2 |  sub_413956
+common_call: 2 |  sub_414264
+common_call: 1 |  sub_414d3b
+common_call: 1 |  sub_414f1c
+common_call: 1 |  sub_414f85
+common_call: 1 |  sub_415064
+common_call: 1 |  sub_415d84
+common_call: 2 | common_string: 1 |  sub_41633c
+common_call: 1 |  sub_416c2f
+common_call: 1 |  sub_416eb5
+common_call: 2 |  sub_417182
+common_call: 1 |  sub_42322c
+common_call: 1 |  sub_423a99
+common_call: 1 |  sub_423b46
+common_call: 2 |  sub_42468b
+common_call: 1 |  sub_424c2c
+common_call: 1 |  sub_424d61
+common_call: 1 |  sub_424e2d
+common_call: 1 |  sub_424fde
+common_call: 1 |  sub_4252f2
+common_call: 1 |  sub_42551b
+common_call: 1 |  sub_425cde
+common_call: 1 |  sub_427394
+common_call: 2 |  sub_428058
+common_call: 1 |  sub_428d54
+common_call: 1 |  sub_428f60
+common_call: 1 |  sub_4290ea
+common_call: 1 |  sub_42957c
+common_call: 1 |  sub_429688
+common_call: 1 |  sub_429fd0
+common_call: 1 |  sub_42af8c
+common_call: 1 |  sub_42b36c
+common_call: 1 |  sub_436f40
+common_call: 1 |  sub_437440
+
+HTTP_Send_File
+common_call: 1 |  sub_4037b8
+common_call: 4 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_4090fb
+common_call: 1 |  sub_4093f5
+common_call: 2 |  sub_40a6eb
+common_call: 4 |  sub_40b629
+common_call: 4 |  sub_40ccf2
+common_call: 1 |  sub_40f390
+common_call: 1 |  sub_40f4bd
+common_call: 1 |  sub_40f753
+common_call: 4 |  sub_4133cc
+common_call: 2 |  sub_414264
+common_call: 1 |  sub_415744
+common_call: 1 |  sub_41583e
+common_call: 1 |  sub_415d0a
+common_call: 1 |  sub_41633c
+common_call: 1 |  sub_4239dc
+common_call: 1 |  sub_423b46
+common_call: 1 |  sub_423d7d
+common_call: 1 |  sub_4252f2
+common_call: 1 |  sub_426460
+common_call: 1 |  sub_42664c
+common_call: 1 |  sub_426965
+common_call: 1 |  sub_426b05
+common_call: 2 |  sub_428058
+common_call: 1 |  sub_4370e0
+common_call: 1 |  sub_437340
+
+*File_To_HTML
+
+HTTP_Connect
+common_call: 1 |  sub_402ace
+common_call: 1 |  sub_402bae
+common_call: 1 |  sub_40343c
+common_call: 1 |  sub_404eb0
+common_call: 1 |  sub_407f99
+common_call: 1 |  sub_40823b
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_408773
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_40963c
+common_call: 1 |  sub_409730
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40b7fd
+common_call: 1 |  sub_40b9fc
+common_call: 1 |  sub_40c3f1
+common_call: 1 |  sub_40c4f4
+common_call: 1 |  sub_40ccf2
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f61b
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_40fec8
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 1 |  sub_414d3b
+common_call: 1 |  sub_414f1c
+common_call: 1 |  sub_414f85
+common_call: 1 |  sub_415d84
+common_call: 1 |  sub_41633c
+common_call: 1 |  sub_417182
+common_call: 1 |  sub_42468b
+common_call: 1 |  sub_424c2c
+common_call: 1 |  sub_424d61
+common_call: 1 |  sub_424e2d
+common_call: 1 |  sub_424fde
+common_call: 1 |  sub_42551b
+common_call: 1 |  sub_425cde
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_428d54
+common_call: 1 |  sub_4290ea
+common_call: 1 |  sub_42957c
+common_call: 1 |  sub_429688
+common_call: 1 |  sub_42b36c
+
+IdentThread
+common_call: 1 |  sub_4021f5
+common_call: 1 |  sub_402ace
+common_call: 1 |  sub_402bae
+common_call: 1 |  sub_402eda
+common_call: 1 |  sub_40343c
+common_call: 1 |  sub_404eb0
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 1 |  sub_407f99
+common_call: 1 |  sub_40823b
+common_call: 2 |  sub_408430
+common_call: 1 |  sub_408773
+common_call: 2 |  sub_4089a8
+common_call: 1 |  sub_40963c
+common_call: 1 |  sub_409730
+common_call: 1 |  sub_409cb8
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40b7fd
+common_call: 2 | common_string: 2 |  sub_40b9fc
+common_call: 1 |  sub_40c3f1
+common_call: 1 |  sub_40c4f4
+common_call: 1 |  sub_40c68b
+common_call: 1 |  sub_40ccf2
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f61b
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_40fec8
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 1 |  sub_414d3b
+common_call: 1 |  sub_414f1c
+common_call: 1 |  sub_414f85
+common_call: 1 |  sub_415064
+common_call: 1 |  sub_415b2d
+common_call: 2 |  sub_415d84
+common_call: 1 |  sub_41633c
+common_call: 1 |  sub_417182
+common_call: 1 |  sub_42322c
+common_call: 1 |  sub_423b46
+common_call: 1 |  sub_424218
+common_call: 2 |  sub_42468b
+common_call: 1 |  sub_424c2c
+common_call: 1 |  sub_424d61
+common_call: 1 |  sub_424e2d
+common_call: 1 |  sub_424fde
+common_call: 1 |  sub_425470
+common_call: 1 |  sub_42551b
+common_call: 1 |  sub_425cde
+common_call: 1 |  sub_427394
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_42868c
+common_call: 1 |  sub_428d54
+common_call: 1 |  sub_4290ea
+common_call: 1 |  sub_42957c
+common_call: 2 |  sub_429688
+common_call: 1 |  sub_429fd0
+common_call: 2 |  sub_42b36c
+
+irc_sendv
+common_call: 1 |  sub_402c86
+common_call: 1 |  sub_40c364
+
+irc_privmsg
+common_call: 1 |  sub_401170
+common_call: 1 |  sub_40179d
+common_call: 1 |  sub_4021f5
+common_call: 1 |  sub_402ace
+common_call: 1 |  sub_402bae
+common_call: 1 |  sub_40343c
+common_call: 2 |  sub_404eb0
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_407f99
+common_call: 1 |  sub_40823b
+common_call: 2 |  sub_408430
+common_call: 1 |  sub_408773
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_40963c
+common_call: 1 |  sub_409730
+common_call: 1 |  sub_40a6eb
+common_call: 2 |  sub_40ab57
+common_call: 1 |  sub_40b7fd
+common_call: 1 |  sub_40b9fc
+common_call: 2 |  sub_40c3f1
+common_call: 1 |  sub_40c4f4
+common_call: 1 |  sub_40c68b
+common_call: 1 |  sub_40ccf2
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f61b
+common_call: 2 |  sub_40f9fc
+common_call: 1 |  sub_40fec8
+common_call: 2 |  sub_412a24
+common_call: 1 |  sub_412eeb
+common_call: 1 |  sub_4133cc
+common_call: 2 |  sub_413956
+common_call: 2 |  sub_414264
+common_call: 1 |  sub_414d3b
+common_call: 1 |  sub_414f1c
+common_call: 1 |  sub_414f85
+common_call: 1 |  sub_415064
+common_call: 1 |  sub_415d84
+common_call: 2 |  sub_41633c
+common_call: 1 |  sub_416c2f
+common_call: 1 |  sub_416eb5
+common_call: 2 |  sub_417182
+common_call: 1 |  sub_42322c
+common_call: 1 |  sub_423a99
+common_call: 1 |  sub_423b46
+common_call: 2 |  sub_42468b
+common_call: 1 |  sub_424c2c
+common_call: 1 |  sub_424d61
+common_call: 1 |  sub_424e2d
+common_call: 1 |  sub_424fde
+common_call: 1 |  sub_4252f2
+common_call: 1 |  sub_42551b
+common_call: 1 |  sub_425cde
+common_call: 1 |  sub_427394
+common_call: 2 |  sub_428058
+common_call: 1 |  sub_428d54
+common_call: 1 |  sub_428f60
+common_call: 1 |  sub_4290ea
+common_call: 1 |  sub_42957c
+common_call: 1 |  sub_429688
+common_call: 1 |  sub_429fd0
+common_call: 1 |  sub_42af8c
+common_call: 1 |  sub_42b36c
+common_call: 1 |  sub_436f40
+common_call: 1 |  sub_437440
+
+DownloadThread
+common_call: 2 |  sub_4021f5
+common_call: 1 |  sub_402eda
+common_call: 2 |  sub_4037b8
+common_call: 3 |  sub_405ad0
+common_call: 5 | common_string: 9 |  sub_407378
+common_call: 3 |  sub_408430
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_4090fb
+common_call: 1 |  sub_4093f5
+common_call: 1 |  sub_409cb8
+common_call: 1 |  sub_40a6eb
+common_call: 1 |  sub_40b629
+common_call: 2 |  sub_40b9fc
+common_call: 1 |  sub_40c68b
+common_call: 2 |  sub_40ccf2
+common_call: 1 |  sub_40f390
+common_call: 1 |  sub_40f4bd
+common_call: 2 |  sub_40f753
+common_call: 1 |  sub_4133cc
+common_call: 1 |  sub_414264
+common_call: 2 |  sub_415064
+common_call: 1 |  sub_415744
+common_call: 1 |  sub_41583e
+common_call: 1 |  sub_415b2d
+common_call: 1 |  sub_415d0a
+common_call: 1 |  sub_415d84
+common_call: 3 |  sub_41633c
+common_call: 2 |  sub_417182
+common_call: 1 |  sub_42322c
+common_call: 1 |  sub_4239dc
+common_call: 1 |  sub_423a3a
+common_call: 1 |  sub_423b46
+common_call: 1 |  sub_423d7d
+common_call: 1 |  sub_424218
+common_call: 2 |  sub_42468b
+common_call: 1 |  sub_424b91
+common_call: 1 |  sub_424c2c
+common_call: 1 |  sub_424d61
+common_call: 1 |  sub_424e2d
+common_call: 1 |  sub_424fde
+common_call: 1 |  sub_4252f2
+common_call: 1 |  sub_425470
+common_call: 1 |  sub_426460
+common_call: 1 |  sub_42664c
+common_call: 1 |  sub_426965
+common_call: 1 |  sub_426c60
+common_call: 1 |  sub_427394
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_42868c
+common_call: 1 |  sub_428d54
+common_call: 2 |  sub_429688
+common_call: 1 |  sub_429fd0
+common_call: 1 |  sub_42b36c
+common_call: 1 |  sub_435d70
+common_call: 1 |  sub_4370e0
+common_call: 1 |  sub_437340
+
+*Xorbuff
+
+AutoStartRegs
+
+AutoRegistry
+common_call: 1 |  sub_401170
+common_call: 1 |  sub_40179d
+common_call: 1 |  sub_4021f5
+common_call: 1 |  sub_404eb0
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_40a6eb
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40c3f1
+common_call: 1 |  sub_40c68b
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_412eeb
+common_call: 1 |  sub_4133cc
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 1 |  sub_415064
+common_call: 1 |  sub_41633c
+common_call: 1 |  sub_416c2f
+common_call: 1 |  sub_416eb5
+common_call: 1 |  sub_417182
+common_call: 1 |  sub_42322c
+common_call: 1 |  sub_423a99
+common_call: 1 |  sub_423b46
+common_call: 1 |  sub_42468b
+common_call: 1 |  sub_4252f2
+common_call: 1 |  sub_427394
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_428f60
+common_call: 1 |  sub_429fd0
+common_call: 1 |  sub_42af8c
+common_call: 1 |  sub_436f40
+common_call: 1 |  sub_437440
+
+addthread
+
+ListThread
+common_call: 1 |  sub_4021f5
+common_call: 1 |  sub_402eda
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_409cb8
+common_call: 1 |  sub_40b9fc
+common_call: 1 |  sub_40c68b
+common_call: 1 |  sub_415064
+common_call: 1 |  sub_415b2d
+common_call: 1 |  sub_415d84
+common_call: 1 |  sub_42322c
+common_call: 1 |  sub_423b46
+common_call: 1 |  sub_424218
+common_call: 1 |  sub_42468b
+common_call: 1 |  sub_425470
+common_call: 1 |  sub_427394
+common_call: 1 |  sub_42868c
+common_call: 1 |  sub_429688
+common_call: 1 |  sub_429fd0
+common_call: 1 |  sub_42b36c
+
+listthreads
+common_string: 2 |  sub_42aa4b
+
+killthread
+common_call: 1 |  sub_417182
+common_call: 1 |  sub_42664c
+common_call: 1 |  sub_42ab26
+
+killthreadall
+
+killthreadid
+
+findthreadid
+
+findthreadnum
+
+stopthread
+common_string: 2 |  sub_42ae15
+
+clearthread
+
+ChgHosts
+
+removevirus
+
+Close_Handles
+common_call: 1 |  sub_4037b8
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_4090fb
+common_call: 1 |  sub_4093f5
+common_call: 1 |  sub_40a6eb
+common_call: 1 |  sub_40b629
+common_call: 1 |  sub_40ccf2
+common_call: 1 |  sub_40f390
+common_call: 1 |  sub_40f4bd
+common_call: 1 |  sub_40f753
+common_call: 1 |  sub_4133cc
+common_call: 1 |  sub_414264
+common_call: 1 |  sub_415744
+common_call: 1 |  sub_41583e
+common_call: 1 |  sub_415d0a
+common_call: 1 |  sub_41633c
+common_call: 1 |  sub_4239dc
+common_call: 1 |  sub_423d7d
+common_call: 1 |  sub_4252f2
+common_call: 1 |  sub_426460
+common_call: 1 |  sub_42664c
+common_call: 1 |  sub_426965
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_4370e0
+common_call: 1 |  sub_437340
+
+send_commands
+common_call: 1 |  sub_4037b8
+common_call: 1 |  sub_407378
+common_call: 1 |  sub_40f753
+common_call: 1 |  sub_423a3a
+common_call: 1 |  sub_426c60
+
+pipe_send
+common_call: 1 |  sub_401170
+common_call: 1 |  sub_40179d
+common_call: 1 |  sub_4021f5
+common_call: 1 |  sub_404eb0
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_40a6eb
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40c3f1
+common_call: 1 |  sub_40c68b
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_412eeb
+common_call: 1 |  sub_4133cc
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 1 |  sub_415064
+common_call: 1 |  sub_41633c
+common_call: 1 |  sub_416c2f
+common_call: 1 |  sub_416eb5
+common_call: 1 |  sub_417182
+common_call: 1 |  sub_42322c
+common_call: 1 |  sub_423a99
+common_call: 1 |  sub_423b46
+common_call: 1 |  sub_42468b
+common_call: 1 |  sub_4252f2
+common_call: 1 |  sub_427394
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_428f60
+common_call: 1 |  sub_429fd0
+common_call: 1 |  sub_42af8c
+common_call: 1 |  sub_436f40
+common_call: 1 |  sub_437440
+
+PipeReadThread
+common_call: 1 |  sub_401170
+common_call: 1 |  sub_40179d
+common_call: 2 |  sub_4021f5
+common_call: 1 |  sub_402eda
+common_call: 1 |  sub_404eb0
+common_call: 3 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 2 |  sub_408430
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_409cb8
+common_call: 1 |  sub_40a6eb
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40b629
+common_call: 1 |  sub_40b9fc
+common_call: 1 |  sub_40c3f1
+common_call: 2 |  sub_40c68b
+common_call: 1 |  sub_40ccf2
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_412eeb
+common_call: 2 |  sub_4133cc
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 2 |  sub_415064
+common_call: 1 |  sub_415b2d
+common_call: 1 |  sub_415d84
+common_call: 1 |  sub_41633c
+common_call: 1 |  sub_416c2f
+common_call: 1 |  sub_416eb5
+common_call: 1 |  sub_417182
+common_call: 2 |  sub_42322c
+common_call: 1 |  sub_423a99
+common_call: 5 |  sub_423b46
+common_call: 1 |  sub_424218
+common_call: 2 |  sub_42468b
+common_call: 1 |  sub_4252f2
+common_call: 1 |  sub_425470
+common_call: 1 |  sub_426b05
+common_call: 2 |  sub_427394
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_42868c
+common_call: 1 |  sub_428f60
+common_call: 1 |  sub_429688
+common_call: 2 |  sub_429fd0
+common_call: 1 |  sub_42af8c
+common_call: 1 |  sub_42b36c
+common_call: 1 |  sub_436f40
+common_call: 1 |  sub_437440
+
+open_cmd
+common_call: 1 |  sub_40179d
+common_call: 1 |  sub_4021f5
+common_call: 1 |  sub_4037b8
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_4090fb
+common_call: 1 |  sub_4093f5
+common_call: 3 |  sub_40a6eb
+common_call: 1 |  sub_40b629
+common_call: 1 |  sub_40ccf2
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f390
+common_call: 1 |  sub_40f4bd
+common_call: 1 |  sub_40f753
+common_call: 1 |  sub_4133cc
+common_call: 1 |  sub_414264
+common_call: 2 |  sub_415744
+common_call: 1 |  sub_41583e
+common_call: 1 |  sub_415d0a
+common_call: 2 |  sub_41633c
+common_call: 1 |  sub_417182
+common_call: 1 |  sub_42322c
+common_call: 1 |  sub_4239dc
+common_call: 5 | common_string: 3 |  sub_423d7d
+common_call: 1 |  sub_42468b
+common_call: 2 |  sub_4252f2
+common_call: 2 |  sub_426460
+common_call: 2 |  sub_42664c
+common_call: 3 |  sub_426965
+common_call: 1 |  sub_427394
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_435e20
+common_call: 1 |  sub_4366a0
+common_call: 1 |  sub_436fc0
+common_call: 1 |  sub_437000
+common_call: 1 |  sub_437030
+common_call: 1 |  sub_437070
+common_call: 1 |  sub_4370e0
+common_call: 1 |  sub_437340
+common_call: 1 |  sub_4376a0
+common_call: 1 |  sub_437730
+common_call: 1 |  sub_437890
+common_call: 1 |  sub_437990
+common_call: 1 |  sub_437a30
+common_call: 1 |  sub_437ac0
+common_call: 1 |  sub_437b80
+
+ScanConnectThread
+common_string: 1 |  sub_425174
+
+ScanThread
+common_call: 1 |  sub_401170
+common_call: 2 |  sub_40179d
+common_call: 2 |  sub_4021f5
+common_call: 1 |  sub_4037b8
+common_call: 1 |  sub_404eb0
+common_call: 2 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 2 |  sub_408430
+common_call: 1 |  sub_4090fb
+common_call: 1 |  sub_4093f5
+common_call: 3 |  sub_40a6eb
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40b629
+common_call: 1 |  sub_40c3f1
+common_call: 1 |  sub_40c68b
+common_call: 1 |  sub_40ccf2
+common_call: 1 |  sub_40f390
+common_call: 1 |  sub_40f4bd
+common_call: 1 |  sub_40f753
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_412eeb
+common_call: 2 |  sub_4133cc
+common_call: 1 |  sub_413956
+common_call: 2 |  sub_414264
+common_call: 1 |  sub_415064
+common_call: 1 |  sub_415744
+common_call: 1 |  sub_41583e
+common_call: 1 |  sub_415d0a
+common_call: 3 |  sub_41633c
+common_call: 1 |  sub_416c2f
+common_call: 1 |  sub_416eb5
+common_call: 2 |  sub_417182
+common_call: 2 |  sub_42322c
+common_call: 1 |  sub_4239dc
+common_call: 1 |  sub_423a99
+common_call: 1 |  sub_423b46
+common_call: 2 |  sub_423d7d
+common_call: 2 |  sub_42468b
+common_call: 3 | common_string: 1 |  sub_4252f2
+common_call: 1 |  sub_426460
+common_call: 2 |  sub_42664c
+common_call: 1 |  sub_426965
+common_call: 2 |  sub_427394
+common_call: 2 |  sub_428058
+common_call: 1 |  sub_428f60
+common_call: 1 |  sub_429fd0
+common_call: 1 |  sub_42af8c
+common_call: 1 |  sub_436f40
+common_call: 1 |  sub_4370e0
+common_call: 1 |  sub_437340
+common_call: 1 |  sub_437440
+
+Sub7_Receive
+
+Sub7
+common_call: 1 |  sub_401170
+common_call: 1 |  sub_40179d
+common_call: 1 |  sub_4021f5
+common_call: 1 |  sub_402ace
+common_call: 1 |  sub_402bae
+common_call: 1 | common_string: 1 |  sub_40343c
+common_call: 1 |  sub_4037b8
+common_call: 2 | common_string: 1 |  sub_404eb0
+common_call: 3 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 1 |  sub_407f99
+common_call: 1 |  sub_40823b
+common_call: 3 |  sub_408430
+common_call: 1 |  sub_408773
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_4090fb
+common_call: 1 |  sub_4093f5
+common_call: 1 |  sub_40963c
+common_call: 1 |  sub_409730
+common_call: 3 |  sub_40a6eb
+common_call: 2 |  sub_40ab57
+common_call: 2 |  sub_40b629
+common_call: 1 |  sub_40b7fd
+common_call: 1 |  sub_40b9fc
+common_call: 2 |  sub_40c3f1
+common_call: 1 |  sub_40c4f4
+common_call: 1 |  sub_40c68b
+common_call: 3 | common_string: 1 |  sub_40ccf2
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f390
+common_call: 1 |  sub_40f4bd
+common_call: 1 |  sub_40f61b
+common_call: 1 |  sub_40f753
+common_call: 2 |  sub_40f9fc
+common_call: 1 | common_string: 1 |  sub_40fec8
+common_call: 2 |  sub_412a24
+common_call: 1 |  sub_412eeb
+common_call: 3 |  sub_4133cc
+common_call: 2 |  sub_413956
+common_call: 4 | common_string: 1 |  sub_414264
+common_call: 1 |  sub_414d3b
+common_call: 1 |  sub_414f1c
+common_call: 1 |  sub_414f85
+common_call: 1 |  sub_415064
+common_call: 1 |  sub_415744
+common_call: 1 |  sub_41583e
+common_call: 1 |  sub_415d0a
+common_call: 1 |  sub_415d84
+common_call: 3 |  sub_41633c
+common_call: 1 |  sub_416c2f
+common_call: 1 |  sub_416eb5
+common_call: 2 |  sub_417182
+common_call: 1 |  sub_42322c
+common_call: 1 |  sub_4239dc
+common_call: 1 |  sub_423a99
+common_call: 1 |  sub_423b46
+common_call: 1 |  sub_423d7d
+common_call: 2 |  sub_42468b
+common_call: 1 |  sub_424c2c
+common_call: 1 |  sub_424d61
+common_call: 1 |  sub_424e2d
+common_call: 1 |  sub_424fde
+common_call: 2 |  sub_4252f2
+common_call: 1 |  sub_42551b
+common_call: 1 |  sub_425cde
+common_call: 1 |  sub_426460
+common_call: 1 |  sub_42664c
+common_call: 1 |  sub_426965
+common_call: 1 |  sub_427394
+common_call: 4 | common_string: 3 |  sub_428058
+common_call: 1 |  sub_428d54
+common_call: 1 |  sub_428f60
+common_call: 1 |  sub_4290ea
+common_call: 1 |  sub_42957c
+common_call: 1 |  sub_429688
+common_call: 1 |  sub_429fd0
+common_call: 1 | common_string: 1 |  sub_42af8c
+common_call: 1 | common_string: 1 |  sub_42b36c
+common_call: 1 |  sub_436f40
+common_call: 1 |  sub_4370e0
+common_call: 1 |  sub_437340
+common_call: 1 |  sub_437440
+
+RedirectThread
+common_call: 1 |  sub_401170
+common_call: 2 |  sub_40179d
+common_call: 3 |  sub_4021f5
+common_call: 1 |  sub_402eda
+common_call: 1 |  sub_404eb0
+common_call: 2 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 2 |  sub_408430
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_409cb8
+common_call: 3 |  sub_40a6eb
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40b9fc
+common_call: 1 |  sub_40c3f1
+common_call: 2 |  sub_40c68b
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_412eeb
+common_call: 1 |  sub_4133cc
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 2 |  sub_415064
+common_call: 1 |  sub_415b2d
+common_call: 1 |  sub_415d84
+common_call: 2 |  sub_41633c
+common_call: 1 |  sub_416c2f
+common_call: 1 |  sub_416eb5
+common_call: 2 |  sub_417182
+common_call: 3 | common_string: 2 |  sub_42322c
+common_call: 1 |  sub_423a99
+common_call: 2 |  sub_423b46
+common_call: 1 |  sub_423d7d
+common_call: 1 |  sub_424218
+common_call: 3 |  sub_42468b
+common_call: 2 |  sub_4252f2
+common_call: 1 |  sub_425470
+common_call: 1 |  sub_42664c
+common_call: 3 |  sub_427394
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_42868c
+common_call: 1 |  sub_428f60
+common_call: 1 |  sub_429688
+common_call: 2 |  sub_429fd0
+common_call: 1 |  sub_42af8c
+common_call: 1 |  sub_42b36c
+common_call: 1 |  sub_4366a0
+common_call: 1 |  sub_436f40
+common_call: 1 |  sub_436fc0
+common_call: 1 |  sub_437000
+common_call: 1 |  sub_437030
+common_call: 1 |  sub_437070
+common_call: 1 |  sub_437440
+common_call: 1 |  sub_4376a0
+common_call: 1 |  sub_437730
+common_call: 1 |  sub_437890
+common_call: 1 |  sub_437990
+common_call: 1 |  sub_437a30
+common_call: 1 |  sub_437ac0
+common_call: 1 |  sub_437b80
+
+RedirectLoopThread
+common_call: 1 |  sub_401170
+common_call: 2 |  sub_40179d
+common_call: 3 |  sub_4021f5
+common_call: 1 |  sub_402eda
+common_call: 1 |  sub_404eb0
+common_call: 2 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 2 |  sub_408430
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_409cb8
+common_call: 3 |  sub_40a6eb
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40b9fc
+common_call: 1 |  sub_40c3f1
+common_call: 2 |  sub_40c68b
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_412eeb
+common_call: 1 |  sub_4133cc
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 2 |  sub_415064
+common_call: 1 |  sub_415b2d
+common_call: 1 |  sub_415d84
+common_call: 2 |  sub_41633c
+common_call: 1 |  sub_416c2f
+common_call: 1 |  sub_416eb5
+common_call: 2 |  sub_417182
+common_call: 3 | common_string: 2 |  sub_42322c
+common_call: 1 |  sub_423a99
+common_call: 2 |  sub_423b46
+common_call: 1 |  sub_423d7d
+common_call: 1 |  sub_424218
+common_call: 3 |  sub_42468b
+common_call: 2 |  sub_4252f2
+common_call: 1 |  sub_425470
+common_call: 1 |  sub_42664c
+common_call: 3 |  sub_427394
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_42868c
+common_call: 1 |  sub_428f60
+common_call: 1 |  sub_429688
+common_call: 2 |  sub_429fd0
+common_call: 1 |  sub_42af8c
+common_call: 1 |  sub_42b36c
+common_call: 1 |  sub_4366a0
+common_call: 1 |  sub_436f40
+common_call: 1 |  sub_436fc0
+common_call: 1 |  sub_437000
+common_call: 1 |  sub_437030
+common_call: 1 |  sub_437070
+common_call: 1 |  sub_437440
+common_call: 1 |  sub_4376a0
+common_call: 1 |  sub_437730
+common_call: 1 |  sub_437890
+common_call: 1 |  sub_437990
+common_call: 1 |  sub_437a30
+common_call: 1 |  sub_437ac0
+common_call: 1 |  sub_437b80
+
+RedirectLoop2Thread
+common_call: 1 |  sub_4021f5
+common_call: 1 |  sub_402eda
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_409cb8
+common_call: 1 |  sub_40b9fc
+common_call: 1 |  sub_40c68b
+common_call: 1 |  sub_415064
+common_call: 1 |  sub_415b2d
+common_call: 1 |  sub_415d84
+common_call: 1 |  sub_42322c
+common_call: 1 |  sub_423b46
+common_call: 1 |  sub_424218
+common_call: 1 |  sub_42468b
+common_call: 1 |  sub_425470
+common_call: 1 |  sub_427394
+common_call: 1 |  sub_42868c
+common_call: 1 |  sub_429688
+common_call: 1 |  sub_429fd0
+common_call: 1 |  sub_42b36c
+
+*rndnickreal
+common_call: 1 |  sub_4021f5
+common_call: 1 |  sub_402ace
+common_call: 1 |  sub_402bae
+common_call: 1 |  sub_40343c
+common_call: 1 |  sub_404eb0
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 1 |  sub_407f99
+common_call: 1 |  sub_40823b
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_408773
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_40963c
+common_call: 1 |  sub_409730
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40b7fd
+common_call: 2 |  sub_40b9fc
+common_call: 1 |  sub_40c3f1
+common_call: 1 |  sub_40c4f4
+common_call: 2 |  sub_40ccf2
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f61b
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_40fec8
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 1 |  sub_414d3b
+common_call: 1 |  sub_414f1c
+common_call: 1 |  sub_414f85
+common_call: 1 |  sub_415064
+common_call: 1 |  sub_415d84
+common_call: 2 |  sub_41633c
+common_call: 2 |  sub_417182
+common_call: 2 | common_string: 1 |  sub_42468b
+common_call: 1 |  sub_424b91
+common_call: 2 | common_string: 1 |  sub_424c2c
+common_call: 2 | common_string: 1 |  sub_424d61
+common_call: 2 | common_string: 1 |  sub_424e2d
+common_call: 2 |  sub_424fde
+common_call: 1 |  sub_42551b
+common_call: 1 |  sub_425cde
+common_call: 1 |  sub_428058
+common_call: 2 |  sub_428d54
+common_call: 1 |  sub_4290ea
+common_call: 1 |  sub_42957c
+common_call: 2 |  sub_429688
+common_call: 1 |  sub_42b36c
+common_call: 1 |  sub_435d70
+
+*rndnickconst
+common_call: 1 |  sub_4021f5
+common_call: 1 |  sub_402ace
+common_call: 1 |  sub_402bae
+common_call: 1 |  sub_40343c
+common_call: 1 |  sub_404eb0
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 1 |  sub_407f99
+common_call: 1 |  sub_40823b
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_408773
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_40963c
+common_call: 1 |  sub_409730
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40b7fd
+common_call: 2 |  sub_40b9fc
+common_call: 1 |  sub_40c3f1
+common_call: 1 |  sub_40c4f4
+common_call: 2 |  sub_40ccf2
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f61b
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_40fec8
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 1 |  sub_414d3b
+common_call: 1 |  sub_414f1c
+common_call: 1 |  sub_414f85
+common_call: 1 |  sub_415064
+common_call: 1 |  sub_415d84
+common_call: 2 |  sub_41633c
+common_call: 2 |  sub_417182
+common_call: 2 | common_string: 1 |  sub_42468b
+common_call: 1 |  sub_424b91
+common_call: 2 | common_string: 1 |  sub_424c2c
+common_call: 2 | common_string: 1 |  sub_424d61
+common_call: 2 | common_string: 1 |  sub_424e2d
+common_call: 2 |  sub_424fde
+common_call: 1 |  sub_42551b
+common_call: 1 |  sub_425cde
+common_call: 1 |  sub_428058
+common_call: 2 |  sub_428d54
+common_call: 1 |  sub_4290ea
+common_call: 1 |  sub_42957c
+common_call: 2 |  sub_429688
+common_call: 1 |  sub_42b36c
+common_call: 1 |  sub_435d70
+
+*rndnickletter
+common_call: 1 |  sub_4021f5
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 1 |  sub_40b9fc
+common_call: 1 |  sub_40ccf2
+common_call: 1 |  sub_415064
+common_call: 1 |  sub_41633c
+common_call: 1 |  sub_417182
+common_call: 1 |  sub_42468b
+common_call: 1 |  sub_424b91
+common_call: 1 |  sub_424c2c
+common_call: 1 |  sub_424d61
+common_call: 1 |  sub_424e2d
+common_call: 1 |  sub_424fde
+common_call: 1 |  sub_428d54
+common_call: 1 |  sub_429688
+common_call: 1 |  sub_435d70
+
+*rndnickcomp
+common_call: 1 |  sub_4021f5
+common_call: 1 |  sub_402ace
+common_call: 1 |  sub_402bae
+common_call: 1 |  sub_40343c
+common_call: 1 |  sub_404eb0
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 1 |  sub_407f99
+common_call: 1 |  sub_40823b
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_408773
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_40963c
+common_call: 1 |  sub_409730
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40b7fd
+common_call: 2 |  sub_40b9fc
+common_call: 1 |  sub_40c3f1
+common_call: 1 |  sub_40c4f4
+common_call: 2 |  sub_40ccf2
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f61b
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_40fec8
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 1 |  sub_414d3b
+common_call: 1 |  sub_414f1c
+common_call: 1 |  sub_414f85
+common_call: 1 |  sub_415064
+common_call: 1 |  sub_415d84
+common_call: 2 |  sub_41633c
+common_call: 2 |  sub_417182
+common_call: 2 | common_string: 1 |  sub_42468b
+common_call: 1 |  sub_424b91
+common_call: 2 | common_string: 1 |  sub_424c2c
+common_call: 2 | common_string: 1 |  sub_424d61
+common_call: 2 | common_string: 1 |  sub_424e2d
+common_call: 2 |  sub_424fde
+common_call: 1 |  sub_42551b
+common_call: 1 |  sub_425cde
+common_call: 1 |  sub_428058
+common_call: 2 |  sub_428d54
+common_call: 1 |  sub_4290ea
+common_call: 1 |  sub_42957c
+common_call: 2 |  sub_429688
+common_call: 1 |  sub_42b36c
+common_call: 1 |  sub_435d70
+
+*rndnickcountry
+common_call: 1 |  sub_4021f5
+common_call: 1 |  sub_402ace
+common_call: 1 |  sub_402bae
+common_call: 1 |  sub_40343c
+common_call: 1 |  sub_404eb0
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 1 |  sub_407f99
+common_call: 1 |  sub_40823b
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_408773
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_40963c
+common_call: 1 |  sub_409730
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40b7fd
+common_call: 2 |  sub_40b9fc
+common_call: 1 |  sub_40c3f1
+common_call: 1 |  sub_40c4f4
+common_call: 2 |  sub_40ccf2
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f61b
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_40fec8
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 1 |  sub_414d3b
+common_call: 1 |  sub_414f1c
+common_call: 1 |  sub_414f85
+common_call: 1 |  sub_415064
+common_call: 1 |  sub_415d84
+common_call: 2 |  sub_41633c
+common_call: 2 |  sub_417182
+common_call: 2 | common_string: 1 |  sub_42468b
+common_call: 1 |  sub_424b91
+common_call: 2 | common_string: 1 |  sub_424c2c
+common_call: 2 | common_string: 1 |  sub_424d61
+common_call: 2 | common_string: 1 |  sub_424e2d
+common_call: 2 |  sub_424fde
+common_call: 1 |  sub_42551b
+common_call: 1 |  sub_425cde
+common_call: 1 |  sub_428058
+common_call: 2 |  sub_428d54
+common_call: 1 |  sub_4290ea
+common_call: 1 |  sub_42957c
+common_call: 2 |  sub_429688
+common_call: 1 |  sub_42b36c
+common_call: 1 |  sub_435d70
+
+*rndnickos
+common_call: 1 |  sub_4021f5
+common_call: 1 |  sub_402ace
+common_call: 1 |  sub_402bae
+common_call: 1 |  sub_40343c
+common_call: 1 |  sub_404eb0
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 1 |  sub_407f99
+common_call: 1 |  sub_40823b
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_408773
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_40963c
+common_call: 1 |  sub_409730
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40b7fd
+common_call: 2 |  sub_40b9fc
+common_call: 1 |  sub_40c3f1
+common_call: 1 |  sub_40c4f4
+common_call: 2 |  sub_40ccf2
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f61b
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_40fec8
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 1 |  sub_414d3b
+common_call: 1 |  sub_414f1c
+common_call: 1 |  sub_414f85
+common_call: 1 |  sub_415064
+common_call: 1 |  sub_415d84
+common_call: 2 |  sub_41633c
+common_call: 2 |  sub_417182
+common_call: 2 | common_string: 1 |  sub_42468b
+common_call: 1 |  sub_424b91
+common_call: 2 | common_string: 1 |  sub_424c2c
+common_call: 2 | common_string: 1 |  sub_424d61
+common_call: 2 | common_string: 2 |  sub_424e2d
+common_call: 2 |  sub_424fde
+common_call: 1 |  sub_42551b
+common_call: 1 |  sub_425cde
+common_call: 1 |  sub_428058
+common_call: 2 |  sub_428d54
+common_call: 1 |  sub_4290ea
+common_call: 1 |  sub_42957c
+common_call: 2 |  sub_429688
+common_call: 1 |  sub_42b36c
+common_call: 1 |  sub_435d70
+
+*prefixnick
+common_call: 1 |  sub_4021f5
+common_call: 1 |  sub_402ace
+common_call: 1 |  sub_402bae
+common_call: 1 |  sub_40343c
+common_call: 1 |  sub_404eb0
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 1 |  sub_407f99
+common_call: 1 |  sub_40823b
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_408773
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_40963c
+common_call: 1 |  sub_409730
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40b7fd
+common_call: 2 |  sub_40b9fc
+common_call: 1 |  sub_40c3f1
+common_call: 1 |  sub_40c4f4
+common_call: 2 |  sub_40ccf2
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f61b
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_40fec8
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 1 |  sub_414d3b
+common_call: 1 |  sub_414f1c
+common_call: 1 |  sub_414f85
+common_call: 1 |  sub_415064
+common_call: 1 |  sub_415d84
+common_call: 2 |  sub_41633c
+common_call: 2 |  sub_417182
+common_call: 2 |  sub_42468b
+common_call: 1 |  sub_424b91
+common_call: 2 |  sub_424c2c
+common_call: 2 |  sub_424d61
+common_call: 2 |  sub_424e2d
+common_call: 2 |  sub_424fde
+common_call: 1 |  sub_42551b
+common_call: 1 |  sub_425cde
+common_call: 1 |  sub_428058
+common_call: 2 |  sub_428d54
+common_call: 1 |  sub_4290ea
+common_call: 1 |  sub_42957c
+common_call: 2 |  sub_429688
+common_call: 1 |  sub_42b36c
+common_call: 1 |  sub_435d70
+
+*rndnick
+
+ListExploitStats
+common_string: 2 |  sub_401570
+
+currentIP
+common_string: 1 |  sub_4016d0
+
+CheckServers
+common_call: 1 |  sub_401170
+common_call: 2 | common_string: 3 |  sub_40179d
+common_call: 2 |  sub_4021f5
+common_call: 1 |  sub_404eb0
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_408430
+common_call: 3 |  sub_40a6eb
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40c3f1
+common_call: 1 |  sub_40c68b
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_412eeb
+common_call: 1 |  sub_4133cc
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 1 |  sub_415064
+common_call: 2 |  sub_41633c
+common_call: 1 |  sub_416c2f
+common_call: 1 |  sub_416eb5
+common_call: 2 | common_string: 1 |  sub_417182
+common_call: 2 |  sub_42322c
+common_call: 1 |  sub_423a99
+common_call: 1 |  sub_423b46
+common_call: 1 |  sub_423d7d
+common_call: 2 |  sub_42468b
+common_call: 2 |  sub_4252f2
+common_call: 1 |  sub_42664c
+common_call: 2 |  sub_427394
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_428f60
+common_call: 1 |  sub_429fd0
+common_call: 1 |  sub_42af8c
+common_call: 1 |  sub_4366a0
+common_call: 1 |  sub_436f40
+common_call: 1 |  sub_436fc0
+common_call: 1 |  sub_437000
+common_call: 1 |  sub_437030
+common_call: 1 |  sub_437070
+common_call: 1 |  sub_437440
+common_call: 1 |  sub_4376a0
+common_call: 1 |  sub_437730
+common_call: 1 |  sub_437890
+common_call: 1 |  sub_437990
+common_call: 1 |  sub_437a30
+common_call: 1 |  sub_437ac0
+common_call: 1 |  sub_437b80
+
+AdvGetNextIP
+
+AdvGetNextIPRandom
+common_string: 1 |  sub_401beb
+common_string: 1 |  sub_414100
+
+AdvPortOpen
+
+SynPortOpen
+common_string: 1 |  sub_401e4f
+
+AdvPortScanner
+common_call: 1 |  sub_401170
+common_call: 2 |  sub_40179d
+common_call: 8 | common_string: 5 |  sub_4021f5
+common_call: 1 |  sub_402eda
+common_call: 1 |  sub_404eb0
+common_call: 3 |  sub_405ad0
+common_call: 2 |  sub_407378
+common_call: 2 |  sub_408430
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_409cb8
+common_call: 3 |  sub_40a6eb
+common_call: 1 |  sub_40ab57
+common_call: 2 |  sub_40b9fc
+common_call: 1 |  sub_40c3f1
+common_call: 2 |  sub_40c68b
+common_call: 1 |  sub_40ccf2
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_412eeb
+common_call: 1 |  sub_4133cc
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 3 |  sub_415064
+common_call: 1 |  sub_415b2d
+common_call: 1 |  sub_415d84
+common_call: 3 |  sub_41633c
+common_call: 1 |  sub_416c2f
+common_call: 1 |  sub_416eb5
+common_call: 3 |  sub_417182
+common_call: 3 |  sub_42322c
+common_call: 1 |  sub_423a99
+common_call: 2 |  sub_423b46
+common_call: 1 |  sub_423d7d
+common_call: 1 |  sub_424218
+common_call: 4 |  sub_42468b
+common_call: 1 |  sub_424b91
+common_call: 1 |  sub_424c2c
+common_call: 1 |  sub_424d61
+common_call: 1 |  sub_424e2d
+common_call: 1 |  sub_424fde
+common_call: 2 |  sub_4252f2
+common_call: 1 |  sub_425470
+common_call: 1 |  sub_42664c
+common_call: 3 |  sub_427394
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_42868c
+common_call: 1 |  sub_428d54
+common_call: 1 |  sub_428f60
+common_call: 2 |  sub_429688
+common_call: 2 |  sub_429fd0
+common_call: 1 |  sub_42af8c
+common_call: 1 |  sub_42b36c
+common_call: 1 |  sub_435d70
+common_call: 3 |  sub_4366a0
+common_call: 2 |  sub_436710
+common_call: 2 |  sub_4367a0
+common_call: 1 |  sub_436840
+common_call: 1 |  sub_436f40
+common_call: 1 |  sub_436fc0
+common_call: 1 |  sub_437000
+common_call: 1 |  sub_437030
+common_call: 1 |  sub_437070
+common_call: 1 |  sub_437440
+common_call: 1 |  sub_4376a0
+common_call: 1 |  sub_437730
+common_call: 1 |  sub_437890
+common_call: 1 |  sub_437990
+common_call: 1 |  sub_437a30
+common_call: 1 |  sub_437ac0
+common_call: 1 |  sub_437b80
+
+AdvScanner
+common_call: 1 |  sub_401170
+common_call: 2 |  sub_40179d
+common_call: 5 | common_string: 3 |  sub_4021f5
+common_call: 1 |  sub_402eda
+common_call: 1 |  sub_404eb0
+common_call: 2 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 2 |  sub_408430
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_409cb8
+common_call: 3 |  sub_40a6eb
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40b9fc
+common_call: 1 |  sub_40c3f1
+common_call: 2 |  sub_40c68b
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_412eeb
+common_call: 1 |  sub_4133cc
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 2 |  sub_415064
+common_call: 1 |  sub_415b2d
+common_call: 1 |  sub_415d84
+common_call: 2 |  sub_41633c
+common_call: 1 |  sub_416c2f
+common_call: 1 |  sub_416eb5
+common_call: 2 |  sub_417182
+common_call: 3 |  sub_42322c
+common_call: 1 |  sub_423a99
+common_call: 2 |  sub_423b46
+common_call: 1 |  sub_423d7d
+common_call: 1 |  sub_424218
+common_call: 3 |  sub_42468b
+common_call: 2 |  sub_4252f2
+common_call: 1 |  sub_425470
+common_call: 1 |  sub_42664c
+common_call: 3 |  sub_427394
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_42868c
+common_call: 1 |  sub_428f60
+common_call: 1 |  sub_429688
+common_call: 2 |  sub_429fd0
+common_call: 1 |  sub_42af8c
+common_call: 1 |  sub_42b36c
+common_call: 1 |  sub_4366a0
+common_call: 1 |  sub_436840
+common_call: 1 |  sub_436f40
+common_call: 1 |  sub_436fc0
+common_call: 1 |  sub_437000
+common_call: 1 |  sub_437030
+common_call: 1 |  sub_437070
+common_call: 1 |  sub_437440
+common_call: 1 |  sub_4376a0
+common_call: 1 |  sub_437730
+common_call: 1 |  sub_437890
+common_call: 1 |  sub_437990
+common_call: 1 |  sub_437a30
+common_call: 1 |  sub_437ac0
+common_call: 1 |  sub_437b80
+
+ADVHttpdScanner
+
+DelPayloadFile
+
+addalias
+
+aliaslist
+common_call: 1 | common_string: 2 |  sub_402ace
+common_call: 1 |  sub_402bae
+common_call: 1 |  sub_40343c
+common_call: 1 |  sub_404eb0
+common_call: 1 |  sub_407f99
+common_call: 1 |  sub_40823b
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_408773
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_40963c
+common_call: 1 |  sub_409730
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40b7fd
+common_call: 1 |  sub_40b9fc
+common_call: 1 |  sub_40c3f1
+common_call: 1 |  sub_40c4f4
+common_call: 1 |  sub_40ccf2
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f61b
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_40fec8
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 1 |  sub_414d3b
+common_call: 1 |  sub_414f1c
+common_call: 1 |  sub_414f85
+common_call: 1 |  sub_415d84
+common_call: 1 |  sub_41633c
+common_call: 1 |  sub_417182
+common_call: 1 |  sub_42468b
+common_call: 1 |  sub_424c2c
+common_call: 1 |  sub_424d61
+common_call: 1 |  sub_424e2d
+common_call: 1 |  sub_424fde
+common_call: 1 |  sub_42551b
+common_call: 1 |  sub_425cde
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_428d54
+common_call: 1 |  sub_4290ea
+common_call: 1 |  sub_42957c
+common_call: 1 |  sub_429688
+common_call: 1 |  sub_42b36c
+
+addlog
+common_call: 1 |  sub_402ace
+common_call: 2 | common_string: 1 |  sub_402bae
+common_call: 1 |  sub_40343c
+common_call: 1 |  sub_404eb0
+common_call: 1 |  sub_407f99
+common_call: 1 |  sub_40823b
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_408773
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_40963c
+common_call: 1 |  sub_409730
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40b7fd
+common_call: 1 |  sub_40b9fc
+common_call: 1 |  sub_40c3f1
+common_call: 2 |  sub_40c4f4
+common_call: 1 |  sub_40ccf2
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f61b
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_40fec8
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 1 |  sub_414d3b
+common_call: 1 |  sub_414f1c
+common_call: 1 |  sub_414f85
+common_call: 1 |  sub_415d84
+common_call: 1 |  sub_41633c
+common_call: 1 |  sub_417182
+common_call: 1 |  sub_42468b
+common_call: 1 |  sub_424c2c
+common_call: 1 |  sub_424d61
+common_call: 1 |  sub_424e2d
+common_call: 1 |  sub_424fde
+common_call: 1 |  sub_42551b
+common_call: 1 |  sub_425cde
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_428d54
+common_call: 1 |  sub_4290ea
+common_call: 1 |  sub_42957c
+common_call: 1 |  sub_429688
+common_call: 1 |  sub_42b36c
+
+addlogv
+common_call: 1 |  sub_402c86
+common_call: 1 |  sub_40c364
+
+showlog
+common_string: 1 |  sub_402cd2
+
+clearlog
+common_string: 1 |  sub_402e18
+
+searchlog
+
+ShowLogThread
+common_call: 1 |  sub_4021f5
+common_call: 1 | common_string: 1 |  sub_402eda
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_409cb8
+common_call: 1 |  sub_40b9fc
+common_call: 1 |  sub_40c68b
+common_call: 1 |  sub_415064
+common_call: 1 |  sub_415b2d
+common_call: 1 |  sub_415d84
+common_call: 1 |  sub_42322c
+common_call: 1 |  sub_423b46
+common_call: 1 |  sub_424218
+common_call: 1 |  sub_42468b
+common_call: 1 |  sub_425470
+common_call: 1 |  sub_427394
+common_call: 1 |  sub_42868c
+common_call: 1 |  sub_429688
+common_call: 1 |  sub_429fd0
+common_call: 1 |  sub_42b36c
+
+opendebuglog
+
+debuglog
+
+closedebuglog
+
+HandlerRoutine
+
+OpenConsole
+common_call: 5 |  sub_4031d4
+common_call: 1 |  sub_42468b
+
+DDOSThread
+common_call: 2 |  sub_4021f5
+common_call: 1 |  sub_402eda
+common_call: 2 | common_string: 1 |  sub_405ad0
+common_call: 2 |  sub_407378
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_409cb8
+common_call: 2 |  sub_40b9fc
+common_call: 1 |  sub_40c68b
+common_call: 1 |  sub_40ccf2
+common_call: 2 |  sub_415064
+common_call: 1 |  sub_415b2d
+common_call: 1 |  sub_415d84
+common_call: 1 |  sub_41633c
+common_call: 1 |  sub_417182
+common_call: 1 |  sub_42322c
+common_call: 1 |  sub_423b46
+common_call: 1 |  sub_424218
+common_call: 2 |  sub_42468b
+common_call: 1 |  sub_424b91
+common_call: 1 |  sub_424c2c
+common_call: 1 |  sub_424d61
+common_call: 1 |  sub_424e2d
+common_call: 1 |  sub_424fde
+common_call: 1 |  sub_425470
+common_call: 1 |  sub_427394
+common_call: 1 |  sub_42868c
+common_call: 1 |  sub_428d54
+common_call: 2 |  sub_429688
+common_call: 1 |  sub_429fd0
+common_call: 1 |  sub_42b36c
+common_call: 1 |  sub_435d70
+
+SendDDOS
+common_call: 2 | common_string: 2 |  sub_406bf0
+common_call: 2 |  sub_42877a
+common_call: 1 |  sub_435d70
+
+DDOSAttack
+
+KazaaInit
+common_string: 1 |  sub_414c54
+
+MorpheusInit
+common_call: 1 |  sub_402ace
+common_call: 1 |  sub_402bae
+common_call: 1 |  sub_40343c
+common_call: 1 |  sub_404eb0
+common_call: 1 |  sub_407f99
+common_call: 1 |  sub_40823b
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_408773
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_40963c
+common_call: 1 |  sub_409730
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40b7fd
+common_call: 1 |  sub_40b9fc
+common_call: 1 |  sub_40c3f1
+common_call: 1 |  sub_40c4f4
+common_call: 1 |  sub_40ccf2
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f61b
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_40fec8
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 1 | common_string: 1 |  sub_414d3b
+common_call: 1 |  sub_414f1c
+common_call: 1 |  sub_414f85
+common_call: 1 |  sub_415d84
+common_call: 1 |  sub_41633c
+common_call: 1 |  sub_417182
+common_call: 1 |  sub_42468b
+common_call: 1 |  sub_424c2c
+common_call: 1 |  sub_424d61
+common_call: 1 |  sub_424e2d
+common_call: 1 |  sub_424fde
+common_call: 1 |  sub_42551b
+common_call: 1 |  sub_425cde
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_428d54
+common_call: 1 |  sub_4290ea
+common_call: 1 |  sub_42957c
+common_call: 1 |  sub_429688
+common_call: 1 |  sub_42b36c
+
+iMeshInit
+common_string: 1 |  sub_414e49
+
+eDonkey2KInit
+common_call: 1 |  sub_402ace
+common_call: 1 |  sub_402bae
+common_call: 1 |  sub_40343c
+common_call: 1 |  sub_404eb0
+common_call: 1 |  sub_407f99
+common_call: 1 |  sub_40823b
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_408773
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_40963c
+common_call: 1 |  sub_409730
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40b7fd
+common_call: 1 |  sub_40b9fc
+common_call: 1 |  sub_40c3f1
+common_call: 1 |  sub_40c4f4
+common_call: 1 |  sub_40ccf2
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f61b
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_40fec8
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 1 |  sub_414d3b
+common_call: 1 |  sub_414f1c
+common_call: 1 |  sub_414f85
+common_call: 1 |  sub_415d84
+common_call: 1 |  sub_41633c
+common_call: 1 |  sub_417182
+common_call: 1 |  sub_42468b
+common_call: 1 |  sub_424c2c
+common_call: 1 |  sub_424d61
+common_call: 1 |  sub_424e2d
+common_call: 1 |  sub_424fde
+common_call: 1 |  sub_42551b
+common_call: 1 |  sub_425cde
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_428d54
+common_call: 1 |  sub_4290ea
+common_call: 1 |  sub_42957c
+common_call: 1 |  sub_429688
+common_call: 1 |  sub_42b36c
+
+LimeWireInit
+common_call: 1 |  sub_402ace
+common_call: 1 |  sub_402bae
+common_call: 1 |  sub_40343c
+common_call: 1 |  sub_404eb0
+common_call: 1 |  sub_407f99
+common_call: 1 |  sub_40823b
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_408773
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_40963c
+common_call: 1 |  sub_409730
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40b7fd
+common_call: 1 |  sub_40b9fc
+common_call: 1 |  sub_40c3f1
+common_call: 1 |  sub_40c4f4
+common_call: 1 |  sub_40ccf2
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f61b
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_40fec8
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 1 |  sub_414d3b
+common_call: 1 |  sub_414f1c
+common_call: 1 |  sub_414f85
+common_call: 1 |  sub_415d84
+common_call: 1 |  sub_41633c
+common_call: 1 |  sub_417182
+common_call: 1 |  sub_42468b
+common_call: 1 |  sub_424c2c
+common_call: 1 |  sub_424d61
+common_call: 1 |  sub_424e2d
+common_call: 1 |  sub_424fde
+common_call: 1 |  sub_42551b
+common_call: 1 |  sub_425cde
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_428d54
+common_call: 1 |  sub_4290ea
+common_call: 1 |  sub_42957c
+common_call: 1 |  sub_429688
+common_call: 1 |  sub_42b36c
+
+P2PSpread
+
+wildcardfit
+
+set
+
+asterisk
+
+Optix
+common_call: 1 |  sub_401170
+common_call: 1 |  sub_40179d
+common_call: 1 |  sub_4021f5
+common_call: 1 |  sub_402ace
+common_call: 1 |  sub_402bae
+common_call: 1 | common_string: 1 |  sub_40343c
+common_call: 1 |  sub_4037b8
+common_call: 2 | common_string: 1 |  sub_404eb0
+common_call: 3 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 1 |  sub_407f99
+common_call: 1 |  sub_40823b
+common_call: 3 |  sub_408430
+common_call: 1 |  sub_408773
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_4090fb
+common_call: 1 |  sub_4093f5
+common_call: 1 |  sub_40963c
+common_call: 1 |  sub_409730
+common_call: 3 |  sub_40a6eb
+common_call: 2 |  sub_40ab57
+common_call: 2 |  sub_40b629
+common_call: 1 |  sub_40b7fd
+common_call: 1 |  sub_40b9fc
+common_call: 2 |  sub_40c3f1
+common_call: 1 |  sub_40c4f4
+common_call: 1 |  sub_40c68b
+common_call: 3 | common_string: 1 |  sub_40ccf2
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f390
+common_call: 1 |  sub_40f4bd
+common_call: 1 |  sub_40f61b
+common_call: 1 |  sub_40f753
+common_call: 2 |  sub_40f9fc
+common_call: 1 | common_string: 1 |  sub_40fec8
+common_call: 2 |  sub_412a24
+common_call: 1 |  sub_412eeb
+common_call: 3 |  sub_4133cc
+common_call: 2 |  sub_413956
+common_call: 4 | common_string: 3 |  sub_414264
+common_call: 1 |  sub_414d3b
+common_call: 1 |  sub_414f1c
+common_call: 1 |  sub_414f85
+common_call: 1 |  sub_415064
+common_call: 1 |  sub_415744
+common_call: 1 |  sub_41583e
+common_call: 1 |  sub_415d0a
+common_call: 1 |  sub_415d84
+common_call: 3 |  sub_41633c
+common_call: 1 |  sub_416c2f
+common_call: 1 |  sub_416eb5
+common_call: 2 |  sub_417182
+common_call: 1 |  sub_42322c
+common_call: 1 |  sub_4239dc
+common_call: 1 |  sub_423a99
+common_call: 1 |  sub_423b46
+common_call: 1 |  sub_423d7d
+common_call: 2 |  sub_42468b
+common_call: 1 |  sub_424c2c
+common_call: 1 |  sub_424d61
+common_call: 1 |  sub_424e2d
+common_call: 1 |  sub_424fde
+common_call: 2 |  sub_4252f2
+common_call: 1 |  sub_42551b
+common_call: 1 |  sub_425cde
+common_call: 1 |  sub_426460
+common_call: 1 |  sub_42664c
+common_call: 1 |  sub_426965
+common_call: 1 |  sub_427394
+common_call: 4 | common_string: 1 |  sub_428058
+common_call: 1 |  sub_428d54
+common_call: 1 |  sub_428f60
+common_call: 1 |  sub_4290ea
+common_call: 1 |  sub_42957c
+common_call: 1 |  sub_429688
+common_call: 1 |  sub_429fd0
+common_call: 1 | common_string: 1 |  sub_42af8c
+common_call: 1 | common_string: 1 |  sub_42b36c
+common_call: 1 |  sub_436f40
+common_call: 1 |  sub_4370e0
+common_call: 1 |  sub_437340
+common_call: 1 |  sub_437440
+
+VisitThread
+common_call: 1 |  sub_4021f5
+common_call: 1 |  sub_402eda
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_409cb8
+common_call: 1 |  sub_40b9fc
+common_call: 1 |  sub_40c68b
+common_call: 1 |  sub_415064
+common_call: 1 |  sub_415b2d
+common_call: 1 |  sub_415d84
+common_call: 1 |  sub_42322c
+common_call: 1 |  sub_423b46
+common_call: 1 |  sub_424218
+common_call: 1 |  sub_42468b
+common_call: 1 |  sub_425470
+common_call: 1 |  sub_427394
+common_call: 1 |  sub_42868c
+common_call: 1 |  sub_429688
+common_call: 1 |  sub_429fd0
+common_call: 1 |  sub_42b36c
+
+Socks4Thread
+common_call: 1 |  sub_401170
+common_call: 2 |  sub_40179d
+common_call: 3 |  sub_4021f5
+common_call: 1 |  sub_402eda
+common_call: 1 |  sub_404eb0
+common_call: 2 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 2 |  sub_408430
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_409cb8
+common_call: 3 |  sub_40a6eb
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40b9fc
+common_call: 1 |  sub_40c3f1
+common_call: 2 |  sub_40c68b
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_412eeb
+common_call: 1 |  sub_4133cc
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 2 |  sub_415064
+common_call: 1 |  sub_415b2d
+common_call: 1 |  sub_415d84
+common_call: 2 |  sub_41633c
+common_call: 1 |  sub_416c2f
+common_call: 1 |  sub_416eb5
+common_call: 2 |  sub_417182
+common_call: 3 |  sub_42322c
+common_call: 1 |  sub_423a99
+common_call: 2 |  sub_423b46
+common_call: 1 |  sub_423d7d
+common_call: 1 |  sub_424218
+common_call: 3 |  sub_42468b
+common_call: 2 |  sub_4252f2
+common_call: 1 |  sub_425470
+common_call: 1 |  sub_42664c
+common_call: 3 | common_string: 4 |  sub_427394
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_42868c
+common_call: 1 |  sub_428f60
+common_call: 1 |  sub_429688
+common_call: 2 |  sub_429fd0
+common_call: 1 |  sub_42af8c
+common_call: 1 |  sub_42b36c
+common_call: 1 |  sub_4366a0
+common_call: 1 |  sub_436f40
+common_call: 1 |  sub_436fc0
+common_call: 1 |  sub_437000
+common_call: 1 |  sub_437030
+common_call: 1 |  sub_437070
+common_call: 1 |  sub_437440
+common_call: 1 |  sub_4376a0
+common_call: 1 |  sub_437730
+common_call: 1 |  sub_437890
+common_call: 1 |  sub_437990
+common_call: 1 |  sub_437a30
+common_call: 1 |  sub_437ac0
+common_call: 1 |  sub_437b80
+
+Socks4ClientThread
+common_call: 1 |  sub_4021f5
+common_call: 1 |  sub_402eda
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_409cb8
+common_call: 1 |  sub_40b9fc
+common_call: 1 |  sub_40c68b
+common_call: 1 |  sub_415064
+common_call: 1 |  sub_415b2d
+common_call: 1 |  sub_415d84
+common_call: 1 |  sub_42322c
+common_call: 1 |  sub_423b46
+common_call: 1 |  sub_424218
+common_call: 1 |  sub_42468b
+common_call: 1 |  sub_425470
+common_call: 1 | common_string: 3 |  sub_427394
+common_call: 1 |  sub_42868c
+common_call: 1 |  sub_429688
+common_call: 1 |  sub_429fd0
+common_call: 1 |  sub_42b36c
+
+TransferLoop
+
+GetStr
+
+CtrlHandler
+
+CheckLogin
+common_string: 1 |  sub_4241a8
+
+RlogindClientThread
+common_call: 1 |  sub_4021f5
+common_call: 1 |  sub_402eda
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_409cb8
+common_call: 1 |  sub_40a6eb
+common_call: 1 |  sub_40b9fc
+common_call: 1 |  sub_40c68b
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_415064
+common_call: 1 |  sub_415b2d
+common_call: 1 |  sub_415d84
+common_call: 1 |  sub_42322c
+common_call: 1 |  sub_423b46
+common_call: 1 | common_string: 1 |  sub_424218
+common_call: 1 |  sub_42468b
+common_call: 1 |  sub_425470
+common_call: 1 |  sub_427394
+common_call: 1 |  sub_42868c
+common_call: 1 |  sub_429688
+common_call: 1 |  sub_429fd0
+common_call: 1 |  sub_42b36c
+common_call: 1 |  sub_4366a0
+common_call: 1 |  sub_436fc0
+common_call: 1 |  sub_437000
+common_call: 1 |  sub_437030
+common_call: 1 |  sub_437070
+common_call: 1 |  sub_4376a0
+common_call: 1 |  sub_437730
+common_call: 1 |  sub_437890
+common_call: 1 |  sub_437990
+common_call: 1 |  sub_437a30
+common_call: 1 |  sub_437ac0
+common_call: 1 |  sub_437b80
+
+RlogindThread
+common_call: 1 |  sub_401170
+common_call: 2 |  sub_40179d
+common_call: 3 |  sub_4021f5
+common_call: 1 |  sub_402eda
+common_call: 1 |  sub_4031d4
+common_call: 1 |  sub_404eb0
+common_call: 2 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 2 |  sub_408430
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_409cb8
+common_call: 3 |  sub_40a6eb
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40b9fc
+common_call: 1 |  sub_40c3f1
+common_call: 2 |  sub_40c68b
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_412eeb
+common_call: 1 |  sub_4133cc
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 2 |  sub_415064
+common_call: 1 |  sub_415b2d
+common_call: 1 |  sub_415d84
+common_call: 2 |  sub_41633c
+common_call: 1 |  sub_416c2f
+common_call: 1 |  sub_416eb5
+common_call: 2 |  sub_417182
+common_call: 3 |  sub_42322c
+common_call: 1 |  sub_423a99
+common_call: 2 |  sub_423b46
+common_call: 1 |  sub_423d7d
+common_call: 1 |  sub_424218
+common_call: 4 | common_string: 4 |  sub_42468b
+common_call: 2 |  sub_4252f2
+common_call: 1 |  sub_425470
+common_call: 1 |  sub_42664c
+common_call: 3 |  sub_427394
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_42868c
+common_call: 1 |  sub_428f60
+common_call: 1 |  sub_429688
+common_call: 2 |  sub_429fd0
+common_call: 1 |  sub_42af8c
+common_call: 1 |  sub_42b36c
+common_call: 1 |  sub_4366a0
+common_call: 1 |  sub_436f40
+common_call: 1 |  sub_436fc0
+common_call: 1 |  sub_437000
+common_call: 1 |  sub_437030
+common_call: 1 |  sub_437070
+common_call: 1 |  sub_437440
+common_call: 1 |  sub_4376a0
+common_call: 1 |  sub_437730
+common_call: 1 |  sub_437890
+common_call: 1 |  sub_437990
+common_call: 1 |  sub_437a30
+common_call: 1 |  sub_437ac0
+common_call: 1 |  sub_437b80
+
+*replacestr
+common_string: 1 |  sub_40343c
+common_string: 1 |  sub_405ad0
+common_string: 1 |  sub_40a6eb
+common_string: 1 |  sub_40ab57
+common_string: 1 |  sub_41633c
+
+*replacestr
+
+Split
+
+initskip
+
+lstrindex
+common_call: 1 |  sub_40f0f9
+common_call: 1 |  sub_40f132
+
+*lstrstr
+common_call: 1 |  sub_40f0f9
+common_call: 1 |  sub_40f132
+
+*PrintError
+common_call: 1 |  sub_402ace
+common_call: 1 |  sub_402bae
+common_call: 1 |  sub_40343c
+common_call: 1 |  sub_404eb0
+common_call: 1 |  sub_407f99
+common_call: 1 |  sub_40823b
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_408773
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_40963c
+common_call: 1 |  sub_409730
+common_call: 1 |  sub_40a6eb
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40b7fd
+common_call: 1 |  sub_40b9fc
+common_call: 1 |  sub_40c3f1
+common_call: 1 |  sub_40c4f4
+common_call: 1 |  sub_40ccf2
+common_call: 2 | common_string: 1 |  sub_40f237
+common_call: 1 |  sub_40f61b
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_40fec8
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 1 |  sub_414d3b
+common_call: 1 |  sub_414f1c
+common_call: 1 |  sub_414f85
+common_call: 1 |  sub_415d84
+common_call: 1 |  sub_41633c
+common_call: 1 |  sub_417182
+common_call: 1 |  sub_42468b
+common_call: 1 |  sub_424c2c
+common_call: 1 |  sub_424d61
+common_call: 1 |  sub_424e2d
+common_call: 1 |  sub_424fde
+common_call: 1 |  sub_42551b
+common_call: 1 |  sub_425cde
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_428d54
+common_call: 1 |  sub_4290ea
+common_call: 1 |  sub_42957c
+common_call: 1 |  sub_429688
+common_call: 1 |  sub_42b36c
+common_call: 1 |  sub_4366a0
+common_call: 1 |  sub_436fc0
+common_call: 1 |  sub_437000
+common_call: 1 |  sub_437030
+common_call: 1 |  sub_437070
+common_call: 1 |  sub_4376a0
+common_call: 1 |  sub_437730
+common_call: 1 |  sub_437890
+common_call: 1 |  sub_437990
+common_call: 1 |  sub_437a30
+common_call: 1 |  sub_437ac0
+common_call: 1 |  sub_437b80
+
+*GetClipboardText
+common_call: 2 |  sub_40f319
+
+mirccmd
+common_call: 1 |  sub_4037b8
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_4090fb
+common_call: 1 |  sub_4093f5
+common_call: 1 |  sub_40a6eb
+common_call: 1 |  sub_40b629
+common_call: 1 |  sub_40ccf2
+common_call: 3 | common_string: 1 |  sub_40f390
+common_call: 1 |  sub_40f4bd
+common_call: 1 |  sub_40f753
+common_call: 1 |  sub_4133cc
+common_call: 1 |  sub_414264
+common_call: 1 |  sub_415744
+common_call: 1 |  sub_41583e
+common_call: 1 |  sub_415d0a
+common_call: 1 |  sub_41633c
+common_call: 1 |  sub_4239dc
+common_call: 1 |  sub_423d7d
+common_string: 1 |  sub_424fde
+common_call: 1 |  sub_4252f2
+common_call: 1 |  sub_426460
+common_call: 1 |  sub_42664c
+common_call: 1 |  sub_426965
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_4370e0
+common_call: 1 |  sub_437340
+
+SetFileTime
+common_call: 1 |  sub_4037b8
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_4090fb
+common_call: 1 |  sub_4093f5
+common_call: 1 |  sub_40a6eb
+common_call: 1 |  sub_40b629
+common_call: 1 |  sub_40ccf2
+common_call: 1 |  sub_40f390
+common_call: 3 | common_string: 1 |  sub_40f4bd
+common_call: 1 |  sub_40f753
+common_call: 1 |  sub_4133cc
+common_call: 1 |  sub_414264
+common_call: 1 |  sub_415744
+common_call: 1 |  sub_41583e
+common_call: 1 |  sub_415d0a
+common_call: 1 |  sub_41633c
+common_call: 1 |  sub_4239dc
+common_call: 1 |  sub_423d7d
+common_call: 1 |  sub_4252f2
+common_call: 1 |  sub_426460
+common_call: 1 |  sub_42664c
+common_call: 1 |  sub_426965
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_4370e0
+common_call: 1 |  sub_437340
+
+CreateProc
+common_call: 1 |  sub_402ace
+common_call: 1 |  sub_402bae
+common_call: 1 |  sub_40343c
+common_call: 1 |  sub_404eb0
+common_call: 1 |  sub_407f99
+common_call: 1 |  sub_40823b
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_408773
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_40963c
+common_call: 1 |  sub_409730
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40b7fd
+common_call: 1 |  sub_40b9fc
+common_call: 1 |  sub_40c3f1
+common_call: 1 |  sub_40c4f4
+common_call: 1 |  sub_40ccf2
+common_call: 1 |  sub_40f237
+common_call: 1 | common_string: 1 |  sub_40f61b
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_40fec8
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 1 |  sub_414d3b
+common_call: 1 |  sub_414f1c
+common_call: 1 |  sub_414f85
+common_call: 1 |  sub_415d84
+common_call: 1 |  sub_41633c
+common_call: 1 |  sub_417182
+common_call: 1 |  sub_42468b
+common_call: 1 |  sub_424c2c
+common_call: 1 |  sub_424d61
+common_call: 1 |  sub_424e2d
+common_call: 1 |  sub_424fde
+common_call: 1 |  sub_42551b
+common_call: 1 |  sub_425cde
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_428d54
+common_call: 1 |  sub_4290ea
+common_call: 1 |  sub_42957c
+common_call: 1 |  sub_429688
+common_call: 1 |  sub_42b36c
+
+Reboot
+
+uninstall
+common_call: 2 |  sub_4037b8
+common_call: 1 |  sub_405ad0
+common_call: 2 |  sub_407378
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_4090fb
+common_call: 1 |  sub_4093f5
+common_call: 1 |  sub_40a6eb
+common_call: 1 |  sub_40b629
+common_call: 1 |  sub_40ccf2
+common_call: 1 |  sub_40f390
+common_call: 1 |  sub_40f4bd
+common_call: 2 | common_string: 2 |  sub_40f753
+common_call: 1 |  sub_4133cc
+common_call: 1 |  sub_414264
+common_call: 1 |  sub_415744
+common_call: 1 |  sub_41583e
+common_call: 1 |  sub_415d0a
+common_call: 1 |  sub_41633c
+common_call: 1 |  sub_4239dc
+common_call: 1 |  sub_423a3a
+common_call: 1 |  sub_423d7d
+common_call: 1 |  sub_4252f2
+common_call: 1 |  sub_426460
+common_call: 1 |  sub_42664c
+common_call: 1 |  sub_426965
+common_call: 1 |  sub_426c60
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_4370e0
+common_call: 1 |  sub_437340
+
+TcpFloodThread
+common_call: 2 |  sub_4021f5
+common_call: 1 |  sub_402ace
+common_call: 1 |  sub_402bae
+common_call: 1 |  sub_402eda
+common_call: 1 |  sub_40343c
+common_call: 1 |  sub_404eb0
+common_call: 2 |  sub_405ad0
+common_call: 2 |  sub_407378
+common_call: 1 |  sub_407f99
+common_call: 1 |  sub_40823b
+common_call: 2 |  sub_408430
+common_call: 1 |  sub_408773
+common_call: 2 |  sub_4089a8
+common_call: 1 |  sub_40963c
+common_call: 1 |  sub_409730
+common_call: 1 |  sub_409cb8
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40b7fd
+common_call: 3 |  sub_40b9fc
+common_call: 1 |  sub_40c3f1
+common_call: 1 |  sub_40c4f4
+common_call: 1 |  sub_40c68b
+common_call: 2 |  sub_40ccf2
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f61b
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_40fec8
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 1 |  sub_414d3b
+common_call: 1 |  sub_414f1c
+common_call: 1 |  sub_414f85
+common_call: 2 |  sub_415064
+common_call: 1 |  sub_415b2d
+common_call: 2 |  sub_415d84
+common_call: 2 |  sub_41633c
+common_call: 2 |  sub_417182
+common_call: 1 |  sub_42322c
+common_call: 1 |  sub_423b46
+common_call: 1 |  sub_424218
+common_call: 3 |  sub_42468b
+common_call: 1 |  sub_424b91
+common_call: 2 |  sub_424c2c
+common_call: 2 |  sub_424d61
+common_call: 2 |  sub_424e2d
+common_call: 2 |  sub_424fde
+common_call: 1 |  sub_425470
+common_call: 1 |  sub_42551b
+common_call: 1 |  sub_425cde
+common_call: 1 |  sub_427394
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_42868c
+common_call: 2 |  sub_428d54
+common_call: 1 |  sub_4290ea
+common_call: 1 |  sub_42957c
+common_call: 3 | common_string: 2 |  sub_429688
+common_call: 1 |  sub_429fd0
+common_call: 2 |  sub_42b36c
+common_call: 1 |  sub_435d70
+
+=
+
+Kuang_Receive
+
+Kuang
+common_call: 1 |  sub_4021f5
+common_call: 1 |  sub_402ace
+common_call: 1 |  sub_402bae
+common_call: 1 | common_string: 1 |  sub_40343c
+common_call: 1 |  sub_4037b8
+common_call: 1 | common_string: 1 |  sub_404eb0
+common_call: 5 |  sub_405ad0
+common_call: 2 |  sub_407378
+common_call: 1 |  sub_407f99
+common_call: 1 |  sub_40823b
+common_call: 2 |  sub_408430
+common_call: 1 |  sub_408773
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_4090fb
+common_call: 1 |  sub_4093f5
+common_call: 1 |  sub_40963c
+common_call: 1 |  sub_409730
+common_call: 2 |  sub_40a6eb
+common_call: 1 |  sub_40ab57
+common_call: 4 |  sub_40b629
+common_call: 1 |  sub_40b7fd
+common_call: 2 |  sub_40b9fc
+common_call: 1 |  sub_40c3f1
+common_call: 1 |  sub_40c4f4
+common_call: 6 | common_string: 1 |  sub_40ccf2
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f390
+common_call: 1 |  sub_40f4bd
+common_call: 1 |  sub_40f61b
+common_call: 1 |  sub_40f753
+common_call: 1 |  sub_40f9fc
+common_call: 1 | common_string: 1 |  sub_40fec8
+common_call: 1 |  sub_412a24
+common_call: 4 |  sub_4133cc
+common_call: 1 |  sub_413956
+common_call: 3 | common_string: 1 |  sub_414264
+common_call: 1 |  sub_414d3b
+common_call: 1 |  sub_414f1c
+common_call: 1 |  sub_414f85
+common_call: 1 |  sub_415064
+common_call: 1 |  sub_415744
+common_call: 1 |  sub_41583e
+common_call: 1 |  sub_415d0a
+common_call: 1 |  sub_415d84
+common_call: 3 |  sub_41633c
+common_call: 2 |  sub_417182
+common_call: 1 |  sub_4239dc
+common_call: 1 |  sub_423b46
+common_call: 1 |  sub_423d7d
+common_call: 2 |  sub_42468b
+common_call: 1 |  sub_424b91
+common_call: 2 |  sub_424c2c
+common_call: 2 |  sub_424d61
+common_call: 2 |  sub_424e2d
+common_call: 2 |  sub_424fde
+common_call: 1 |  sub_4252f2
+common_call: 1 |  sub_42551b
+common_call: 1 |  sub_425cde
+common_call: 1 |  sub_426460
+common_call: 1 |  sub_42664c
+common_call: 1 |  sub_426965
+common_call: 1 |  sub_426b05
+common_call: 3 | common_string: 1 |  sub_428058
+common_call: 2 |  sub_428d54
+common_call: 1 |  sub_4290ea
+common_call: 1 |  sub_42957c
+common_call: 2 |  sub_429688
+common_string: 1 |  sub_42af8c
+common_call: 1 | common_string: 1 |  sub_42b36c
+common_call: 1 |  sub_435d70
+common_call: 1 |  sub_4370e0
+common_call: 1 |  sub_437340
+
+NetDevil_Receive
+
+NetDevil_Upload
+common_call: 1 |  sub_401170
+common_call: 1 |  sub_40179d
+common_call: 1 |  sub_4021f5
+common_call: 1 |  sub_4037b8
+common_call: 1 |  sub_404eb0
+common_call: 5 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 2 |  sub_408430
+common_call: 1 |  sub_4090fb
+common_call: 1 |  sub_4093f5
+common_call: 3 |  sub_40a6eb
+common_call: 1 |  sub_40ab57
+common_call: 4 |  sub_40b629
+common_call: 1 |  sub_40c3f1
+common_call: 1 |  sub_40c68b
+common_call: 4 |  sub_40ccf2
+common_call: 1 |  sub_40f390
+common_call: 1 |  sub_40f4bd
+common_call: 1 |  sub_40f753
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_412eeb
+common_call: 5 | common_string: 3 |  sub_4133cc
+common_call: 1 |  sub_413956
+common_call: 3 |  sub_414264
+common_call: 1 |  sub_415064
+common_call: 1 |  sub_415744
+common_call: 1 |  sub_41583e
+common_call: 1 |  sub_415d0a
+common_call: 2 |  sub_41633c
+common_call: 1 |  sub_416c2f
+common_call: 1 |  sub_416eb5
+common_call: 1 |  sub_417182
+common_call: 1 |  sub_42322c
+common_call: 1 |  sub_4239dc
+common_call: 1 |  sub_423a99
+common_call: 2 |  sub_423b46
+common_call: 1 |  sub_423d7d
+common_call: 1 |  sub_42468b
+common_call: 2 |  sub_4252f2
+common_call: 1 |  sub_426460
+common_call: 1 |  sub_42664c
+common_call: 1 |  sub_426965
+common_call: 1 |  sub_426b05
+common_call: 1 |  sub_427394
+common_call: 3 |  sub_428058
+common_call: 1 |  sub_428f60
+common_call: 1 |  sub_429fd0
+common_call: 1 |  sub_42af8c
+common_call: 1 |  sub_436f40
+common_call: 1 |  sub_4370e0
+common_call: 1 |  sub_437340
+common_call: 1 |  sub_437440
+
+NetDevil
+common_call: 1 |  sub_401170
+common_call: 1 |  sub_40179d
+common_call: 1 |  sub_4021f5
+common_call: 1 |  sub_402ace
+common_call: 1 |  sub_402bae
+common_call: 1 |  sub_40343c
+common_call: 2 |  sub_404eb0
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_407f99
+common_call: 1 |  sub_40823b
+common_call: 2 |  sub_408430
+common_call: 1 |  sub_408773
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_40963c
+common_call: 1 |  sub_409730
+common_call: 1 |  sub_40a6eb
+common_call: 2 |  sub_40ab57
+common_call: 1 |  sub_40b7fd
+common_call: 1 |  sub_40b9fc
+common_call: 2 |  sub_40c3f1
+common_call: 1 |  sub_40c4f4
+common_call: 1 |  sub_40c68b
+common_call: 1 |  sub_40ccf2
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f61b
+common_call: 2 |  sub_40f9fc
+common_call: 1 |  sub_40fec8
+common_call: 2 |  sub_412a24
+common_call: 1 |  sub_412eeb
+common_call: 1 |  sub_4133cc
+common_call: 2 | common_string: 2 |  sub_413956
+common_call: 2 |  sub_414264
+common_call: 1 |  sub_414d3b
+common_call: 1 |  sub_414f1c
+common_call: 1 |  sub_414f85
+common_call: 1 |  sub_415064
+common_call: 1 |  sub_415d84
+common_call: 2 |  sub_41633c
+common_call: 1 |  sub_416c2f
+common_call: 1 |  sub_416eb5
+common_call: 2 |  sub_417182
+common_call: 1 |  sub_42322c
+common_call: 1 |  sub_423a99
+common_call: 1 |  sub_423b46
+common_call: 2 |  sub_42468b
+common_call: 1 |  sub_424c2c
+common_call: 1 |  sub_424d61
+common_call: 1 |  sub_424e2d
+common_call: 1 |  sub_424fde
+common_call: 1 |  sub_4252f2
+common_call: 1 |  sub_42551b
+common_call: 1 |  sub_425cde
+common_call: 1 |  sub_427394
+common_call: 2 |  sub_428058
+common_call: 1 |  sub_428d54
+common_call: 1 |  sub_428f60
+common_call: 1 |  sub_4290ea
+common_call: 1 |  sub_42957c
+common_call: 1 |  sub_429688
+common_call: 1 |  sub_429fd0
+common_call: 1 |  sub_42af8c
+common_call: 1 |  sub_42b36c
+common_call: 1 |  sub_436f40
+common_call: 1 |  sub_437440
+
+CreateSock
+
+DCCChatThread
+common_call: 1 |  sub_401170
+common_call: 1 |  sub_40179d
+common_call: 2 |  sub_4021f5
+common_call: 1 |  sub_402eda
+common_call: 1 |  sub_404eb0
+common_call: 2 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 2 |  sub_408430
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_409cb8
+common_call: 1 |  sub_40a6eb
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40b9fc
+common_call: 1 |  sub_40c3f1
+common_call: 2 |  sub_40c68b
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_412eeb
+common_call: 1 |  sub_4133cc
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 2 |  sub_415064
+common_call: 1 |  sub_415b2d
+common_call: 1 |  sub_415d84
+common_call: 1 |  sub_41633c
+common_call: 1 |  sub_416c2f
+common_call: 1 |  sub_416eb5
+common_call: 1 |  sub_417182
+common_call: 2 |  sub_42322c
+common_call: 1 |  sub_423a99
+common_call: 2 |  sub_423b46
+common_call: 1 |  sub_424218
+common_call: 2 |  sub_42468b
+common_call: 1 |  sub_4252f2
+common_call: 1 |  sub_425470
+common_call: 2 |  sub_427394
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_42868c
+common_call: 1 |  sub_428f60
+common_call: 1 |  sub_429688
+common_call: 2 |  sub_429fd0
+common_call: 1 |  sub_42af8c
+common_call: 1 |  sub_42b36c
+common_call: 1 |  sub_436f40
+common_call: 1 |  sub_437440
+
+DCCSendThread
+common_call: 1 |  sub_4021f5
+common_call: 1 |  sub_402eda
+common_call: 1 |  sub_4037b8
+common_call: 5 | common_string: 3 |  sub_405ad0
+common_call: 2 |  sub_407378
+common_call: 2 |  sub_408430
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_4090fb
+common_call: 1 |  sub_4093f5
+common_call: 1 |  sub_409cb8
+common_call: 2 |  sub_40a6eb
+common_call: 4 |  sub_40b629
+common_call: 1 |  sub_40b9fc
+common_call: 1 |  sub_40c68b
+common_call: 4 |  sub_40ccf2
+common_call: 1 |  sub_40f390
+common_call: 1 |  sub_40f4bd
+common_call: 1 |  sub_40f753
+common_call: 4 |  sub_4133cc
+common_call: 2 |  sub_414264
+common_call: 1 |  sub_415064
+common_call: 1 |  sub_415744
+common_call: 1 |  sub_41583e
+common_call: 1 |  sub_415b2d
+common_call: 1 |  sub_415d0a
+common_call: 1 |  sub_415d84
+common_call: 1 |  sub_41633c
+common_call: 1 |  sub_42322c
+common_call: 1 |  sub_4239dc
+common_call: 2 |  sub_423b46
+common_call: 1 |  sub_423d7d
+common_call: 1 |  sub_424218
+common_call: 1 |  sub_42468b
+common_call: 1 |  sub_4252f2
+common_call: 1 |  sub_425470
+common_call: 1 |  sub_426460
+common_call: 1 |  sub_42664c
+common_call: 1 |  sub_426965
+common_call: 1 |  sub_426b05
+common_call: 1 |  sub_427394
+common_call: 2 |  sub_428058
+common_call: 1 |  sub_42868c
+common_call: 1 |  sub_429688
+common_call: 1 |  sub_429fd0
+common_call: 1 |  sub_42b36c
+common_call: 1 |  sub_4370e0
+common_call: 1 |  sub_437340
+
+DCCGetThread
+common_call: 1 |  sub_4021f5
+common_call: 1 |  sub_402eda
+common_string: 1 |  sub_40343c
+common_call: 1 |  sub_4037b8
+common_call: 2 | common_string: 3 |  sub_405ad0
+common_call: 2 |  sub_407378
+common_call: 2 |  sub_408430
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_4090fb
+common_call: 1 |  sub_4093f5
+common_call: 1 |  sub_409cb8
+common_call: 1 | common_string: 1 |  sub_40a6eb
+common_string: 1 |  sub_40ab57
+common_call: 1 |  sub_40b629
+common_call: 1 |  sub_40b9fc
+common_call: 1 |  sub_40c68b
+common_call: 1 |  sub_40ccf2
+common_call: 1 |  sub_40f390
+common_call: 1 |  sub_40f4bd
+common_call: 1 |  sub_40f753
+common_call: 1 |  sub_4133cc
+common_call: 1 |  sub_414264
+common_call: 1 |  sub_415064
+common_call: 1 |  sub_415744
+common_call: 1 |  sub_41583e
+common_call: 1 |  sub_415b2d
+common_call: 1 |  sub_415d0a
+common_call: 1 |  sub_415d84
+common_call: 1 | common_string: 1 |  sub_41633c
+common_call: 1 |  sub_42322c
+common_call: 1 |  sub_4239dc
+common_call: 1 |  sub_423b46
+common_call: 1 |  sub_423d7d
+common_call: 1 |  sub_424218
+common_call: 1 |  sub_42468b
+common_call: 1 |  sub_4252f2
+common_call: 1 |  sub_425470
+common_call: 1 |  sub_426460
+common_call: 1 |  sub_42664c
+common_call: 1 |  sub_426965
+common_call: 1 |  sub_427394
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_42868c
+common_call: 1 |  sub_429688
+common_call: 1 |  sub_429fd0
+common_call: 1 |  sub_42b36c
+common_call: 1 |  sub_4370e0
+common_call: 1 |  sub_437340
+
+PrivateIP
+
+ResolveAddress
+
+FlushDNSCache
+
+FlushARPCache
+common_string: 1 |  sub_413e52
+
+*GetIP
+common_string: 1 |  sub_401beb
+common_string: 1 |  sub_414100
+
+checksum
+
+in_cksum
+
+Beagle
+common_call: 1 |  sub_402ace
+common_call: 1 |  sub_402bae
+common_call: 2 | common_string: 3 |  sub_40343c
+common_call: 1 | common_string: 1 |  sub_404eb0
+common_string: 1 |  sub_405ad0
+common_call: 1 |  sub_407f99
+common_call: 1 |  sub_40823b
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_408773
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_40963c
+common_call: 1 |  sub_409730
+common_string: 1 |  sub_40a6eb
+common_call: 1 | common_string: 1 |  sub_40ab57
+common_call: 1 |  sub_40b7fd
+common_call: 1 |  sub_40b9fc
+common_call: 1 |  sub_40c3f1
+common_call: 1 |  sub_40c4f4
+common_call: 1 | common_string: 1 |  sub_40ccf2
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f61b
+common_call: 1 |  sub_40f9fc
+common_call: 1 | common_string: 1 |  sub_40fec8
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_413956
+common_call: 1 | common_string: 1 |  sub_414264
+common_call: 1 |  sub_414d3b
+common_call: 1 |  sub_414f1c
+common_call: 1 |  sub_414f85
+common_call: 1 |  sub_415d84
+common_call: 2 | common_string: 1 |  sub_41633c
+common_call: 2 |  sub_417182
+common_call: 1 |  sub_42468b
+common_call: 1 |  sub_424c2c
+common_call: 1 |  sub_424d61
+common_call: 1 |  sub_424e2d
+common_call: 1 |  sub_424fde
+common_call: 1 |  sub_42551b
+common_call: 1 |  sub_425cde
+common_call: 1 | common_string: 1 |  sub_428058
+common_call: 1 |  sub_428d54
+common_call: 2 |  sub_4290ea
+common_call: 1 |  sub_42957c
+common_call: 1 |  sub_429688
+common_string: 1 |  sub_42af8c
+common_call: 1 | common_string: 1 |  sub_42b36c
+
+GetShellcodeSize
+
+GetShellcode
+
+GetRNS0TerminatedShellcodeSize
+
+GetRNS0TerminatedShellcode
+
+GetRNS0EncodedSize
+
+EncodeRNS0
+
+DDOSThread
+common_call: 2 |  sub_4021f5
+common_call: 1 |  sub_402eda
+common_call: 2 | common_string: 1 |  sub_405ad0
+common_call: 2 |  sub_407378
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_409cb8
+common_call: 2 |  sub_40b9fc
+common_call: 1 |  sub_40c68b
+common_call: 1 |  sub_40ccf2
+common_call: 2 |  sub_415064
+common_call: 1 |  sub_415b2d
+common_call: 1 |  sub_415d84
+common_call: 1 |  sub_41633c
+common_call: 1 |  sub_417182
+common_call: 1 |  sub_42322c
+common_call: 1 |  sub_423b46
+common_call: 1 |  sub_424218
+common_call: 2 |  sub_42468b
+common_call: 1 |  sub_424b91
+common_call: 1 |  sub_424c2c
+common_call: 1 |  sub_424d61
+common_call: 1 |  sub_424e2d
+common_call: 1 |  sub_424fde
+common_call: 1 |  sub_425470
+common_call: 1 |  sub_427394
+common_call: 1 |  sub_42868c
+common_call: 1 |  sub_428d54
+common_call: 2 |  sub_429688
+common_call: 1 |  sub_429fd0
+common_call: 1 |  sub_42b36c
+common_call: 1 |  sub_435d70
+
+SendDDOS
+common_call: 2 | common_string: 2 |  sub_406bf0
+common_call: 2 |  sub_42877a
+common_call: 1 |  sub_435d70
+
+DDOSAttack
+
+SecureThread
+common_call: 1 |  sub_4021f5
+common_call: 1 |  sub_402eda
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_409cb8
+common_call: 1 |  sub_40b9fc
+common_call: 1 |  sub_40c68b
+common_call: 1 |  sub_415064
+common_call: 1 |  sub_415b2d
+common_call: 1 |  sub_415d84
+common_call: 1 |  sub_42322c
+common_call: 1 |  sub_423b46
+common_call: 1 |  sub_424218
+common_call: 1 |  sub_42468b
+common_call: 1 |  sub_425470
+common_call: 1 |  sub_427394
+common_call: 1 |  sub_42868c
+common_call: 1 |  sub_429688
+common_call: 1 |  sub_429fd0
+common_call: 1 |  sub_42b36c
+
+SecureSystem
+common_call: 1 |  sub_402ace
+common_call: 1 |  sub_402bae
+common_call: 1 |  sub_40343c
+common_call: 1 |  sub_404eb0
+common_call: 1 |  sub_407f99
+common_call: 1 |  sub_40823b
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_408773
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_40963c
+common_call: 1 |  sub_409730
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40b7fd
+common_call: 1 |  sub_40b9fc
+common_call: 1 |  sub_40c3f1
+common_call: 1 |  sub_40c4f4
+common_call: 1 |  sub_40ccf2
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f61b
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_40fec8
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 1 |  sub_414d3b
+common_call: 1 |  sub_414f1c
+common_call: 1 |  sub_414f85
+common_call: 1 |  sub_415d84
+common_call: 1 |  sub_41633c
+common_call: 1 |  sub_417182
+common_call: 1 |  sub_42468b
+common_call: 1 |  sub_424c2c
+common_call: 1 |  sub_424d61
+common_call: 1 |  sub_424e2d
+common_call: 1 |  sub_424fde
+common_call: 1 | common_string: 6 |  sub_42551b
+common_call: 1 | common_string: 2 |  sub_425cde
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_428d54
+common_call: 1 |  sub_4290ea
+common_call: 1 |  sub_42957c
+common_call: 1 |  sub_429688
+common_call: 1 |  sub_42b36c
+
+UnSecureSystem
+common_call: 1 |  sub_402ace
+common_call: 1 |  sub_402bae
+common_call: 1 |  sub_40343c
+common_call: 1 |  sub_404eb0
+common_call: 1 |  sub_407f99
+common_call: 1 |  sub_40823b
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_408773
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_40963c
+common_call: 1 |  sub_409730
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40b7fd
+common_call: 1 |  sub_40b9fc
+common_call: 1 |  sub_40c3f1
+common_call: 1 |  sub_40c4f4
+common_call: 1 |  sub_40ccf2
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f61b
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_40fec8
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 1 |  sub_414d3b
+common_call: 1 |  sub_414f1c
+common_call: 1 |  sub_414f85
+common_call: 1 |  sub_415d84
+common_call: 1 |  sub_41633c
+common_call: 1 |  sub_417182
+common_call: 1 |  sub_42468b
+common_call: 1 |  sub_424c2c
+common_call: 1 |  sub_424d61
+common_call: 1 |  sub_424e2d
+common_call: 1 |  sub_424fde
+common_call: 1 | common_string: 2 |  sub_42551b
+common_call: 1 | common_string: 4 |  sub_425cde
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_428d54
+common_call: 1 |  sub_4290ea
+common_call: 1 |  sub_42957c
+common_call: 1 |  sub_429688
+common_call: 1 |  sub_42b36c
+
+AutoSecure
+common_call: 1 |  sub_401170
+common_call: 1 |  sub_40179d
+common_call: 2 |  sub_4021f5
+common_call: 1 |  sub_402eda
+common_call: 1 |  sub_404eb0
+common_call: 2 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 2 |  sub_408430
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_409cb8
+common_call: 1 |  sub_40a6eb
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40b9fc
+common_call: 1 |  sub_40c3f1
+common_call: 2 |  sub_40c68b
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_412eeb
+common_call: 1 |  sub_4133cc
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 2 |  sub_415064
+common_call: 1 |  sub_415b2d
+common_call: 1 |  sub_415d84
+common_call: 1 |  sub_41633c
+common_call: 1 |  sub_416c2f
+common_call: 1 |  sub_416eb5
+common_call: 1 |  sub_417182
+common_call: 2 |  sub_42322c
+common_call: 1 |  sub_423a99
+common_call: 2 |  sub_423b46
+common_call: 1 |  sub_424218
+common_call: 2 |  sub_42468b
+common_call: 1 |  sub_4252f2
+common_call: 1 |  sub_425470
+common_call: 2 |  sub_427394
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_42868c
+common_call: 1 |  sub_428f60
+common_call: 1 |  sub_429688
+common_call: 2 |  sub_429fd0
+common_call: 1 |  sub_42af8c
+common_call: 1 |  sub_42b36c
+common_call: 1 |  sub_436f40
+common_call: 1 |  sub_437440
+
+*Uptime
+common_call: 1 |  sub_4021f5
+common_call: 1 |  sub_402ace
+common_call: 1 |  sub_402bae
+common_call: 1 |  sub_40343c
+common_call: 1 |  sub_404eb0
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 1 |  sub_407f99
+common_call: 1 |  sub_40823b
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_408773
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_40963c
+common_call: 1 |  sub_409730
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40b7fd
+common_call: 2 |  sub_40b9fc
+common_call: 1 |  sub_40c3f1
+common_call: 1 |  sub_40c4f4
+common_call: 2 |  sub_40ccf2
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f61b
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_40fec8
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 1 |  sub_414d3b
+common_call: 1 |  sub_414f1c
+common_call: 1 |  sub_414f85
+common_call: 1 |  sub_415064
+common_call: 1 |  sub_415d84
+common_call: 2 |  sub_41633c
+common_call: 2 |  sub_417182
+common_call: 2 |  sub_42468b
+common_call: 1 |  sub_424b91
+common_call: 2 |  sub_424c2c
+common_call: 2 |  sub_424d61
+common_call: 2 |  sub_424e2d
+common_call: 2 |  sub_424fde
+common_call: 1 |  sub_42551b
+common_call: 1 |  sub_425cde
+common_call: 1 |  sub_428058
+common_call: 2 | common_string: 1 |  sub_428d54
+common_call: 1 |  sub_4290ea
+common_call: 1 |  sub_42957c
+common_call: 2 |  sub_429688
+common_call: 1 |  sub_42b36c
+common_call: 1 |  sub_435d70
+
+OSVersionCheck
+
+GetCycleCount
+
+GetCPUSpeed
+common_call: 1 |  sub_401170
+common_call: 1 |  sub_40179d
+common_call: 1 |  sub_4021f5
+common_call: 1 |  sub_404eb0
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_40a6eb
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40c3f1
+common_call: 1 |  sub_40c68b
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_412eeb
+common_call: 1 |  sub_4133cc
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 1 |  sub_415064
+common_call: 1 |  sub_41633c
+common_call: 1 |  sub_416c2f
+common_call: 1 |  sub_416eb5
+common_call: 1 |  sub_417182
+common_call: 1 |  sub_42322c
+common_call: 1 |  sub_423a99
+common_call: 1 |  sub_423b46
+common_call: 1 |  sub_42468b
+common_call: 1 |  sub_4252f2
+common_call: 1 |  sub_427394
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_428f60
+common_call: 1 |  sub_429fd0
+common_call: 1 |  sub_42af8c
+common_call: 1 |  sub_436f40
+common_call: 1 |  sub_437440
+
+*sysinfo
+common_call: 1 |  sub_402ace
+common_call: 1 |  sub_402bae
+common_call: 2 |  sub_40343c
+common_call: 1 |  sub_404eb0
+common_call: 1 |  sub_407f99
+common_call: 1 |  sub_40823b
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_408773
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_40963c
+common_call: 1 |  sub_409730
+common_string: 1 |  sub_409cb8
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40b7fd
+common_call: 1 |  sub_40b9fc
+common_call: 1 |  sub_40c3f1
+common_call: 1 |  sub_40c4f4
+common_call: 1 |  sub_40ccf2
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f61b
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_40fec8
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 1 |  sub_414d3b
+common_call: 1 |  sub_414f1c
+common_call: 1 |  sub_414f85
+common_call: 1 |  sub_415d84
+common_call: 2 |  sub_41633c
+common_call: 2 |  sub_417182
+common_call: 1 |  sub_42468b
+common_call: 1 |  sub_424c2c
+common_call: 1 |  sub_424d61
+common_call: 1 |  sub_424e2d
+common_call: 1 |  sub_424fde
+common_call: 1 |  sub_42551b
+common_call: 1 |  sub_425cde
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_428d54
+common_call: 3 | common_string: 4 |  sub_4290ea
+common_call: 1 |  sub_42957c
+common_call: 1 |  sub_429688
+common_call: 1 |  sub_42b36c
+
+*netinfo
+common_call: 1 |  sub_402ace
+common_call: 1 |  sub_402bae
+common_call: 1 |  sub_40343c
+common_call: 1 |  sub_404eb0
+common_call: 1 |  sub_407f99
+common_call: 1 |  sub_40823b
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_408773
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_40963c
+common_call: 1 |  sub_409730
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40b7fd
+common_call: 1 |  sub_40b9fc
+common_call: 1 |  sub_40c3f1
+common_call: 1 |  sub_40c4f4
+common_call: 1 |  sub_40ccf2
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f61b
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_40fec8
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 1 |  sub_414d3b
+common_call: 1 |  sub_414f1c
+common_call: 1 |  sub_414f85
+common_call: 1 |  sub_415d84
+common_call: 1 |  sub_41633c
+common_call: 1 |  sub_417182
+common_call: 1 |  sub_42468b
+common_call: 1 |  sub_424c2c
+common_call: 1 |  sub_424d61
+common_call: 1 |  sub_424e2d
+common_call: 1 |  sub_424fde
+common_call: 1 |  sub_42551b
+common_call: 1 |  sub_425cde
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_428d54
+common_call: 1 |  sub_4290ea
+common_call: 1 | common_string: 1 |  sub_42957c
+common_call: 1 |  sub_429688
+common_call: 1 |  sub_42b36c
+
+MyDoom
+common_call: 1 |  sub_402ace
+common_call: 1 |  sub_402bae
+common_call: 1 | common_string: 1 |  sub_40343c
+common_call: 1 | common_string: 1 |  sub_404eb0
+common_call: 1 |  sub_407f99
+common_call: 1 |  sub_40823b
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_408773
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_40963c
+common_call: 1 |  sub_409730
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40b7fd
+common_call: 1 |  sub_40b9fc
+common_call: 1 |  sub_40c3f1
+common_call: 1 |  sub_40c4f4
+common_call: 1 | common_string: 1 |  sub_40ccf2
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f61b
+common_call: 1 |  sub_40f9fc
+common_call: 1 | common_string: 1 |  sub_40fec8
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_413956
+common_call: 1 | common_string: 1 |  sub_414264
+common_call: 1 |  sub_414d3b
+common_call: 1 |  sub_414f1c
+common_call: 1 |  sub_414f85
+common_call: 1 |  sub_415d84
+common_call: 1 |  sub_41633c
+common_call: 1 |  sub_417182
+common_call: 1 |  sub_42468b
+common_call: 1 |  sub_424c2c
+common_call: 1 |  sub_424d61
+common_call: 1 |  sub_424e2d
+common_call: 1 |  sub_424fde
+common_call: 1 |  sub_42551b
+common_call: 1 |  sub_425cde
+common_call: 1 | common_string: 1 |  sub_428058
+common_call: 1 |  sub_428d54
+common_call: 1 |  sub_4290ea
+common_call: 1 |  sub_42957c
+common_call: 1 |  sub_429688
+common_string: 1 |  sub_42af8c
+common_call: 1 | common_string: 1 |  sub_42b36c
+
+MemContains
+
+FpHost
+
+FileExists
+common_call: 1 |  sub_407d34
+common_call: 1 |  sub_412a24
+
+*commaI64
+
+*DriveType
+common_string: 4 |  sub_407eb3
+
+DiskSpace
+
+DiskSpaceKB
+common_call: 1 |  sub_402ace
+common_call: 1 |  sub_402bae
+common_call: 1 |  sub_40343c
+common_call: 1 |  sub_404eb0
+common_call: 1 | common_string: 1 |  sub_407f99
+common_call: 1 | common_string: 1 |  sub_40823b
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_408773
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_40963c
+common_call: 1 |  sub_409730
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40b7fd
+common_call: 1 |  sub_40b9fc
+common_call: 1 |  sub_40c3f1
+common_call: 1 |  sub_40c4f4
+common_call: 1 |  sub_40ccf2
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f61b
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_40fec8
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 1 |  sub_414d3b
+common_call: 1 |  sub_414f1c
+common_call: 1 |  sub_414f85
+common_call: 1 |  sub_415d84
+common_call: 1 |  sub_41633c
+common_call: 1 |  sub_417182
+common_call: 1 |  sub_42468b
+common_call: 1 |  sub_424c2c
+common_call: 1 |  sub_424d61
+common_call: 1 |  sub_424e2d
+common_call: 1 |  sub_424fde
+common_call: 1 |  sub_42551b
+common_call: 1 |  sub_425cde
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_428d54
+common_call: 1 |  sub_4290ea
+common_call: 1 |  sub_42957c
+common_call: 1 |  sub_429688
+common_call: 1 |  sub_42b36c
+
+DriveSpace
+common_call: 1 |  sub_402ace
+common_call: 1 |  sub_402bae
+common_call: 1 |  sub_40343c
+common_call: 1 |  sub_404eb0
+common_call: 1 |  sub_407f99
+common_call: 1 | common_string: 3 |  sub_40823b
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_408773
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_40963c
+common_call: 1 |  sub_409730
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40b7fd
+common_call: 1 |  sub_40b9fc
+common_call: 1 |  sub_40c3f1
+common_call: 1 |  sub_40c4f4
+common_call: 1 |  sub_40ccf2
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f61b
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_40fec8
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 1 |  sub_414d3b
+common_call: 1 |  sub_414f1c
+common_call: 1 |  sub_414f85
+common_call: 1 |  sub_415d84
+common_call: 1 |  sub_41633c
+common_call: 1 |  sub_417182
+common_call: 1 |  sub_42468b
+common_call: 1 |  sub_424c2c
+common_call: 1 |  sub_424d61
+common_call: 1 |  sub_424e2d
+common_call: 1 |  sub_424fde
+common_call: 1 |  sub_42551b
+common_call: 1 |  sub_425cde
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_428d54
+common_call: 1 |  sub_4290ea
+common_call: 1 |  sub_42957c
+common_call: 1 |  sub_429688
+common_call: 1 |  sub_42b36c
+
+DriveInfo
+
+WinMain
+common_call: 1 |  sub_401170
+common_call: 2 |  sub_40179d
+common_call: 3 |  sub_4021f5
+common_call: 1 |  sub_402ace
+common_call: 1 |  sub_402bae
+common_call: 2 | common_string: 1 |  sub_40343c
+common_call: 1 |  sub_4037b8
+common_call: 2 |  sub_404eb0
+common_call: 3 | common_string: 1 |  sub_405ad0
+common_call: 3 |  sub_407378
+common_call: 1 |  sub_407f99
+common_call: 1 |  sub_40823b
+common_call: 4 |  sub_408430
+common_call: 1 |  sub_408773
+common_call: 1 |  sub_4089a8
+common_call: 2 |  sub_4090fb
+common_call: 2 |  sub_4093f5
+common_call: 1 |  sub_40963c
+common_call: 1 |  sub_409730
+common_call: 4 | common_string: 1 |  sub_40a6eb
+common_call: 2 | common_string: 1 |  sub_40ab57
+common_call: 1 |  sub_40b629
+common_call: 1 |  sub_40b7fd
+common_call: 2 |  sub_40b9fc
+common_call: 2 |  sub_40c3f1
+common_call: 1 |  sub_40c4f4
+common_call: 1 |  sub_40c68b
+common_call: 3 |  sub_40ccf2
+common_call: 2 |  sub_40f237
+common_call: 1 |  sub_40f390
+common_call: 2 |  sub_40f4bd
+common_call: 1 |  sub_40f61b
+common_call: 1 |  sub_40f753
+common_call: 2 |  sub_40f9fc
+common_call: 1 |  sub_40fec8
+common_call: 2 |  sub_412a24
+common_call: 1 |  sub_412eeb
+common_call: 2 |  sub_4133cc
+common_call: 2 |  sub_413956
+common_call: 3 |  sub_414264
+common_call: 1 |  sub_414d3b
+common_call: 1 |  sub_414f1c
+common_call: 1 |  sub_414f85
+common_call: 2 |  sub_415064
+common_call: 1 |  sub_415744
+common_call: 2 |  sub_41583e
+common_call: 2 |  sub_415d0a
+common_call: 1 |  sub_415d84
+common_call: 10 | common_string: 1 |  sub_41633c
+common_call: 1 |  sub_416c2f
+common_call: 1 |  sub_416eb5
+common_call: 6 |  sub_417182
+common_call: 2 |  sub_42322c
+common_call: 1 |  sub_4239dc
+common_call: 1 |  sub_423a99
+common_call: 1 |  sub_423b46
+common_call: 2 |  sub_423d7d
+common_call: 4 |  sub_42468b
+common_call: 1 |  sub_424b91
+common_call: 2 |  sub_424c2c
+common_call: 2 |  sub_424d61
+common_call: 2 |  sub_424e2d
+common_call: 2 |  sub_424fde
+common_call: 3 |  sub_4252f2
+common_call: 1 |  sub_42551b
+common_call: 1 |  sub_425cde
+common_call: 1 |  sub_426460
+common_call: 2 |  sub_42664c
+common_call: 1 |  sub_426965
+common_call: 2 |  sub_427394
+common_call: 3 |  sub_428058
+common_call: 2 |  sub_428d54
+common_call: 1 |  sub_428f60
+common_call: 2 |  sub_4290ea
+common_call: 1 |  sub_42957c
+common_call: 2 |  sub_429688
+common_call: 1 |  sub_429fd0
+common_call: 1 |  sub_42af8c
+common_call: 1 |  sub_42b36c
+common_call: 2 |  sub_435d70
+common_call: 1 |  sub_4366a0
+common_call: 1 |  sub_436f40
+common_call: 1 |  sub_436fc0
+common_call: 1 |  sub_437000
+common_call: 1 |  sub_437030
+common_call: 1 |  sub_437070
+common_call: 1 |  sub_4370e0
+common_call: 1 |  sub_437100
+common_call: 1 |  sub_437200
+common_call: 1 |  sub_437340
+common_call: 1 |  sub_437440
+common_call: 1 |  sub_4376a0
+common_call: 1 |  sub_437730
+common_call: 1 |  sub_437890
+common_call: 1 |  sub_437990
+common_call: 1 |  sub_437a30
+common_call: 1 |  sub_437ac0
+common_call: 1 |  sub_437b80
+
+irc_connect
+common_call: 1 |  sub_401170
+common_call: 1 |  sub_40179d
+common_call: 1 |  sub_4021f5
+common_call: 1 |  sub_404eb0
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_40a6eb
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40c3f1
+common_call: 1 |  sub_40c68b
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_412eeb
+common_call: 1 |  sub_4133cc
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 1 |  sub_415064
+common_call: 1 |  sub_41633c
+common_call: 1 | common_string: 1 |  sub_416c2f
+common_call: 1 |  sub_416eb5
+common_call: 1 |  sub_417182
+common_call: 1 |  sub_42322c
+common_call: 1 |  sub_423a99
+common_call: 1 |  sub_423b46
+common_call: 1 |  sub_42468b
+common_call: 1 |  sub_4252f2
+common_call: 1 |  sub_427394
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_428f60
+common_call: 1 |  sub_429fd0
+common_call: 1 |  sub_42af8c
+common_call: 1 |  sub_436f40
+common_call: 1 |  sub_437440
+
+irc_receiveloop
+common_call: 1 |  sub_401170
+common_call: 1 |  sub_40179d
+common_call: 1 |  sub_4021f5
+common_call: 1 |  sub_404eb0
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_40a6eb
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40c3f1
+common_call: 1 |  sub_40c68b
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_412eeb
+common_call: 1 |  sub_4133cc
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 1 |  sub_415064
+common_call: 1 |  sub_41633c
+common_call: 1 |  sub_416c2f
+common_call: 1 |  sub_416eb5
+common_call: 1 |  sub_417182
+common_call: 1 |  sub_42322c
+common_call: 1 |  sub_423a99
+common_call: 1 |  sub_423b46
+common_call: 1 |  sub_42468b
+common_call: 1 |  sub_4252f2
+common_call: 1 |  sub_427394
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_428f60
+common_call: 1 |  sub_429fd0
+common_call: 1 |  sub_42af8c
+common_call: 1 |  sub_436f40
+common_call: 1 |  sub_437440
+
+irc_parseline
+common_call: 1 |  sub_401170
+common_call: 2 | common_string: 1 |  sub_40179d
+common_call: 3 |  sub_4021f5
+common_call: 1 |  sub_402ace
+common_call: 1 |  sub_402bae
+common_call: 2 |  sub_40343c
+common_call: 2 |  sub_404eb0
+common_call: 2 |  sub_405ad0
+common_call: 2 | common_string: 1 |  sub_407378
+common_call: 1 |  sub_407f99
+common_call: 1 |  sub_40823b
+common_call: 3 |  sub_408430
+common_call: 1 |  sub_408773
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_40963c
+common_call: 1 |  sub_409730
+common_call: 3 |  sub_40a6eb
+common_call: 2 |  sub_40ab57
+common_call: 1 |  sub_40b7fd
+common_call: 2 |  sub_40b9fc
+common_call: 2 |  sub_40c3f1
+common_call: 1 |  sub_40c4f4
+common_call: 1 |  sub_40c68b
+common_call: 2 |  sub_40ccf2
+common_string: 1 |  sub_40d28c
+common_call: 2 |  sub_40f237
+common_call: 1 |  sub_40f61b
+common_call: 2 |  sub_40f9fc
+common_call: 1 |  sub_40fec8
+common_call: 2 |  sub_412a24
+common_call: 1 |  sub_412eeb
+common_call: 1 |  sub_4133cc
+common_call: 2 |  sub_413956
+common_call: 2 |  sub_414264
+common_call: 1 |  sub_414d3b
+common_call: 1 |  sub_414f1c
+common_call: 1 |  sub_414f85
+common_call: 2 |  sub_415064
+common_call: 1 |  sub_415d84
+common_call: 6 |  sub_41633c
+common_call: 1 |  sub_416c2f
+common_call: 1 |  sub_416eb5
+common_call: 7 | common_string: 20 |  sub_417182
+common_call: 2 |  sub_42322c
+common_call: 1 |  sub_423a99
+common_call: 1 |  sub_423b46
+common_call: 1 |  sub_423d7d
+common_call: 4 |  sub_42468b
+common_call: 1 |  sub_424b91
+common_call: 2 |  sub_424c2c
+common_call: 2 |  sub_424d61
+common_call: 2 |  sub_424e2d
+common_call: 2 |  sub_424fde
+common_call: 2 |  sub_4252f2
+common_call: 1 |  sub_42551b
+common_call: 1 |  sub_425cde
+common_call: 2 |  sub_42664c
+common_call: 2 | common_string: 1 |  sub_427394
+common_call: 2 |  sub_428058
+common_call: 2 |  sub_428d54
+common_call: 1 |  sub_428f60
+common_call: 2 |  sub_4290ea
+common_call: 1 |  sub_42957c
+common_call: 2 |  sub_429688
+common_call: 1 |  sub_429fd0
+common_call: 1 |  sub_42ab26
+common_call: 1 |  sub_42af8c
+common_call: 1 |  sub_42b36c
+common_call: 1 |  sub_435d70
+common_call: 1 |  sub_4366a0
+common_call: 1 |  sub_436f40
+common_call: 1 |  sub_436fc0
+common_call: 1 |  sub_437000
+common_call: 1 |  sub_437030
+common_call: 1 |  sub_437070
+common_call: 1 |  sub_437440
+common_call: 1 |  sub_4376a0
+common_call: 1 |  sub_437730
+common_call: 1 |  sub_437890
+common_call: 1 |  sub_437990
+common_call: 1 |  sub_437a30
+common_call: 1 |  sub_437ac0
+common_call: 1 |  sub_437b80
+
+NetConnect
+common_call: 1 |  sub_401170
+common_call: 1 |  sub_40179d
+common_call: 1 |  sub_4021f5
+common_call: 1 |  sub_402ace
+common_call: 1 |  sub_402bae
+common_call: 1 |  sub_40343c
+common_call: 2 |  sub_404eb0
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_407d34
+common_call: 1 |  sub_407f99
+common_call: 1 |  sub_40823b
+common_call: 2 |  sub_408430
+common_call: 1 |  sub_408773
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_40963c
+common_call: 1 |  sub_409730
+common_call: 2 |  sub_40a6eb
+common_call: 2 |  sub_40ab57
+common_call: 1 |  sub_40b7fd
+common_call: 1 |  sub_40b9fc
+common_call: 2 |  sub_40c3f1
+common_call: 1 |  sub_40c4f4
+common_call: 1 |  sub_40c68b
+common_call: 1 |  sub_40ccf2
+common_call: 2 |  sub_40f237
+common_call: 1 |  sub_40f61b
+common_call: 2 |  sub_40f9fc
+common_call: 1 |  sub_40fec8
+common_call: 1 |  sub_411056
+common_call: 4 |  sub_412a24
+common_call: 1 |  sub_412eeb
+common_call: 1 |  sub_412f73
+common_call: 1 |  sub_4133cc
+common_call: 2 |  sub_413956
+common_call: 2 |  sub_414264
+common_call: 1 |  sub_414d3b
+common_call: 1 |  sub_414f1c
+common_call: 1 |  sub_414f85
+common_call: 1 |  sub_415064
+common_call: 1 |  sub_415d84
+common_call: 2 |  sub_41633c
+common_call: 1 |  sub_416c2f
+common_call: 1 |  sub_416eb5
+common_call: 2 |  sub_417182
+common_call: 1 |  sub_42322c
+common_call: 1 |  sub_423a99
+common_call: 1 |  sub_423b46
+common_call: 2 |  sub_42468b
+common_call: 1 |  sub_424c2c
+common_call: 1 |  sub_424d61
+common_call: 1 |  sub_424e2d
+common_call: 1 |  sub_424fde
+common_call: 1 |  sub_4252f2
+common_call: 1 |  sub_42551b
+common_call: 1 |  sub_425cde
+common_call: 1 |  sub_427394
+common_call: 2 |  sub_428058
+common_call: 1 |  sub_428d54
+common_call: 1 |  sub_428f60
+common_call: 1 |  sub_4290ea
+common_call: 1 |  sub_42957c
+common_call: 1 |  sub_429688
+common_call: 1 |  sub_429fd0
+common_call: 1 |  sub_42af8c
+common_call: 1 |  sub_42b36c
+common_call: 1 |  sub_4366a0
+common_call: 1 |  sub_436f40
+common_call: 1 |  sub_436fc0
+common_call: 1 |  sub_437000
+common_call: 1 |  sub_437030
+common_call: 1 |  sub_437070
+common_call: 1 |  sub_437440
+common_call: 1 |  sub_4376a0
+common_call: 1 |  sub_437730
+common_call: 1 |  sub_437890
+common_call: 1 |  sub_437990
+common_call: 1 |  sub_437a30
+common_call: 1 |  sub_437ac0
+common_call: 1 |  sub_437b80
+
+RootBox
+common_call: 1 |  sub_401170
+common_call: 1 |  sub_40179d
+common_call: 1 |  sub_4021f5
+common_call: 1 |  sub_404eb0
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_40a6eb
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40c3f1
+common_call: 1 |  sub_40c68b
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_412eeb
+common_call: 1 |  sub_4133cc
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 1 |  sub_415064
+common_call: 1 |  sub_41633c
+common_call: 1 |  sub_416c2f
+common_call: 1 |  sub_416eb5
+common_call: 1 |  sub_417182
+common_call: 1 |  sub_42322c
+common_call: 1 |  sub_423a99
+common_call: 1 |  sub_423b46
+common_call: 1 |  sub_42468b
+common_call: 1 |  sub_4252f2
+common_call: 1 |  sub_427394
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_428f60
+common_call: 1 |  sub_429fd0
+common_call: 1 |  sub_42af8c
+common_call: 1 |  sub_436f40
+common_call: 1 |  sub_437440
+
+NetBios
+common_call: 1 |  sub_411056
+common_call: 1 |  sub_411103
+common_call: 1 |  sub_412a24
+common_call: 2 |  sub_412f73
+
+webdav
+common_call: 1 |  sub_402ace
+common_call: 1 |  sub_402bae
+common_call: 1 | common_string: 1 |  sub_40343c
+common_call: 1 | common_string: 1 |  sub_404eb0
+common_call: 1 |  sub_407f99
+common_call: 1 |  sub_40823b
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_408773
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_40963c
+common_call: 1 |  sub_409730
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40b7fd
+common_call: 1 |  sub_40b9fc
+common_call: 1 |  sub_40c3f1
+common_call: 1 |  sub_40c4f4
+common_call: 1 | common_string: 1 |  sub_40ccf2
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f61b
+common_call: 1 |  sub_40f9fc
+common_call: 1 | common_string: 1 |  sub_40fec8
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_413956
+common_call: 1 | common_string: 1 |  sub_414264
+common_call: 1 |  sub_414d3b
+common_call: 1 |  sub_414f1c
+common_call: 1 |  sub_414f85
+common_call: 1 |  sub_415d84
+common_call: 1 |  sub_41633c
+common_call: 1 |  sub_417182
+common_call: 1 |  sub_42468b
+common_call: 1 |  sub_424c2c
+common_call: 1 |  sub_424d61
+common_call: 1 |  sub_424e2d
+common_call: 1 |  sub_424fde
+common_call: 1 |  sub_42551b
+common_call: 1 |  sub_425cde
+common_call: 1 | common_string: 1 |  sub_428058
+common_call: 1 |  sub_428d54
+common_call: 1 |  sub_4290ea
+common_call: 1 |  sub_42957c
+common_call: 1 |  sub_429688
+common_string: 1 |  sub_42af8c
+common_call: 1 | common_string: 1 |  sub_42b36c
+
+SniffThread
+common_call: 1 |  sub_4021f5
+common_call: 1 |  sub_402ace
+common_call: 1 |  sub_402bae
+common_call: 1 |  sub_402eda
+common_call: 1 |  sub_40343c
+common_call: 1 |  sub_404eb0
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 1 |  sub_407f99
+common_call: 1 |  sub_40823b
+common_call: 2 |  sub_408430
+common_call: 1 |  sub_408773
+common_call: 2 |  sub_4089a8
+common_call: 1 |  sub_40963c
+common_call: 1 |  sub_409730
+common_call: 1 |  sub_409cb8
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40b7fd
+common_call: 2 |  sub_40b9fc
+common_call: 1 |  sub_40c3f1
+common_call: 1 |  sub_40c4f4
+common_call: 1 |  sub_40c68b
+common_call: 1 |  sub_40ccf2
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f61b
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_40fec8
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 1 |  sub_414d3b
+common_call: 1 |  sub_414f1c
+common_call: 1 |  sub_414f85
+common_call: 1 |  sub_415064
+common_call: 1 |  sub_415b2d
+common_call: 2 | common_string: 3 |  sub_415d84
+common_call: 1 |  sub_41633c
+common_call: 1 |  sub_417182
+common_call: 1 |  sub_42322c
+common_call: 1 |  sub_423b46
+common_call: 1 |  sub_424218
+common_call: 2 |  sub_42468b
+common_call: 1 |  sub_424c2c
+common_call: 1 |  sub_424d61
+common_call: 1 |  sub_424e2d
+common_call: 1 |  sub_424fde
+common_call: 1 |  sub_425470
+common_call: 1 |  sub_42551b
+common_call: 1 |  sub_425cde
+common_call: 1 |  sub_427394
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_42868c
+common_call: 1 |  sub_428d54
+common_call: 1 |  sub_4290ea
+common_call: 1 |  sub_42957c
+common_call: 2 |  sub_429688
+common_call: 1 |  sub_429fd0
+common_call: 2 |  sub_42b36c
+
+ping
+common_call: 1 |  sub_4021f5
+common_call: 1 |  sub_402eda
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_409cb8
+common_call: 1 |  sub_40b9fc
+common_call: 1 |  sub_40c68b
+common_call: 1 | common_string: 2 |  sub_415064
+common_call: 1 |  sub_415b2d
+common_call: 1 |  sub_415d84
+common_call: 1 |  sub_42322c
+common_call: 1 |  sub_423b46
+common_call: 1 |  sub_424218
+common_call: 1 |  sub_42468b
+common_call: 1 |  sub_425470
+common_call: 1 |  sub_427394
+common_call: 1 |  sub_42868c
+common_call: 1 |  sub_429688
+common_call: 1 |  sub_429fd0
+common_call: 1 |  sub_42b36c
+
+udp
+common_call: 1 |  sub_401170
+common_call: 1 |  sub_40179d
+common_call: 3 |  sub_4021f5
+common_call: 1 |  sub_402eda
+common_call: 1 |  sub_404eb0
+common_call: 3 |  sub_405ad0
+common_call: 2 |  sub_407378
+common_call: 2 |  sub_408430
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_409cb8
+common_call: 1 |  sub_40a6eb
+common_call: 1 |  sub_40ab57
+common_call: 2 |  sub_40b9fc
+common_call: 1 |  sub_40c3f1
+common_call: 2 |  sub_40c68b
+common_call: 1 |  sub_40ccf2
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_412eeb
+common_call: 1 |  sub_4133cc
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 3 | common_string: 2 |  sub_415064
+common_call: 1 |  sub_415b2d
+common_call: 1 |  sub_415d84
+common_call: 2 |  sub_41633c
+common_call: 1 |  sub_416c2f
+common_call: 1 |  sub_416eb5
+common_call: 2 |  sub_417182
+common_call: 2 |  sub_42322c
+common_call: 1 |  sub_423a99
+common_call: 2 |  sub_423b46
+common_call: 1 |  sub_424218
+common_call: 3 |  sub_42468b
+common_call: 1 |  sub_424b91
+common_call: 1 |  sub_424c2c
+common_call: 1 |  sub_424d61
+common_call: 1 |  sub_424e2d
+common_call: 1 |  sub_424fde
+common_call: 1 |  sub_4252f2
+common_call: 1 |  sub_425470
+common_call: 2 |  sub_427394
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_42868c
+common_call: 1 |  sub_428d54
+common_call: 1 |  sub_428f60
+common_call: 2 |  sub_429688
+common_call: 2 |  sub_429fd0
+common_call: 1 |  sub_42af8c
+common_call: 1 |  sub_42b36c
+common_call: 1 |  sub_435d70
+common_call: 1 |  sub_436f40
+common_call: 1 |  sub_437440
+
+WksSvc
+common_call: 1 |  sub_401170
+common_call: 1 |  sub_401500
+common_call: 1 |  sub_40179d
+common_call: 1 |  sub_4021f5
+common_call: 1 |  sub_402ace
+common_call: 1 |  sub_402bae
+common_call: 1 | common_string: 1 |  sub_40343c
+common_call: 2 | common_string: 1 |  sub_404eb0
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_407f99
+common_call: 1 |  sub_40823b
+common_call: 2 |  sub_408430
+common_call: 1 |  sub_408773
+common_call: 2 |  sub_4089a8
+common_call: 1 |  sub_40963c
+common_call: 1 |  sub_409730
+common_call: 1 |  sub_40a6eb
+common_call: 2 |  sub_40ab57
+common_call: 1 |  sub_40b7fd
+common_call: 1 |  sub_40b9fc
+common_call: 2 |  sub_40c3f1
+common_call: 1 |  sub_40c4f4
+common_call: 1 |  sub_40c68b
+common_call: 1 | common_string: 1 |  sub_40ccf2
+common_call: 1 |  sub_40d28c
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f61b
+common_call: 2 | common_string: 1 |  sub_40f9fc
+common_call: 1 | common_string: 1 |  sub_40fec8
+common_call: 1 |  sub_411056
+common_call: 3 |  sub_412a24
+common_call: 1 |  sub_412eeb
+common_call: 1 |  sub_412f73
+common_call: 1 |  sub_4133cc
+common_call: 2 |  sub_413956
+common_call: 2 | common_string: 1 |  sub_414264
+common_call: 1 |  sub_414d3b
+common_call: 1 |  sub_414f1c
+common_call: 1 |  sub_414f85
+common_call: 1 |  sub_415064
+common_call: 1 |  sub_415d84
+common_call: 2 |  sub_41633c
+common_call: 1 |  sub_416c2f
+common_call: 1 |  sub_416eb5
+common_call: 2 |  sub_417182
+common_call: 1 |  sub_42322c
+common_call: 1 |  sub_423a99
+common_call: 1 |  sub_423b46
+common_call: 2 |  sub_42468b
+common_call: 1 |  sub_424c2c
+common_call: 1 |  sub_424d61
+common_call: 1 |  sub_424e2d
+common_call: 1 |  sub_424fde
+common_call: 1 |  sub_4252f2
+common_call: 1 |  sub_42551b
+common_call: 1 |  sub_425cde
+common_call: 1 |  sub_427394
+common_call: 2 | common_string: 1 |  sub_428058
+common_call: 1 |  sub_428d54
+common_call: 1 |  sub_428f60
+common_call: 1 |  sub_4290ea
+common_call: 1 |  sub_42957c
+common_call: 1 |  sub_429688
+common_call: 1 |  sub_429fd0
+common_call: 1 | common_string: 2 |  sub_42af8c
+common_call: 1 | common_string: 1 |  sub_42b36c
+common_call: 1 |  sub_436f40
+common_call: 1 |  sub_437440
+
+WksSocket
+
+SaveKeys
+common_call: 1 |  sub_402ace
+common_call: 2 |  sub_402bae
+common_call: 1 |  sub_40343c
+common_call: 1 |  sub_404eb0
+common_call: 1 |  sub_407f99
+common_call: 1 |  sub_40823b
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_408773
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_40963c
+common_call: 1 |  sub_409730
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40b7fd
+common_call: 1 |  sub_40b9fc
+common_call: 1 |  sub_40c3f1
+common_call: 2 | common_string: 1 |  sub_40c4f4
+common_call: 1 |  sub_40ccf2
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f61b
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_40fec8
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 1 |  sub_414d3b
+common_call: 1 |  sub_414f1c
+common_call: 1 |  sub_414f85
+common_call: 1 |  sub_415d84
+common_call: 1 |  sub_41633c
+common_call: 1 |  sub_417182
+common_call: 1 |  sub_42468b
+common_call: 1 |  sub_424c2c
+common_call: 1 |  sub_424d61
+common_call: 1 |  sub_424e2d
+common_call: 1 |  sub_424fde
+common_call: 1 |  sub_42551b
+common_call: 1 |  sub_425cde
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_428d54
+common_call: 1 |  sub_4290ea
+common_call: 1 |  sub_42957c
+common_call: 1 |  sub_429688
+common_call: 1 |  sub_42b36c
+
+KeyLoggerThread
+common_call: 1 |  sub_401170
+common_call: 1 |  sub_40179d
+common_call: 2 |  sub_4021f5
+common_call: 1 |  sub_402eda
+common_call: 1 |  sub_404eb0
+common_call: 2 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 2 |  sub_408430
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_409cb8
+common_call: 1 |  sub_40a6eb
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40b9fc
+common_call: 1 |  sub_40c3f1
+common_call: 2 | common_string: 3 |  sub_40c68b
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_412eeb
+common_call: 1 |  sub_4133cc
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 2 |  sub_415064
+common_call: 1 |  sub_415b2d
+common_call: 1 |  sub_415d84
+common_call: 1 |  sub_41633c
+common_call: 1 |  sub_416c2f
+common_call: 1 |  sub_416eb5
+common_call: 1 |  sub_417182
+common_call: 2 |  sub_42322c
+common_call: 1 |  sub_423a99
+common_call: 2 |  sub_423b46
+common_call: 1 |  sub_424218
+common_call: 2 |  sub_42468b
+common_call: 1 |  sub_4252f2
+common_call: 1 |  sub_425470
+common_call: 2 |  sub_427394
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_42868c
+common_call: 1 |  sub_428f60
+common_call: 1 |  sub_429688
+common_call: 2 |  sub_429fd0
+common_call: 1 |  sub_42af8c
+common_call: 1 |  sub_42b36c
+common_call: 1 |  sub_436f40
+common_call: 1 |  sub_437440
+
+LoadDLLs
+common_call: 1 |  sub_401500
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_40a6eb
+common_call: 1 | common_string: 106 |  sub_40d28c
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_4366a0
+common_call: 1 |  sub_436fc0
+common_call: 1 |  sub_437000
+common_call: 1 |  sub_437030
+common_call: 1 |  sub_437070
+common_call: 1 |  sub_4376a0
+common_call: 1 |  sub_437730
+common_call: 1 |  sub_437890
+common_call: 1 |  sub_437990
+common_call: 1 |  sub_437a30
+common_call: 1 |  sub_437ac0
+common_call: 1 |  sub_437b80
+
+CheckDLLs
+common_string: 14 |  sub_40e91a
+
+*Services
+common_string: 3 |  sub_4101c4
+
+ServiceControl
+common_call: 1 |  sub_40a6eb
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_4366a0
+common_call: 1 |  sub_436fc0
+common_call: 1 |  sub_437000
+common_call: 1 |  sub_437030
+common_call: 1 |  sub_437070
+common_call: 1 |  sub_4376a0
+common_call: 1 |  sub_437730
+common_call: 1 |  sub_437890
+common_call: 1 |  sub_437990
+common_call: 1 |  sub_437a30
+common_call: 1 |  sub_437ac0
+common_call: 1 |  sub_437b80
+
+*ServiceError
+common_string: 1 |  sub_410407
+
+ListServices
+common_call: 1 |  sub_40a6eb
+common_call: 1 |  sub_40f237
+common_string: 2 |  sub_410c5d
+common_call: 1 |  sub_4366a0
+common_call: 1 |  sub_436fc0
+common_call: 1 |  sub_437000
+common_call: 1 |  sub_437030
+common_call: 1 |  sub_437070
+common_call: 1 |  sub_4376a0
+common_call: 1 |  sub_437730
+common_call: 1 |  sub_437890
+common_call: 1 |  sub_437990
+common_call: 1 |  sub_437a30
+common_call: 1 |  sub_437ac0
+common_call: 1 |  sub_437b80
+
+*Shares
+common_string: 3 |  sub_410f24
+
+*AsWideString
+common_call: 1 |  sub_411056
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_412f73
+
+*AsAnsiString
+common_call: 1 |  sub_411103
+common_call: 1 |  sub_412f73
+
+ShareAdd
+
+ShareDel
+
+ListShares
+common_string: 3 |  sub_411378
+
+*Users
+common_string: 3 |  sub_41157c
+
+UserAdd
+
+UserDel
+
+UserInfo
+common_string: 20 |  sub_4117a0
+
+ListUsers
+common_string: 4 |  sub_411e94
+
+*NasError
+
+*NetSend
+common_string: 1 |  sub_4128cd
+
+AdjustPrivileges
+common_call: 1 |  sub_4037b8
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_4090fb
+common_call: 1 |  sub_4093f5
+common_call: 1 |  sub_40a6eb
+common_call: 1 |  sub_40b629
+common_call: 1 |  sub_40ccf2
+common_call: 1 |  sub_40f390
+common_call: 1 |  sub_40f4bd
+common_call: 1 |  sub_40f753
+common_call: 1 |  sub_4133cc
+common_call: 1 |  sub_414264
+common_call: 2 |  sub_415744
+common_call: 1 |  sub_41583e
+common_call: 1 |  sub_415d0a
+common_call: 1 |  sub_41633c
+common_call: 1 |  sub_4239dc
+common_call: 2 |  sub_423d7d
+common_call: 1 |  sub_4252f2
+common_call: 1 |  sub_426460
+common_call: 1 |  sub_42664c
+common_call: 2 |  sub_426965
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_435e20
+common_call: 1 |  sub_4370e0
+common_call: 1 |  sub_437340
+
+listProcesses
+common_call: 1 |  sub_4037b8
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 1 |  sub_408430
+common_call: 2 |  sub_4090fb
+common_call: 2 |  sub_4093f5
+common_call: 1 |  sub_40a6eb
+common_call: 1 |  sub_40b629
+common_call: 1 |  sub_40ccf2
+common_call: 1 |  sub_40f390
+common_call: 1 |  sub_40f4bd
+common_call: 1 |  sub_40f753
+common_call: 1 |  sub_4133cc
+common_call: 1 |  sub_414264
+common_call: 1 |  sub_415744
+common_call: 3 | common_string: 1 |  sub_41583e
+common_call: 3 |  sub_415d0a
+common_call: 2 |  sub_41633c
+common_call: 1 |  sub_4239dc
+common_call: 1 |  sub_423d7d
+common_call: 1 |  sub_4252f2
+common_call: 1 |  sub_426460
+common_call: 2 |  sub_42664c
+common_call: 1 |  sub_426965
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_435e20
+common_call: 1 |  sub_4370e0
+common_call: 1 |  sub_437340
+
+listProcessesThread
+common_call: 1 |  sub_4021f5
+common_call: 1 |  sub_402eda
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_409cb8
+common_call: 1 |  sub_40b9fc
+common_call: 1 |  sub_40c68b
+common_call: 1 |  sub_415064
+common_call: 1 |  sub_415b2d
+common_call: 1 |  sub_415d84
+common_call: 1 |  sub_42322c
+common_call: 1 |  sub_423b46
+common_call: 1 |  sub_424218
+common_call: 1 |  sub_42468b
+common_call: 1 |  sub_425470
+common_call: 1 |  sub_427394
+common_call: 1 |  sub_42868c
+common_call: 1 |  sub_429688
+common_call: 1 |  sub_429fd0
+common_call: 1 |  sub_42b36c
+
+killProcess
+common_call: 1 |  sub_4037b8
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 1 |  sub_408430
+common_call: 2 |  sub_4090fb
+common_call: 2 |  sub_4093f5
+common_call: 1 |  sub_40a6eb
+common_call: 1 |  sub_40b629
+common_call: 1 |  sub_40ccf2
+common_call: 1 |  sub_40f390
+common_call: 1 |  sub_40f4bd
+common_call: 1 |  sub_40f753
+common_call: 1 |  sub_4133cc
+common_call: 1 |  sub_414264
+common_call: 1 |  sub_415744
+common_call: 3 |  sub_41583e
+common_call: 3 |  sub_415d0a
+common_call: 2 |  sub_41633c
+common_call: 1 |  sub_4239dc
+common_call: 1 |  sub_423d7d
+common_call: 1 |  sub_4252f2
+common_call: 1 |  sub_426460
+common_call: 2 |  sub_42664c
+common_call: 1 |  sub_426965
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_435e20
+common_call: 1 |  sub_4370e0
+common_call: 1 |  sub_437340
+
+kill_av
+common_call: 1 |  sub_401170
+common_call: 1 |  sub_40179d
+common_call: 1 |  sub_4021f5
+common_call: 1 |  sub_404eb0
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_40a6eb
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40c3f1
+common_call: 1 |  sub_40c68b
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_412eeb
+common_call: 1 |  sub_4133cc
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 1 |  sub_415064
+common_call: 1 |  sub_41633c
+common_call: 1 |  sub_416c2f
+common_call: 1 |  sub_416eb5
+common_call: 1 |  sub_417182
+common_call: 1 |  sub_42322c
+common_call: 1 |  sub_423a99
+common_call: 1 |  sub_423b46
+common_call: 1 |  sub_42468b
+common_call: 1 |  sub_4252f2
+common_call: 1 |  sub_427394
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_428f60
+common_call: 1 |  sub_429fd0
+common_call: 1 |  sub_42af8c
+common_call: 1 |  sub_436f40
+common_call: 1 |  sub_437440
+
+MSSQL
+common_call: 1 |  sub_401170
+common_call: 1 |  sub_40179d
+common_call: 1 |  sub_4021f5
+common_call: 1 |  sub_402ace
+common_call: 1 |  sub_402bae
+common_call: 1 |  sub_40343c
+common_call: 2 |  sub_404eb0
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_407f99
+common_call: 1 |  sub_40823b
+common_call: 2 |  sub_408430
+common_call: 1 |  sub_408773
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_40963c
+common_call: 1 |  sub_409730
+common_call: 1 |  sub_40a6eb
+common_call: 2 |  sub_40ab57
+common_call: 1 |  sub_40b7fd
+common_call: 1 |  sub_40b9fc
+common_call: 2 |  sub_40c3f1
+common_call: 1 |  sub_40c4f4
+common_call: 1 |  sub_40c68b
+common_call: 1 |  sub_40ccf2
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f61b
+common_call: 2 | common_string: 5 |  sub_40f9fc
+common_call: 1 |  sub_40fec8
+common_call: 2 |  sub_412a24
+common_call: 1 |  sub_412eeb
+common_call: 1 |  sub_4133cc
+common_call: 2 |  sub_413956
+common_call: 2 |  sub_414264
+common_call: 1 |  sub_414d3b
+common_call: 1 |  sub_414f1c
+common_call: 1 |  sub_414f85
+common_call: 1 |  sub_415064
+common_call: 1 |  sub_415d84
+common_call: 2 |  sub_41633c
+common_call: 1 |  sub_416c2f
+common_call: 1 |  sub_416eb5
+common_call: 2 |  sub_417182
+common_call: 1 |  sub_42322c
+common_call: 1 |  sub_423a99
+common_call: 1 |  sub_423b46
+common_call: 2 |  sub_42468b
+common_call: 1 |  sub_424c2c
+common_call: 1 |  sub_424d61
+common_call: 1 |  sub_424e2d
+common_call: 1 |  sub_424fde
+common_call: 1 |  sub_4252f2
+common_call: 1 |  sub_42551b
+common_call: 1 |  sub_425cde
+common_call: 1 |  sub_427394
+common_call: 2 |  sub_428058
+common_call: 1 |  sub_428d54
+common_call: 1 |  sub_428f60
+common_call: 1 |  sub_4290ea
+common_call: 1 |  sub_42957c
+common_call: 1 |  sub_429688
+common_call: 1 |  sub_429fd0
+common_call: 1 | common_string: 1 |  sub_42af8c
+common_call: 1 |  sub_42b36c
+common_call: 1 |  sub_436f40
+common_call: 1 |  sub_437440
+
+FindPassThread
+common_call: 1 |  sub_401500
+common_call: 1 |  sub_4021f5
+common_call: 1 |  sub_402ace
+common_call: 1 |  sub_402bae
+common_call: 1 |  sub_402eda
+common_call: 1 |  sub_40343c
+common_call: 1 |  sub_404eb0
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 1 |  sub_407f99
+common_call: 1 |  sub_40823b
+common_call: 2 |  sub_408430
+common_call: 1 |  sub_408773
+common_call: 5 | common_string: 5 |  sub_4089a8
+common_call: 1 |  sub_40963c
+common_call: 1 |  sub_409730
+common_call: 1 |  sub_409cb8
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40b7fd
+common_call: 2 |  sub_40b9fc
+common_call: 1 |  sub_40c3f1
+common_call: 1 |  sub_40c4f4
+common_call: 1 |  sub_40c68b
+common_call: 1 |  sub_40ccf2
+common_call: 1 |  sub_40d28c
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f61b
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_40fec8
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 1 |  sub_414d3b
+common_call: 1 |  sub_414f1c
+common_call: 1 |  sub_414f85
+common_call: 1 |  sub_415064
+common_string: 1 |  sub_41583e
+common_call: 1 |  sub_415b2d
+common_call: 2 |  sub_415d84
+common_call: 1 |  sub_41633c
+common_call: 1 |  sub_417182
+common_call: 1 |  sub_42322c
+common_call: 1 |  sub_423b46
+common_call: 1 |  sub_424218
+common_call: 2 |  sub_42468b
+common_call: 1 |  sub_424c2c
+common_call: 1 |  sub_424d61
+common_call: 1 |  sub_424e2d
+common_call: 1 |  sub_424fde
+common_call: 1 |  sub_425470
+common_call: 1 |  sub_42551b
+common_call: 1 |  sub_425cde
+common_call: 1 |  sub_427394
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_42868c
+common_call: 1 |  sub_428d54
+common_call: 1 |  sub_4290ea
+common_call: 1 |  sub_42957c
+common_call: 2 |  sub_429688
+common_call: 1 |  sub_429fd0
+common_call: 2 |  sub_42b36c
+
+FindWinLogon
+common_call: 4 | common_string: 3 |  sub_408dc1
+common_call: 3 |  sub_4090fb
+common_call: 3 |  sub_4093f5
+common_call: 3 |  sub_40963c
+common_call: 3 |  sub_409730
+
+LocatePasswordPageWinNT
+common_call: 1 |  sub_4037b8
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 1 |  sub_408430
+common_call: 3 |  sub_408dc1
+common_call: 10 |  sub_4090fb
+common_call: 8 |  sub_4093f5
+common_call: 3 |  sub_40963c
+common_call: 3 |  sub_409730
+common_call: 1 |  sub_40a6eb
+common_call: 2 |  sub_40ab57
+common_call: 1 |  sub_40b629
+common_call: 1 |  sub_40ccf2
+common_call: 1 |  sub_40f390
+common_call: 1 |  sub_40f4bd
+common_call: 1 |  sub_40f753
+common_call: 1 |  sub_4133cc
+common_call: 1 |  sub_414264
+common_call: 1 |  sub_415744
+common_call: 2 |  sub_41583e
+common_call: 2 |  sub_415d0a
+common_call: 2 |  sub_41633c
+common_call: 1 |  sub_4239dc
+common_call: 1 |  sub_423d7d
+common_call: 1 |  sub_4252f2
+common_call: 1 |  sub_426460
+common_call: 1 |  sub_42664c
+common_call: 1 |  sub_426965
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_4370e0
+common_call: 1 |  sub_437340
+
+LocatePasswordPageWin2K
+common_call: 1 |  sub_4037b8
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 1 |  sub_408430
+common_call: 3 |  sub_408dc1
+common_call: 8 |  sub_4090fb
+common_call: 8 |  sub_4093f5
+common_call: 3 |  sub_40963c
+common_call: 3 |  sub_409730
+common_call: 1 |  sub_40a6eb
+common_call: 1 |  sub_40b629
+common_call: 1 |  sub_40ccf2
+common_call: 1 |  sub_40f390
+common_call: 1 |  sub_40f4bd
+common_call: 1 |  sub_40f753
+common_call: 1 |  sub_4133cc
+common_call: 1 |  sub_414264
+common_call: 1 |  sub_415744
+common_call: 2 |  sub_41583e
+common_call: 2 |  sub_415d0a
+common_call: 2 |  sub_41633c
+common_call: 1 |  sub_4239dc
+common_call: 1 |  sub_423d7d
+common_call: 1 |  sub_4252f2
+common_call: 1 |  sub_426460
+common_call: 1 |  sub_42664c
+common_call: 1 |  sub_426965
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_4370e0
+common_call: 1 |  sub_437340
+
+*DisplayPasswordWinNT
+common_call: 1 |  sub_402ace
+common_call: 1 |  sub_402bae
+common_call: 1 |  sub_40343c
+common_call: 1 |  sub_404eb0
+common_call: 1 |  sub_407f99
+common_call: 1 |  sub_40823b
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_408773
+common_call: 1 |  sub_4089a8
+common_call: 3 |  sub_408dc1
+common_call: 3 |  sub_4090fb
+common_call: 3 |  sub_4093f5
+common_call: 4 |  sub_40963c
+common_call: 4 |  sub_409730
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40b7fd
+common_call: 1 |  sub_40b9fc
+common_call: 1 |  sub_40c3f1
+common_call: 1 |  sub_40c4f4
+common_call: 1 |  sub_40ccf2
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f61b
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_40fec8
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 1 |  sub_414d3b
+common_call: 1 |  sub_414f1c
+common_call: 1 |  sub_414f85
+common_call: 1 |  sub_415d84
+common_call: 1 |  sub_41633c
+common_call: 1 |  sub_417182
+common_call: 1 |  sub_42468b
+common_call: 1 |  sub_424c2c
+common_call: 1 |  sub_424d61
+common_call: 1 |  sub_424e2d
+common_call: 1 |  sub_424fde
+common_call: 1 |  sub_42551b
+common_call: 1 |  sub_425cde
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_428d54
+common_call: 1 |  sub_4290ea
+common_call: 1 |  sub_42957c
+common_call: 1 |  sub_429688
+common_call: 1 |  sub_42b36c
+
+*DisplayPasswordWin2K
+common_call: 1 |  sub_402ace
+common_call: 1 |  sub_402bae
+common_call: 1 |  sub_40343c
+common_call: 1 |  sub_404eb0
+common_call: 1 |  sub_407f99
+common_call: 1 |  sub_40823b
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_408773
+common_call: 1 |  sub_4089a8
+common_call: 3 |  sub_408dc1
+common_call: 3 |  sub_4090fb
+common_call: 3 |  sub_4093f5
+common_call: 4 |  sub_40963c
+common_call: 4 |  sub_409730
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40b7fd
+common_call: 1 |  sub_40b9fc
+common_call: 1 |  sub_40c3f1
+common_call: 1 |  sub_40c4f4
+common_call: 1 |  sub_40ccf2
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f61b
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_40fec8
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 1 |  sub_414d3b
+common_call: 1 |  sub_414f1c
+common_call: 1 |  sub_414f85
+common_call: 1 |  sub_415d84
+common_call: 1 |  sub_41633c
+common_call: 1 |  sub_417182
+common_call: 1 |  sub_42468b
+common_call: 1 |  sub_424c2c
+common_call: 1 |  sub_424d61
+common_call: 1 |  sub_424e2d
+common_call: 1 |  sub_424fde
+common_call: 1 |  sub_42551b
+common_call: 1 |  sub_425cde
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_428d54
+common_call: 1 |  sub_4290ea
+common_call: 1 |  sub_42957c
+common_call: 1 |  sub_429688
+common_call: 1 |  sub_42b36c
+
+crc32
+
+crc32f
+
+CreateSession
+common_call: 1 |  sub_4037b8
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_4090fb
+common_call: 1 |  sub_4093f5
+common_call: 2 |  sub_40a6eb
+common_call: 1 |  sub_40b629
+common_call: 1 |  sub_40ccf2
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f390
+common_call: 1 |  sub_40f4bd
+common_call: 1 |  sub_40f753
+common_call: 1 |  sub_4133cc
+common_call: 1 |  sub_414264
+common_call: 1 |  sub_415744
+common_call: 1 |  sub_41583e
+common_call: 1 |  sub_415d0a
+common_call: 1 |  sub_41633c
+common_call: 1 |  sub_4239dc
+common_call: 2 |  sub_423d7d
+common_call: 1 |  sub_4252f2
+common_call: 2 | common_string: 2 |  sub_426460
+common_call: 1 |  sub_42664c
+common_call: 1 |  sub_426965
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_4366a0
+common_call: 1 |  sub_436fc0
+common_call: 1 |  sub_437000
+common_call: 1 |  sub_437030
+common_call: 1 |  sub_437070
+common_call: 1 |  sub_4370e0
+common_call: 1 |  sub_437340
+common_call: 1 |  sub_4376a0
+common_call: 1 |  sub_437730
+common_call: 1 |  sub_437890
+common_call: 1 |  sub_437990
+common_call: 1 |  sub_437a30
+common_call: 1 |  sub_437ac0
+common_call: 1 |  sub_437b80
+
+SessionRun
+common_call: 1 |  sub_40179d
+common_call: 1 |  sub_4021f5
+common_call: 1 |  sub_4037b8
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_4090fb
+common_call: 1 |  sub_4093f5
+common_call: 3 |  sub_40a6eb
+common_call: 1 |  sub_40b629
+common_call: 1 |  sub_40ccf2
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f390
+common_call: 1 |  sub_40f4bd
+common_call: 1 |  sub_40f753
+common_call: 1 |  sub_4133cc
+common_call: 1 |  sub_414264
+common_call: 1 |  sub_415744
+common_call: 2 |  sub_41583e
+common_call: 2 |  sub_415d0a
+common_call: 2 |  sub_41633c
+common_call: 2 |  sub_417182
+common_call: 1 |  sub_42322c
+common_call: 1 |  sub_4239dc
+common_call: 2 |  sub_423d7d
+common_call: 1 |  sub_42468b
+common_call: 2 |  sub_4252f2
+common_call: 1 |  sub_426460
+common_call: 5 | common_string: 2 |  sub_42664c
+common_call: 1 |  sub_426965
+common_call: 1 |  sub_427394
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_42ab26
+common_call: 1 |  sub_435e20
+common_call: 1 |  sub_4366a0
+common_call: 1 |  sub_436fc0
+common_call: 1 |  sub_437000
+common_call: 1 |  sub_437030
+common_call: 1 |  sub_437070
+common_call: 1 |  sub_4370e0
+common_call: 1 |  sub_437340
+common_call: 1 |  sub_4376a0
+common_call: 1 |  sub_437730
+common_call: 1 |  sub_437890
+common_call: 1 |  sub_437990
+common_call: 1 |  sub_437a30
+common_call: 1 |  sub_437ac0
+common_call: 1 |  sub_437b80
+
+StartShell
+common_call: 1 |  sub_4037b8
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_4090fb
+common_call: 1 |  sub_4093f5
+common_call: 2 |  sub_40a6eb
+common_call: 1 |  sub_40b629
+common_call: 1 |  sub_40ccf2
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f390
+common_call: 1 |  sub_40f4bd
+common_call: 1 |  sub_40f753
+common_call: 1 |  sub_4133cc
+common_call: 1 |  sub_414264
+common_call: 2 |  sub_415744
+common_call: 1 |  sub_41583e
+common_call: 1 |  sub_415d0a
+common_call: 1 |  sub_41633c
+common_call: 1 |  sub_4239dc
+common_call: 3 |  sub_423d7d
+common_call: 1 |  sub_4252f2
+common_call: 1 |  sub_426460
+common_call: 1 |  sub_42664c
+common_call: 3 | common_string: 1 |  sub_426965
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_435e20
+common_call: 1 |  sub_4366a0
+common_call: 1 |  sub_436fc0
+common_call: 1 |  sub_437000
+common_call: 1 |  sub_437030
+common_call: 1 |  sub_437070
+common_call: 1 |  sub_4370e0
+common_call: 1 |  sub_437340
+common_call: 1 |  sub_4376a0
+common_call: 1 |  sub_437730
+common_call: 1 |  sub_437890
+common_call: 1 |  sub_437990
+common_call: 1 |  sub_437a30
+common_call: 1 |  sub_437ac0
+common_call: 1 |  sub_437b80
+
+SessionReadShellThread
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_40a6eb
+common_call: 1 |  sub_40b629
+common_call: 1 |  sub_40ccf2
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_4133cc
+common_call: 1 |  sub_423b46
+common_call: 1 | common_string: 1 |  sub_426b05
+common_call: 1 |  sub_4366a0
+common_call: 1 |  sub_436fc0
+common_call: 1 |  sub_437000
+common_call: 1 |  sub_437030
+common_call: 1 |  sub_437070
+common_call: 1 |  sub_4376a0
+common_call: 1 |  sub_437730
+common_call: 1 |  sub_437890
+common_call: 1 |  sub_437990
+common_call: 1 |  sub_437a30
+common_call: 1 |  sub_437ac0
+common_call: 1 |  sub_437b80
+
+SessionWriteShellThread
+common_call: 1 |  sub_4037b8
+common_call: 1 |  sub_407378
+common_call: 1 |  sub_40f753
+common_call: 1 |  sub_423a3a
+common_call: 2 |  sub_426c60
+
+upnp
+common_call: 1 |  sub_401170
+common_call: 1 |  sub_40179d
+common_call: 1 |  sub_4021f5
+common_string: 1 |  sub_40343c
+common_call: 1 | common_string: 1 |  sub_404eb0
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_40a6eb
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40c3f1
+common_call: 1 |  sub_40c68b
+common_string: 1 |  sub_40ccf2
+common_call: 1 | common_string: 1 |  sub_40f9fc
+common_string: 1 |  sub_40fec8
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_412eeb
+common_call: 1 |  sub_4133cc
+common_call: 1 |  sub_413956
+common_call: 1 | common_string: 1 |  sub_414264
+common_call: 1 |  sub_415064
+common_call: 1 |  sub_41633c
+common_call: 1 |  sub_416c2f
+common_call: 1 |  sub_416eb5
+common_call: 1 |  sub_417182
+common_call: 1 |  sub_42322c
+common_call: 1 |  sub_423a99
+common_call: 1 |  sub_423b46
+common_call: 1 |  sub_42468b
+common_call: 1 |  sub_4252f2
+common_call: 1 |  sub_427394
+common_call: 1 | common_string: 1 |  sub_428058
+common_call: 1 |  sub_428f60
+common_call: 1 |  sub_429fd0
+common_call: 1 | common_string: 2 |  sub_42af8c
+common_string: 1 |  sub_42b36c
+common_call: 1 |  sub_436f40
+common_call: 1 |  sub_437440
+
+getcdkeys
+common_string: 1 |  sub_404620
+
+SynFloodThread
+common_call: 1 |  sub_4021f5
+common_call: 1 |  sub_402eda
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_409cb8
+common_call: 1 |  sub_40b9fc
+common_call: 1 |  sub_40c68b
+common_call: 1 |  sub_415064
+common_call: 1 |  sub_415b2d
+common_call: 1 |  sub_415d84
+common_call: 1 |  sub_42322c
+common_call: 1 |  sub_423b46
+common_call: 1 |  sub_424218
+common_call: 1 |  sub_42468b
+common_call: 1 |  sub_425470
+common_call: 1 |  sub_427394
+common_call: 1 | common_string: 1 |  sub_42868c
+common_call: 1 |  sub_429688
+common_call: 1 |  sub_429fd0
+common_call: 1 |  sub_42b36c
+
+SendSyn
+common_call: 2 |  sub_406bf0
+common_call: 2 | common_string: 1 |  sub_42877a
+common_call: 1 |  sub_435d70
+
+SynFlood
+
+tftpserver
+common_call: 1 |  sub_401170
+common_call: 1 |  sub_40179d
+common_call: 2 |  sub_4021f5
+common_call: 1 |  sub_402eda
+common_call: 1 |  sub_404eb0
+common_call: 2 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 2 |  sub_408430
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_409cb8
+common_call: 1 |  sub_40a6eb
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40b9fc
+common_call: 1 |  sub_40c3f1
+common_call: 2 |  sub_40c68b
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_412eeb
+common_call: 1 |  sub_4133cc
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 2 |  sub_415064
+common_call: 1 |  sub_415b2d
+common_call: 1 |  sub_415d84
+common_call: 1 |  sub_41633c
+common_call: 1 |  sub_416c2f
+common_call: 1 |  sub_416eb5
+common_call: 1 |  sub_417182
+common_call: 2 |  sub_42322c
+common_call: 1 |  sub_423a99
+common_call: 2 |  sub_423b46
+common_call: 1 |  sub_424218
+common_call: 2 |  sub_42468b
+common_call: 1 |  sub_4252f2
+common_call: 1 |  sub_425470
+common_call: 2 |  sub_427394
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_42868c
+common_call: 1 |  sub_428f60
+common_call: 1 |  sub_429688
+common_call: 2 | common_string: 3 |  sub_429fd0
+common_call: 1 |  sub_42af8c
+common_call: 1 |  sub_42b36c
+common_call: 1 |  sub_436f40
+common_call: 1 |  sub_437440
+
+FindFileThread
+common_call: 1 |  sub_4021f5
+common_call: 1 |  sub_402ace
+common_call: 1 |  sub_402bae
+common_call: 1 |  sub_402eda
+common_call: 1 |  sub_40343c
+common_call: 1 |  sub_404eb0
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_407378
+common_call: 1 |  sub_407f99
+common_call: 1 |  sub_40823b
+common_call: 2 | common_string: 2 |  sub_408430
+common_call: 1 |  sub_408773
+common_call: 2 |  sub_4089a8
+common_call: 1 |  sub_40963c
+common_call: 1 |  sub_409730
+common_call: 1 |  sub_409cb8
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40b7fd
+common_call: 2 |  sub_40b9fc
+common_call: 1 |  sub_40c3f1
+common_call: 1 |  sub_40c4f4
+common_call: 1 |  sub_40c68b
+common_call: 1 |  sub_40ccf2
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f61b
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_40fec8
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 1 |  sub_414d3b
+common_call: 1 |  sub_414f1c
+common_call: 1 |  sub_414f85
+common_call: 1 |  sub_415064
+common_call: 1 |  sub_415b2d
+common_call: 2 |  sub_415d84
+common_call: 1 |  sub_41633c
+common_call: 1 |  sub_417182
+common_call: 1 |  sub_42322c
+common_call: 1 |  sub_423b46
+common_call: 1 |  sub_424218
+common_call: 2 |  sub_42468b
+common_call: 1 |  sub_424c2c
+common_call: 1 |  sub_424d61
+common_call: 1 |  sub_424e2d
+common_call: 1 |  sub_424fde
+common_call: 1 |  sub_425470
+common_call: 1 |  sub_42551b
+common_call: 1 |  sub_425cde
+common_call: 1 |  sub_427394
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_42868c
+common_call: 1 |  sub_428d54
+common_call: 1 |  sub_4290ea
+common_call: 1 |  sub_42957c
+common_call: 2 |  sub_429688
+common_call: 1 |  sub_429fd0
+common_call: 2 |  sub_42b36c
+
+FindFile
+common_call: 1 |  sub_402ace
+common_call: 1 |  sub_402bae
+common_call: 1 |  sub_40343c
+common_call: 1 |  sub_404eb0
+common_call: 1 |  sub_407f99
+common_call: 1 |  sub_40823b
+common_call: 1 |  sub_408430
+common_call: 2 |  sub_408773
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_40963c
+common_call: 1 |  sub_409730
+common_call: 2 |  sub_40ab57
+common_call: 1 |  sub_40b7fd
+common_call: 1 |  sub_40b9fc
+common_call: 1 |  sub_40c3f1
+common_call: 1 |  sub_40c4f4
+common_call: 1 |  sub_40ccf2
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f61b
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_40fec8
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 1 |  sub_414d3b
+common_call: 1 |  sub_414f1c
+common_call: 1 |  sub_414f85
+common_call: 1 |  sub_415d84
+common_call: 1 |  sub_41633c
+common_call: 1 |  sub_417182
+common_call: 1 |  sub_42468b
+common_call: 1 |  sub_424c2c
+common_call: 1 |  sub_424d61
+common_call: 1 |  sub_424e2d
+common_call: 1 |  sub_424fde
+common_call: 1 |  sub_42551b
+common_call: 1 |  sub_425cde
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_428d54
+common_call: 1 |  sub_4290ea
+common_call: 1 |  sub_42957c
+common_call: 1 |  sub_429688
+common_call: 1 |  sub_42b36c
+
+ICMPFloodThread
+common_call: 2 |  sub_4021f5
+common_call: 1 |  sub_402ace
+common_call: 1 |  sub_402bae
+common_call: 1 |  sub_402eda
+common_call: 1 |  sub_40343c
+common_call: 1 |  sub_404eb0
+common_call: 2 |  sub_405ad0
+common_call: 2 |  sub_407378
+common_call: 1 |  sub_407f99
+common_call: 1 |  sub_40823b
+common_call: 2 |  sub_408430
+common_call: 1 |  sub_408773
+common_call: 2 |  sub_4089a8
+common_call: 1 |  sub_40963c
+common_call: 1 |  sub_409730
+common_call: 1 |  sub_409cb8
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40b7fd
+common_call: 3 | common_string: 2 |  sub_40b9fc
+common_call: 1 |  sub_40c3f1
+common_call: 1 |  sub_40c4f4
+common_call: 1 |  sub_40c68b
+common_call: 2 |  sub_40ccf2
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f61b
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_40fec8
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 1 |  sub_414d3b
+common_call: 1 |  sub_414f1c
+common_call: 1 |  sub_414f85
+common_call: 2 |  sub_415064
+common_call: 1 |  sub_415b2d
+common_call: 2 |  sub_415d84
+common_call: 2 |  sub_41633c
+common_call: 2 |  sub_417182
+common_call: 1 |  sub_42322c
+common_call: 1 |  sub_423b46
+common_call: 1 |  sub_424218
+common_call: 3 |  sub_42468b
+common_call: 1 |  sub_424b91
+common_call: 2 |  sub_424c2c
+common_call: 2 |  sub_424d61
+common_call: 2 |  sub_424e2d
+common_call: 2 |  sub_424fde
+common_call: 1 |  sub_425470
+common_call: 1 |  sub_42551b
+common_call: 1 |  sub_425cde
+common_call: 1 |  sub_427394
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_42868c
+common_call: 2 |  sub_428d54
+common_call: 1 |  sub_4290ea
+common_call: 1 |  sub_42957c
+common_call: 3 |  sub_429688
+common_call: 1 |  sub_429fd0
+common_call: 2 |  sub_42b36c
+common_call: 1 |  sub_435d70
+
+Crypt
+
+decryptstrings
+
+encryptstring
+common_call: 1 |  sub_402ace
+common_call: 1 |  sub_402bae
+common_call: 1 |  sub_40343c
+common_call: 1 |  sub_404eb0
+common_call: 1 |  sub_407f99
+common_call: 1 |  sub_40823b
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_408773
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_40963c
+common_call: 1 |  sub_409730
+common_call: 1 |  sub_40ab57
+common_call: 1 |  sub_40b7fd
+common_call: 1 |  sub_40b9fc
+common_call: 1 |  sub_40c3f1
+common_call: 1 |  sub_40c4f4
+common_call: 1 |  sub_40ccf2
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f61b
+common_call: 1 |  sub_40f9fc
+common_call: 1 |  sub_40fec8
+common_call: 1 |  sub_412a24
+common_call: 1 |  sub_413956
+common_call: 1 |  sub_414264
+common_call: 1 |  sub_414d3b
+common_call: 1 |  sub_414f1c
+common_call: 1 |  sub_414f85
+common_call: 1 |  sub_415d84
+common_call: 1 |  sub_41633c
+common_call: 1 |  sub_417182
+common_call: 1 |  sub_42468b
+common_call: 1 |  sub_424c2c
+common_call: 1 |  sub_424d61
+common_call: 1 |  sub_424e2d
+common_call: 1 |  sub_424fde
+common_call: 1 |  sub_42551b
+common_call: 1 |  sub_425cde
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_428d54
+common_call: 1 |  sub_4290ea
+common_call: 1 |  sub_42957c
+common_call: 1 |  sub_429688
+common_call: 1 |  sub_42b36c
+
+encryptstrings
+common_string: 1 |  sub_4133cc
+
+*decrypt
+
+*encrypt
+
+encipher
+
+decipher
+
+code
+
+decode
+
+codestr
+
+decodestr
+
+*EncryptPassword
+
+*DecryptPassword
+
+DameWare
+common_call: 1 |  sub_401170
+common_call: 1 |  sub_40179d
+common_call: 1 |  sub_4021f5
+common_call: 1 |  sub_402ace
+common_call: 1 |  sub_402bae
+common_call: 1 | common_string: 1 |  sub_40343c
+common_call: 2 | common_string: 6 |  sub_404eb0
+common_call: 1 |  sub_405ad0
+common_call: 1 |  sub_407f99
+common_call: 1 |  sub_40823b
+common_call: 2 |  sub_408430
+common_call: 1 |  sub_408773
+common_call: 1 |  sub_4089a8
+common_call: 1 |  sub_40963c
+common_call: 1 |  sub_409730
+common_call: 1 |  sub_40a6eb
+common_call: 2 |  sub_40ab57
+common_call: 1 |  sub_40b7fd
+common_call: 1 |  sub_40b9fc
+common_call: 2 |  sub_40c3f1
+common_call: 1 |  sub_40c4f4
+common_call: 1 |  sub_40c68b
+common_call: 1 | common_string: 1 |  sub_40ccf2
+common_call: 1 |  sub_40f237
+common_call: 1 |  sub_40f61b
+common_call: 2 |  sub_40f9fc
+common_call: 1 | common_string: 1 |  sub_40fec8
+common_call: 2 |  sub_412a24
+common_call: 1 |  sub_412eeb
+common_call: 1 |  sub_4133cc
+common_call: 2 |  sub_413956
+common_call: 2 | common_string: 1 |  sub_414264
+common_call: 1 |  sub_414d3b
+common_call: 1 |  sub_414f1c
+common_call: 1 |  sub_414f85
+common_call: 1 |  sub_415064
+common_call: 1 |  sub_415d84
+common_call: 2 |  sub_41633c
+common_call: 1 |  sub_416c2f
+common_call: 1 |  sub_416eb5
+common_call: 2 |  sub_417182
+common_call: 1 |  sub_42322c
+common_call: 1 |  sub_423a99
+common_call: 1 |  sub_423b46
+common_call: 2 |  sub_42468b
+common_call: 1 |  sub_424c2c
+common_call: 1 |  sub_424d61
+common_call: 1 |  sub_424e2d
+common_call: 1 |  sub_424fde
+common_call: 1 |  sub_4252f2
+common_call: 1 |  sub_42551b
+common_call: 1 |  sub_425cde
+common_call: 1 |  sub_427394
+common_call: 2 | common_string: 1 |  sub_428058
+common_call: 1 |  sub_428d54
+common_call: 1 |  sub_428f60
+common_call: 1 |  sub_4290ea
+common_call: 1 |  sub_42957c
+common_call: 1 |  sub_429688
+common_call: 1 |  sub_429fd0
+common_call: 1 | common_string: 1 |  sub_42af8c
+common_call: 1 | common_string: 1 |  sub_42b36c
+common_call: 1 |  sub_436f40
+common_call: 1 |  sub_437440
+
+check_os
+
+Capture
+common_call: 2 | common_string: 1 |  sub_4037b8
+common_call: 1 |  sub_405ad0
+common_call: 2 |  sub_407378
+common_call: 1 |  sub_408430
+common_call: 1 |  sub_4090fb
+common_call: 1 |  sub_4093f5
+common_call: 1 |  sub_40a6eb
+common_call: 1 |  sub_40b629
+common_call: 1 |  sub_40ccf2
+common_call: 1 |  sub_40f390
+common_call: 1 |  sub_40f4bd
+common_call: 2 |  sub_40f753
+common_call: 1 |  sub_4133cc
+common_call: 1 |  sub_414264
+common_call: 1 |  sub_415744
+common_call: 1 |  sub_41583e
+common_call: 1 |  sub_415d0a
+common_call: 1 |  sub_41633c
+common_call: 1 |  sub_4239dc
+common_call: 1 |  sub_423a3a
+common_call: 1 |  sub_423d7d
+common_call: 1 |  sub_4252f2
+common_call: 1 |  sub_426460
+common_call: 1 |  sub_42664c
+common_call: 1 |  sub_426965
+common_call: 1 |  sub_426c60
+common_call: 1 |  sub_428058
+common_call: 1 |  sub_4370e0
+common_call: 1 |  sub_437340
+
+CaptureFrame
+common_string: 1 |  sub_403cd7
+common_string: 1 |  sub_404102
+
+CaptureVideo
+common_string: 1 |  sub_403cd7
+common_string: 1 |  sub_404102
+
