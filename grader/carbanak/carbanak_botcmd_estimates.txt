@@ -1,0 +1,4216 @@
+plugin_AutorunSidebar/source/dllmain.cpp : SetAutorun
+
+plugin_AutorunSidebar/source/dllmain.cpp : DllMain
+
+plugin_AutorunSidebar/source/dllmain.cpp : Execute
+
+plugin_AutorunSidebar/source/SetAutorun.cpp : _CT_
+
+plugin_AutorunSidebar/source/SetAutorun.cpp : _CT_
+
+plugin_AutorunSidebar/source/SetAutorun.cpp : SetAutorun
+
+botcmd_dll/source/dllmain.cpp : Start
+
+botcmd_dll/source/dllmain.cpp : DllMain
+
+botcmd_dll/source/botcmd_dll.cpp : Start
+
+botcmd_dll/source/DecodeString.cpp : DECODE_STRING
+
+botcmd_dll/source/DecodeString.cpp : DECODE_STRING
+
+core/source/file.cpp : Open
+
+core/source/file.cpp : Write
+common_call: 1 |  sub_410d4e
+common_call: 1 |  sub_410fe4
+common_call: 1 |  sub_4110c3
+common_call: 1 |  sub_4111b1
+common_call: 1 |  sub_4113c9
+
+core/source/file.cpp : Read
+common_call: 1 |  sub_417bc4
+common_call: 1 |  sub_417d1b
+common_call: 1 |  sub_4181bf
+
+core/source/file.cpp : Close
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+core/source/file.cpp : ReadAll
+common_call: 1 |  sub_417bc4
+common_call: 1 |  sub_417d1b
+common_call: 1 |  sub_4181bf
+
+core/source/file.cpp : WriteAll
+common_call: 1 |  sub_410d4e
+common_call: 1 |  sub_410fe4
+common_call: 1 |  sub_4110c3
+common_call: 1 |  sub_4111b1
+common_call: 1 |  sub_4113c9
+
+core/source/file.cpp : Append
+
+core/source/file.cpp : Append
+
+core/source/file.cpp : Size
+
+core/source/file.cpp : IsExists
+
+core/source/file.cpp : Delete
+
+core/source/file.cpp : Copy
+
+core/source/file.cpp : SetAttributes
+
+core/source/file.cpp : GetTempFile
+
+core/source/file.cpp : ListFiles
+common_call: 2 |  sub_4127e3
+
+core/source/file.cpp : linked
+
+core/source/file.cpp : linked
+
+core/source/file.cpp : linked
+
+core/source/file.cpp : linked
+
+core/source/file.cpp : MemFile::Read
+
+core/source/file.cpp : MemFile::Write
+
+core/source/file.cpp : MemFile::Seek
+
+core/source/file.cpp : MemFile::Clear
+
+core/source/debug.cpp : DbgMsg
+common_call: 1 |  sub_4026ca
+
+core/source/cab.cpp : FN_FCIALLOC
+
+core/source/cab.cpp : FN_FCIFREE
+
+core/source/cab.cpp : FN_FCIOPEN
+
+core/source/cab.cpp : FN_FDIOPEN
+
+core/source/cab.cpp : FN_FCIREAD
+
+core/source/cab.cpp : FN_FDIREAD
+
+core/source/cab.cpp : FN_FCIWRITE
+
+core/source/cab.cpp : FN_FDIWRITE
+
+core/source/cab.cpp : FN_FCICLOSE
+
+core/source/cab.cpp : FN_FDICLOSE
+
+core/source/cab.cpp : FN_FCISEEK
+
+core/source/cab.cpp : FN_FDISEEK
+
+core/source/cab.cpp : FN_FCIDELETE
+
+core/source/cab.cpp : FN_FCISTATUS
+
+core/source/cab.cpp : FN_FCIFILEPLACED
+
+core/source/cab.cpp : FN_FCIGETOPENINFO
+
+core/source/cab.cpp : FN_FCIGETTEMPFILE
+
+core/source/cab.cpp : FN_FCIGETNEXTCABINET
+
+core/source/cab.cpp : ExtractCabNotify
+
+core/source/cab.cpp : Cab::Close
+
+core/source/cab.cpp : Cab::AddFile
+
+core/source/cab.cpp : Cab::AddFile
+
+core/source/cab.cpp : Cab::AddFile
+
+core/source/cab.cpp : CallbackAddFile
+
+core/source/cab.cpp : Cab::AddFolder
+
+core/source/cab.cpp : Cab::Save
+
+core/source/cab.cpp : Cab::Extract
+
+core/source/version.cpp : GetWindowsVersion
+common_call: 1 |  sub_405af2
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40f3ae
+
+core/source/version.cpp : GetNTVersion
+
+core/source/version.cpp : GetNTVersion
+
+core/source/memory.cpp : InitHeap
+
+core/source/memory.cpp : ReleaseHeap
+
+core/source/memory.cpp : AllocHeap
+common_call: 1 |  sub_40e7cd
+common_call: 1 |  sub_40e8b8
+
+core/source/memory.cpp : ReallocHeap
+common_call: 1 |  sub_417839
+
+core/source/memory.cpp : FreeHeap
+common_call: 1 |  sub_40e793
+
+core/source/memory.cpp : Init
+
+core/source/memory.cpp : Release
+
+core/source/memory.cpp : Alloc
+
+core/source/memory.cpp : Realloc
+
+core/source/memory.cpp : Free
+
+core/source/memory.cpp : Copy
+
+core/source/memory.cpp : Duplication
+
+core/source/memory.cpp : Set
+
+core/source/memory.cpp : IndexOf
+
+core/source/memory.cpp : IndexOf
+
+core/source/memory.cpp : Find
+
+core/source/memory.cpp : Cmp
+
+core/source/memory.cpp : Data::Realloc
+
+core/source/memory.cpp : Data::MakeEnough
+
+core/source/memory.cpp : Data::SetLen
+
+core/source/memory.cpp : Data::AddLen
+
+core/source/memory.cpp : Data::Append
+
+core/source/memory.cpp : Data::AppendStr
+
+core/source/memory.cpp : Data::Submem
+
+core/source/memory.cpp : Data::Submem
+
+core/source/memory.cpp : Data::Insert
+
+core/source/memory.cpp : Data::Remove
+
+core/source/memory.cpp : Data::IndexOf
+
+core/source/memory.cpp : Data::IndexOf
+
+core/source/memory.cpp : Data::Copy
+
+core/source/memory.cpp : Data::Copy
+
+core/source/memory.cpp : Data::ToString
+
+core/source/memory.cpp : Data::Unlink
+
+core/source/memory.cpp : Data::Link
+
+core/source/memory.cpp : Data::Link
+
+core/source/memory.cpp : Data::Replace
+
+core/source/memory.cpp : *memset
+
+core/source/memory.cpp : memcpy
+
+core/source/memory.cpp : memcmp
+
+core/source/winapi.cpp : sizeof
+
+core/source/winapi.cpp : Init
+
+core/source/winapi.cpp : GetPEB
+
+core/source/winapi.cpp : GetDllBase
+
+core/source/winapi.cpp : GetApiAddr
+
+core/source/winapi.cpp : BuildImportTable
+
+core/source/winapi.cpp : InitBotImportTable
+
+core/source/winapi.cpp : GetImportAddr
+
+core/source/winapi.cpp : GetApiAddrFunc
+common_call: 3 | common_string: 2 |  sub_4026ca
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+
+core/source/rand.cpp : Init
+
+core/source/rand.cpp : Next
+
+core/source/rand.cpp : Gen
+
+core/source/rand.cpp : Gen
+
+core/source/rand.cpp : Gen
+
+core/source/rand.cpp : Condition
+
+core/source/runinmem.cpp : )
+
+core/source/runinmem.cpp : (*typeFuncRun)
+
+core/source/runinmem.cpp : CopySections
+
+core/source/runinmem.cpp : FinalizeSections
+
+core/source/runinmem.cpp : EndModule
+
+core/source/runinmem.cpp : RunNormal
+
+core/source/runinmem.cpp : RunOverlay
+
+core/source/runinmem.cpp : InitAndRun
+
+core/source/runinmem.cpp : SetImageBase
+
+core/source/runinmem.cpp : End
+
+core/source/runinmem.cpp : RunExe
+
+core/source/runinmem.cpp : RunDll
+
+core/source/runinmem.cpp : FreeDll
+
+core/source/runinmem.cpp : RunOverlay
+
+core/source/runinmem.cpp : RunNormal
+
+core/source/runinmem.cpp : SetImageBase
+
+core/source/runinmem.cpp : InitAndRun
+
+core/source/runinmem.cpp : CopySections
+
+core/source/runinmem.cpp : FinalizeSections
+
+core/source/misc.cpp : CalcHash
+
+core/source/misc.cpp : GetMacAddress
+
+core/source/misc.cpp : RunThread
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+core/source/misc.cpp : RunThread
+
+core/source/misc.cpp : Delay
+
+core/source/misc.cpp : CriticalSection::Init
+
+core/source/misc.cpp : CriticalSection::Enter
+common_call: 1 |  sub_40656b
+common_call: 1 |  sub_410bc0
+common_call: 1 |  sub_41381c
+
+core/source/misc.cpp : CriticalSection::Leave
+common_call: 1 |  sub_40657f
+common_call: 1 |  sub_410c08
+common_call: 1 |  sub_41383f
+
+core/source/misc.cpp : ExtractIpPort
+
+core/source/vector.cpp : VectorBase::ReleaseValue
+
+core/source/vector.cpp : VectorBase::Realloc
+
+core/source/vector.cpp : VectorBase::Grow
+
+core/source/vector.cpp : VectorBase::Get
+
+core/source/vector.cpp : VectorBase::Del
+
+core/source/vector.cpp : VectorBase::DelAll
+
+core/source/pe.cpp : GetImageBase
+
+core/source/pe.cpp : GetImageBaseProcess
+
+core/source/pe.cpp : SizeOfImage
+
+core/source/pe.cpp : ProcessRelocs
+
+core/source/pe.cpp : ConvertExeToDll
+
+core/source/pe.cpp : IsValid
+
+core/source/socket.cpp : Init
+
+core/source/socket.cpp : Release
+
+core/source/socket.cpp : HostToIP
+
+core/source/socket.cpp : ConnectIP
+
+core/source/socket.cpp : ConnectHost
+
+core/source/socket.cpp : Write
+
+core/source/socket.cpp : Read
+
+core/source/socket.cpp : Read
+
+core/source/socket.cpp : Close
+
+core/source/socket.cpp : CreateListen
+
+core/source/socket.cpp : Accept
+
+core/source/socket.cpp : TunnelSocketThread
+
+core/source/socket.cpp : LoopTunnel
+
+core/source/socket.cpp : StartTunnel
+
+core/source/reestr.cpp : key
+
+core/source/reestr.cpp : Reestr::Open
+
+core/source/reestr.cpp : Reestr::Create
+
+core/source/reestr.cpp : Reestr::Enum
+
+core/source/reestr.cpp : Reestr::Close
+
+core/source/reestr.cpp : Reestr::GetString
+
+core/source/reestr.cpp : Reestr::GetData
+
+core/source/reestr.cpp : Reestr::SetData
+
+core/source/reestr.cpp : Reestr::SetDWORD
+
+core/source/reestr.cpp : Reestr::DelValue
+
+core/source/reestr.cpp : Reestr::SetString
+
+core/source/http.cpp : Request::Init
+
+core/source/http.cpp : Request::SetHost
+
+core/source/http.cpp : Request::SetFile
+
+core/source/http.cpp : Request::SetUrl
+
+core/source/http.cpp : Request::NameProtocol
+
+core/source/http.cpp : Request::VerProtocol
+
+core/source/http.cpp : Request::GetUrl
+
+core/source/http.cpp : Request::CreateHeader
+
+core/source/http.cpp : Request::SendRecv
+
+core/source/http.cpp : ChunkedToNormal
+
+core/source/http.cpp : Request::Exec
+
+core/source/http.cpp : Request::AnalysisHeader
+
+core/source/http.cpp : Request::Get
+
+core/source/http.cpp : Request::Post
+
+core/source/http.cpp : Request::SetContentType
+
+core/source/http.cpp : Request::SetContentWebForm
+
+core/source/http.cpp : Request::SetContentMultipart
+
+core/source/http.cpp : UrlEncode
+
+core/source/http.cpp : request
+
+core/source/http.cpp : PostDataMultipart::AddName
+
+core/source/http.cpp : PostDataMultipart::AddValue
+
+core/source/http.cpp : PostDataMultipart::AddFile
+
+core/source/http.cpp : PostDataMultipart::End
+
+core/source/FileTools.cpp : (*typeCallbackAfterPatch)
+
+core/source/FileTools.cpp : Patch
+
+core/source/FileTools.cpp : CalcCheckSum
+
+core/source/FileTools.cpp : PatchExe
+
+core/source/pipe.cpp : SendAnswer
+
+core/source/pipe.cpp : InitServerPipeResponse
+
+core/source/pipe.cpp : PipePoint::SetName
+
+core/source/pipe.cpp : PipePoint::GenName
+
+core/source/pipe.cpp : PipePoint::Close
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+core/source/pipe.cpp : PipePoint::GetFullName
+
+core/source/pipe.cpp : PipePoint::Read
+common_call: 1 |  sub_417bc4
+common_call: 1 |  sub_417d1b
+common_call: 1 |  sub_4181bf
+
+core/source/pipe.cpp : PipePoint::Write
+common_call: 1 |  sub_410c1f
+common_call: 1 |  sub_410d4e
+common_call: 1 |  sub_410fe4
+common_call: 1 |  sub_4110c3
+common_call: 1 |  sub_4111b1
+common_call: 1 |  sub_4113c9
+
+core/source/pipe.cpp : PipeServer::Handler
+
+core/source/pipe.cpp : PipeServer::Disconnect
+
+core/source/pipe.cpp : PipeServer::Start
+common_call: 2 |  sub_403074
+
+core/source/pipe.cpp : PipeServerThread
+
+core/source/pipe.cpp : PipeServer::StartAsync
+
+core/source/pipe.cpp : PipeServer::Loop
+
+core/source/pipe.cpp : HandlerAsyncThread
+
+core/source/pipe.cpp : PipeServer::HandlerAsync
+
+core/source/pipe.cpp : PipeServer::Stop
+
+core/source/pipe.cpp : PipeResponse::Handler
+
+core/source/pipe.cpp : PipeClient::Connect
+common_call: 1 |  sub_4026ca
+common_call: 2 | common_string: 1 |  sub_403074
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+
+core/source/pipe.cpp : PipeClient::Write
+
+core/source/pipe.cpp : PipeClient::Request
+
+core/source/pipe.cpp : PipeClient::Send
+
+core/source/pipe.cpp : PipeClient::Send
+
+core/source/pipe.cpp : PipeClient::Send
+
+core/source/pipe.cpp : PipeClient::Send
+
+core/source/string.cpp : Init
+
+core/source/string.cpp : Release
+
+core/source/string.cpp : Len
+
+core/source/string.cpp : Copy
+
+core/source/string.cpp : Copy
+
+core/source/string.cpp : Duplication
+
+core/source/string.cpp : Alloc
+
+core/source/string.cpp : Join
+
+core/source/string.cpp : FormatVA
+
+core/source/string.cpp : Format
+
+core/source/string.cpp : Format
+
+core/source/string.cpp : Hash
+
+core/source/string.cpp : Upper
+
+core/source/string.cpp : Upper
+
+core/source/string.cpp : Lower
+
+core/source/string.cpp : Lower
+
+core/source/string.cpp : Cmp
+
+core/source/string.cpp : IndexOf
+
+core/source/string.cpp : IndexOf
+
+core/source/string.cpp : ReplaceChars
+
+core/source/string.cpp : ToInt
+
+core/source/string.cpp : DecToHex
+
+core/source/string.cpp : ToStringBegin
+
+core/source/string.cpp : ToStringEnd
+
+core/source/string.cpp : ToString
+
+core/source/string.cpp : ToString
+
+core/source/string.cpp : LTrim
+
+core/source/string.cpp : RTrim
+
+core/source/string.cpp : Trim
+
+core/source/string.cpp : ToWideChar
+common_call: 1 |  sub_40fe91
+common_call: 1 |  sub_413be4
+common_call: 1 |  sub_41580c
+common_call: 1 |  sub_417edb
+common_call: 1 |  sub_418a10
+
+core/source/string.cpp : ToWideChar
+
+core/source/string.cpp : Ignore
+
+core/source/string.cpp : Len
+
+core/source/string.cpp : ToWin1251
+common_call: 1 |  sub_40dc06
+common_call: 1 |  sub_40ffa5
+common_call: 1 |  sub_410d4e
+common_call: 1 |  sub_4111b1
+common_call: 1 |  sub_413307
+common_call: 1 |  sub_41580c
+
+core/source/string.cpp : Alloc
+
+core/source/string.cpp : IndexOf
+
+core/source/string.cpp : Chr
+
+core/source/string.cpp : StringBuilder::Grow
+
+core/source/string.cpp : StringBuilder::Cat
+
+core/source/string.cpp : StringBuilder::Cat
+
+core/source/string.cpp : StringBuilder::Cat
+
+core/source/string.cpp : StringBuilder::Cat
+
+core/source/string.cpp : StringBuilder::Copy
+
+core/source/string.cpp : StringBuilder::UpdateLen
+
+core/source/string.cpp : StringBuilder::SetLen
+
+core/source/string.cpp : StringBuilder::IndexOf
+
+core/source/string.cpp : StringBuilder::IndexOf
+
+core/source/string.cpp : StringBuilder::Substring
+
+core/source/string.cpp : StringBuilder::Substring
+
+core/source/string.cpp : StringBuilder::Insert
+
+core/source/string.cpp : StringBuilder::Insert
+
+core/source/string.cpp : StringBuilder::Replace
+
+core/source/string.cpp : StringBuilder::Replace
+
+core/source/string.cpp : StringBuilder::ReplaceChar
+
+core/source/string.cpp : StringBuilder::Split
+
+core/source/string.cpp : StringBuilder::Split
+
+core/source/string.cpp : StringBuilder::ToInt
+
+core/source/string.cpp : StringBuilder::FillEndStr
+
+core/source/string.cpp : StringBuilder::Set
+
+core/source/string.cpp : StringBuilder::Right
+
+core/source/string.cpp : StringBuilder::ToWin1251
+
+core/source/sniffer.cpp : FilterIP
+
+core/source/sniffer.cpp : Filter
+
+core/source/HttpProxy.cpp : port
+
+core/source/HttpProxy.cpp : HttpProxyThread
+
+core/source/HttpProxy.cpp : HttpProxy::Start
+
+core/source/HttpProxy.cpp : HttpProxy::StartAsync
+
+core/source/HttpProxy.cpp : HttpRequestThread
+
+core/source/HttpProxy.cpp : HttpProxy::Loop
+
+core/source/keylogger.cpp : FilterMsgBase::Check
+
+core/source/keylogger.cpp : FilterMsg::Check
+
+core/source/keylogger.cpp : FilterMsg
+
+core/source/keylogger.cpp : FilterKey::Check
+
+core/source/keylogger.cpp : FilterMsgAnd::Check
+
+core/source/keylogger.cpp : FilterMsgOr::Check
+
+core/source/keylogger.cpp : ExecForFilterMsg::Exec
+
+core/source/keylogger.cpp : ExecForFilterMsg::ExecCondition
+
+core/source/keylogger.cpp : DispatchMessageParamsToFilter
+
+core/source/keylogger.cpp : FilterToDispatchMessageParams
+
+core/source/keylogger.cpp : FilterDispatchMessage
+
+core/source/keylogger.cpp : FilterDispatchMessageWnd
+
+core/source/keylogger.cpp : JoinDispatchMessage
+
+core/source/keylogger.cpp : JoinDispatchMessageWnd
+
+core/source/PipeSocket.cpp : PipeSocketServer::Disconnect
+
+core/source/PipeSocket.cpp : PipeSocketServer::Handler
+
+core/source/PipeSocket.cpp : EstablishConnection
+
+core/source/PipeSocket.cpp : PipeClient
+
+core/source/PipeSocket.cpp : PipeSocketClient::ConnectIP
+
+core/source/PipeSocket.cpp : PipeSocketClient::Write
+
+core/source/PipeSocket.cpp : PipeSocketClient::Read
+
+core/source/PipeSocket.cpp : PipeSocketClient::Close
+
+core/source/proxy.cpp : Connector::Add
+
+core/source/proxy.cpp : Connector::Del
+
+core/source/proxy.cpp : ConnectToProxy
+
+core/source/proxy.cpp : Connector::Connect
+
+core/source/core.cpp : Init
+
+core/source/core.cpp : Release
+
+core/source/core.cpp : InitBot
+
+core/source/core.cpp : ReleaseBot
+
+core/source/ThroughTunnel.cpp : portOut
+
+core/source/ThroughTunnel.cpp : ThroughTunnelThread
+
+core/source/ThroughTunnel.cpp : ThroughTunnel::Start
+
+core/source/ThroughTunnel.cpp : ThroughTunnel::StartAsync
+
+core/source/ThroughTunnel.cpp : ThroughTunnel::Connected
+
+core/source/ThroughTunnel.cpp : ThroughTunnel::Loop
+
+core/source/crypt.cpp : Init
+
+core/source/crypt.cpp : Release
+
+core/source/crypt.cpp : ToBase64
+
+core/source/crypt.cpp : EncodeCharBase64
+
+core/source/crypt.cpp : ToBase64
+
+core/source/crypt.cpp : FromBase64
+
+core/source/crypt.cpp : Name
+
+core/source/crypt.cpp : FileName
+
+core/source/crypt.cpp : GenerateKeyRC2
+
+core/source/crypt.cpp : EncodeRC2
+
+core/source/crypt.cpp : DecodeRC2
+
+core/source/crypt.cpp : EncodeDecodeXorVector
+
+core/source/path.cpp : GetSystemDirectore
+
+core/source/path.cpp : GetStartupExe
+common_call: 1 |  sub_40d785
+
+core/source/path.cpp : GetCSIDLPath
+
+core/source/path.cpp : GetCSIDLPath
+
+core/source/path.cpp : GetTempPath
+
+core/source/path.cpp : GetFileName
+
+core/source/path.cpp : GetFileName
+
+core/source/path.cpp : GetFileExt
+
+core/source/path.cpp : ChangeExt
+
+core/source/path.cpp : GetPathName
+
+core/source/path.cpp : Combine
+
+core/source/path.cpp : Combine
+
+core/source/path.cpp : Combine
+
+core/source/path.cpp : Combine
+
+core/source/path.cpp : Combine
+
+core/source/path.cpp : Combine
+
+core/source/path.cpp : Combine
+
+core/source/path.cpp : AppendFile
+
+core/source/path.cpp : CreateDirectory
+
+core/source/path.cpp : DeleteDirectory
+
+core/source/path.cpp : RemoveEndSeparator
+
+core/source/Service.cpp : Start
+common_call: 1 |  sub_4026ca
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+
+core/source/Service.cpp : Stop
+
+core/source/Service.cpp : GetListServices
+
+core/source/Service.cpp : Delete
+
+core/source/Service.cpp : GetFileName
+
+core/source/Service.cpp : OffDcomlaunch
+
+core/source/Service.cpp : CreateNameService
+
+core/source/Service.cpp : GetNameService
+
+core/source/Service.cpp : Create
+common_call: 1 |  sub_4026ca
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+
+core/source/Service.cpp : SetStartType
+
+core/source/misc/FileMonitoring.cpp : Monitoring
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+core/source/misc/KillLoadedModule.cpp : EnumModules
+
+core/source/misc/KillLoadedModule.cpp : KillLoadedModule
+
+core/source/misc/GetCommandLineProcess.cpp : GetCommandLine
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+core/source/misc/DeleteFileHard.cpp : DeleteHard
+
+core/source/misc/KillBlockingProcess.cpp : GetInfoTable
+
+core/source/misc/KillBlockingProcess.cpp : GetFileHandleType
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+core/source/misc/KillBlockingProcess.cpp : ZwQueryInformationFileThread
+
+core/source/misc/KillBlockingProcess.cpp : FindBlockingProcesses
+common_call: 1 |  sub_405af2
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40f3ae
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+core/source/misc/KillBlockingProcess.cpp : KillBlocking
+
+core/source/util/users.cpp : GetNameSid
+
+core/source/util/users.cpp : _CT_
+
+core/source/util/users.cpp : AddRemoteUser
+
+core/source/util/users.cpp : Delete
+
+core/source/util/users.cpp : TokenUserCallback
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+core/source/util/users.cpp : GetToken
+
+core/source/util/mutex.cpp : CreateNameMutex
+
+core/source/util/mutex.cpp : Create
+common_call: 1 |  sub_4026ca
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+
+core/source/util/mutex.cpp : Release
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+core/source/util/screenshot.cpp : GetEncoderClsid
+
+core/source/util/screenshot.cpp : Init
+
+core/source/util/screenshot.cpp : Release
+
+core/source/util/screenshot.cpp : InitGDIPlus
+
+core/source/util/screenshot.cpp : MakeBitmap
+common_call: 1 |  sub_4055ff
+
+core/source/util/screenshot.cpp : MakeBmp
+
+core/source/util/screenshot.cpp : MakePng
+
+core/source/util/screenshot.cpp : Make
+
+core/source/util/window.cpp : GetCaption
+
+core/source/util/window.cpp : GetNameClass
+
+core/source/util/window.cpp : GetParent
+
+core/source/util/window.cpp : GetTopParent
+
+core/source/util/window.cpp : GetParentWithCaption
+
+core/source/hook/hook.cpp : sizeof
+
+core/source/hook/hook.cpp : sizeof
+
+core/source/hook/hook.cpp : Init
+
+core/source/hook/hook.cpp : Release
+
+core/source/hook/hook.cpp : GetAsmLen
+
+core/source/hook/hook.cpp : Set
+
+core/source/hook/hook.cpp : Set
+
+core/source/hook/hook.cpp : Set
+
+core/source/hook/hook.cpp : Set
+
+core/source/hook/hook.cpp : GetHook
+
+core/source/hook/hook.cpp : Join
+
+core/source/hook/hook.cpp : GetJoinFunc
+
+core/source/hook/hook.cpp : GetRealFunc
+
+core/source/hook/hook.cpp : GetProxyFunc
+
+core/source/hook/hook.cpp : Join_Func
+
+core/source/hook/DispatchMessage.cpp : HandlerBefore
+
+core/source/hook/DispatchMessage.cpp : HandlerAfter
+
+core/source/hook/DispatchMessage.cpp : Hook_DispatchMessageA
+
+core/source/hook/DispatchMessage.cpp : Hook_DispatchMessageW
+
+core/source/hook/DispatchMessage.cpp : Join_DispatchMessage
+
+core/source/hook/ZwResumeThread.cpp : Hook_ZwResumeThread
+
+core/source/hook/ZwResumeThread.cpp : Join_ZwResumeThread
+
+core/source/hook/DestroyWindow.cpp : Hook_DestroyWindow
+
+core/source/hook/DestroyWindow.cpp : Join_DestroyWindow
+
+core/source/hook/GetMessage.cpp : HandlerBefore
+
+core/source/hook/GetMessage.cpp : HandlerAfter
+
+core/source/hook/GetMessage.cpp : Hook_GetMessageA
+
+core/source/hook/GetMessage.cpp : Hook_GetMessageW
+
+core/source/hook/GetMessage.cpp : Join_GetMessage
+
+core/source/hook/PeekMessage.cpp : HandlerBefore
+
+core/source/hook/PeekMessage.cpp : HandlerAfter
+
+core/source/hook/PeekMessage.cpp : Hook_PeekMessageA
+
+core/source/hook/PeekMessage.cpp : Hook_PeekMessageW
+
+core/source/hook/PeekMessage.cpp : Join_PeekMessage
+
+core/source/hook/x86/zdisasm.cpp : GetInstLenght
+
+core/source/abstract/GetUid1.cpp : _GetUid1
+
+core/source/injects/InjectIntoProcess3.cpp : InjectIntoProcess3
+
+core/source/injects/InjectIntoProcess1.cpp : InjectIntoProcess1
+
+core/source/injects/explorer.cpp : RunExplorer
+
+core/source/injects/explorer.cpp : JmpToExplorer
+
+core/source/injects/explorer2.cpp : *typeSetWindowLongA)
+
+core/source/injects/explorer2.cpp : *typeSendNotifyMessageA)
+
+core/source/injects/explorer2.cpp : Inject32Start
+
+core/source/injects/explorer2.cpp : Inject32End
+
+core/source/injects/explorer2.cpp : GetKiUserApcDispatcherProc
+common_call: 1 |  sub_406060
+common_call: 1 |  sub_40dfa2
+common_call: 1 |  sub_40f487
+
+core/source/injects/explorer2.cpp : CompareMemoryAndRead
+
+core/source/injects/explorer2.cpp : FindCodeInProcessCode
+
+core/source/injects/explorer2.cpp : FindCodeInProcess
+
+core/source/injects/explorer2.cpp : Explore32CreateSH
+common_call: 1 |  sub_406060
+common_call: 1 |  sub_40dfa2
+common_call: 1 |  sub_40f487
+
+core/source/injects/explorer2.cpp : OpenAndMapSection
+
+core/source/injects/explorer2.cpp : OpenSectionForInject
+
+core/source/injects/explorer2.cpp : InjectExplore32CreateSH
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+core/source/injects/explorer2.cpp : Inject32Normal
+
+core/source/injects/explorer2.cpp : InjectToProcess32
+common_call: 1 |  sub_406060
+common_call: 1 |  sub_40dfa2
+common_call: 1 |  sub_40f487
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+core/source/injects/explorer2.cpp : InjectToExplorer32
+
+core/source/injects/InjectCode.cpp : InjectCode
+
+core/source/injects/InjectCode2.cpp : InjectCode2
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+core/source/injects/RunInjectCode.cpp : RunInjectCode
+
+core/source/injects/RunInjectCode2.cpp : RunInjectCode2
+
+core/source/injects/InjectIntoProcess2.cpp : InjectIntoProcess2
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+core/source/injects/svchost.cpp : RunSvchost
+
+core/source/injects/svchost.cpp : JmpToSvchost
+
+core/source/injects/svchost.cpp : JmpToSvchost
+
+core/source/injects/RunInjectCode3.cpp : RunInjectCode3
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+core/source/process/sendmsg.cpp : SendMsg
+
+core/source/process/sendmsg.cpp : SendMsg
+common_call: 1 |  sub_4055ff
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+core/source/process/kill.cpp : Kill1
+common_call: 1 |  sub_405af2
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40f3ae
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+core/source/process/kill.cpp : Kill2
+common_call: 1 |  sub_4055ff
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+core/source/process/kill.cpp : Kill
+
+core/source/process/kill.cpp : Kill
+
+core/source/process/exec.cpp : ExecVA
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+core/source/process/exec.cpp : Exec
+
+core/source/process/exec.cpp : Exec
+
+core/source/process/exec.cpp : Exec
+
+core/source/process/exec.cpp : Exec
+
+core/source/process/exec.cpp : Exec
+
+core/source/process/exec.cpp : ExecAsCurrUser
+
+core/source/process/misc_process.cpp : CurrentPID
+common_call: 1 |  sub_4055ff
+
+core/source/process/misc_process.cpp : CurrentHash
+
+core/source/process/misc_process.cpp : Name
+
+core/source/process/misc_process.cpp : Name
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+core/source/process/misc_process.cpp : GetPIDCallback
+
+core/source/process/misc_process.cpp : GetPID
+
+core/source/process/misc_process.cpp : GetPID
+
+core/source/process/misc_process.cpp : GetPID
+
+core/source/process/misc_process.cpp : ListProcess
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+core/source/process/misc_process.cpp : GetExplorerPID
+
+core/source/process/misc_process.cpp : IsAlive
+
+core/source/elevation/PathRec.cpp : NtFreeVirtualMemory
+
+core/source/elevation/PathRec.cpp : ShellCode
+
+core/source/elevation/PathRec.cpp : WatchdogThread
+common_call: 1 |  sub_4055ff
+
+core/source/elevation/PathRec.cpp : FindAFixAddress
+
+core/source/elevation/PathRec.cpp : CheckMagicDword
+
+core/source/elevation/PathRec.cpp : PathRec
+common_call: 1 |  sub_4026ca
+common_call: 1 |  sub_406060
+common_call: 1 |  sub_40dfa2
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_40f487
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+
+core/source/elevation/UACBypass.cpp : InfectImage
+common_string: 7 |  sub_40399f
+
+core/source/elevation/UACBypass.cpp : UACBypass
+common_string: 7 |  sub_40399f
+
+core/source/elevation/UACBypass.cpp : *typeLoadLibraryA)
+
+core/source/elevation/UACBypass.cpp : *typeWinExec)
+
+core/source/elevation/UACBypass.cpp : *typeExitProcess)
+
+core/source/elevation/UACBypass.cpp : *typeDLL_MAIN)
+
+core/source/elevation/UACBypass.cpp : Shellcode
+
+core/source/elevation/UACBypass.cpp : Shellcode_end
+
+core/source/elevation/UACBypass.cpp : Shellcode
+
+core/source/elevation/UACBypass.cpp : Shellcode_end
+
+core/source/elevation/UACBypass.cpp : InfectImage
+common_string: 7 |  sub_40399f
+
+core/source/elevation/EUDC.cpp : EnableEUDC
+common_call: 1 |  sub_4026ca
+
+core/source/elevation/EUDC.cpp : SetSystemRights
+common_call: 1 |  sub_4026ca
+
+core/source/elevation/EUDC.cpp : HookAsm
+
+core/source/elevation/EUDC.cpp : EUDC
+common_call: 1 |  sub_412bc0
+
+core/source/elevation/COM.cpp : dllloader_start
+
+core/source/elevation/COM.cpp : winexec_start
+
+core/source/elevation/COM.cpp : SetFunc
+
+core/source/elevation/COM.cpp : MapBinary
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+core/source/elevation/COM.cpp : RvaToOffset
+
+core/source/elevation/COM.cpp : WriteFileShellcode
+common_call: 1 |  sub_406060
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40dfa2
+common_call: 1 |  sub_40f487
+
+core/source/elevation/COM.cpp : COM
+common_call: 1 |  sub_4026ca
+common_string: 10 |  sub_403f45
+common_call: 1 |  sub_405af2
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_40f3ae
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+core/source/elevation/ndproxy.cpp : NTSTATUS
+common_call: 1 |  sub_4026ca
+common_string: 9 |  sub_4034d0
+common_call: 1 |  sub_406060
+common_call: 1 |  sub_40dfa2
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_40f487
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+core/source/elevation/ndproxy.cpp : =
+common_call: 1 |  sub_4026ca
+common_string: 9 |  sub_4034d0
+common_call: 1 |  sub_406060
+common_call: 1 |  sub_40dfa2
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_40f487
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+core/source/elevation/ndproxy.cpp : NDProxy
+common_call: 1 |  sub_4026ca
+common_string: 9 |  sub_4034d0
+common_call: 1 |  sub_406060
+common_call: 1 |  sub_40dfa2
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_40f487
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+core/source/elevation/sdrop.cpp : )
+
+core/source/elevation/sdrop.cpp : *PSLOOKUPPROCESSBYPROCESSID)
+
+core/source/elevation/sdrop.cpp : GetInfoTable
+
+core/source/elevation/sdrop.cpp : FindHalQuerySystemInformation
+
+core/source/elevation/sdrop.cpp : HalDispatchRedirect
+
+core/source/elevation/sdrop.cpp : PressKernelMem
+
+core/source/elevation/sdrop.cpp : FreeKernelMem
+
+core/source/elevation/sdrop.cpp : FindAndReplaceProcessToken
+
+core/source/elevation/sdrop.cpp : ShellCode
+
+core/source/elevation/sdrop.cpp : ExecuteExploit
+
+core/source/elevation/sdrop.cpp : Sdrop
+common_call: 1 |  sub_4026ca
+common_call: 1 |  sub_406060
+common_call: 1 |  sub_40dfa2
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_40f487
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+core/source/elevation/BlackEnergy2.cpp : GetBypassSbd
+
+core/source/elevation/BlackEnergy2.cpp : RunShellExecuteEx
+
+core/source/elevation/BlackEnergy2.cpp : BlackEnergy2
+
+core/source/elevation/BlackEnergy2.cpp : GetBypassSbd
+
+core/source/elevation/BlackEnergy2.cpp : RunShellExecuteEx
+
+core/source/elevation/CVE2014-4113.cpp : *PZWQUERYSYSTENINFORMATION)
+
+core/source/elevation/CVE2014-4113.cpp : *PZWALLOCATEVIRTUALMEMORY)
+
+core/source/elevation/CVE2014-4113.cpp : *PLOOKUPPROCESSBYID)
+
+core/source/elevation/CVE2014-4113.cpp : *PTICURRENT)
+
+core/source/elevation/CVE2014-4113.cpp : InitTokenOffset
+
+core/source/elevation/CVE2014-4113.cpp : GetKrnlNtBase
+common_call: 1 |  sub_401771
+
+core/source/elevation/CVE2014-4113.cpp : InitExpVars
+common_call: 1 |  sub_4055ff
+common_call: 1 |  sub_406060
+common_call: 1 |  sub_406100
+common_call: 1 |  sub_4062b2
+common_call: 2 |  sub_40dfa2
+common_call: 1 |  sub_40f487
+common_call: 1 |  sub_40f523
+common_call: 1 |  sub_40f960
+
+core/source/elevation/CVE2014-4113.cpp : CallPtiCurrent
+common_call: 1 |  sub_406060
+common_call: 1 |  sub_406100
+common_call: 1 |  sub_4062b2
+common_call: 2 |  sub_40dfa2
+common_call: 1 |  sub_40f487
+common_call: 1 |  sub_40f523
+common_call: 1 |  sub_40f960
+
+core/source/elevation/CVE2014-4113.cpp : ShellCode
+
+core/source/elevation/CVE2014-4113.cpp : InitExploitMem
+common_call: 1 |  sub_405af2
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40f3ae
+
+core/source/elevation/CVE2014-4113.cpp : MyWndProc
+
+core/source/elevation/CVE2014-4113.cpp : InitPopupMenu
+common_call: 1 |  sub_4026ca
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+
+core/source/elevation/CVE2014-4113.cpp : NewWndProc
+
+core/source/elevation/CVE2014-4113.cpp : WndProcHook
+
+core/source/elevation/CVE2014-4113.cpp : ThreadProc
+common_call: 1 |  sub_4055ff
+
+core/source/elevation/CVE2014-4113.cpp : CVE2014_4113
+common_call: 1 |  sub_4026ca
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+
+plugin_rdpwrap/source/dllmain.cpp : RdpWrapInstall
+
+plugin_rdpwrap/source/dllmain.cpp : RdpWrapUninstall
+
+plugin_rdpwrap/source/dllmain.cpp : DllMain
+
+plugin_rdpwrap/source/dllmain.cpp : install
+
+plugin_rdpwrap/source/dllmain.cpp : uninstall
+
+plugin_rdpwrap/source/install.cpp : _CT_
+
+plugin_rdpwrap/source/install.cpp : _CT_
+
+plugin_rdpwrap/source/install.cpp : _CT_
+
+plugin_rdpwrap/source/install.cpp : CreateNameRdpWrapDll
+common_call: 1 |  sub_405af2
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40f3ae
+
+plugin_rdpwrap/source/install.cpp : FixedReestr
+common_call: 1 |  sub_405af2
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40f3ae
+
+plugin_rdpwrap/source/install.cpp : GetNameTermServiceDll
+common_call: 1 |  sub_405af2
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40f3ae
+
+plugin_rdpwrap/source/install.cpp : RdpWrapInstall
+common_call: 1 |  sub_405af2
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40f3ae
+
+plugin_rdpwrap/source/install.cpp : RdpWrapUninstall
+
+plugin_rdpwrap/source/install.cpp : GetNameTermServiceDll
+common_call: 1 |  sub_405af2
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40f3ae
+
+plugin_rdpwrap/source/install.cpp : ListFilesCallback
+
+plugin_rdpwrap/source/install.cpp : CreateNameRdpWrapDll
+common_call: 1 |  sub_405af2
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40f3ae
+
+plugin_rdpwrap/source/install.cpp : FixedReestr
+common_call: 1 |  sub_405af2
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40f3ae
+
+bot/source/main.cpp : SetAutorun
+common_call: 2 |  sub_4026ca
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40e0da
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+
+bot/source/main.cpp : IsAutorun
+common_call: 2 |  sub_4026ca
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40e0da
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+
+bot/source/main.cpp : InstallBot
+common_call: 2 |  sub_4026ca
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40e0da
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+
+bot/source/main.cpp : IsPresentKAV
+common_call: 2 |  sub_4026ca
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40e0da
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+
+bot/source/main.cpp : IsDuplication
+common_call: 2 |  sub_4026ca
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40e0da
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+
+bot/source/main.cpp : main
+common_call: 2 |  sub_4026ca
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40e0da
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+
+bot/source/main.cpp : DllThread
+
+bot/source/main.cpp : main_dll
+common_call: 1 |  sub_405af2
+common_call: 1 |  sub_40d785
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40f3ae
+
+bot/source/main.cpp : DllMain
+
+bot/source/main.cpp : InstallBot
+
+bot/source/main.cpp : StartBot
+common_call: 1 |  sub_4026ca
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+
+bot/source/main.cpp : RestartBot
+
+bot/source/main.cpp : StartBotApart
+
+bot/source/main.cpp : SetAutorun
+common_call: 2 |  sub_4026ca
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40e0da
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+
+bot/source/main.cpp : IsAutorun
+common_call: 2 |  sub_4026ca
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40e0da
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+
+bot/source/main.cpp : InstallBotThread
+
+bot/source/main.cpp : IsPresentKAV
+common_call: 2 |  sub_4026ca
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40e0da
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+
+bot/source/main.cpp : IsDuplication
+common_call: 2 |  sub_4026ca
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40e0da
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+
+bot/source/ReflectiveLoader.cpp : ror
+
+bot/source/ReflectiveLoader.cpp : hash
+
+bot/source/ReflectiveLoader.cpp : __declspec
+
+bot/source/rootkit.cpp : RootkitEntry
+
+bot/source/rootkit.cpp : FuncZwResumeThread
+
+bot/source/rootkit.cpp : InjectCrossRootkit
+
+bot/source/rootkit.cpp : InjectToProcessRootkit
+
+bot/source/rootkit.cpp : InjectToProcessRootkit
+
+bot/source/rootkit.cpp : JumpInSvchostRootkit
+
+bot/source/rootkit.cpp : JumpInSvchostRootkit
+
+bot/source/rootkit.cpp : InitRootkit
+
+bot/source/rootkit.cpp : SetInjectPID
+
+bot/source/explorer_loop.cpp : ExplorerLoop
+
+bot/source/explorer_loop.cpp : ExplorerEntry
+
+bot/source/explorer_loop.cpp : ExplorerEntryFromService
+
+bot/source/explorer_loop.cpp : WaitRunExplorer
+
+bot/source/explorer_loop.cpp : RunInExplorer2
+
+bot/source/explorer_loop.cpp : RunInExplorer
+
+bot/source/tools.cpp : AddAllowedprogram
+
+bot/source/tools.cpp : KillOs1
+common_call: 1 |  sub_410d4e
+common_call: 1 |  sub_410fe4
+common_call: 1 |  sub_4110c3
+common_call: 1 |  sub_4111b1
+common_call: 1 |  sub_4113c9
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+bot/source/tools.cpp : KillOs2
+
+bot/source/tools.cpp : KillOs
+
+bot/source/tools.cpp : Reboot
+
+bot/source/Manager.cpp : HandlerManagerServer
+
+bot/source/Manager.cpp : HandlerMimikatzRDP
+
+bot/source/Manager.cpp : HandlerVideoServerConnect
+
+bot/source/Manager.cpp : HandlerVideoServerDisconnect
+
+bot/source/Manager.cpp : ManagerServer::ManagerServer
+
+bot/source/Manager.cpp : ManagerServer::Handler
+
+bot/source/Manager.cpp : ManagerServer::Disconnect
+
+bot/source/Manager.cpp : HandlerManagerServer
+
+bot/source/Manager.cpp : ManagerServer::HandlerCmdAdminPanel
+
+bot/source/Manager.cpp : HandlerMimikatzRDP
+
+bot/source/Manager.cpp : ManagerServer::GetNewPipeInet
+
+bot/source/Manager.cpp : ManagerServer::GetPipeInet
+
+bot/source/Manager.cpp : ManagerServer::AddSharedFile
+
+bot/source/Manager.cpp : ManagerServer::RegAdminPanel
+
+bot/source/Manager.cpp : ManagerServer::RegTaskServer
+
+bot/source/Manager.cpp : ManagerServer::RegVideoServer
+
+bot/source/Manager.cpp : ManagerServer::RegMonitoringProcesses
+
+bot/source/Manager.cpp : ManagerServer::GetAdminCmd
+
+bot/source/Manager.cpp : ManagerServer::SendData
+common_call: 1 |  sub_405af2
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40f3ae
+
+bot/source/Manager.cpp : ManagerServer::CmdExec
+
+bot/source/Manager.cpp : ManagerServer::LoadFile
+
+bot/source/Manager.cpp : ManagerServer::ExecRequest
+
+bot/source/Manager.cpp : ManagerServer::LoadPlugin
+
+bot/source/Manager.cpp : ManagerServer::LoadPluginAdminka
+
+bot/source/Manager.cpp : ManagerServer::LoadPluginServer
+
+bot/source/Manager.cpp : ManagerServer::StartVideo
+
+bot/source/Manager.cpp : ManagerServer::SendFirstVideoFrame
+
+bot/source/Manager.cpp : ManagerServer::StopVideo
+
+bot/source/Manager.cpp : ManagerServer::SendFileToVideoServer
+
+bot/source/Manager.cpp : ManagerServer::SendFolderPackToVideoServer
+
+bot/source/Manager.cpp : ManagerServer::StartVideoServerTunnel
+
+bot/source/Manager.cpp : ManagerServer::SendVideoLog
+
+bot/source/Manager.cpp : ManagerServer::CreateVideoLog
+
+bot/source/Manager.cpp : ManagerServer::CreateVideoStream
+
+bot/source/Manager.cpp : IdStreamRecv
+
+bot/source/Manager.cpp : ManagerServer::CreateVideoStream
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+bot/source/Manager.cpp : ManagerServer::SendVideoStream
+
+bot/source/Manager.cpp : ManagerServer::CloseStream
+
+bot/source/Manager.cpp : ManagerServer::AddVideoServers
+
+bot/source/Manager.cpp : ManagerServer::VideoServerRestart
+
+bot/source/Manager.cpp : HandlerVideoServerConnect
+
+bot/source/Manager.cpp : HandlerVideoServerDisconnect
+
+bot/source/Manager.cpp : HandlerVideoServerRestart
+
+bot/source/Manager.cpp : ManagerServer::AddSharedFile
+
+bot/source/Manager.cpp : ManagerServer::GetSharedFile
+
+bot/source/Manager.cpp : ManagerServer::MimikatzPathRDP
+
+bot/source/Manager.cpp : ManagerServer::StartHttpProxy
+
+bot/source/Manager.cpp : ManagerServer::StartIpPortProxy
+
+bot/source/Manager.cpp : CmdProxy
+
+bot/source/Manager.cpp : ManagerServer::SetProxy
+
+bot/source/Manager.cpp : ManagerServer::DelProxy
+
+bot/source/Manager.cpp : ManagerServer::GetGlobalState
+
+bot/source/Manager.cpp : ManagerServer::SetGlobalState
+
+bot/source/Manager.cpp : ManagerServer::AddStartCmd
+
+bot/source/Manager.cpp : ManagerServer::DuplData
+
+bot/source/Manager.cpp : ManagerServer::SetNewHostsAdminki
+
+bot/source/Manager.cpp : ManagerServer::SendResExecutedCmd
+
+bot/source/Manager.cpp : ManagerServer::SendLog
+
+bot/source/Manager.cpp : HandlerGetCmd
+
+bot/source/Manager.cpp : HandlerAddKeyloggerConfigFile
+
+bot/source/Manager.cpp : FirstExecuteCommands
+
+bot/source/Manager.cpp : LoadKeyloggerConfig
+
+bot/source/Manager.cpp : ManagerLoop
+
+bot/source/Manager.cpp : ManagerLoopThread
+
+bot/source/Manager.cpp : MakeNameGeneralPipe
+
+bot/source/Manager.cpp : GeneralPipeServer::Handler
+
+bot/source/Manager.cpp : GetValVer
+
+bot/source/Manager.cpp : GetVerRunnedBot
+
+bot/source/Manager.cpp : UpdateHosts
+
+bot/source/Manager.cpp : UpdateBot
+
+bot/source/Manager.cpp : KillBot
+
+bot/source/Manager.cpp : UpdateIsDublication
+
+bot/source/VideoServer.cpp : StartRDP
+
+bot/source/VideoServer.cpp : StartVNC
+
+bot/source/VideoServer.cpp : StartServerTunnel
+
+bot/source/VideoServer.cpp : LoadPluginRequest
+
+bot/source/VideoServer.cpp : LoadPluginLoaded
+
+bot/source/VideoServer.cpp : HandlerSendFolderPack
+
+bot/source/VideoServer.cpp : HandlerCreateLog
+
+bot/source/VideoServer.cpp : Init
+
+bot/source/VideoServer.cpp : Release
+
+bot/source/VideoServer.cpp : CallbackCmd
+
+bot/source/VideoServer.cpp : Run
+
+bot/source/VideoServer.cpp : VideoServerProcess
+common_call: 1 |  sub_40df1d
+
+bot/source/VideoServer.cpp : VerifyConnect
+
+bot/source/VideoServer.cpp : GetHosts
+
+bot/source/VideoServer.cpp : RunInSvchost
+
+bot/source/VideoServer.cpp : Start
+
+bot/source/VideoServer.cpp : AnswerPatchRDP
+
+bot/source/VideoServer.cpp : StartRDP
+
+bot/source/VideoServer.cpp : StartVNC
+
+bot/source/VideoServer.cpp : StartServerTunnel
+
+bot/source/VideoServer.cpp : LoadPluginRequest
+
+bot/source/VideoServer.cpp : LoadPluginLoaded
+
+bot/source/VideoServer.cpp : AddServers
+
+bot/source/VideoServer.cpp : HandlerSendFolderPack
+
+bot/source/VideoServer.cpp : HandlerCreateLog
+
+bot/source/VideoServer.cpp : HandlerCreateStream
+
+bot/source/VideoServer.cpp : VideoPipeServer::Handler
+
+bot/source/VideoServer.cpp : VideoPipeServer::Disconnect
+
+bot/source/VideoServer.cpp : VideoPipeServer::SendFile
+
+bot/source/VideoServer.cpp : VideoPipeServer::Reg
+
+bot/source/VideoServer.cpp : VideoPipeServer::SendStr
+
+bot/source/VideoServer.cpp : ThroughTunnel
+
+bot/source/VideoServer.cpp : VideoServerTunnel::Connected
+
+bot/source/task.cpp : TaskServer::Handler
+
+bot/source/task.cpp : TaskServer::Disconnect
+
+bot/source/task.cpp : TaskServer::Reg
+
+bot/source/task.cpp : TaskServer::ExecTask
+
+bot/source/task.cpp : конфига
+
+bot/source/task.cpp : бота
+
+bot/source/task.cpp : изменении
+
+bot/source/task.cpp : ProtectBot
+
+bot/source/task.cpp : UnprotectBot
+
+bot/source/task.cpp : ProtectConfig
+
+bot/source/task.cpp : UnprotectConfig
+
+bot/source/task.cpp : SaveConfig
+
+bot/source/task.cpp : (*typeFuncExecCmd)
+
+bot/source/task.cpp : ExecCmd_LoadConfig
+
+bot/source/task.cpp : ExecCmd_State
+
+bot/source/task.cpp : ExecCmd_Video
+
+bot/source/task.cpp : ExecCmd_Download
+
+bot/source/task.cpp : ExecCmd_Ammyy
+
+bot/source/task.cpp : ExecCmd_Update
+
+bot/source/task.cpp : ExecCmd_UpdKlgCfg
+
+bot/source/task.cpp : ExecCmd_IFobs
+
+bot/source/task.cpp : ExecCmd_HttpProxy
+
+bot/source/task.cpp : ExecCmd_KillOs
+
+bot/source/task.cpp : ExecCmd_Reboot
+
+bot/source/task.cpp : ExecCmd_Tunnel
+
+bot/source/task.cpp : ExecCmd_Adminka
+
+bot/source/task.cpp : ExecCmd_Server
+
+bot/source/task.cpp : ExecCmd_User
+
+bot/source/task.cpp : ExecCmd_RDP
+
+bot/source/task.cpp : ExecCmd_Secure
+
+bot/source/task.cpp : ExecCmd_Del
+
+bot/source/task.cpp : ExecCmd_StartCmd
+
+bot/source/task.cpp : ExecCmd_RunMem
+
+bot/source/task.cpp : ExecCmd_LogonPasswords
+
+bot/source/task.cpp : ExecCmd_Screenshot
+
+bot/source/task.cpp : ExecCmd_Sleep
+
+bot/source/task.cpp : ExecCmd_Dupl
+
+bot/source/task.cpp : ExecCmd_FindFiles
+
+bot/source/task.cpp : ExecCmd_VNC
+
+bot/source/task.cpp : ExecCmd_RunFile
+
+bot/source/task.cpp : ExecCmd_KillBot
+
+bot/source/task.cpp : ExecCmd_ListProcess
+
+bot/source/task.cpp : ExecCmd_Plugins
+
+bot/source/task.cpp : ExecCmd_TinyMet
+
+bot/source/task.cpp : ExecCmd_KillProcess
+
+bot/source/task.cpp : ExecCmd_Cmd
+
+bot/source/task.cpp : ExecCmd_RunPlug
+
+bot/source/task.cpp : ExecCmd_Autorun
+
+bot/source/task.cpp : ExecCmdThread
+
+bot/source/task.cpp : Init
+
+bot/source/task.cpp : ExecCmd
+
+bot/source/task.cpp : ExecCmdThread
+
+bot/source/task.cpp : SaveCmdInConfigFile
+
+bot/source/task.cpp : AddStartCmd
+
+bot/source/task.cpp : GetUserFromCmd
+
+bot/source/task.cpp : ExecCmd_LoadConfig
+
+bot/source/task.cpp : ExecCmd_State
+
+bot/source/task.cpp : ExecCmd_Video
+
+bot/source/task.cpp : HandlerDownloadLoadFile
+
+bot/source/task.cpp : ExecCmd_Download
+
+bot/source/task.cpp : _CT_
+
+bot/source/task.cpp : _CT_
+
+bot/source/task.cpp : _CT_
+
+bot/source/task.cpp : GetAmmyyID
+
+bot/source/task.cpp : GetPrefixAmmyy
+
+bot/source/task.cpp : CopyAmmyyFiles
+
+bot/source/task.cpp : DelAmmyy
+
+bot/source/task.cpp : HandlerAmmyyPlugin
+
+bot/source/task.cpp : AmmyIsService
+
+bot/source/task.cpp : StopAmmyy
+
+bot/source/task.cpp : DelAmmyy
+
+bot/source/task.cpp : StopAmmyy
+
+bot/source/task.cpp : RunAmmyy
+
+bot/source/task.cpp : RunOrInstallAmmyy
+
+bot/source/task.cpp : ExecCmd_Ammyy
+
+bot/source/task.cpp : UpdateBot
+
+bot/source/task.cpp : HandlerUpdatePlugin
+
+bot/source/task.cpp : ExecCmd_Update
+
+bot/source/task.cpp : ExecCmd_UpdKlgCfg
+
+bot/source/task.cpp : ExecCmd_IFobs
+
+bot/source/task.cpp : ExecCmd_HttpProxy
+
+bot/source/task.cpp : ExecCmd_KillOs
+
+bot/source/task.cpp : ExecCmd_Reboot
+
+bot/source/task.cpp : ExecCmd_Tunnel
+
+bot/source/task.cpp : ExecCmd_Adminka
+
+bot/source/task.cpp : ExecCmd_Server
+
+bot/source/task.cpp : ExecCmd_User
+
+bot/source/task.cpp : ExecCmd_RDP
+
+bot/source/task.cpp : HandlerSecurePlugin
+
+bot/source/task.cpp : ExecCmd_Secure
+
+bot/source/task.cpp : ExecCmd_Del
+
+bot/source/task.cpp : ExecCmd_StartCmd
+
+bot/source/task.cpp : HandlerRunMemLoadFile
+
+bot/source/task.cpp : ExecCmd_RunMem
+
+bot/source/task.cpp : ExecCmd_LogonPasswords
+
+bot/source/task.cpp : ScreenshotFunc
+
+bot/source/task.cpp : ExecCmd_Screenshot
+
+bot/source/task.cpp : ExecCmd_Sleep
+
+bot/source/task.cpp : ExecCmd_Dupl
+
+bot/source/task.cpp : ExecCmd_FindFiles
+
+bot/source/task.cpp : ExecCmd_VNC
+
+bot/source/task.cpp : ExecCmd_RunFile
+
+bot/source/task.cpp : ExecCmd_KillBot
+
+bot/source/task.cpp : ExecCmd_ListProcess
+
+bot/source/task.cpp : ExecCmd_Plugins
+
+bot/source/task.cpp : TinyMetThread
+
+bot/source/task.cpp : TinyMetStart
+
+bot/source/task.cpp : TinyMetLoadedPlugin
+
+bot/source/task.cpp : ExecCmd_TinyMet
+
+bot/source/task.cpp : ExecCmd_KillProcess
+
+bot/source/task.cpp : ExecCmd_Cmd
+
+bot/source/task.cpp : ExecCmd_RunPlug
+
+bot/source/task.cpp : *autorunExecute)
+
+bot/source/task.cpp : AutorunLoadedPlugin
+
+bot/source/task.cpp : ExecCmd_Autorun
+
+bot/source/task.cpp : ExecCmd_MsgBox
+
+bot/source/task.cpp : TaskServer::GetGlobalState
+
+bot/source/task.cpp : SaveStateConfigThread
+
+bot/source/task.cpp : TaskServer::SetGlobalState
+
+bot/source/wincmd.cpp : HandlerCreatedPipeStream
+
+bot/source/wincmd.cpp : WinCmdServer::WinCmdServer
+
+bot/source/wincmd.cpp : WinCmdServer::Release
+common_call: 1 |  sub_405af2
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40f3ae
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+bot/source/wincmd.cpp : WinCmdServer::Init
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+bot/source/wincmd.cpp : WinCmdServer::Handler
+common_call: 1 |  sub_410d4e
+common_call: 1 |  sub_410fe4
+common_call: 1 |  sub_4110c3
+common_call: 1 |  sub_4111b1
+common_call: 1 |  sub_4113c9
+
+bot/source/wincmd.cpp : WinCmdServer::LoopReaderFromCmd
+common_call: 1 |  sub_417bc4
+common_call: 1 |  sub_417d1b
+common_call: 1 |  sub_4181bf
+
+bot/source/wincmd.cpp : WinCmdServer::Disconnect
+
+bot/source/wincmd.cpp : HandlerCreatedPipeStream
+
+bot/source/wincmd.cpp : LoopReaderFromCmdThread
+
+bot/source/wincmd.cpp : WinCmdProcess
+common_call: 1 |  sub_40df1d
+
+bot/source/wincmd.cpp : Start
+
+bot/source/sandbox.cpp : CreateName
+
+bot/source/sandbox.cpp : SandboxServer::Handler
+
+bot/source/sandbox.cpp : JumpToRundll32
+
+bot/source/sandbox.cpp : JmpToSvchostSandBox
+
+bot/source/sandbox.cpp : Run
+
+bot/source/sandbox.cpp : Init
+
+bot/source/sandbox.cpp : ProcessExec
+
+bot/source/sandbox.cpp : ExecDirect
+
+bot/source/sandbox.cpp : Exec
+
+bot/source/sandbox.cpp : Exec
+
+bot/source/sandbox.cpp : ProcessRunMem
+
+bot/source/sandbox.cpp : RunMem
+
+bot/source/sandbox.cpp : Run
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+bot/source/sandbox.cpp : Init
+
+bot/source/sandbox.cpp : CreateName
+
+bot/source/config.cpp : _CT_
+common_call: 1 | common_string: 1 |  sub_401661
+
+bot/source/config.cpp : GenUID
+common_call: 1 | common_string: 1 |  sub_401661
+
+bot/source/config.cpp : DecodeGenRand
+
+bot/source/config.cpp : ExchangeDist
+
+bot/source/config.cpp : InitDecodeTable
+
+bot/source/config.cpp : Init
+
+bot/source/config.cpp : InitFileConfig
+
+bot/source/config.cpp : GetDefBotFolder
+
+bot/source/config.cpp : GetBotFolder
+
+bot/source/config.cpp : GetBotFile
+
+bot/source/config.cpp : GetFileNameForNameManager
+
+bot/source/config.cpp : SaveNameManager
+
+bot/source/config.cpp : LoadNameManager
+
+bot/source/config.cpp : NameBotExe
+
+bot/source/config.cpp : FullNameBotExe
+
+bot/source/config.cpp : NameUserAZ
+
+bot/source/config.cpp : CreateNameMutex
+
+bot/source/config.cpp : CreateMutex
+
+bot/source/config.cpp : ReleaseMutex
+
+bot/source/config.cpp : GetSleepingFileName
+
+bot/source/config.cpp : IsSleeping
+
+bot/source/config.cpp : DelSleeping
+
+bot/source/config.cpp : GetDateWork
+
+bot/source/config.cpp : DECODE_STRING
+
+bot/source/config.cpp : DECODE_STRING2
+
+bot/source/config.cpp : DECODE_STRINGW
+
+bot/source/config.cpp : DECODE_STRINGW2
+
+bot/source/config.cpp : DECODE_STRING2
+
+bot/source/config.cpp : DECODE_STRINGW
+
+bot/source/config.cpp : DECODE_STRINGW2
+
+bot/source/AdminPanel.cpp : GetCurrDate
+
+bot/source/AdminPanel.cpp : Init
+
+bot/source/AdminPanel.cpp : Release
+
+bot/source/AdminPanel.cpp : VerifyConnect
+
+bot/source/AdminPanel.cpp : GetHostAdmin
+
+bot/source/AdminPanel.cpp : GetHosts
+
+bot/source/AdminPanel.cpp : CorrectlyInsert
+
+bot/source/AdminPanel.cpp : InsertDirectories
+
+bot/source/AdminPanel.cpp : InsertExt
+
+bot/source/AdminPanel.cpp : TextToUrl
+
+bot/source/AdminPanel.cpp : GenUrl
+
+bot/source/AdminPanel.cpp : GetCmd
+
+bot/source/AdminPanel.cpp : DuplDataKeylogger
+
+bot/source/AdminPanel.cpp : DuplDataScreenshot
+
+bot/source/AdminPanel.cpp : DuplData
+
+bot/source/AdminPanel.cpp : SendData
+
+bot/source/AdminPanel.cpp : LoadPlugin
+
+bot/source/AdminPanel.cpp : SendDataCrossGet
+
+bot/source/AdminPanel.cpp : SendLog
+
+bot/source/AdminPanel.cpp : EncryptToBin
+
+bot/source/AdminPanel.cpp : EncryptToText
+
+bot/source/AdminPanel.cpp : Decrypt
+
+bot/source/AdminPanel.cpp : HandlerGetCmd
+
+bot/source/AdminPanel.cpp : HandlerSendData
+
+bot/source/AdminPanel.cpp : HandlerLoadFile
+
+bot/source/AdminPanel.cpp : HandlerLoadPlugin
+
+bot/source/AdminPanel.cpp : StartHttpProxy
+
+bot/source/AdminPanel.cpp : StartIpPortProxy
+
+bot/source/AdminPanel.cpp : PipeInetRequest::Handler
+
+bot/source/AdminPanel.cpp : PipeInetRequest::SendString
+
+bot/source/AdminPanel.cpp : PipeInetRequest::Reg
+
+bot/source/AdminPanel.cpp : PipeInetRequest::GetCmd
+
+bot/source/AdminPanel.cpp : PipeInetRequest::SendData
+
+bot/source/AdminPanel.cpp : PipeInetRequest::LoadFile
+
+bot/source/AdminPanel.cpp : PipeInetRequest::LoadPlugin
+
+bot/source/AdminPanel.cpp : VerifyConnect
+
+bot/source/AdminPanel.cpp : AdminPanelThread
+
+bot/source/AdminPanel.cpp : AdminPanelProcess
+common_call: 1 |  sub_40df1d
+
+bot/source/AdminPanel.cpp : RunAdminPanelInSvchost2
+
+bot/source/AdminPanel.cpp : RunAdminPanelInSvchost
+
+bot/source/AdminPanel.cpp : RunAdminPanel
+
+bot/source/AdminPanel.cpp : GetCurrDate
+
+bot/source/abstract.cpp : GetUid
+
+bot/source/AV.cpp : AVDetect
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+bot/source/AV.cpp : AVGUnload
+
+bot/source/plugin.cpp : CreatePipeName
+
+bot/source/plugin.cpp : HandlerExecuteFunc
+
+bot/source/plugin.cpp : PluginServer::Handler
+
+bot/source/plugin.cpp : PluginServer::Disconnect
+
+bot/source/plugin.cpp : PluginServer::ExecuteFunc
+
+bot/source/plugin.cpp : *typeSetterCB)
+
+bot/source/plugin.cpp : CBTextFunc
+
+bot/source/plugin.cpp : InitPluginCBText
+
+bot/source/plugin.cpp : PluginProcess
+common_call: 1 |  sub_40df1d
+
+bot/source/plugin.cpp : LoadedPlugin
+
+bot/source/plugin.cpp : Run
+
+bot/source/plugin.cpp : Stop
+
+bot/source/plugin.cpp : ExecuteFunc
+
+bot/source/keylogger.cpp : StartKeyLoggerFirstNScreenshot
+
+bot/source/keylogger.cpp : KeyLoggerFirstNScreenShot::Exec
+
+bot/source/keylogger.cpp : KeyLoggerAllCharsDestroyWindow
+
+bot/source/keylogger.cpp : HookExitProcess
+
+bot/source/keylogger.cpp : KeyLogger::ExecForFilterMsg
+
+bot/source/keylogger.cpp : KeyLoggerAllChars::Start
+common_call: 1 |  sub_40df1d
+
+bot/source/keylogger.cpp : KeyCodeToString
+common_call: 1 |  sub_4055ff
+
+bot/source/keylogger.cpp : ContainsMask
+
+bot/source/keylogger.cpp : KeyLoggerAllChars::Exec
+
+bot/source/keylogger.cpp : KeyLoggerAllChars::SendWindowData
+
+bot/source/info.cpp : GetEnvironmentComment
+
+bot/source/info.cpp : GetEnvironmentComment
+
+bot/source/MonitoringProcesses.cpp : _CT_
+
+bot/source/MonitoringProcesses.cpp : _CT_
+
+bot/source/MonitoringProcesses.cpp : Monitoring
+
+bot/source/MonitoringProcesses.cpp : AddProcessesForRDP
+
+bot/source/MonitoringProcesses.cpp : Start
+
+bot/source/MonitoringProcesses.cpp : GetMonitoringProcesses
+
+bot/source/MonitoringProcesses.cpp : AddProcessesForRDP
+
+bot/source/MonitoringProcesses.cpp : KillCallback
+
+bot/source/MonitoringProcesses.cpp : PatchProcessForRDP
+
+bot/source/MonitoringProcesses.cpp : MonitoringCallback
+
+bot/source/MonitoringProcesses.cpp : Monitoring
+
+bot/source/MonitoringProcesses.cpp : MonProcessServer::Handler
+
+bot/source/MonitoringProcesses.cpp : MonProcessServer::Disconnect
+
+bot/source/MonitoringProcesses.cpp : MonProcessServer::Reg
+
+bot/source/service.cpp : GetFolderForService
+
+bot/source/service.cpp : GetFolderFromConfigTxt
+
+bot/source/service.cpp : GetFileNameService
+
+bot/source/service.cpp : Copy
+common_call: 1 |  sub_4026ca
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+
+bot/source/service.cpp : Install
+
+bot/source/service.cpp : ServiceControlHandler
+
+bot/source/service.cpp : ServiceMain
+
+bot/source/service.cpp : Start
+common_call: 1 |  sub_4026ca
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+
+bot/source/service.cpp : IsService
+
+bot/source/service.cpp : DeleteWithFile
+
+bot/source/service.cpp : GetFolderForService
+
+bot/source/service.cpp : GetFolderFromConfigTxt
+
+bot/source/other/secure_lsa.cpp : Lsa
+
+bot/source/other/FindFiles.cpp : FindFilesCallback
+
+bot/source/other/FindFiles.cpp : FindFiles
+
+bot/source/other/rdp_patch.cpp : *typeSfcFileException)
+
+bot/source/other/rdp_patch.cpp : DeprotectFile
+common_call: 1 |  sub_406060
+common_call: 1 |  sub_40dfa2
+common_call: 1 |  sub_40f487
+
+bot/source/other/rdp_patch.cpp : PatchRDPFilesXP
+
+bot/source/other/rdp_patch.cpp : PatchRDPFilesVer6x
+
+bot/source/other/rdp_patch.cpp : PatchRDPFilesVista
+
+bot/source/other/rdp_patch.cpp : PatchRDPFilesWin7
+
+bot/source/other/rdp_patch.cpp : PatchRDPFiles
+
+bot/source/other/ListProcess.cpp : ListProcessCallback
+
+bot/source/other/ListProcess.cpp : ListProcess
+
+bot/source/other/ListProcess.cpp : SendListProcess
+
+bot/source/other/vnc.cpp : *typeStartServer)
+
+bot/source/other/vnc.cpp : *typeStopServer)
+
+bot/source/other/vnc.cpp : ThreadVNC
+
+bot/source/other/vnc.cpp : GetNameVNCServer
+
+bot/source/other/vnc.cpp : HandlerStartInSandbox
+
+bot/source/other/vnc.cpp : HandlerLoadedPlugin
+
+bot/source/other/vnc.cpp : Start
+
+bot/source/other/vnc.cpp : ResStartVNC
+
+bot/source/other/vnc.cpp : StartDefault
+
+bot/source/other/vnc.cpp : ThreadVNC
+
+bot/source/other/vnc.cpp : VNCServer::Disconnect
+common_call: 1 |  sub_40df1d
+
+bot/source/other/GetProxy.cpp : AppendAddr
+
+bot/source/other/GetProxy.cpp : GetProxyIE
+
+bot/source/other/GetProxy.cpp : GetValueFirefox
+
+bot/source/other/GetProxy.cpp : AppendIpPortFirefox
+
+bot/source/other/GetProxy.cpp : GetProxyFirefox
+
+bot/source/other/GetProxy.cpp : FindProxyAddr
+
+bot/source/other/GetProxy.cpp : FindAuthenticationProxyCallback
+
+bot/source/other/GetProxy.cpp : FindAuthenticationProxyThread
+
+bot/source/other/GetProxy.cpp : FindAuthenticationProxy
+
+bot/source/other/GetProxy.cpp : SendCmdAdminka
+
+bot/source/other/GetProxy.cpp : FindProxyCallback
+
+bot/source/other/GetProxy.cpp : FindProxyAddrCrossSniffer
+
+bot/source/other/mimikatz.cpp : SendAllLogonsThread
+
+bot/source/other/mimikatz.cpp : SendAllLogonsThread
+
+bot/source/other/mimikatz.cpp : SendAllLogons
+
+bot/source/other/mimikatz.cpp : GetLogonPasswords
+
+bot/source/other/mimikatz.cpp : PatchRDP
+
+bot/source/other/mimikatz.cpp : UpdateReestr
+
+bot/source/system/system.cpp : Start
+
+bot/source/system/FormGrabber.cpp : ThreadSniffer
+
+bot/source/system/FormGrabber.cpp : Start
+
+bot/source/system/FormGrabber.cpp : StartCrossSniffer
+
+bot/source/system/FormGrabber.cpp : CallbackSniffer
+
+bot/source/system/FormGrabber.cpp : ThreadSniffer
+
+bot/source/system/ifobs.cpp : )
+
+bot/source/system/ifobs.cpp : _CT_
+
+bot/source/system/ifobs.cpp : _CT_
+
+bot/source/system/ifobs.cpp : _CT_
+
+bot/source/system/ifobs.cpp : _CT_
+
+bot/source/system/ifobs.cpp : HandlerLoaded_ifobs_plug
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+bot/source/system/ifobs.cpp : HandlerLoaded_rtlext_plug
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+bot/source/system/ifobs.cpp : HandlerCreateLog
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+bot/source/system/ifobs.cpp : GetPathInIFobsFolder
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+bot/source/system/ifobs.cpp : InstallIFobsPlugin
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+bot/source/system/ifobs.cpp : PlugIsInstalled
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+bot/source/system/ifobs.cpp : PutBalans
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+bot/source/system/ifobs.cpp : PutPasswords
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+bot/source/system/ifobs.cpp : SendLogsAdm
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+bot/source/system/ifobs.cpp : SendLogsAdmFull
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+bot/source/system/ifobs.cpp : SendLogsFile
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+bot/source/system/ifobs.cpp : Start
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+bot/source/system/ifobs.cpp : HandlerLoaded_rtlext_plug
+
+bot/source/system/ifobs.cpp : HandlerLoaded_ifobs_plug
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+bot/source/system/ifobs.cpp : HandlerCreateLog
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+bot/source/system/ifobs.cpp : GetPathInIFobsFolder
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+bot/source/system/ifobs.cpp : InstallIFobsPlugin
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+bot/source/system/ifobs.cpp : PlugIsInstalled
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+bot/source/system/ifobs.cpp : SendDataCab
+
+bot/source/system/ifobs.cpp : SendDataFromPlugin
+
+bot/source/system/ifobs.cpp : PutBalans
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+bot/source/system/ifobs.cpp : PutPasswords
+
+bot/source/system/ifobs.cpp : SendLogsAdm
+
+bot/source/system/ifobs.cpp : SendLogsAdmFull
+
+bot/source/system/ifobs.cpp : SendLogsFile
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+bot/source/system/ifobs.cpp : IsBtAccept
+
+bot/source/system/ifobs.cpp : EnumChildProc
+
+bot/source/system/ifobs.cpp : GetLoginForm
+
+bot/source/system/ifobs.cpp : GrabData
+
+bot/source/system/ifobs.cpp : KeyLogger::ExecForFilterMsg
+
+bot/source/system/ifobs.cpp : IFobsLogger::Exec
+
+bot/source/system/ifobs.cpp : IFobsLogger::Start
+
+bot/source/system/ifobs.cpp : HandlerLoaded_z_ini
+
+bot/source/system/ifobs.cpp : DeletePlugins
+
+bot/source/system/ifobs.cpp : CreateFileReplacing
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+bot/source/plugins/FindOutlookFiles.cpp : FindOutlookFiles
+
+bot/source/plugins/MonitoringFile.cpp : HandlerCreateIdLog
+
+bot/source/plugins/MonitoringFile.cpp : MonitoringCB
+
+bot/source/plugins/MonitoringFile.cpp : HandlerCreateIdLog
+
+bot/source/plugins/MonitoringFile.cpp : MonitoringFile
+
+bot/source/plugins/plugins.cpp : Execute
+
+bot/source/plugins/TrustedHosts.cpp : Find
+
+bot/source/plugins/TrustedHosts.cpp : SendResult
+
+bot/source/plugins/TrustedHosts.cpp : TrustedHosts
+
+builder_gui/misc.cpp : MsgDlgV
+
+builder_gui/misc.cpp : MsgDlg
+
+builder_gui/misc.cpp : MsgDlgErr
+
+builder_gui/misc.cpp : MsgDlgWarn
+
+builder_gui/misc.cpp : MsgDlgMsg
+
+builder_gui/misc.cpp : MsgDlgQue
+
+builder_gui/builder_guiDlg.cpp : Cbuilder_guiDlg::DoDataExchange
+
+builder_gui/builder_guiDlg.cpp : ON_WM_PAINT
+
+builder_gui/builder_guiDlg.cpp : Cbuilder_guiDlg::OnInitDialog
+
+builder_gui/builder_guiDlg.cpp : Cbuilder_guiDlg::OnPaint
+
+builder_gui/builder_guiDlg.cpp : Cbuilder_guiDlg::OnQueryDragIcon
+
+builder_gui/builder_guiDlg.cpp : Cbuilder_guiDlg::OnCtlColor
+
+builder_gui/builder_guiDlg.cpp : Cbuilder_guiDlg::OnDestroy
+
+builder_gui/builder_guiDlg.cpp : Cbuilder_guiDlg::OnBnClickedConfig
+
+builder_gui/builder_guiDlg.cpp : Cbuilder_guiDlg::OnBnClickedSrc
+
+builder_gui/builder_guiDlg.cpp : Cbuilder_guiDlg::OnBnClickedDst
+
+builder_gui/builder_guiDlg.cpp : Cbuilder_guiDlg::OnBnClickedSaveconfig
+
+builder_gui/builder_guiDlg.cpp : Cbuilder_guiDlg::OnBnClickedSaveasconfig
+
+builder_gui/builder_guiDlg.cpp : Cbuilder_guiDlg::OnBnClickedBuild
+
+builder_gui/builder_guiDlg.cpp : Trim
+
+builder_gui/builder_guiDlg.cpp : GetHosts
+common_call: 1 |  strchr
+
+builder_gui/builder_guiDlg.cpp : Cbuilder_guiDlg::LoadConfig
+common_call: 1 |  strchr
+
+builder_gui/builder_guiDlg.cpp : MakeHosts
+
+builder_gui/builder_guiDlg.cpp : Cbuilder_guiDlg::SaveConfig
+
+builder_gui/builder_guiDlg.cpp : Cbuilder_guiDlg::Normalize
+
+builder_gui/builder_guiDlg.cpp : Cbuilder_guiDlg::Verify
+
+builder_gui/builder_guiDlg.cpp : GetFileNameSets
+
+builder_gui/builder_guiDlg.cpp : GetStringFromFile
+
+builder_gui/builder_guiDlg.cpp : Cbuilder_guiDlg::LoadSets
+
+builder_gui/builder_guiDlg.cpp : Cbuilder_guiDlg::SaveSets
+
+builder_gui/builder_guiDlg.cpp : Cbuilder_guiDlg::CreateBuild
+common_call: 1 |  sub_40fb2a
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_417bc4
+common_call: 1 |  sub_417d1b
+common_call: 1 |  sub_4181bf
+common_call: 1 |  sub_418593
+
+builder_gui/builder_guiDlg.cpp : Cbuilder_guiDlg::OnBnClickedPublickey
+
+builder_gui/builder_gui.cpp : ON_COMMAND
+
+builder_gui/builder_gui.cpp : Cbuilder_guiApp::InitInstance
+
+downloader/source/main.cpp : SetAutorun
+common_call: 1 |  sub_4026ca
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40e0da
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+
+downloader/source/main.cpp : IsAutorun
+common_call: 1 |  sub_4026ca
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40e0da
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+
+downloader/source/main.cpp : InstallBot
+common_call: 1 |  sub_4026ca
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40e0da
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+
+downloader/source/main.cpp : IsPresentKAV
+common_call: 1 |  sub_4026ca
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40e0da
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+
+downloader/source/main.cpp : IsDuplication
+common_call: 1 |  sub_4026ca
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40e0da
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+
+downloader/source/main.cpp : MainLoop
+common_call: 1 |  sub_4026ca
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40e0da
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+
+downloader/source/main.cpp : InstallBotThread
+common_call: 1 |  sub_4026ca
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40e0da
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+
+downloader/source/main.cpp : main
+common_call: 1 |  sub_4026ca
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40e0da
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+
+downloader/source/main.cpp : if
+common_call: 1 |  sub_40e0da
+
+downloader/source/main.cpp : Init
+common_call: 1 |  sub_40e0da
+
+downloader/source/main.cpp : Init
+common_call: 1 |  sub_40e0da
+
+downloader/source/main.cpp : if
+common_call: 1 |  sub_40e0da
+
+downloader/source/main.cpp : GetCommandLineA)
+
+downloader/source/main.cpp : if
+
+downloader/source/main.cpp : IsService
+
+downloader/source/main.cpp : (
+
+downloader/source/main.cpp : (IsAutorun
+
+downloader/source/main.cpp : (
+
+downloader/source/main.cpp : (IsPresentKAV
+
+downloader/source/main.cpp : if
+
+downloader/source/main.cpp : Sdrop
+
+downloader/source/main.cpp : StartBot
+
+downloader/source/main.cpp : InstallBot
+common_call: 1 |  sub_4026ca
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40e0da
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+
+downloader/source/main.cpp : if
+
+downloader/source/main.cpp : MainLoop
+common_call: 1 |  sub_4026ca
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40e0da
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+
+downloader/source/main.cpp : if
+
+downloader/source/main.cpp : (
+
+downloader/source/main.cpp : Init
+
+downloader/source/main.cpp : for
+
+downloader/source/main.cpp : if
+
+downloader/source/main.cpp : SetAutorun
+common_call: 1 |  sub_4026ca
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40e0da
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+
+downloader/source/main.cpp : FullNameBotExe
+
+downloader/source/main.cpp : DbgMsg
+
+downloader/source/main.cpp : if
+
+downloader/source/main.cpp : IsAutorun
+common_call: 1 |  sub_4026ca
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40e0da
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+
+downloader/source/main.cpp : InstallBotThread
+common_call: 1 |  sub_4026ca
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40e0da
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+
+downloader/source/main.cpp : if
+
+downloader/source/main.cpp : (
+
+downloader/source/main.cpp : if
+
+downloader/source/main.cpp : IsPresentKAV
+common_call: 1 |  sub_4026ca
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40e0da
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+
+downloader/source/main.cpp : IsDuplication
+common_call: 1 |  sub_4026ca
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40e0da
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+
+downloader/source/main.cpp : CreateMutex
+
+downloader/source/main.cpp : ReleaseMutex
+
+downloader/source/task.cpp : (*typeFuncExecCmd)
+
+downloader/source/task.cpp : ExecCmd_Download
+
+downloader/source/task.cpp : ExecCmd_Update
+
+downloader/source/task.cpp : ExecCmd_RunDll
+
+downloader/source/task.cpp : ExecCmdThread
+
+downloader/source/task.cpp : ProtectBot
+
+downloader/source/task.cpp : UnprotectBot
+
+downloader/source/task.cpp : Init
+
+downloader/source/task.cpp : ExecCmd
+
+downloader/source/task.cpp : ExecCmdThread
+
+downloader/source/task.cpp : ExecCmd_Download
+
+downloader/source/task.cpp : ExecCmd_Update
+
+downloader/source/task.cpp : RunDllThread
+
+downloader/source/task.cpp : ExecCmd_RunDll
+
+downloader/source/config.cpp : GenUID
+common_call: 1 |  sub_401661
+
+downloader/source/config.cpp : DecodeGenRand
+
+downloader/source/config.cpp : ExchangeDist
+
+downloader/source/config.cpp : for
+
+downloader/source/config.cpp : InitDecodeTable
+
+downloader/source/config.cpp : Init
+
+downloader/source/config.cpp : sizeof
+
+downloader/source/config.cpp : (
+
+downloader/source/config.cpp : (
+
+downloader/source/config.cpp : (
+
+downloader/source/config.cpp : if
+
+downloader/source/config.cpp : if
+
+downloader/source/config.cpp : if
+
+downloader/source/config.cpp : NameBotExe
+
+downloader/source/config.cpp : FullNameBotExe
+
+downloader/source/config.cpp : GetBotFolder
+
+downloader/source/config.cpp : _CS_
+
+downloader/source/config.cpp : if
+
+downloader/source/config.cpp : CreateDirectory
+
+downloader/source/config.cpp : CreateNameMutex
+
+downloader/source/config.cpp : CreateMutex
+
+downloader/source/config.cpp : ReleaseMutex
+
+downloader/source/config.cpp : DECODE_STRING
+
+downloader/source/config.cpp : if
+
+downloader/source/config.cpp : Alloc
+
+downloader/source/config.cpp : while
+
+downloader/source/config.cpp : if
+
+downloader/source/adminka.cpp : Init
+
+downloader/source/adminka.cpp : Release
+
+downloader/source/adminka.cpp : GetHostAdmin
+
+downloader/source/adminka.cpp : CorrectlyInsert
+
+downloader/source/adminka.cpp : InsertDirectories
+
+downloader/source/adminka.cpp : InsertExt
+
+downloader/source/adminka.cpp : TextToUrl
+
+downloader/source/adminka.cpp : GenUrl
+
+downloader/source/adminka.cpp : GetCmd
+
+downloader/source/adminka.cpp : LoadPlugin
+
+downloader/source/adminka.cpp : LoadFile
+
+downloader/source/adminka.cpp : EncryptToBin
+
+downloader/source/adminka.cpp : EncryptToText
+
+downloader/source/adminka.cpp : Decrypt
+
+downloader/source/service.cpp : GetFileNameService
+
+downloader/source/service.cpp : Copy
+common_call: 1 |  sub_4026ca
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+
+downloader/source/service.cpp : Install
+
+downloader/source/service.cpp : ServiceControlHandler
+
+downloader/source/service.cpp : ServiceMain
+
+downloader/source/service.cpp : Start
+common_call: 1 |  sub_4026ca
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+
+downloader/source/service.cpp : IsService
+
+downloader/source/service.cpp : DeleteWithFile
+
+test/source/test.cpp : test
+
+test/source/test.cpp : test2
+
+test/source/test.cpp : test3
+
+test/source/test.cpp : test4
+
+test/source/test.cpp : test5
+
+test/source/test.cpp : test6
+
+test/source/test.cpp : test7
+
+test/source/test.cpp : test8
+
+test/source/test.cpp : test9
+
+test/source/test.cpp : test10
+
+test/source/test.cpp : test11
+
+test/source/test.cpp : test12
+
+test/source/test.cpp : test13
+
+test/source/test.cpp : test14
+
+test/source/test.cpp : test15
+
+test/source/test.cpp : test16
+
+test/source/test.cpp : test17
+
+test/source/test.cpp : test18
+
+test/source/test.cpp : test19
+
+test/source/test.cpp : test20
+
+test/source/test.cpp : test21
+
+test/source/test.cpp : test22
+common_call: 1 |  sub_4026ca
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+
+test/source/test.cpp : test23
+
+test/source/test.cpp : OffDcomlaunch
+
+test/source/test.cpp : test24
+
+test/source/test.cpp : test25
+
+test/source/test.cpp : Lsa
+
+test/source/test.cpp : test26
+
+test/source/test.cpp : test27
+
+test/source/test.cpp : test28
+common_call: 1 |  sub_4026ca
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+
+test/source/test.cpp : test29
+common_call: 1 |  sub_4026ca
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+test/source/test.cpp : PrintPriv
+
+test/source/test.cpp : test30
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+test/source/test.cpp : MonitoringCB
+
+test/source/test.cpp : test31
+
+test/source/test.cpp : test32
+
+test/source/test.cpp : main
+
+test/source/test.cpp : DECODE_STRING
+
+botcmd/source/main.cpp : длина
+
+botcmd/source/main.cpp : CmdSendBot
+
+botcmd/source/main.cpp : CmdInfo
+
+botcmd/source/main.cpp : CmdGetProxy
+
+botcmd/source/main.cpp : CmdExit
+
+botcmd/source/main.cpp : CmdUAC
+
+botcmd/source/main.cpp : CmdElevation
+
+botcmd/source/main.cpp : (*typeFuncExecCmd)
+
+botcmd/source/main.cpp : Init
+common_call: 2 |  sub_401771
+
+botcmd/source/main.cpp : DispatchArgs
+common_call: 2 |  sub_401771
+
+botcmd/source/main.cpp : main
+common_call: 2 |  sub_401771
+
+botcmd/source/main.cpp : Init
+common_call: 2 |  sub_401771
+
+botcmd/source/main.cpp : DispatchArgs
+common_call: 2 |  sub_401771
+
+botcmd/source/main.cpp : CmdSendBot
+
+botcmd/source/main.cpp : CmdInfo
+
+botcmd/source/main.cpp : CmdGetProxy
+
+botcmd/source/main.cpp : CmdExit
+
+botcmd/source/main.cpp : UAC_aq
+
+botcmd/source/main.cpp : UAC_cb
+
+botcmd/source/main.cpp : CmdUAC
+
+botcmd/source/main.cpp : CmdElevation
+
+botcmd/source/UAC.cpp : InitPath
+
+botcmd/source/UAC.cpp : UACProcess
+
+botcmd/source/UAC.cpp : UAC_aq
+
+botcmd/source/UAC.cpp : UAC_cb
+
+botcmd/source/DecodeString.cpp : DECODE_STRING
+
+botcmd/source/DecodeString.cpp : DECODE_STRING
+
+TestElevation/main.cpp : sdrop
+common_call: 2 |  sub_401771
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40e0da
+
+TestElevation/main.cpp : ndproxy
+common_call: 2 |  sub_401771
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40e0da
+
+TestElevation/main.cpp : uac_bypass
+common_call: 2 |  sub_401771
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40e0da
+
+TestElevation/main.cpp : mimikatz
+common_call: 2 |  sub_401771
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40e0da
+
+TestElevation/main.cpp : mimikatz2
+common_call: 2 |  sub_401771
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40e0da
+
+TestElevation/main.cpp : CVE2014_4113
+common_call: 2 |  sub_401771
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40e0da
+
+TestElevation/main.cpp : main
+common_call: 2 |  sub_401771
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40e0da
+
+TestElevation/main.cpp : sdrop
+common_call: 2 |  sub_401771
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40e0da
+
+TestElevation/main.cpp : ndproxy
+common_call: 2 |  sub_401771
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40e0da
+
+TestElevation/main.cpp : uac_bypass
+common_call: 2 |  sub_401771
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40e0da
+
+TestElevation/main.cpp : mimikatz
+common_call: 2 |  sub_401771
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40e0da
+
+TestElevation/main.cpp : mimikatz2
+common_call: 2 |  sub_401771
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40e0da
+
+TestElevation/main.cpp : CVE2014_4113
+common_call: 2 |  sub_401771
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40e0da
+
+TestElevation/main.cpp : DECODE_STRING
+
+TestElevation/main.cpp : DECODE_STRINGW
+
+TestElevation/main.cpp : DECODE_STRINGW2
+
+TestElevation/main.cpp : DECODE_STRING2
+
+TestElevation/main.cpp : DECODE_STRINGW
+
+TestElevation/main.cpp : DECODE_STRINGW2
+
+WndRec/source/file.cpp : SendFile
+
+WndRec/source/file.cpp : LoadPluginAsync
+
+WndRec/source/https.cpp : request
+
+WndRec/source/https.cpp : HTTPS::Close
+
+WndRec/source/https.cpp : HTTPS::Connect
+
+WndRec/source/https.cpp : HTTPS::Write
+
+WndRec/source/https.cpp : HTTPS::Read
+
+WndRec/source/https.cpp : HTTPS::ThreadReader
+
+WndRec/source/stream.cpp : InitStreams
+
+WndRec/source/stream.cpp : GetStream
+
+WndRec/source/stream.cpp : CreateServerStream
+
+WndRec/source/stream.cpp : CreateFileStream
+
+WndRec/source/stream.cpp : CreateStream
+
+WndRec/source/stream.cpp : RecreateStream
+
+WndRec/source/stream.cpp : WriteStream
+
+WndRec/source/stream.cpp : CloseStream
+
+WndRec/source/cmdexec.cpp : Tunnel
+
+WndRec/source/cmdexec.cpp : StartPortForward
+
+WndRec/source/cmdexec.cpp : MainCmdExec
+common_call: 1 |  sub_40df1d
+
+WndRec/source/cmdexec.cpp : RunCmdExec
+
+WndRec/source/lzw.cpp : init_table_lzw
+
+WndRec/source/lzw.cpp : create_table_lzw
+
+WndRec/source/lzw.cpp : release_table_lzw
+
+WndRec/source/lzw.cpp : output_code
+
+WndRec/source/lzw.cpp : input_code
+
+WndRec/source/lzw.cpp : to_lzw
+
+WndRec/source/lzw.cpp : from_lzw
+
+WndRec/source/sender.cpp : Align16
+
+WndRec/source/sender.cpp : GetPublicKey
+
+WndRec/source/sender.cpp : InitPacketBuf
+
+WndRec/source/sender.cpp : ReleasePacketBuf
+
+WndRec/source/sender.cpp : ResetBuf
+
+WndRec/source/sender.cpp : ReadSocket
+
+WndRec/source/sender.cpp : XorMask
+
+WndRec/source/sender.cpp : XorMask2
+
+WndRec/source/sender.cpp : WritePacket
+
+WndRec/source/sender.cpp : WritePacket
+
+WndRec/source/sender.cpp : ReadPacket
+
+WndRec/source/sender.cpp : CreateRawPacket
+
+WndRec/source/sender.cpp : IOServer::Init
+
+WndRec/source/sender.cpp : IOServer::ConnectIP
+
+WndRec/source/sender.cpp : IOServer::ConnectPipe
+
+WndRec/source/sender.cpp : IOServer::ConnectHttps
+
+WndRec/source/sender.cpp : IOServer::Close
+
+WndRec/source/sender.cpp : IOServer::Write
+
+WndRec/source/sender.cpp : IOServer::Read
+
+WndRec/source/sender.cpp : IOServer::Connected
+
+WndRec/source/video.cpp : кадр
+
+WndRec/source/video.cpp : GetNameProcess
+
+WndRec/source/video.cpp : MakeScreenShot
+
+WndRec/source/video.cpp : LowerBits
+
+WndRec/source/video.cpp : CalcDiffFrame
+
+WndRec/source/video.cpp : RLEFrameColor2Bits
+
+WndRec/source/video.cpp : CreateStreamVideo
+
+WndRec/source/video.cpp : Record
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+WndRec/source/video.cpp : RecordThread
+
+WndRec/source/video.cpp : StartRecHwnd
+
+WndRec/source/video.cpp : StartRecPid
+
+WndRec/source/video.cpp : SendFirstFrame
+
+WndRec/source/video.cpp : StopRec
+
+WndRec/source/video.cpp : ResetTime
+
+WndRec/source/tunnel.cpp : InitTunnels
+
+WndRec/source/tunnel.cpp : FindThread
+
+WndRec/source/tunnel.cpp : AddThread
+
+WndRec/source/tunnel.cpp : SendToServer
+
+WndRec/source/tunnel.cpp : CloseTunnel
+
+WndRec/source/tunnel.cpp : CloseAllSockets
+
+WndRec/source/tunnel.cpp : FromSocketsToServer
+
+WndRec/source/tunnel.cpp : FromServerToSockets
+
+WndRec/source/tunnel.cpp : SendProtocolData
+
+WndRec/source/tunnel.cpp : CompactSockets
+
+WndRec/source/tunnel.cpp : TunnelThread
+
+WndRec/source/tunnel.cpp : StartTunnel
+
+WndRec/source/tunnel.cpp : StopTunnel
+
+WndRec/source/SendLog.cpp : SendLog
+
+WndRec/source/manager.cpp : InitList
+
+WndRec/source/manager.cpp : ReleaseList
+
+WndRec/source/manager.cpp : ManagerThread
+
+WndRec/source/manager.cpp : ExtractPackage
+
+WndRec/source/manager.cpp : ExtractPackage
+
+WndRec/source/manager.cpp : AddLastPackage
+
+WndRec/source/manager.cpp : AddFirstPackage
+
+WndRec/source/manager.cpp : ReleasePackage
+
+WndRec/source/manager.cpp : SendPackage
+
+WndRec/source/manager.cpp : ReleasePackageTime
+
+WndRec/source/manager.cpp : CloseServer
+
+WndRec/source/manager.cpp : AddInPackage
+
+WndRec/source/manager.cpp : Init
+
+WndRec/source/manager.cpp : AddIPServer
+
+WndRec/source/manager.cpp : Release
+
+WndRec/source/manager.cpp : Reconnect
+
+WndRec/source/manager.cpp : UpdateSettings
+
+WndRec/source/manager.cpp : WriteData
+
+WndRec/source/manager.cpp : WaitSendedPackages
+
+WndRec/source/manager.cpp : ReadData
+
+WndRec/source/manager.cpp : ReadData2
+
+WndRec/source/manager.cpp : GetData
+
+WndRec/source/manager.cpp : GetData2
+
+WndRec/source/manager.cpp : OutOfHibernation
+
+WndRec/source/manager.cpp : WritePackage
+
+WndRec/source/manager.cpp : ConnectToServer
+
+WndRec/source/manager.cpp : CloseServer
+
+WndRec/source/manager.cpp : SendPackage
+
+WndRec/source/manager.cpp : RecvPackage
+
+WndRec/source/manager.cpp : AddInPackage
+
+WndRec/source/manager.cpp : ManagerThread
+
+WndRec/source/manager.cpp : InitList
+
+WndRec/source/manager.cpp : ReleaseList
+
+WndRec/source/manager.cpp : AddLastPackage
+
+WndRec/source/manager.cpp : AddFirstPackage
+
+WndRec/source/manager.cpp : ExtractPackage
+
+WndRec/source/manager.cpp : ExtractPackage
+
+WndRec/source/manager.cpp : AllocPackage
+
+WndRec/source/manager.cpp : ReleasePackage
+
+WndRec/source/manager.cpp : ReleasePackageTime
+
+WndRec/source/manager.cpp : GetIPServer
+
+WndRec/source/manager.cpp : GetPortServer
+
+WndRec/source/manager.cpp : ReadCmd
+
+WndRec/source/manager.cpp : RunHibernation
+
+WndRec/source/manager.cpp : WaitOutPackage
+
+WndRec/source/manager.cpp : DuplicationServer
+
+WndRec/source/manager.cpp : SendStr
+
+WndRec/source/FileTransfer.cpp : MD5File
+
+WndRec/source/FileTransfer.cpp : FT_Init
+
+WndRec/source/FileTransfer.cpp : AddData
+
+WndRec/source/FileTransfer.cpp : InitBufStream
+
+WndRec/source/FileTransfer.cpp : ReleaseBufStream
+
+WndRec/source/FileTransfer.cpp : FT_DirCallback
+
+WndRec/source/FileTransfer.cpp : FT_Dir
+
+WndRec/source/FileTransfer.cpp : FT_CopyServer2Bot
+common_call: 1 |  sub_4026ca
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+
+WndRec/source/FileTransfer.cpp : ThreadCopyBot2Server
+
+WndRec/source/FileTransfer.cpp : FT_CopyBot2Server
+
+WndRec/source/FileTransfer.cpp : FT_StopCopy
+
+WndRec/source/FileTransfer.cpp : FT_MkDir
+common_call: 1 |  sub_4026ca
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+
+WndRec/source/FileTransfer.cpp : FT_DelFile
+common_call: 1 |  sub_4026ca
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+
+WndRec/source/FileTransfer.cpp : MD5File
+
+WndRec/source/crypt.cpp : EncryptRSA
+
+WndRec/source/crypt.cpp : EncryptAES256
+
+WndRec/source/crypt.cpp : DecryptAES256
+
+WndRec/source/crypt.cpp : GenAES256Key
+
+WndRec/source/portforward.cpp : PortForwardConnect
+
+WndRec/source/portforward.cpp : StartPortForward
+
+WndRec/source/portforward.cpp : StopPortForward
+
+WndRec/source/socks.cpp : SocksProtocolHandler
+
+WndRec/source/socks.cpp : StartSocks
+
+WndRec/source/socks.cpp : StopSocks
+
+plugin_cve2014-4113/main.cpp : DllMain
+
+plugin_cve2014-4113/main.cpp : Execute
+
+builder/source/main.cpp : _tmain
+
+builder/source/main.cpp : DECODE_STRING
+
+builder/source/main.cpp : DECODE_STRING
+
+builder/source/EncodeString.cpp : GenRand
+
+builder/source/EncodeString.cpp : Exchange
+
+builder/source/EncodeString.cpp : CreateEncodeTable
+
+builder/source/EncodeString.cpp : EncodeString
+
+builder/source/EncodeString.cpp : EncodeAllStrings
+
+builder/source/RSAKey.cpp : ExportKey
+
+builder/source/RSAKey.cpp : GenRSAKeys
+
+builder/source/RSAKey.cpp : EncodeRSAKey
+
+builder/source/ConfigFile.cpp : DateToInt
+
+builder/source/ConfigFile.cpp : GetHosts
+
+builder/source/ConfigFile.cpp : ReadConfig
+
+builder/source/ConfigFile.cpp : ReplaceMem
+
+builder/source/ConfigFile.cpp : ReplaceString
+
+builder/source/ConfigFile.cpp : EncodeReplaceString
+
+builder/source/ConfigFile.cpp : SetHosts
+
+builder/source/ConfigFile.cpp : SetConfig
+
+builder/source/ConfigFile.cpp : IsPrime
+
+builder/source/ConfigFile.cpp : GenRandABR
+
+builder/source/ConfigFile.cpp : SetRandVector
+
+builder/source/ConfigFile.cpp : DateToInt
+
+tool/collect_api.cpp : FindItem
+
+tool/collect_api.cpp : C_Cpp_ListCallback
+
+tool/collect_api.cpp : CmdCollectApi
+
+tool/request_url.cpp : CorrectlyInsert
+
+tool/request_url.cpp : InsertDirectories
+
+tool/request_url.cpp : InsertExt
+
+tool/request_url.cpp : TextToUrl
+
+tool/tool.cpp : CmdHash
+
+tool/tool.cpp : CmdUrl
+
+tool/tool.cpp : TextToUrl
+
+tool/tool.cpp : CmdCollectApi
+
+tool/tool.cpp : main
+
+tool/tool.cpp : CmdHash
+
+tool/tool.cpp : CmdUrl
+
+tool/tool.cpp : DECODE_STRING
+
+tool/tool.cpp : DECODE_STRING
+
+TestInject/main.cpp : ExplorerEntry
+common_call: 1 |  sub_4026ca
+
+TestInject/main.cpp : main
+
+TestInject/main.cpp : DECODE_STRING
+
+mimikatz/source/kuhl_m_ts.c : kuhl_m_ts_multirdp
+
+mimikatz/source/kuhl_m_ts.c : kuhl_m_ts_csrsrv
+
+mimikatz/source/kuhl_m_ts.c : kuhl_m_ts_winlogon
+
+mimikatz/source/kuhl_m_ts.c : kuhl_m_ts_msgina
+
+mimikatz/source/mimikatz.cpp : RtlGetNtVersionNumbers
+
+mimikatz/source/mimikatz.cpp : kuhl_m_sekurlsa_all
+
+mimikatz/source/mimikatz.cpp : kuhl_m_sekurlsa_init
+
+mimikatz/source/mimikatz.cpp : kuhl_m_sekurlsa_clean
+
+mimikatz/source/mimikatz.cpp : kuhl_m_ts_multirdp
+
+mimikatz/source/mimikatz.cpp : kuhl_m_ts_csrsrv
+
+mimikatz/source/mimikatz.cpp : kuhl_m_ts_winlogon
+
+mimikatz/source/mimikatz.cpp : kuhl_m_ts_msgina
+
+mimikatz/source/mimikatz.cpp : OutputData
+
+mimikatz/source/mimikatz.cpp : _wcsdup
+
+mimikatz/source/mimikatz.cpp : free
+
+mimikatz/source/mimikatz.cpp : ExtactAllLogons
+
+mimikatz/source/mimikatz.cpp : MimikatzPatchRDP
+
+mimikatz/source/mimikatz.cpp : MimikatzUpdateReestr
+
+mimikatz/source/mimikatz.cpp : MimikatzPatchCsrss
+
+mimikatz/source/mimikatz.cpp : MimikatzPatchWinlogon
+
+mimikatz/source/mimikatz.cpp : wcsrchr
+
+mimikatz/source/sekurlsa/kuhl_m_sekurlsa.c : kuhl_m_sekurlsa_reset
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+mimikatz/source/sekurlsa/kuhl_m_sekurlsa.c : kuhl_m_sekurlsa_process
+
+mimikatz/source/sekurlsa/kuhl_m_sekurlsa.c : kuhl_m_sekurlsa_minidump
+
+mimikatz/source/sekurlsa/kuhl_m_sekurlsa.c : kuhl_m_sekurlsa_init
+
+mimikatz/source/sekurlsa/kuhl_m_sekurlsa.c : kuhl_m_sekurlsa_clean
+
+mimikatz/source/sekurlsa/kuhl_m_sekurlsa.c : kuhl_m_sekurlsa_enum_range
+common_call: 1 |  sub_401771
+
+mimikatz/source/sekurlsa/kuhl_m_sekurlsa.c : kuhl_m_sekurlsa_all
+
+mimikatz/source/sekurlsa/kuhl_m_sekurlsa.c : kuhl_m_sekurlsa_strings
+
+mimikatz/source/sekurlsa/kuhl_m_sekurlsa.c : kuhl_m_sekurlsa_acquireLSA
+common_call: 1 |  sub_4026ca
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418574
+common_call: 1 |  sub_418593
+
+mimikatz/source/sekurlsa/kuhl_m_sekurlsa.c : kuhl_m_sekurlsa_findlibs
+
+mimikatz/source/sekurlsa/kuhl_m_sekurlsa.c : kuhl_m_sekurlsa_enum
+common_call: 1 |  sub_401771
+
+mimikatz/source/sekurlsa/kuhl_m_sekurlsa.c : kuhl_m_sekurlsa_enum_callback_logondata
+
+mimikatz/source/sekurlsa/kuhl_m_sekurlsa.c : kuhl_m_sekurlsa_printinfos_logonData
+common_call: 1 |  sub_401771
+
+mimikatz/source/sekurlsa/kuhl_m_sekurlsa.c : kuhl_m_sekurlsa_getLogonData
+
+mimikatz/source/sekurlsa/kuhl_m_sekurlsa.c : kuhl_m_sekurlsa_genericCredsOutput
+common_call: 1 |  sub_401771
+
+mimikatz/source/sekurlsa/kuhl_m_sekurlsa.c : kuhl_m_sekurlsa_genericKeyOutput
+
+mimikatz/source/sekurlsa/kuhl_m_sekurlsa_utils.c : kuhl_m_sekurlsa_utils_search
+
+mimikatz/source/sekurlsa/kuhl_m_sekurlsa_utils.c : kuhl_m_sekurlsa_utils_search_generic
+
+mimikatz/source/sekurlsa/kuhl_m_sekurlsa_utils.c : kuhl_m_sekurlsa_utils_pFromLinkedListByLuid
+common_call: 1 |  sub_401771
+
+mimikatz/source/sekurlsa/kuhl_m_sekurlsa_utils.c : kuhl_m_sekurlsa_utils_pFromAVLByLuid
+
+mimikatz/source/sekurlsa/kuhl_m_sekurlsa_utils.c : kuhl_m_sekurlsa_utils_pFromAVLByLuidRec
+common_call: 1 |  sub_401771
+
+mimikatz/source/sekurlsa/kuhl_m_sekurlsa_utils.c : kuhl_m_sekurlsa_utils_NlpMakeRelativeOrAbsoluteString
+
+mimikatz/source/sekurlsa/kuhl_m_sekurlsa_utils.c : kuhl_m_sekurlsa_utils_getSid
+
+mimikatz/source/sekurlsa/crypto/kuhl_m_sekurlsa_nt6.c : kuhl_m_sekurlsa_nt6_init
+common_call: 1 |  sub_406060
+common_call: 1 |  sub_40dfa2
+common_call: 1 |  sub_40f487
+
+mimikatz/source/sekurlsa/crypto/kuhl_m_sekurlsa_nt6.c : kuhl_m_sekurlsa_nt6_clean
+common_call: 1 |  sub_406100
+common_call: 1 |  sub_4062b2
+common_call: 1 |  sub_40dfa2
+common_call: 1 |  sub_40f523
+common_call: 1 |  sub_40f960
+
+mimikatz/source/sekurlsa/crypto/kuhl_m_sekurlsa_nt6.c : kuhl_m_sekurlsa_nt6_LsaInitializeProtectedMemory
+
+mimikatz/source/sekurlsa/crypto/kuhl_m_sekurlsa_nt6.c : kuhl_m_sekurlsa_nt6_LsaCleanupProtectedMemory
+common_call: 1 |  sub_401771
+
+mimikatz/source/sekurlsa/crypto/kuhl_m_sekurlsa_nt6.c : kuhl_m_sekurlsa_nt6_LsaProtectMemory
+
+mimikatz/source/sekurlsa/crypto/kuhl_m_sekurlsa_nt6.c : kuhl_m_sekurlsa_nt6_LsaUnprotectMemory
+
+mimikatz/source/sekurlsa/crypto/kuhl_m_sekurlsa_nt6.c : kuhl_m_sekurlsa_nt6_LsaEncryptMemory
+
+mimikatz/source/sekurlsa/crypto/kuhl_m_sekurlsa_nt6.c : kuhl_m_sekurlsa_nt6_acquireKeys
+common_call: 1 |  sub_401771
+
+mimikatz/source/sekurlsa/crypto/kuhl_m_sekurlsa_nt6.c : kuhl_m_sekurlsa_nt6_acquireKey
+common_call: 1 |  sub_401771
+
+mimikatz/source/sekurlsa/crypto/kuhl_m_sekurlsa_nt5.c : kuhl_m_sekurlsa_nt5_init
+common_call: 1 |  sub_406060
+common_call: 1 |  sub_40dfa2
+common_call: 1 |  sub_40f487
+
+mimikatz/source/sekurlsa/crypto/kuhl_m_sekurlsa_nt5.c : kuhl_m_sekurlsa_nt5_clean
+common_call: 1 |  sub_401771
+common_call: 1 |  sub_406100
+common_call: 1 |  sub_4062b2
+common_call: 1 |  sub_40dfa2
+common_call: 1 |  sub_40f523
+common_call: 1 |  sub_40f960
+
+mimikatz/source/sekurlsa/crypto/kuhl_m_sekurlsa_nt5.c : kuhl_m_sekurlsa_nt5_acquireKeys
+
+mimikatz/source/sekurlsa/crypto/kuhl_m_sekurlsa_nt5.c : kuhl_m_sekurlsa_nt5_acquireKey
+
+mimikatz/source/sekurlsa/crypto/kuhl_m_sekurlsa_nt63.c : kuhl_m_sekurlsa_nt63_init
+common_call: 1 |  sub_406060
+common_call: 1 |  sub_40df5e
+common_call: 1 |  sub_40dfa2
+common_call: 1 |  sub_40f487
+
+mimikatz/source/sekurlsa/crypto/kuhl_m_sekurlsa_nt63.c : kuhl_m_sekurlsa_nt63_clean
+
+mimikatz/source/sekurlsa/crypto/kuhl_m_sekurlsa_nt63.c : kuhl_m_sekurlsa_nt63_acquireKeys
+
+mimikatz/source/sekurlsa/crypto/kuhl_m_sekurlsa_nt63.c : kuhl_m_sekurlsa_nt63_LsaProtectMemory
+
+mimikatz/source/sekurlsa/crypto/kuhl_m_sekurlsa_nt63.c : kuhl_m_sekurlsa_nt63_LsaUnprotectMemory
+
+mimikatz/source/sekurlsa/crypto/kuhl_m_sekurlsa_nt63.c : kuhl_m_sekurlsa_nt63_LsaEncryptMemory
+common_call: 1 |  sub_401771
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+mimikatz/source/sekurlsa/packages/kuhl_m_sekurlsa_tspkg.c : _CT_
+
+mimikatz/source/sekurlsa/packages/kuhl_m_sekurlsa_tspkg.c : kuhl_m_sekurlsa_tspkg
+
+mimikatz/source/sekurlsa/packages/kuhl_m_sekurlsa_tspkg.c : kuhl_m_sekurlsa_enum_logon_callback_tspkg
+
+mimikatz/source/sekurlsa/packages/kuhl_m_sekurlsa_ssp.c : _CT_
+
+mimikatz/source/sekurlsa/packages/kuhl_m_sekurlsa_ssp.c : kuhl_m_sekurlsa_ssp
+
+mimikatz/source/sekurlsa/packages/kuhl_m_sekurlsa_ssp.c : kuhl_m_sekurlsa_enum_logon_callback_ssp
+
+mimikatz/source/sekurlsa/packages/kuhl_m_sekurlsa_livessp.c : _CT_
+
+mimikatz/source/sekurlsa/packages/kuhl_m_sekurlsa_livessp.c : kuhl_m_sekurlsa_livessp
+
+mimikatz/source/sekurlsa/packages/kuhl_m_sekurlsa_livessp.c : kuhl_m_sekurlsa_enum_logon_callback_livessp
+
+mimikatz/source/sekurlsa/packages/kuhl_m_sekurlsa_wdigest.c : _CT_
+
+mimikatz/source/sekurlsa/packages/kuhl_m_sekurlsa_wdigest.c : kuhl_m_sekurlsa_wdigest
+
+mimikatz/source/sekurlsa/packages/kuhl_m_sekurlsa_wdigest.c : kuhl_m_sekurlsa_enum_logon_callback_wdigest
+common_call: 1 |  sub_401771
+
+mimikatz/source/sekurlsa/packages/kuhl_m_sekurlsa_dpapi.c : _CT_
+
+mimikatz/source/sekurlsa/packages/kuhl_m_sekurlsa_dpapi.c : _CT_
+
+mimikatz/source/sekurlsa/packages/kuhl_m_sekurlsa_dpapi.c : kuhl_m_sekurlsa_dpapi
+
+mimikatz/source/sekurlsa/packages/kuhl_m_sekurlsa_dpapi.c : kuhl_m_sekurlsa_enum_callback_dpapi
+common_call: 1 |  sub_401771
+
+mimikatz/source/sekurlsa/packages/kuhl_m_sekurlsa_kerberos.c : _CT_
+
+mimikatz/source/sekurlsa/packages/kuhl_m_sekurlsa_kerberos.c : kuhl_m_sekurlsa_kerberos
+
+mimikatz/source/sekurlsa/packages/kuhl_m_sekurlsa_kerberos.c : kuhl_m_sekurlsa_enum_logon_callback_kerberos
+common_call: 1 |  sub_401771
+
+mimikatz/source/sekurlsa/packages/kuhl_m_sekurlsa_kerberos.c : kuhl_m_sekurlsa_kerberos_tickets
+
+mimikatz/source/sekurlsa/packages/kuhl_m_sekurlsa_kerberos.c : kuhl_m_sekurlsa_enum_callback_kerberos_tickets
+common_call: 1 |  sub_401771
+
+mimikatz/source/sekurlsa/packages/kuhl_m_sekurlsa_kerberos.c : kuhl_m_sekurlsa_kerberos_enum_tickets
+common_call: 1 |  sub_401771
+
+mimikatz/source/sekurlsa/packages/kuhl_m_sekurlsa_kerberos.c : kuhl_m_sekurlsa_kerberos_generateFileName
+common_call: 1 |  sub_401771
+
+mimikatz/source/sekurlsa/packages/kuhl_m_sekurlsa_kerberos.c : kuhl_m_sekurlsa_kerberos_createTicket
+
+mimikatz/source/sekurlsa/packages/kuhl_m_sekurlsa_kerberos.c : kuhl_m_sekurlsa_kerberos_createExternalName
+
+mimikatz/source/sekurlsa/packages/kuhl_m_sekurlsa_kerberos.c : kuhl_m_sekurlsa_kerberos_createKiwiKerberosBuffer
+
+mimikatz/source/sekurlsa/packages/kuhl_m_sekurlsa_kerberos.c : kuhl_m_sekurlsa_kerberos_freeTicket
+common_call: 1 |  sub_401771
+
+mimikatz/source/sekurlsa/packages/kuhl_m_sekurlsa_kerberos.c : kuhl_m_sekurlsa_kerberos_freeExternalName
+common_call: 1 |  sub_401771
+
+mimikatz/source/sekurlsa/packages/kuhl_m_sekurlsa_kerberos.c : kuhl_m_sekurlsa_kerberos_freeKiwiKerberosBuffer
+common_call: 1 |  sub_401771
+
+mimikatz/source/sekurlsa/packages/kuhl_m_sekurlsa_msv1_0.c : _CT_
+
+mimikatz/source/sekurlsa/packages/kuhl_m_sekurlsa_msv1_0.c : kuhl_m_sekurlsa_msv
+
+mimikatz/source/sekurlsa/packages/kuhl_m_sekurlsa_msv1_0.c : kuhl_m_sekurlsa_enum_logon_callback_msv
+
+mimikatz/source/sekurlsa/packages/kuhl_m_sekurlsa_msv1_0.c : FillAnsiString
+
+mimikatz/source/sekurlsa/packages/kuhl_m_sekurlsa_msv1_0.c : kuhl_m_sekurlsa_msv_enum_cred_callback_std
+
+mimikatz/source/sekurlsa/packages/kuhl_m_sekurlsa_msv1_0.c : kuhl_m_sekurlsa_msv_enum_cred_callback_pth
+
+mimikatz/source/sekurlsa/packages/kuhl_m_sekurlsa_msv1_0.c : kuhl_m_sekurlsa_enum_callback_msv_pth
+
+mimikatz/source/sekurlsa/packages/kuhl_m_sekurlsa_msv1_0.c : kuhl_m_sekurlsa_msv_pth
+common_call: 1 |  sub_401771
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+mimikatz/source/sekurlsa/packages/kuhl_m_sekurlsa_msv1_0.c : kuhl_m_sekurlsa_msv_pth_makefakestring
+
+mimikatz/source/sekurlsa/packages/kuhl_m_sekurlsa_msv1_0.c : kuhl_m_sekurlsa_msv_enum_cred
+common_call: 1 |  sub_401771
+
+mimikatz/source/modules/kull_m_string.c : kull_m_string_suspectUnicodeStringStructure
+
+mimikatz/source/modules/kull_m_string.c : kull_m_string_suspectUnicodeString
+
+mimikatz/source/modules/kull_m_string.c : kull_m_string_getUnicodeString
+
+mimikatz/source/modules/kull_m_string.c : kull_m_string_freeUnicodeStringBuffer
+common_call: 1 |  sub_401771
+
+mimikatz/source/modules/kull_m_string.c : kull_m_string_outputHighUnicodeString
+
+mimikatz/source/modules/kull_m_string.c : kull_m_string_outputHighWideString
+
+mimikatz/source/modules/kull_m_string.c : kull_m_string_outputHighWideStringWithLen
+common_call: 1 |  sub_40fb2a
+
+mimikatz/source/modules/kull_m_string.c : kull_m_string_qad_ansi_to_unicode
+
+mimikatz/source/modules/kull_m_string.c : kull_m_string_qad_ansi_c_to_unicode
+
+mimikatz/source/modules/kull_m_string.c : kull_m_string_wprintf_hex
+
+mimikatz/source/modules/kull_m_string.c : kull_m_string_displayFileTime
+
+mimikatz/source/modules/kull_m_string.c : kull_m_string_displayLocalFileTime
+
+mimikatz/source/modules/kull_m_string.c : kull_m_string_displayGUID
+
+mimikatz/source/modules/kull_m_string.c : kull_m_string_args_byName
+
+mimikatz/source/modules/kull_m_registry.c : kull_m_registry_open
+common_call: 1 |  sub_401771
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+mimikatz/source/modules/kull_m_registry.c : kull_m_registry_close
+common_call: 1 |  sub_401771
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+mimikatz/source/modules/kull_m_registry.c : kull_m_registry_RegOpenKeyEx
+common_call: 1 |  sub_401771
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+
+mimikatz/source/modules/kull_m_registry.c : kull_m_registry_searchKeyNamedInList
+common_call: 1 |  sub_401771
+
+mimikatz/source/modules/kull_m_registry.c : kull_m_registry_RegQueryInfoKey
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+
+mimikatz/source/modules/kull_m_registry.c : kull_m_registry_RegQueryValueEx
+common_call: 1 |  sub_401771
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+
+mimikatz/source/modules/kull_m_registry.c : kull_m_registry_RegEnumKeyEx
+common_call: 1 |  sub_401771
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+
+mimikatz/source/modules/kull_m_registry.c : kull_m_registry_RegCloseKey
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+
+mimikatz/source/modules/kull_m_minidump.c : kull_m_minidump_open
+
+mimikatz/source/modules/kull_m_minidump.c : kull_m_minidump_close
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+mimikatz/source/modules/kull_m_minidump.c : kull_m_minidump_RVAtoPTR
+
+mimikatz/source/modules/kull_m_minidump.c : kull_m_minidump_stream
+
+mimikatz/source/modules/kull_m_minidump.c : kull_m_minidump_copy
+
+mimikatz/source/modules/kull_m_minidump.c : kull_m_minidump_remapVirtualMemory64
+
+mimikatz/source/modules/kull_m_service.c : kull_m_service_getUniqueForName
+
+mimikatz/source/modules/kull_m_service.c : kull_m_service_start
+
+mimikatz/source/modules/kull_m_service.c : kull_m_service_remove
+
+mimikatz/source/modules/kull_m_service.c : kull_m_service_genericControl
+
+mimikatz/source/modules/kull_m_service.c : kull_m_service_stop
+
+mimikatz/source/modules/kull_m_service.c : kull_m_service_suspend
+
+mimikatz/source/modules/kull_m_service.c : kull_m_service_resume
+
+mimikatz/source/modules/kull_m_handle.c : kull_m_handle_getHandles
+common_call: 1 |  sub_401771
+
+mimikatz/source/modules/kull_m_asn1.c : kull_m_asn1_getSize
+
+mimikatz/source/modules/kull_m_asn1.c : kull_m_asn1_append
+common_call: 1 |  sub_401771
+
+mimikatz/source/modules/kull_m_asn1.c : kull_m_asn1_create
+
+mimikatz/source/modules/kull_m_asn1.c : kull_m_asn1_GenTime
+
+mimikatz/source/modules/kull_m_asn1.c : kull_m_asn1_GenString
+
+mimikatz/source/modules/kull_m_asn1.c : kull_m_asn1_BitStringFromULONG
+
+mimikatz/source/modules/kull_m_output.c : OutputData
+
+mimikatz/source/modules/kull_m_output.c : kprintf
+
+mimikatz/source/modules/kull_m_output.c : kprintf_inputline
+
+mimikatz/source/modules/kull_m_output.c : kull_m_output_file
+
+mimikatz/source/modules/kull_m_net.c : kull_m_net_getCurrentDomainInfo
+
+mimikatz/source/modules/kull_m_net.c : kull_m_net_CreateWellKnownSid
+common_call: 1 |  sub_401771
+common_call: 1 |  sub_4026ca
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+
+mimikatz/source/modules/kull_m_patch.c : kull_m_patch
+common_call: 1 |  sub_401771
+
+mimikatz/source/modules/kull_m_patch.c : kull_m_patch_getGenericFromBuild
+
+mimikatz/source/modules/kull_m_patch.c : kull_m_patch_genericProcessOrServiceFromBuild
+
+mimikatz/source/modules/kull_m_memory.c : kull_m_memory_open
+common_call: 1 |  sub_401771
+
+mimikatz/source/modules/kull_m_memory.c : kull_m_memory_close
+common_call: 1 |  sub_401771
+
+mimikatz/source/modules/kull_m_memory.c : kull_m_memory_copy
+common_call: 1 |  sub_401771
+common_call: 1 |  sub_410d4e
+common_call: 1 |  sub_410fe4
+common_call: 1 |  sub_4110c3
+common_call: 1 |  sub_4111b1
+common_call: 1 |  sub_4113c9
+common_call: 1 |  sub_417bc4
+common_call: 1 |  sub_417d1b
+common_call: 1 |  sub_4181bf
+
+mimikatz/source/modules/kull_m_memory.c : kull_m_memory_search
+common_call: 1 |  sub_401771
+
+mimikatz/source/modules/kull_m_memory.c : kull_m_memory_alloc
+
+mimikatz/source/modules/kull_m_memory.c : kull_m_memory_free
+
+mimikatz/source/modules/kull_m_memory.c : kull_m_memory_query
+
+mimikatz/source/modules/kull_m_memory.c : kull_m_memory_protect
+
+mimikatz/source/modules/kull_m_file.c : kull_m_file_getCurrentDirectory
+common_call: 1 |  sub_401771
+
+mimikatz/source/modules/kull_m_file.c : kull_m_file_getAbsolutePathOf
+common_call: 1 |  sub_401771
+
+mimikatz/source/modules/kull_m_file.c : kull_m_file_isFileExist
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+mimikatz/source/modules/kull_m_file.c : kull_m_file_writeData
+common_call: 1 |  sub_410c1f
+common_call: 1 |  sub_410d4e
+common_call: 1 |  sub_410fe4
+common_call: 1 |  sub_4110c3
+common_call: 1 |  sub_4111b1
+common_call: 1 |  sub_4113c9
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+mimikatz/source/modules/kull_m_file.c : kull_m_file_readData
+common_call: 1 |  sub_401771
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_417bc4
+common_call: 1 |  sub_417d1b
+common_call: 1 |  sub_4181bf
+common_call: 1 |  sub_418593
+
+mimikatz/source/modules/kull_m_file.c : kull_m_file_cleanFilename
+
+mimikatz/source/modules/kull_m_token.c : kull_m_token_getNameDomainFromToken
+common_call: 1 |  sub_401771
+common_call: 1 |  sub_4026ca
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+
+mimikatz/source/modules/kull_m_token.c : kull_m_token_getNameDomainFromSID
+common_call: 1 |  sub_401771
+common_call: 1 |  sub_4026ca
+common_call: 1 |  sub_40e793
+common_call: 1 |  sub_410455
+common_call: 1 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+
+mimikatz/source/modules/kull_m_token.c : kull_m_token_getTokens
+
+mimikatz/source/modules/kull_m_token.c : kull_m_token_getTokens_process_callback
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+mimikatz/source/modules/kull_m_token.c : kull_m_token_getTokens_handles_callback
+common_call: 1 |  sub_401771
+common_call: 1 |  sub_405af2
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40f3ae
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+mimikatz/source/modules/kull_m_kernel.c : kull_m_kernel_ioctl
+common_call: 1 |  sub_401771
+common_call: 1 |  sub_4026ca
+common_call: 1 |  sub_40e793
+common_call: 2 |  sub_410455
+common_call: 2 |  sub_4104d9
+common_call: 1 |  sub_410c1f
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+mimikatz/source/modules/kull_m_kernel.c : kull_m_kernel_mimidrv_ioctl
+
+mimikatz/source/modules/kull_m_kernel.c : kull_m_kernel_mimidrv_simple_output
+common_call: 1 |  sub_401771
+
+mimikatz/source/modules/kull_m_kernel.c : kull_m_kernel_mimidrv_raw
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+mimikatz/source/modules/kull_m_process.c : kull_m_process_getProcessInformation
+common_call: 1 |  sub_401771
+
+mimikatz/source/modules/kull_m_process.c : kull_m_process_callback_pidForName
+
+mimikatz/source/modules/kull_m_process.c : kull_m_process_getProcessIdForName
+
+mimikatz/source/modules/kull_m_process.c : kull_m_process_getVeryBasicModuleInformations
+common_call: 1 |  sub_401771
+
+mimikatz/source/modules/kull_m_process.c : kull_m_process_callback_moduleForName
+
+mimikatz/source/modules/kull_m_process.c : kull_m_process_callback_moduleFirst
+
+mimikatz/source/modules/kull_m_process.c : kull_m_process_getVeryBasicModuleInformationsForName
+
+mimikatz/source/modules/kull_m_process.c : kull_m_process_getMemoryInformations
+
+mimikatz/source/modules/kull_m_process.c : kull_m_process_peb
+common_call: 1 |  sub_405af2
+common_call: 1 |  sub_40df1d
+common_call: 1 |  sub_40f3ae
+
+mimikatz/source/modules/kull_m_process.c : kull_m_process_ntheaders
+common_call: 1 |  sub_401771
+
+mimikatz/source/modules/kull_m_process.c : kull_m_process_datadirectory
+common_call: 1 |  sub_401771
+
+mimikatz/source/modules/kull_m_process.c : kull_m_process_create
+common_call: 1 |  sub_401771
+common_call: 1 |  sub_417aed
+common_call: 1 |  sub_418593
+
+mimikatz/source/modules/kull_m_process.c : kull_m_process_getExportedEntryInformations
+common_call: 1 |  sub_401771
+
+mimikatz/source/modules/kull_m_process.c : kull_m_process_getImportNameWithoutEnd
+common_call: 1 |  sub_401771
+
+mimikatz/source/modules/kull_m_process.c : kull_m_process_getImportedEntryInformations
+common_call: 1 |  sub_401771
+

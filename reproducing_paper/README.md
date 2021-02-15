@@ -44,16 +44,18 @@ See [README.md](../README.md)
 (dr) $ time ./run.sh &> run_output.txt
 ```
 
-## Sorting functions
-
 ## Graphs
   - Ground-truth ROC curves
     ```
+    (dr) $ time ./rbot.sh &> rbot_final_stdout_stderr.txt
+    (dr) $ time ./pegasus.sh &> pegasus_final_stdout_stderr.txt
+    (dr) $ time ./carbanak.sh &> carbanak_final_stdout_stderr.txt
+
     (dr) $ cd ./grader/
-    (dr) $ time ./rbot_final_corrected.sh &> rbot_final_stdout_stderr.txt
-    (dr) $ time ./pegasus_final_corrected.sh &> pegasus_final_stdout_stderr.txt
-    (dr) $ time ./carbanak_final_corrected.sh &> carbanak_final_stdout_stderr.txt
-    (dr) $ time ./combined_final.sh &> combined_final_stdout_stderr.txt
+    (dr) $ time ./rbot.sh &> rbot_final_stdout_stderr.txt
+    (dr) $ time ./pegasus.sh &> pegasus_final_stdout_stderr.txt
+    (dr) $ time ./carbanak.sh &> carbanak_final_stdout_stderr.txt
+    (dr) $ time ./combined.sh &> combined_final_stdout_stderr.txt
     ```
   - Identify ideal threshold to use from ground-truth samples
     - See `combined_final_stdout_stderr.txt`
@@ -74,6 +76,8 @@ See [README.md](../README.md)
                                           --output cluster_distribution.png
     ```
 
+## Sorting functions
+
 ## Compile & evaluate obfuscated malware
 
 ## Compile & evaluate mimicry-like malware
@@ -85,4 +89,4 @@ See [README.md](../README.md)
   - Experiment 4:
   - Experiment 5:
   - Malware CFGs:
-    - 
+

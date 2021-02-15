@@ -1,0 +1,9 @@
+tensorflow==1.13.1
+tensorflow-gpu==1.13.1
+keras==2.2.4
+requests>=2.21.0
+pandas>=0.24.2
+scikit-learn>=0.21.0
+opencv-python>=4.1.0.25
+prettytable>=0.7.2
+shap==0.34.0

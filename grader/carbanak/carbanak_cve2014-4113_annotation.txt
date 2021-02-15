@@ -1,0 +1,3 @@
+0x1000101c mal-Execute
+0x100011ad mal-CVE2014-4113
+0x100016ba mal-ThreadProc

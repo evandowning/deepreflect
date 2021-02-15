@@ -1,0 +1,6 @@
+0x401771 mal-main
+0x401035 mal-CmdSendBot
+0x4010bd mal-CmdInfo
+0x40113d mal-CmdGetProxy
+0x40130f mal-CmdUAC
+0x401468 mal-CmdElevation
