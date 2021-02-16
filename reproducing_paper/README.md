@@ -8,7 +8,7 @@ $ cd deepreflect/
 $ git checkout tags/v0.0.1
 ```
 
-## Download dataset
+## Download & extract dataset
 ```
 $ wget <link>
 $ <extract>
@@ -16,8 +16,29 @@ $ <extract>
 
 ## Train baseline models
 ```
-# "ACFG" are features inspired by "ACFG" features. Since they are not exactly ACFG features, we call them "ABB" features.
+# "ACFG" are features inspired by "ACFG" features. Since they are not exactly ACFG features, we call them "ABB" features in our paper, but for simplicity we call them "ACFG" features in our code. This will be corrected in a future version of our code.
 # "ACFG Plus" are features used by DeepReflect. See paper for details.
+
+# For autoencoders, see ../README.md
+
+# For VGG19
+$ time python model.py --shap True --kernel 4 --strides 1 acfg \
+              --train ./models/malicious_plus_benign_joint/train.txt \
+              --test ./models/malicious_plus_benign_joint/test.txt \
+              --valid ./models/malicious_plus_benign_joint/valid.txt \
+              --model ./models/malicious_plus_benign_joint/vgg19.h5 \
+              --map ./models/malicious_plus_benign_joint/final_map.txt \
+              --vgg19 True &> ./models/final_binaries_unipacker_bndb_acfg/vgg19_output.txt
+
+# Get SHAP highlights
+$ time python explain_shap.py acfg --train ./models/malicious_plus_benign_joint/train.txt \
+              --test ./models/malicious_plus_benign_joint/test.txt \
+              --valid ./models/malicious_plus_benign_joint/valid.txt \
+              --data test \
+              --model ./models/malicious_plus_benign_joint/vgg19_half_joint.h5 \
+              --map ./models/malicious_plus_benign_joint/final_map.txt \
+              --joint True \
+              --output ./shap/ 2> error.txt
 ```
 
 ## Train DeepReflect and cluster RoIs
@@ -77,16 +98,10 @@ See [README.md](../README.md)
     ```
 
 ## Sorting functions
+  - See `sorting/` folder in dataset
 
 ## Compile & evaluate obfuscated malware
+  - See `malware-gt/` folder in dataset
 
 ## Compile & evaluate mimicry-like malware
-
-## Code examples
-  - Experiment 1:
-  - Experiment 2:
-  - Experiment 3:
-  - Experiment 4:
-  - Experiment 5:
-  - Malware CFGs:
-
+  - See `malware-gt/` folder in dataset
