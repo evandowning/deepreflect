@@ -26,9 +26,9 @@ $ time python model.py --shap True --kernel 4 --strides 1 acfg \
               --train ./models/malicious_plus_benign_joint/train.txt \
               --test ./models/malicious_plus_benign_joint/test.txt \
               --valid ./models/malicious_plus_benign_joint/valid.txt \
-              --model ./models/malicious_plus_benign_joint/vgg19.h5 \
+              --model ./models/malicious_plus_benign_joint/vgg19_half_joint.h5 \
               --map ./models/malicious_plus_benign_joint/final_map.txt \
-              --vgg19 True &> ./models/final_binaries_unipacker_bndb_acfg/vgg19_output.txt
+              --vgg19-half True &> ./models/final_binaries_unipacker_bndb_acfg/vgg19_output.txt
 
 # Get SHAP highlights
 $ time python explain_shap.py acfg --train ./models/malicious_plus_benign_joint/train.txt \
