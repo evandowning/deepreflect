@@ -7,8 +7,8 @@ For technical details, please see the paper cited below.
 
 **Overview**:
   - Input: unpacked malware PE binary
-  - Middle: list of all functions in binary along with their reconstruction error values
-  - Output: choosing a threshold, identifies regions of interest (i.e., suspected malicious functions)
+  - Middle: list of all basic blocks in binary along with their reconstruction error values
+  - Output: choosing a threshold (based on average reconstruction error value per function), identifies regions of interest (i.e., basic blocks above threshold), and clusters the averaged feature vectors of RoIs
 
 **Usage**: Using ground-truth malware binaries, choose an error value threshold which gives the analyst their desired results (tune to favor increasing TPR or decreasing FPR).
 
