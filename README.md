@@ -29,6 +29,7 @@ For technical details, please see the paper cited below.
     - Python 3 (tested with Python 3.7.3) and pip
     - virtualenvwrapper (optional, but recommended)
     - BinaryNinja (used only to extract features and function information from binaries)
+    - parallel (optional, but recommended)
   - Setup:
     ```
     $ git clone https://github.com/evandowning/deepreflect.git
