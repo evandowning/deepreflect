@@ -1,3 +1,5 @@
+# Originally from https://github.com/elastic/ember/tree/master/malconv
+
 from keras.layers import concatenate
 from keras.layers.core import Lambda
 from keras.models import Model
