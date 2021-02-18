@@ -20,7 +20,6 @@ from scipy import stats
 from sklearn.cluster import DBSCAN, OPTICS
 from sklearn import metrics
 
-from DBCV import DBCV
 from scipy.spatial.distance import euclidean
 
 from cluster_acfg import ACFG
