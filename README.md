@@ -8,7 +8,7 @@ For technical details, please see the paper cited below.
 **Overview**:
   - Input: unpacked malware PE binary
   - Middle: list of all basic blocks in binary along with their reconstruction error values
-  - Output: choosing a threshold (based on average reconstruction error value per function), identifies regions of interest (i.e., basic blocks above threshold), and clusters the averaged feature vectors of RoIs
+  - Output: choosing a threshold (based on average reconstruction error value per function), identifies regions of interest (RoI) (i.e., basic blocks above threshold), and clusters the averaged feature vectors of RoIs
 
 **Usage**: Using ground-truth malware binaries, choose an error value threshold which gives the analyst their desired results (tune to favor increasing TPR or decreasing FPR).
 
@@ -43,25 +43,39 @@ For technical details, please see the paper cited below.
     - Folder layout: `benign_unpacked/benign/<binary files>` and `malicious_unpacked/<family label>/<binary files>`
   - Extract binary features & data
     ```
-    (dr) $ cd ./extract
     (dr) $ ./extract.sh benign_unpacked/
     (dr) $ ./extract.sh malicious_unpacked/
     ```
   - Train autoencoder:
     ```
-    (dr) $ python split.py /data/benign_unipacker_bndb_acfg_plus_feature/ train.txt test.txt
-    (dr) $ for fn in 'train.txt' 'test.txt' 'valid.txt'; do shuf $fn > tmp.txt; mv tmp.txt $fn; done
+    (dr) $ cd ./model/
+
+    # Split & shuffle dataset
+    (dr) $ python split.py benign_unpacked_bndb_raw_feature/ train.txt test.txt > split_stdout.txt
+    (dr) $ for fn in 'train.txt' 'test.txt'; do shuf $fn > tmp.txt; mv tmp.txt $fn; done
 
     # Check that benign samples use all features:
-    (dr) $ time python feature_check.py train.txt test.txt valid.txt
-    # Do the same for malicious samples as well
-    (dr) $ find /data/malicious_unipacker_bndb_acfg_plus_feature/ -type f > malicious.txt
-    (dr) $ time python feature_check.py malicious.txt valid.txt valid.txt
+    (dr) $ python feature_check.py train.txt
+    (dr) $ python feature_check.py test.txt
+    # Check that malicious samples use all features:
+    (dr) $ find malicious_unpacked_bndb_raw_feature/ -type f > malicious.txt
+    (dr) $ python feature_check.py malicious.txt
+
+    # Get max values (for normalizing)
+    (dr) $ python normalize.py  --train train.txt \
+                                --test test.txt \
+                                --output normalize.npy
 
     # Train model
-    (dr) $ time python autoencoder.py --kernel 24 --strides 1 --option 2 acfg_plus --train train.txt --test test.txt --valid valid.txt --model ./models/m2_normalize_24_12.h5 --map benign_map.txt --normalize True > output.txt
+    (dr) $ time python autoencoder.py   --train train.txt \
+                                        --test test.txt \
+                                        --normalize normalize.npy \
+                                        --model dr.h5 > autoencoder_stdout.txt 2> autoencoder_stderr.txt
     ```
-  - Cluster likely malicious functions:
+  - Determine desired threshold:
+    ```
+    ```
+  - Cluster suspicious functions:
     - Extract reconstruction errors for each basic block:
       ```
       (dr) $ time python autoencoder_eval_all.py acfg_plus --acfg-feature /data/malicious_unipacker_bndb_acfg_plus_feature/ \
@@ -69,7 +83,7 @@ For technical details, please see the paper cited below.
                                                            --normalize True \
                                                            --output /data/malicious_unipacker_bndb_acfg_plus_feature_error/ 2> autoencoder_eval_all_stderr.txt
       ```
-    - Extract regions of interest (basic blocks):
+    - Extract RoI (basic blocks):
       ```
       (dr) $ time python autoencoder_roi.py acfg_plus --data /data/malicious_unipacker_bndb_acfg_plus_feature_error/ \
                                                       --bndb-func /data/malicious_unipacker_bndb_function/ \
@@ -77,7 +91,7 @@ For technical details, please see the paper cited below.
                                                       --output ./autoencoder_roi/ \
                                                       --bb --avg --thresh 7.293461392658043e-06 > ./autoencoder_roi/stdout.txt 2> ./autoencoder_roi/stderr.txt
       ```
-    - Cluster highlighted functions:
+    - Cluster functions containing RoI:
       ```
       (dr) $ time python pca_hdbscan.py --x autoencoder_roi/x_train.npy \
                                         --fn autoencoder_roi/train_fn.npy \

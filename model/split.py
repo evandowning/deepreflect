@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import sys
 import os
 import random
@@ -5,7 +7,7 @@ import math
 from prettytable import PrettyTable
 
 def usage():
-    sys.stdout.write('usage: python split.py /data/acfg_features train.txt test.txt\n')
+    sys.stdout.write('usage: python split.py features/ train.txt test.txt\n')
     sys.exit(2)
 
 def _main():

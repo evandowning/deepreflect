@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import sys
 import numpy as np
 
@@ -32,27 +34,17 @@ def summary(FN):
     return summation
 
 def usage():
-    sys.stderr.write('usage: python feature_check.py train.txt test.txt valid.txt\n')
+    sys.stderr.write('usage: python feature_check.py file.txt\n')
     sys.exit(1)
 
 def _main():
-    if len(sys.argv) != 4:
+    if len(sys.argv) != 2:
         usage()
 
-    trainFN = sys.argv[1]
-    testFN = sys.argv[2]
-    validFN = sys.argv[3]
+    fn = sys.argv[1]
 
-    summation = summary(trainFN)
-    sys.stdout.write('Train: {0}\n'.format(summation))
-    sys.stdout.write('\n')
-
-    summation = summary(testFN)
-    sys.stdout.write('Test: {0}\n'.format(summation))
-    sys.stdout.write('\n')
-
-    summation = summary(validFN)
-    sys.stdout.write('Valid: {0}\n'.format(summation))
+    summation = summary(fn)
+    sys.stdout.write('{0}: {1}\n'.format(fn,summation))
     sys.stdout.write('\n')
 
 if __name__ == '__main__':
