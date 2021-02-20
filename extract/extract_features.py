@@ -28,7 +28,7 @@ def set_type():
                         self_type[k][line+'A'] = label
                         self_type[k][line+'W'] = label
 
-class ACFG:
+class DR:
     def __init__(self, addr, inst, offspring, betweenness, api):
         self.entry_addr = int(addr,16)
 
@@ -128,27 +128,22 @@ class ACFG:
         return rv
 
     def __repr__(self):
-        return '<ACFG for {0}>'.format(hex(self.entry_addr))
+        return '<DR for {0}>'.format(hex(self.entry_addr))
 
 # Dump features to output file
-def dump(output,fn,acfg):
-    h = fn.split('/')[-1] + '.npy'
-    f = fn.split('/')[-2]
-
-    newdir = os.path.join(output,f)
-
-    # Create new directory
-    if not os.path.exists(newdir):
-        os.makedirs(newdir)
-
-    outputFN = os.path.join(newdir,h)
+def dump(output,dr):
+    # Get folder of features file
+    # Create it if it doesn't exist
+    root = os.path.dirname(output)
+    if not os.path.exists(root):
+        os.makedirs(root)
 
     # Create numpy array
-    array = np.array([], dtype=np.float)
+    array = np.array([], dtype=float)
 
     # For each basic block
-    for bb in sorted(acfg, key=lambda x:x.entry_addr):
-        a = np.array([], dtype=np.float)
+    for bb in sorted(dr, key=lambda x:x.entry_addr):
+        a = np.array([], dtype=float)
 
         # [0] Entry address
         a = np.append(a,bb.entry_addr)
@@ -199,9 +194,9 @@ def dump(output,fn,acfg):
             array = np.vstack((array,a))
 
     # Output numpy array
-    np.save(outputFN, array)
+    np.save(output, array)
 
-# Gets ACFG contents from preprocessed file
+# Gets DR contents from preprocessed file
 def extract(fn):
     rv = list()
 
@@ -222,13 +217,13 @@ def extract(fn):
     pattern += r'.*\n'
     pattern += r'.*APIs: (.*)\n'
 
-    # Parse ACFGs
+    # Parse DR features
     match = re.findall(pattern, content, re.MULTILINE)
     for m in match:
         addr,inst,offspring,betweenness,api = m
-        acfg = ACFG(addr,inst,offspring,betweenness,api)
-        acfg.get_type()
-        rv.append(acfg)
+        dr = DR(addr,inst,offspring,betweenness,api)
+        dr.get_type()
+        rv.append(dr)
 
     return rv
 
@@ -236,14 +231,24 @@ def _main():
     # Parse arguments
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('--acfg', help='acfg preprocess file', required=True)
+    parser.add_argument('--raw', help='raw features file', required=True)
     parser.add_argument('--output', help='output folder', required=True)
 
     args = parser.parse_args()
 
     # Store arguments
-    fn = args.acfg
+    fn = args.raw
     output = args.output
+
+    # If raw file doesn't exist
+    if not os.path.exists(fn):
+        sys.stderr.write('{0} does not exist\n'.format(fn))
+        sys.exit(1)
+
+    # If features file already exists
+    if os.path.exists(output):
+        sys.stderr.write('{0} already exists\n'.format(output))
+        sys.exit(1)
 
     start = time.time()
 
@@ -253,14 +258,14 @@ def _main():
     sys.stdout.write('{0} : Setting types took {1} seconds\n'.format(fn,time.time()-start))
     start = time.time()
 
-    # Get acfg contents
+    # Get dr contents
     rv = extract(fn)
 
     sys.stdout.write('{0} : Extracting features took {1} seconds\n'.format(fn,time.time()-start))
     start = time.time()
 
     # Output feature vector
-    dump(output,fn,rv)
+    dump(output,rv)
 
     sys.stdout.write('{0} : Dumping features took {1} seconds\n'.format(fn,time.time()-start))
 

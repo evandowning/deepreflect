@@ -11,20 +11,24 @@ def _main():
     # Parse arguments
     parser = argparse.ArgumentParser()
 
-    subparsers = parser.add_subparsers(help='dataset types help', dest='cmd')
-    subparsers.required = True
-
-    sp = subparsers.add_parser('acfg_plus', help='acfg plus features')
-    sp.set_defaults(cmd='acfg_plus')
-    sp.add_argument('--bndb', help='bndb file', required=True)
-    sp.add_argument('--output', help='output file', required=True)
+    parser.add_argument('--bndb', help='bndb file', required=True)
+    parser.add_argument('--output', help='output file', required=True)
 
     args = parser.parse_args()
 
     # Store arguments
-    dataset = args.cmd
     bndbFN = args.bndb
     outFN = args.output
+
+    # If bndb file doesn't exist
+    if not os.path.exists(bndbFN):
+        sys.stderr.write('{0} does not exist\n'.format(bndbFN))
+        sys.exit(1)
+
+    # If function file already exists
+    if os.path.exists(outFN):
+        sys.stderr.write('{0} already exists\n'.format(outFN))
+        sys.exit(1)
 
     start = time.time()
 
@@ -34,6 +38,12 @@ def _main():
     sys.stdout.write('{0}: Took {1} seconds to load BinaryNinja file\n'.format(bndbFN,time.time()-start))
 
     start = time.time()
+
+    # Get folder of function file
+    # Create it if it doesn't exist
+    root = os.path.dirname(outFN)
+    if not os.path.exists(root):
+        os.makedirs(root)
 
     with open(outFN,'w') as fw:
         # Iterate over each function

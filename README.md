@@ -40,29 +40,12 @@ For technical details, please see the paper cited below.
 
 ## Usage
   - Obtain unpacked benign and malicious PE file datasets
-    - I put benign unpacked binaries in `/data/benign_unipacker/` and malicious unpacked binaries in `/data/malicious_unipacker/` because I unpacked them via unipacker.
-    - Under each directory is a subdirectory of the family label. I.e., `/data/benign_unipacker/benign/`, `/data/malicious_unipacker/virut/`, `/data/malicious_unipacker/zbot/`, etc.
-  - Extract BinaryNinja DB file
+    - Folder layout: `benign_unpacked/benign/<binary files>` and `malicious_unpacked/<family label>/<binary files>`
+  - Extract binary features & data
     ```
-    (dr) $ find /data/benign_unipacker -type f > samples_benign_unipacker.txt
-    (dr) $ ./write_commands_binja.sh samples_benign_unipacker.txt /data/benign_unipacker_bndb/ > commands_benign_unipacker_bndb.txt
-    (dr) $ time parallel --memfree 2G --retries 10 -a commands_benign_unipacker_bndb.txt 2> error.txt > output.txt
-    ```
-  - Extracting features:
-    ```
-    (dr) $ find /data/benign_unipacker_bndb -type f > samples_benign_unipacker_bndb.txt
-    (dr) $ ./write_commands_acfg_plus_binja.sh samples_benign_unipacker_bndb.txt benign_unipacker_bndb_acfg_plus/ > commands_benign_unipacker_bndb_acfg_plus.txt
-    (dr) $ time parallel --memfree 2G --retries 10 -a commands_benign_unipacker_bndb_acfg_plus.txt 2> error.txt > output.txt
-
-    (dr) $ find benign_unipacker_bndb_acfg_plus -type f > samples_benign_unipacker_bndb_acfg_plus.txt
-    (dr) $ ./write_commands_acfg_plus_feature.sh samples_benign_unipacker_bndb_acfg_plus.txt benign_unipacker_bndb_acfg_plus_feature/ > commands_benign_unipacker_bndb_acfg_plus_feature.txt
-    (dr) $ time parallel --memfree 2G --retries 10 -a commands_benign_unipacker_bndb_acfg_plus_feature.txt 2> error.txt > output.txt
-    ```
-  - Extract function-related data from BinaryNinja DB files
-    ```
-    (dr) $ find /data/malicious_unipacker_bndb/ -type f > samples_bndb.txt
-    (dr) $ time ./write_commands_get_function.sh samples_bndb.txt /data/malicious_unipacker_bndb_function/ > commands_get_function.txt
-    (dr) $ time parallel --memfree 4G --retries 10 -a commands_get_function.txt 2> parallel_get_function_stderr.txt > parallel_get_function_stdout.txt
+    (dr) $ cd ./extract
+    (dr) $ ./extract.sh benign_unpacked/
+    (dr) $ ./extract.sh malicious_unpacked/
     ```
   - Train autoencoder:
     ```
@@ -78,31 +61,36 @@ For technical details, please see the paper cited below.
     # Train model
     (dr) $ time python autoencoder.py --kernel 24 --strides 1 --option 2 acfg_plus --train train.txt --test test.txt --valid valid.txt --model ./models/m2_normalize_24_12.h5 --map benign_map.txt --normalize True > output.txt
     ```
-  - Extract reconstruction errors:
-    ```
-    (dr) $ time python autoencoder_eval_all.py acfg_plus --acfg-feature /data/malicious_unipacker_bndb_acfg_plus_feature/ \
-                                                         --model ./models/autoencoder_benign_unipacker_plus/m2_normalize_24_12.h5 \
-                                                         --normalize True \
-                                                         --output /data/malicious_unipacker_bndb_acfg_plus_feature_error/ 2> autoencoder_eval_all_stderr.txt
-    ```
-  - Extract regions of interest:
-    ```
-    (dr) $ time python autoencoder_roi.py acfg_plus --data /data/malicious_unipacker_bndb_acfg_plus_feature_error/ \
-                                                    --bndb-func /data/malicious_unipacker_bndb_function/ \
-                                                    --acfg /data/malicious_unipacker_bndb_acfg_plus_feature/ \
-                                                    --output ./autoencoder_roi/ \
-                                                    --bb --avg --thresh 7.293461392658043e-06 > ./autoencoder_roi/stdout.txt 2> ./autoencoder_roi/stderr.txt
-    ```
-  - Cluster regions of interest:
-    ```
-    (dr) $ time python pca_hdbscan.py --x autoencoder_roi/x_train.npy \
-                                      --fn autoencoder_roi/train_fn.npy \
-                                      --addr autoencoder_roi/train_addr.npy > pca_hdbscan_output.txt
-    ```
+  - Cluster likely malicious functions:
+    - Extract reconstruction errors for each basic block:
+      ```
+      (dr) $ time python autoencoder_eval_all.py acfg_plus --acfg-feature /data/malicious_unipacker_bndb_acfg_plus_feature/ \
+                                                           --model ./models/autoencoder_benign_unipacker_plus/m2_normalize_24_12.h5 \
+                                                           --normalize True \
+                                                           --output /data/malicious_unipacker_bndb_acfg_plus_feature_error/ 2> autoencoder_eval_all_stderr.txt
+      ```
+    - Extract regions of interest (basic blocks):
+      ```
+      (dr) $ time python autoencoder_roi.py acfg_plus --data /data/malicious_unipacker_bndb_acfg_plus_feature_error/ \
+                                                      --bndb-func /data/malicious_unipacker_bndb_function/ \
+                                                      --acfg /data/malicious_unipacker_bndb_acfg_plus_feature/ \
+                                                      --output ./autoencoder_roi/ \
+                                                      --bb --avg --thresh 7.293461392658043e-06 > ./autoencoder_roi/stdout.txt 2> ./autoencoder_roi/stderr.txt
+      ```
+    - Cluster highlighted functions:
+      ```
+      (dr) $ time python pca_hdbscan.py --x autoencoder_roi/x_train.npy \
+                                        --fn autoencoder_roi/train_fn.npy \
+                                        --addr autoencoder_roi/train_addr.npy > pca_hdbscan_output.txt
+      ```
+
+## Grading
+  - Every system will have FPs and FNs. Ours is no different. The following allows the user to identify FPs and FNs to grade this tool and continue improving it.
 
 ## FAQs
   - Why don't you release the binaries used to train and evaluate DeepReflect (other than ground-truth samples)?
     - We cannot release malware binaries because of our agreement with those who provided them to us.
       - If you're looking for malware binaries, you might consider the [SOREL dataset](https://github.com/sophos-ai/SOREL-20M)
     - We cannot release benign binaries because of copyright rules.
+      - If you're looking for benign binaries, you might consider [crawling](https://github.com/evandowning/selenium-crawler) them on [CNET](https://download.cnet.com/windows/). Make sure to verify they're not malicious via [VirusTotal](https://www.virustotal.com/).
     - We do, however, release our extracted features so models can be trained from scratch.

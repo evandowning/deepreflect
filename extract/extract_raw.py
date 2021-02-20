@@ -2,16 +2,12 @@ import sys
 import os
 import argparse
 import time
-import re
-from multiprocessing import Pool
 
 import networkx as nx
-import pygraphviz
-from networkx.drawing import nx_agraph
 
 import binaryninja as binja
 
-class ACFG:
+class DR:
     def __init__(self, addr, num_inst):
         self.entry_addr = addr
 
@@ -60,16 +56,22 @@ class ACFG:
         return rv
 
     def __repr__(self):
-        return '<ACFG for {0}>'.format(hex(self.entry_addr))
+        return '<DR for {0}>'.format(hex(self.entry_addr))
 
-# Dump ACFG to file
+# Dump DR raw features to file
 def dump(output,rv):
-    with open(output,'w') as fw:
-        for acfg in rv:
-            fw.write('{0}\n'.format(acfg))
+    # Get folder of raw file
+    # Create it if it doesn't exist
+    root = os.path.dirname(output)
+    if not os.path.exists(root):
+        os.makedirs(root)
 
-# Extract ACFG from BNDB file using Binary Ninja
-def get_acfg_binja(bFN, debug):
+    with open(output,'w') as fw:
+        for dr in rv:
+            fw.write('{0}\n'.format(dr))
+
+# Extract DR raw features from BNDB file using Binary Ninja
+def get_dr_binja(bFN, debug):
     rv = list()
 
     start = time.time()
@@ -122,17 +124,17 @@ def get_acfg_binja(bFN, debug):
         for bb in bbs:
             insts = bb.get_disassembly_text()
 
-            # Create ACFG object
-            acfg = ACFG(bb.start, bb.instruction_count)
+            # Create DR object
+            dr = DR(bb.start, bb.instruction_count)
 
             # Set betweenness of this basic block
             if bb.start in betweenness:
-                acfg.set_betweenness(betweenness[bb.start])
+                dr.set_betweenness(betweenness[bb.start])
             else:
-                acfg.set_betweenness(0)
+                dr.set_betweenness(0)
 
             # Set number of offspring
-            acfg.set_offspring(len(bb.outgoing_edges))
+            dr.set_offspring(len(bb.outgoing_edges))
 
             # For each instruction of basic block
             for e,inst in enumerate(insts):
@@ -144,22 +146,22 @@ def get_acfg_binja(bFN, debug):
                     sys.stdout.write('{0} | {1} \n'.format(hex(inst.address),inst))
 
                 # Get mnemonic
-                acfg.count('{0}'.format(inst.tokens[0]))
+                dr.count('{0}'.format(inst.tokens[0]))
 
                 # Get call symbol (if it exists)
-                acfg.get_symbol(inst.tokens)
+                dr.get_symbol(inst.tokens)
 
-            # Append ACFG to return
-            rv.append(acfg)
+            # Append DR to return
+            rv.append(dr)
 
             if debug:
                 sys.stdout.write('\n')
         if debug:
             sys.stdout.write('\n')
 
-    sys.stdout.write('{0} Getting ACFG features took {1} seconds\n'.format(bFN,time.time()-time_previous))
+    sys.stdout.write('{0} Getting DR raw features took {1} seconds\n'.format(bFN,time.time()-time_previous))
 
-    sys.stdout.write('{0} Extracting ACFG from BNDB file took a total of {1} seconds\n'.format(bFN,time.time()-start))
+    sys.stdout.write('{0} Extracting DR raw features from BNDB file took a total of {1} seconds\n'.format(bFN,time.time()-start))
 
     # Close file
     bv.file.close()
@@ -198,14 +200,14 @@ def _main():
         sys.stderr.write('{0} does not exist\n'.format(fn))
         sys.exit(1)
 
-    # If ACFG plus file already exists
+    # If raw file already exists
     if os.path.exists(output):
         sys.stderr.write('{0} already exists\n'.format(output))
         sys.exit(1)
 
-    # Extract acfg
+    # Extract raw features
     if tool == 'binja':
-        rv = get_acfg_binja(fn,debug)
+        rv = get_dr_binja(fn,debug)
         time_previous = time.time()
         dump(output,rv)
         sys.stdout.write('{0} Finished dumping features took {1} seconds\n'.format(fn,time.time()-time_previous))
