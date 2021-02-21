@@ -13,9 +13,9 @@ def _main():
     # Parse arguments
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('--x', help='x train', required=True)
-    parser.add_argument('--fn', help='train fn', required=True)
-    parser.add_argument('--addr', help='train addr', required=True)
+    parser.add_argument('--x', help='x (roi features to cluster)', required=True)
+    parser.add_argument('--fn', help='fn', required=True)
+    parser.add_argument('--addr', help='addr', required=True)
 
     args = parser.parse_args()
 

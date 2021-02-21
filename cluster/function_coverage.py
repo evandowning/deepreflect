@@ -25,9 +25,10 @@ def _main():
     # Parse arguments
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('--functions', help='binary functions folder', required=True)
-    parser.add_argument('--fn', help='train fn', required=True)
-    parser.add_argument('--addr', help='train addr', required=True)
+    parser.add_argument('--functions', help='functions folder', required=True)
+    parser.add_argument('--fn', help='fn', required=True)
+    parser.add_argument('--addr', help='addr', required=True)
+    parser.add_argument('--output', help='output graph file', required=True)
 
     args = parser.parse_args()
 
@@ -35,6 +36,7 @@ def _main():
     functions = args.functions
     fnFN = args.fn
     addrFN = args.addr
+    outputFN = args.output
 
     highlight = dict()
 
@@ -142,61 +144,17 @@ def _main():
     # Colors from LibreOffice
     color = ['004586','ff420e','ffd320','579d1c','7e0021','83caff','314004','aecf00']
 
-#   # Graph distributions & output min/max/avg
-#   x = range(len(highlight.keys()))
-
-#   # Coverage
-#   plt.bar(x,sorted(percent_coverage,reverse=True),color='#{0}'.format(color[0]))
-#   # From : https://stackoverflow.com/questions/12998430/remove-xticks-in-a-matplotlib-plot#12998531
-#   plt.tick_params(
-#   axis='x',          # changes apply to the x-axis
-#   which='both',      # both major and minor ticks are affected
-#   bottom=False,      # ticks along the bottom edge are off
-#   top=False,         # ticks along the top edge are off
-#   labelbottom=False) # labels along the bottom edge are off
-
-#   plt.xlabel('Malware Binary')
-#   plt.ylabel('# Highlighted Functions / # of Functions')
-#   plt.title('Function Highlight Percent Distribution')
-#   plt.tight_layout()
-
-#   plt.savefig('function_coverage_percentage.png')
-#   plt.clf()
-
-
     # Coverage Histogram
-    #fig= plt.figure(figsize=(5,3))
-    fig= plt.figure(figsize=(5,2))
+    fig= plt.figure(figsize=(5,3))
     percent_coverage = [x*100 for x in percent_coverage]
     n, bins, patches = plt.hist(percent_coverage, 50, facecolor='#{0}'.format(color[0]), rwidth=0.7)
 
     plt.xlabel('% of Functions Highlighted in Sample')
     plt.ylabel('# of Malware Samples')
-#   plt.title('Function Highlight Percent Histogram')
+    plt.title('Function Highlight Percent Histogram')
     plt.tight_layout()
 
-    plt.savefig('function_coverage_percentage_histogram.png')
-
-
-#   # Size (bb's)
-#   plt.bar(x,sorted(avg_bb_roi,reverse=True),color='#{0}'.format(color[0]),label='Highlighted Functions')
-#   plt.bar(x,sorted(avg_bb_func,reverse=True),color='#{0}'.format(color[1]),label='All Functions')
-#   # From : https://stackoverflow.com/questions/12998430/remove-xticks-in-a-matplotlib-plot#12998531
-#   plt.tick_params(
-#   axis='x',          # changes apply to the x-axis
-#   which='both',      # both major and minor ticks are affected
-#   bottom=False,      # ticks along the bottom edge are off
-#   top=False,         # ticks along the top edge are off
-#   labelbottom=False) # labels along the bottom edge are off
-
-#   plt.xlabel('Malware Binary')
-#   plt.ylabel('Avg. Number of Basic Blocks of Function')
-#   plt.title('Function Basic Block Distribution')
-#   plt.legend(loc='upper right')
-
-#   plt.savefig('function_coverage_bb.png')
-#   plt.clf()
-
+    plt.savefig(outputFN)
 
 if __name__ == '__main__':
     _main()
