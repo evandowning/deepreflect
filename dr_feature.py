@@ -3,9 +3,8 @@
 import sys
 import os
 import numpy as np
-import random
 
-# Holds parsed dataset
+# Retrieves DR features
 class DR(object):
     # Get samples
     def __init__(self, trainFN, testFN, max_len, normalizeFN):
@@ -26,11 +25,13 @@ class DR(object):
 
                 self.train.append(line)
 
-        with open(testFN,'r') as fr:
-            for line in fr:
-                line = line.strip('\n')
+        # For mse.py
+        if testFN is not None:
+            with open(testFN,'r') as fr:
+                for line in fr:
+                    line = line.strip('\n')
 
-                self.test.append(line)
+                    self.test.append(line)
 
         # If normalizing the DR feature vectors
         if self.normalizeFN is not None:
@@ -85,9 +86,17 @@ class DR(object):
         # Output numpy array
         np.save(outputFN, maximum_val)
 
-    # Data Generator
+    # Gets path of index
+    def get_path(self,t,e):
+        if t == 'train':
+            sample = self.train
+        elif t == 'test':
+            sample = self.test
+
+        return sample[e]
+
+    # Data generator for training autoencoder
     def generator(self,t,batch_size):
-        sample = None
         if t == 'train':
             sample = self.train
         elif t == 'test':
@@ -114,8 +123,6 @@ class DR(object):
                 # Organize data to be fed to keras
                 x.append(b)
 
-                print(len(x))
-
                 if len(x) == batch_size:
                     if self.normalizeFN is not None:
                         yield (np.asarray(x) / self.maximum_val , np.asarray(x) / self.maximum_val)
@@ -123,3 +130,287 @@ class DR(object):
                         yield (np.asarray(x), np.asarray(x))
 
                     x = list()
+
+#TODO
+# Retrieves ROI values
+class ROI(object):
+    # Get samples
+    def __init__(self, sample, thresh, funcFlag=False,windowFlag=False,bbFlag=False,avgFlag=False,avgstdevFlag=False):
+        self.sample = sample
+
+        self.funcFlag = funcFlag
+        self.windowFlag = windowFlag
+        self.bbFlag = bbFlag
+
+        self.avgFlag = avgFlag
+        self.avgstdevFlag = avgstdevFlag
+
+        self.thresh = thresh
+
+    # Returns MSE values (and BB addresses) over or equal to threshold
+    def parse(self, mseFN, featureFN, thresh):
+        rv_addr = list()
+        rv_mse = list()
+
+        # Read data
+        mse = np.load(mseFN)[0]
+
+        addr = list()
+
+        # Read feature addresses
+        feature = np.load(featureFN)
+        for a in feature:
+            addr.append(int(a[0]))
+
+        # Extend addr if necessary (address of -1 denotes padding)
+        if len(addr) < len(mse):
+            diff = len(mse) - len(addr)
+            addr.extend(['-1']*diff)
+
+        # Identify highlighted basic blocks
+        index = np.where(mse >= thresh)[0]
+
+        for i in index:
+            a = int(addr[i])
+            m = float(mse[i])
+            rv_addr.append(a)
+            rv_mse.append(m)
+
+        return rv_addr,rv_mse
+
+    # Some getter functions
+    def get_sample_num(self):
+        return len(self.sample)
+
+    # Data Generator
+    def generator(self):
+        for mseFN,funcFN,featureFN in self.sample:
+            sys.stdout.write('{0}\n'.format(mseFN))
+            sys.stdout.flush()
+
+            feature_map = dict()
+
+            # Get features of basic blocks
+            feature = np.load(featureFN)
+
+            for a in feature:
+                feature_map[int(a[0])] = a[1:]
+
+            # Get highlighted basic block addresses and corresponding MSE values
+            addr,mse = self.parse(mseFN,featureFN,self.thresh)
+
+            sys.stderr.write('BB HIGHLIGHT: {0} {1}\n'.format(mseFN,addr))
+
+            if len(addr) == 0:
+                sys.stderr.write('{0}: Note: Nothing was highlighted\n'.format(mseFN))
+                continue
+            if (len(set(addr)) == 1) and (-1 in set(addr)):
+                sys.stderr.write('{0}: Note: Only padding was highlighted\n'.format(mseFN))
+                continue
+
+            bb_map = dict()
+            func_map = dict()
+
+            # Get functions & bb's in binary
+            with open(funcFN,'r') as fr:
+                for line in fr:
+                    line = line.strip('\n')
+                    split = line.split(' ')
+
+                    # Corrupted line. Most likely obfuscated function name
+                    if len(split) < 4:
+                        continue
+
+                    funcAddr = split[0]
+                    bbAddr = split[1]
+                    funcSymbolType = split[-2] # NOTE: this is because sometimes the function's name has spaces in it
+                    funcSymbolTypeName = split[-1]
+
+                    # If not an function symbol, ignore
+                    if funcSymbolType != '0':
+                        continue
+
+                    funcAddr = int(funcAddr)
+                    bbAddr = int(bbAddr)
+
+                    bb_map[bbAddr] = funcAddr
+
+                    if funcAddr not in func_map:
+                        func_map[funcAddr] = list()
+                    func_map[funcAddr].append(bbAddr)
+
+            # Retrieve data
+            x = list()
+            x_func = list()
+
+            # Autoencoder (benign unpacked plus, valid, filtered)
+            maximum_val = np.array([2.18000000e+02,4.66131907e-01,1.59328500e+06,1.00820000e+04,7.68000000e+02,5.19373000e+05,1.20040000e+04,4.36000000e+02,4.10000000e+01,6.00000000e+00,7.00000000e+00,3.00000000e+00,6.00000000e+00,1.50000000e+01,2.00000000e+00,3.00000000e+00,5.00000000e+00,5.00000000e+00])
+
+            funcs = set()
+
+            # For each highlighted basic block, get its function
+            for bb in addr:
+                # Ignore padding
+                if bb == -1:
+                    continue
+
+                if bb not in bb_map:
+                    sys.stderr.write('{0}: Error: Highlighted BB {1} not found\n'.format(fn,hex(bb)))
+                    continue
+
+                func = bb_map[bb]
+                funcs.add(func)
+
+            # Take all basic blocks in highlighted functions
+            if self.funcFlag:
+                # For each highlighted function
+                for f in funcs:
+                    tmp = np.array([])
+
+                    # For each basic block in this function
+                    for bb in sorted(func_map[f]):
+                        # NOTE: not sure why this happened with binaryninja. maybe different/updated versions?
+                        if bb not in feature_map:
+                            sys.stderr.write('{0}: Error: BB {1} in binary, but not in ACFG features\n'.format(fn,hex(bb)))
+                            continue
+
+                        feature = feature_map[bb]
+                        # Normalize data
+                        feature = feature / maximum_val
+
+                        if len(tmp) == 0:
+                            tmp = feature
+                        else:
+                            tmp = np.vstack((tmp,feature))
+
+                    x.append(tmp)
+                    x_func.append(f)
+
+            # Take only basic blocks window-wise within each highlighted function
+            elif self.windowFlag:
+                # For each highlighted function
+                for f in funcs:
+                    tmp = np.array([])
+
+                    # Get first and last highlighted basic block in function
+                    sorted_bb = sorted(func_map[f])
+                    common = sorted(set(sorted_bb).intersection(set(addr)))
+                    start = common[0]
+                    end = common[-1]
+                    start_index = sorted_bb.index(start)
+                    end_index = sorted_bb.index(end)
+
+                    # For each basic block in this function's window
+                    for bb in sorted_bb[start_index:end_index+1]:
+                        # NOTE: not sure why this happened with binaryninja. maybe different/updated versions?
+                        if bb not in feature_map:
+                            sys.stderr.write('{0}: Error: BB {1} in binary, but not in ACFG features\n'.format(fn,hex(bb)))
+                            continue
+
+                        feature = feature_map[bb]
+                        # Normalize data
+                        feature = feature / maximum_val
+
+                        if len(tmp) == 0:
+                            tmp = feature
+                        else:
+                            tmp = np.vstack((tmp,feature))
+
+                    x.append(tmp)
+                    x_func.append(f)
+
+            # Take only highlighted basic blocks within each highlighted function
+            elif self.bbFlag:
+                # For each highlighted function
+                for f in funcs:
+                    tmp = np.array([])
+
+                    # For each basic block in this function
+                    for bb in sorted(func_map[f]):
+                        # If this basic block was not highlighted, ignore it
+                        if bb not in addr:
+                            continue
+
+                        # NOTE: not sure why this happened with binaryninja. maybe different/updated versions?
+                        if bb not in feature_map:
+                            sys.stderr.write('{0}: Error: BB {1} in binary, but not in ACFG features\n'.format(fn,hex(bb)))
+                            continue
+
+                        feature = feature_map[bb]
+                        # Normalize data
+                        feature = feature / maximum_val
+
+                        if len(tmp) == 0:
+                            tmp = feature
+                        else:
+                            tmp = np.vstack((tmp,feature))
+
+                    x.append(tmp)
+                    x_func.append(f)
+
+                # For each highlighted basic block
+                for bb in addr:
+                    # Ignore padding
+                    if bb == -1:
+                        continue
+
+                    if bb not in bb_map:
+                        # Error is already being reported above
+                        continue
+
+                    # NOTE: not sure why this happened with binaryninja. maybe different/updated versions?
+                    if bb not in feature_map:
+                        sys.stderr.write('{0}: Error: BB {1} in binary, but not in ACFG features\n'.format(fn,hex(bb)))
+                        continue
+
+                    func = bb_map[bb]
+                    feature = feature_map[bb]
+                    # Normalize data
+                    feature = feature / maximum_val
+
+                    #print(hex(bb),hex(func),feature,len(feature))
+
+            # Final computation on data
+            if self.avgFlag:
+                rv = np.array([])
+
+                for s in x:
+                    # Average these values
+                    if s.ndim == 2:
+                        avg = np.average(s,axis=0)
+                    else:
+                        avg = s
+
+                    if len(rv) == 0:
+                        rv = avg
+                    else:
+                        rv = np.vstack((rv,avg))
+
+            elif self.avgstdevFlag:
+                rv = np.array([])
+
+                for s in x:
+                    # Average these values
+                    if s.ndim == 2:
+                        avg = np.average(s,axis=0)
+                        std = np.std(s,axis=0)
+                        avgstd = np.append(avg,std)
+                    else:
+                        avgstd = np.append(s,s)
+
+                    if len(rv) == 0:
+                        rv = avgstd
+                    else:
+                        rv = np.vstack((rv,avgstd))
+
+            # If nothing was extracted, ignore this sample
+            if len(rv) == 0:
+                sys.stderr.write('{0}: Note, no highlights contain internal functions.\n'.format(mseFN))
+                continue
+
+            # For each array (representing each function highlighted)
+            if rv.ndim == 2:
+                for e,r in enumerate(rv):
+                    yield (mseFN,hex(x_func[e]),r)
+            else:
+                yield (mseFN,hex(x_func[0]),rv)

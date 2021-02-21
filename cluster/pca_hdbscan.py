@@ -1,19 +1,13 @@
 #!/usr/bin/python3
 
 import sys
-import os
 import argparse
 import numpy as np
 import time
 
-from collections import Counter
-
-from joblib import dump
-
 from sklearn.decomposition import PCA
 
 import hdbscan
-from sklearn import metrics
 
 def _main():
     # Parse arguments

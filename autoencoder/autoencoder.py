@@ -118,7 +118,7 @@ def _main():
     max_len = int(args.max_bb)
     model_path = args.model
 
-    # Import dataset
+    # Load dataset
     data = DR(trainFN,testFN,max_len,normalizeFN)
 
     # Define model
