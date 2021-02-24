@@ -8,7 +8,7 @@ For technical details, please see the paper cited below.
 **Overview**:
   - Input: unpacked malware PE binary
   - Middle: list of all basic blocks in binary along with their reconstruction error values (MSE values)
-  - Output: choosing a threshold (based on average MSE value per function), identifies regions of interest (RoI) (i.e., basic blocks above threshold), and clusters the averaged feature vectors of RoIs
+  - Output: choosing a threshold (based on average MSE value per function), identifies regions of interest (RoI) (i.e., basic blocks with MSE values above threshold), and clusters the averaged feature vectors of RoIs
 
 **Usage**: Using ground-truth malware binaries, choose an MSE threshold which gives the analyst their desired results (tune to favor increasing TPR or decreasing FPR).
 
@@ -124,7 +124,11 @@ For technical details, please see the paper cited below.
     ```
     $ vim roc_stdout_stderr.txt
     ```
-  - Examine FPs & FNs due to threshold
+  - Examine FPs & FNs due to chosen threshold
+    ```
+    $ examine.sh 9.053894787328584e-08 &> examine_stdout_stderr.txt
+    $ vim examine_stdout_stderr.txt
+    ```
 
 ## FAQs
   - Why don't you release the binaries used to train and evaluate DeepReflect (other than ground-truth samples)?
