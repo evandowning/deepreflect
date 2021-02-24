@@ -52,8 +52,12 @@ def print_details(y,score,addr,thr,f_name):
             string = 'TN: Function Address: {0}  Score: {1}\n'.format(hex(addr[e]),s)
             tn.append(string)
 
+    tpr = len(tp)/(len(tp)+len(fn))
+    fpr = len(fp)/(len(fp)+len(tn))
+
     # Output TPs, FPs, and FNs
     sys.stdout.write('Total: {0} | TP: {1} | FP: {2} | FN: {3} | TN: {4}\n'.format(len(tp)+len(fp)+len(fn)+len(tn),len(tp),len(fp),len(fn),len(tn)))
+    sys.stdout.write('TPR: {0} | FPR: {1}\n'.format(tpr*100,fpr*100))
     for string in tp:
         sys.stdout.write(string)
     for string in fp:
@@ -117,6 +121,8 @@ def _main():
     parser.add_argument('--feature', help='features file', required=True)
     parser.add_argument('--bndb-func', help='bndb function file', required=True)
 
+    parser.add_argument('--threshold', help='optional threshold to evaluate', default=None, required=False)
+
     parser.add_argument('--annotation', help='function annotations', required=True)
     parser.add_argument('--roc',help='roc curve output name', required=True)
 
@@ -126,8 +132,12 @@ def _main():
     mseFN = args.mse
     featureFN = args.feature
     funcFN = args.bndb_func
+    optionalThreshold = args.threshold
     annotationFN = args.annotation
     output = args.roc
+
+    if args.threshold is not None:
+        optionalThreshold = float(args.threshold)
 
     sample = [[mseFN,funcFN,featureFN]]
 
@@ -193,38 +203,45 @@ def _main():
     fpr, tpr, thresholds = metrics.roc_curve(roc_y, roc_score)
     roc_auc = metrics.auc(fpr, tpr)
 
-    # Output FPR/TPR/Thresholds
-    sys.stdout.write('ROC Curve. AUC: {0}\n'.format(roc_auc))
-    sys.stdout.write('FPR TRP Threshold\n')
-    for i in range(len(fpr)):
-        sys.stdout.write('{0} {1} {2}\n'.format(fpr[i],tpr[i],thresholds[i]))
-    sys.stdout.write('\n')
+    # If user defines threshold to test at
+    if optionalThreshold is not None:
+        sys.stdout.write('Optional Threshold {0}\n'.format(optionalThreshold))
+        print_details(roc_y,roc_score,roc_addr,optionalThreshold,gt_f_name)
+        sys.stdout.write('\n')
 
-    # Graph ROC curve
-    plt.plot(fpr,tpr,'r--')
-    plt.xlabel('FPR')
-    plt.ylabel('TPR')
-    plt.title('Function ROC Curve. AUC = {0}'.format(round(roc_auc,4)))
+    # Otherwise, print TPs/FPs/FNs for different thresholds
+    else:
+        # Output FPR/TPR/Thresholds
+        sys.stdout.write('ROC Curve. AUC: {0}\n'.format(roc_auc))
+        sys.stdout.write('FPR TRP Threshold\n')
+        for i in range(len(fpr)):
+            sys.stdout.write('{0} {1} {2}\n'.format(fpr[i],tpr[i],thresholds[i]))
+        sys.stdout.write('\n')
 
-    plt.savefig('{0}_func.png'.format(output))
-    plt.clf()
+        # Graph ROC curve
+        plt.plot(fpr,tpr,'r--')
+        plt.xlabel('FPR')
+        plt.ylabel('TPR')
+        plt.title('Function ROC Curve. AUC = {0}'.format(round(roc_auc,4)))
 
-    # Save y, score, and addr
-    np.savez('{0}_func_data.npz'.format(output),
-             y=np.asarray(roc_y),
-             score=np.asarray(roc_score),
-             addr=np.asarray(roc_addr))
+        plt.savefig('{0}_func.png'.format(output))
+        plt.clf()
 
-    # Print TPs/FPs/FNs for different thresholds
-    thr = get_thr_at_tpr(0.8,tpr,thresholds)
-    sys.stdout.write('Threshold - TPR at 80% (FPR {0}%): {1}\n'.format(get_fpr_at_tpr(0.8,tpr,fpr)*100,thr))
-    print_details(roc_y,roc_score,roc_addr,thr,gt_f_name)
-    sys.stdout.write('\n')
+        # Save y, score, and addr
+        np.savez('{0}_func_data.npz'.format(output),
+                 y=np.asarray(roc_y),
+                 score=np.asarray(roc_score),
+                 addr=np.asarray(roc_addr))
 
-    thr = get_thr_at_fpr(0.05,fpr,thresholds)
-    sys.stdout.write('Threshold - FPR at 5% (TPR {0}%): {1}\n'.format(get_tpr_at_fpr(0.05,tpr,fpr)*100,thr))
-    print_details(roc_y,roc_score,roc_addr,thr,gt_f_name)
-    sys.stdout.write('\n')
+        thr = get_thr_at_tpr(0.8,tpr,thresholds)
+        sys.stdout.write('Threshold - TPR at 80% (FPR {0}%): {1}\n'.format(get_fpr_at_tpr(0.8,tpr,fpr)*100,thr))
+        print_details(roc_y,roc_score,roc_addr,thr,gt_f_name)
+        sys.stdout.write('\n')
+
+        thr = get_thr_at_fpr(0.05,fpr,thresholds)
+        sys.stdout.write('Threshold - FPR at 5% (TPR {0}%): {1}\n'.format(get_tpr_at_fpr(0.05,tpr,fpr)*100,thr))
+        print_details(roc_y,roc_score,roc_addr,thr,gt_f_name)
+        sys.stdout.write('\n')
 
 if __name__ == '__main__':
     _main()
