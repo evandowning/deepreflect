@@ -12,13 +12,6 @@ For technical details, please see the paper cited below.
 
 **Usage**: Using ground-truth malware binaries, choose an MSE threshold which gives the analyst their desired results (tune to favor increasing TPR or decreasing FPR).
 
-## Citation
-  - ```
-    things and stuff
-    ```
-  - Paper: link to paper
-  - [Reproducing paper experiments](reproducing_paper/README.md)
-
 ## Coming soon
   - Dockerfile
   - BinaryNinja plugin
@@ -28,7 +21,7 @@ For technical details, please see the paper cited below.
     - Tested on Debian 10 (Buster)
     - Python 3 (tested with Python 3.7.3) and pip
     - virtualenvwrapper (optional, but recommended)
-    - BinaryNinja (used only to extract features and function information from binaries)
+    - BinaryNinja 2.2 (used to extract features and function information from binaries)
     - parallel (optional, but recommended)
   - Setup:
     ```
@@ -133,7 +126,21 @@ For technical details, please see the paper cited below.
 ## FAQs
   - Why don't you release the binaries used to train and evaluate DeepReflect (other than ground-truth samples)?
     - We cannot release malware binaries because of our agreement with those who provided them to us.
-      - If you're looking for malware binaries, you might consider the [SOREL dataset](https://github.com/sophos-ai/SOREL-20M)
+      - If you're looking for malware binaries, you might consider the [SOREL dataset](https://github.com/sophos-ai/SOREL-20M) or contacting [VirusTotal](https://www.virustotal.com/).
     - We cannot release benign binaries because of copyright rules.
       - If you're looking for benign binaries, you might consider [crawling](https://github.com/evandowning/selenium-crawler) them on [CNET](https://download.cnet.com/windows/). Make sure to verify they're not malicious via [VirusTotal](https://www.virustotal.com/).
     - We do, however, release our extracted features so models can be trained from scratch.
+
+## Citing
+  - ```
+    Evan Downing, Yisroel Mirsky, Kyuhong Park, Wenke Lee. "DeepReflect: Discovering Malicious Functionality through Binary Reconstruction.", USENIX Security Symposium, 2021.
+
+    @inproceedings{2021_deepreflect,
+        title = {DeepReflect: Discovering Malicious Functionality through Binary Reconstruction},
+        booktitle = {{USENIX} {Security} {Symposium}},
+        author = {Downing, Evan and Mirsky, Yisroel and Park, Kyuhong and Lee, Wenke},
+        year = {2021}
+    ```
+  - Paper: link to paper
+  - [Reproducing paper experiments](reproducing_paper/README.md)
+
