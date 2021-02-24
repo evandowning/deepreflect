@@ -2,8 +2,6 @@
 
 import sys
 import numpy as np
-import matplotlib.pyplot as plt
-from sklearn import metrics
 
 def _main():
     if len(sys.argv) < 3:
