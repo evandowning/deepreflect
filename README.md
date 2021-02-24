@@ -97,16 +97,18 @@ For technical details, please see the paper cited below.
     - Graph percentage of functions highlighted:
       ```
       (dr) $ cd ./cluster/
-      (dr) $ time python function_coverage.py --functions malicious_unpacked_bndb_function/ \
-                                              --fn ../autoencoder/roi/fn.npy \
-                                              --addr ../autoencoder/roi/addr.npy \
-                                              --output function_coverage.png > function_coverage_stdout.txt
+      (dr) $ python function_coverage.py --functions malicious_unpacked_bndb_function/ \
+                                         --fn ../autoencoder/roi/fn.npy \
+                                         --addr ../autoencoder/roi/addr.npy \
+                                         --output function_coverage.png > function_coverage_stdout.txt
       ```
 
 ## Grading
+  - Here we provide real malware binaries compiled from source code which have been [open-sourced or leaked](https://thezoo.morirt.com/). These are dangerous malware. **Do NOT execute these binaries. They are meant to be used for educational purposes only.**
   - Graph ROC curves
     ```
     (dr) $ cd grader/
+    (dr) $ unzip malware.zip # Password is "infected"
     (dr) $ ./roc.sh &> roc_stdout_stderr.txt
     ```
     - [roc_rbot.png](grader/roc_rbot.png)
@@ -115,12 +117,34 @@ For technical details, please see the paper cited below.
     - [roc_combined.png](grader/roc_combined.png)
   - Pick desired threshold
     ```
-    $ vim roc_stdout_stderr.txt
+    (dr) $ vim roc_stdout_stderr.txt
     ```
   - Examine FPs & FNs due to chosen threshold
     ```
-    $ examine.sh 9.053894787328584e-08 &> examine_stdout_stderr.txt
-    $ vim examine_stdout_stderr.txt
+    (dr) $ ./examine.sh 9.053894787328584e-08 &> examine_stdout_stderr.txt
+    (dr) $ vim examine_stdout_stderr.txt
+    ```
+
+## Post Processing
+  - To further improve results, we've added some post-processing steps to our tool.
+  - Run post-processing steps
+    ```
+    (dr) $ cd post-processing/
+    ```
+    - Reduce FPs
+      - Sort functions by MSE value to list TPs before FPs
+        - Our intuition is that functions more unrecognizable by the autoencoder are more likely to be malicious.
+        - 
+      - Sort functions by number of basic blocks to list TPs before FPs
+        - We observed that a lot of malicious functions are larger than benign functions.
+        - 
+      - Sort functions by uniqueness compared to other malware samples in population
+        - 
+    - Reduce FNs
+        - Signature-based solutions can be used to identify known functionalities
+        - 
+  - Grade each step (and combinations of steps) from above
+    ```
     ```
 
 ## FAQs
@@ -133,6 +157,8 @@ For technical details, please see the paper cited below.
 
 ## Citing
   ```
+  To appear in USENIX Security Symposium 2021.
+
   @inproceedings{deepreflect_2021,
       author = {Downing, Evan and Mirsky, Yisroel and Park, Kyuhong and Lee, Wenke},
       title = {DeepReflect: {Discovering} {Malicious} {Functionality} through {Binary} {Reconstruction}},
