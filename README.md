@@ -116,10 +116,10 @@ For technical details, please see the paper cited below.
     (dr) $ cd grader/
     (dr) $ ./roc.sh &> roc_stdout_stderr.txt
     ```
-    ![rbot](grader/roc_rbot.png)
-    ![pegasus](grader/roc_pegasus.png)
-    ![carbanak](grader/roc_carbanak.png)
-    ![combined](grader/roc_combined.png)
+    - [roc_rbot.png](grader/roc_rbot.png)
+    - [roc_pegasus.png](grader/roc_pegasus.png)
+    - [roc_carbanak.png](grader/roc_carbanak.png)
+    - [roc_combined.png](grader/roc_combined.png)
   - Pick desired threshold
     ```
     $ vim roc_stdout_stderr.txt
