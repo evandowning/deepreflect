@@ -1,153 +1,110 @@
 #!/bin/bash
 
+roc_multi()
+{
+    family="$1"
+
+    root=`pwd`
+    base="${root}/malware/${family}/output/"
+
+    python roc_multi.py "${base}/combined_roc_func_data.npz" \
+                        "DeepReflect" \
+                        "Carbanak" \
+                        "${base}/combined_roc.png"
+}
+
 combine ()
 {
-    base="$1"
-    output="$2"
+    family="$1"
 
-    echo "Combine Func"
+    root=`pwd`
+    base="${root}/malware/${family}/output/"
 
-    python combine.py "${base}_bot_data_func.npz" \
-                      "${base}_botcmd_data_func.npz" \
-                      "${base}_downloader_data_func.npz" \
-                      "${base}_autorunsidebar_data_func.npz" \
-                      "${base}_cve2014-4113_data_func.npz" \
-                      "${base}_rdpwrap_data_func.npz" \
-                      "${output}_data_func.npz"
-
-    python combine.py "${base}_bot_data_func_avg.npz" \
-                      "${base}_botcmd_data_func_avg.npz" \
-                      "${base}_downloader_data_func_avg.npz" \
-                      "${base}_autorunsidebar_data_func_avg.npz" \
-                      "${base}_cve2014-4113_data_func_avg.npz" \
-                      "${base}_rdpwrap_data_func_avg.npz" \
-                      "${output}_data_func_avg.npz"
-
-    python combine.py "${base}_bot_data_func_avg_log.npz" \
-                      "${base}_botcmd_data_func_avg_log.npz" \
-                      "${base}_downloader_data_func_avg_log.npz" \
-                      "${base}_autorunsidebar_data_func_avg_log.npz" \
-                      "${base}_cve2014-4113_data_func_avg_log.npz" \
-                      "${base}_rdpwrap_data_func_avg_log.npz" \
-                      "${output}_data_func_avg_log.npz"
+    python combine.py "${base}/AutorunSidebar_roc_func_data.npz" \
+                      "${base}/bot_roc_func_data.npz" \
+                      "${base}/botcmd_roc_func_data.npz" \
+                      "${base}/cve2014-4113_roc_func_data.npz" \
+                      "${base}/downloader_roc_func_data.npz" \
+                      "${base}/rdpwrap_roc_func_data.npz" \
+                      "${base}/combined_roc_func_data.npz"
 }
-
-shap ()
-{
-    fam="$1"
-    name="$2"
-
-    echo "$name - SHAP - ACFG"
-
-    python roc_corrected.py --mse "../malware-gt-binja/acfg-shap-eval/${name}.txt.npy" \
-                  --acfg-feature "../malware-gt-binja/acfg-feature/acfg/${name}.txt" \
-                  --func "./carbanak/${name}_function.txt" \
-                  --bndb-func "./carbanak/${name}_bndb_function.txt" \
-                  --gt "./carbanak/${name}_annotation.txt" \
-                  --roc "./carbanak/${fam}_shap_acfg_roc_${name}"
-}
-
 
 roc ()
 {
-    fam="$1"
+    family="$1"
     name="$2"
 
-    echo "$name - Autoencoder - ACFG"
+    root=`pwd`
+    root_input="${root}/malware/${family}/"
+    binary="${root_input}/${name}"
 
-    python roc_corrected.py --mse "../malware-gt-binja/acfg-autoencoder/${name}.npy" \
-                  --acfg-feature "../malware-gt-binja/acfg-feature/acfg/${name}.txt" \
-                  --func "./carbanak/${name}_function.txt" \
-                  --bndb-func "./carbanak/${name}_bndb_function.txt" \
-                  --gt "./carbanak/${name}_annotation.txt" \
-                  --roc "./carbanak/${fam}_ae_acfg_roc_${name}"
+    root_output="${root_input}/output"
+    mkdir -p "${root_output}"
+
+    base="${root_output}/${name: 0:-4}"
+    bndb="${base}.bndb"
+    raw="${base}_raw.txt"
+
+    feature="${base}_feature.npy"
+    feature_path="${base}_feature_path.txt"
+    echo "${feature}" > "${feature_path}"
+
+    function="${base}_function.txt"
+    mse="${base}_mse"
+    annotation="${root_input}/${name: 0:-4}_annotation.txt"
+    roc_name="${base}_roc"
+    roc_out="${base}_roc_stdout_stderr.txt"
+
+    cd ../extract/
+
+    # Extract features
+    python binja.py --exe "${binary}" --output "${bndb}"
+    python extract_raw.py binja --bndb "${bndb}" --output "${raw}"
+    python extract_features.py --raw "${raw}" --output "${feature}"
+
+    # Extract function information
+    python extract_function.py --bndb "${bndb}" --output "${function}"
+
+    cd ../autoencoder/
+
+    # Extract MSE values
+    python mse.py --feature "${feature_path}" \
+                  --model "dr.h5" \
+                  --normalize "normalize.npy" \
+                  --output "${mse}"
+
+    cd "${root}"
+
+    # Graph ROC curve
+    python roc.py --mse "${mse}/output/${name: 0:-4}_feature.npy" \
+                  --feature "${feature}" \
+                  --bndb-func "${function}" \
+                  --annotation "${annotation}" \
+                  --roc "${roc_name}" &> "${roc_out}"
 }
 
-roc_plus ()
-{
-    fam="$1"
-    name="$2"
+family="carbanak"
 
-    echo "$name - Autoencoder - ACFG plus"
+name="AutorunSidebar.dll"
+roc "${family}" "${name}"
 
-    python roc_corrected.py --mse "../malware-gt-binja/acfg-plus-autoencoder/${name}.npy" \
-                  --acfg-plus-feature "../malware-gt-binja/acfg-plus-feature/acfg-plus/${name}.txt.npy" \
-                  --func "./carbanak/${name}_function.txt" \
-                  --bndb-func "./carbanak/${name}_bndb_function.txt" \
-                  --gt "./carbanak/${name}_annotation.txt" \
-                  --roc "./carbanak/${fam}_ae_acfg_plus_roc_${name}"
-}
+name="bot.exe"
+roc "${family}" "${name}"
 
-capa()
-{
-    name="$1"
+name="botcmd.exe"
+roc "${family}" "${name}"
 
-    echo "$name - CAPA"
+name="cve2014-4113.dll"
+roc "${family}" "${name}"
 
-    cd ./capa/
-    ./output_data.sh
-    cd ../
-}
+name="downloader.exe"
+roc "${family}" "${name}"
 
-fam="carbanak"
-
-name="${fam}_bot"
-shap "$fam" "$name"
-roc "$fam" "$name"
-roc_plus "$fam" "$name"
-
-name="${fam}_botcmd"
-shap "$fam" "$name"
-roc "$fam" "$name"
-roc_plus "$fam" "$name"
-
-name="${fam}_downloader"
-shap "$fam" "$name"
-roc "$fam" "$name"
-roc_plus "$fam" "$name"
-
-name="${fam}_autorunsidebar"
-shap "$fam" "$name"
-roc "$fam" "$name"
-roc_plus "$fam" "$name"
-
-name="${fam}_cve2014-4113"
-shap "$fam" "$name"
-roc "$fam" "$name"
-roc_plus "$fam" "$name"
-
-name="${fam}_rdpwrap"
-shap "$fam" "$name"
-roc "$fam" "$name"
-roc_plus "$fam" "$name"
-
-capa "$fam"
+name="rdpwrap.dll"
+roc "${family}" "${name}"
 
 # Combine ROC data
-base="./carbanak/carbanak_ae_acfg_roc_carbanak"
-output="./carbanak/combined/ae_acfg"
-combine "$base" "$output"
+combine "${family}"
 
-base="./carbanak/carbanak_ae_acfg_plus_roc_carbanak"
-output="./carbanak/combined/ae_acfg_plus"
-combine "$base" "$output"
-
-base="./carbanak/carbanak_shap_acfg_roc_carbanak"
-output="./carbanak/combined/shap_acfg"
-combine "$base" "$output"
-
-# For function average
-echo "Separate: Average"
-python separate.py "./carbanak/combined/ae_acfg_plus_data_func_avg.npz" \
-                   "./carbanak/combined/ae_acfg_data_func_avg.npz" \
-                   "./carbanak/combined/shap_acfg_data_func_avg.npz" \
-                   "./capa/carbanak_capa_data_func.npz" \
-                   "./functionsimsearch/carbanak_data_func_avg.npz" \
-                   "DeepReflect" \
-                   "AE_ABB" \
-                   "SHAP_ABB" \
-                   "CAPA" \
-                   "FunctionSimSearch" \
-                   "Carbanak" \
-                   "./carbanak/combined/separate_avg.png"
-
+# Graph ROC data
+roc_multi "${family}"

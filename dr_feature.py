@@ -4,7 +4,7 @@ import sys
 import os
 import numpy as np
 
-# Retrieves DR features
+# Retrieves DR features for training autoencoder
 class DR(object):
     # Get samples
     def __init__(self, trainFN, testFN, max_len, normalizeFN):
@@ -80,9 +80,6 @@ class DR(object):
 
         sys.stdout.write('\n')
 
-        # Autoencoder (benign unpacked plus, valid, filtered)
-       #maximum_val = np.array([2.18000000e+02,4.66131907e-01,1.59328500e+06,1.00820000e+04,7.68000000e+02,5.19373000e+05,1.20040000e+04,4.36000000e+02,4.10000000e+01,6.00000000e+00,7.00000000e+00,3.00000000e+00,6.00000000e+00,1.50000000e+01,2.00000000e+00,3.00000000e+00,5.00000000e+00,5.00000000e+00])
-
         # Output numpy array
         np.save(outputFN, maximum_val)
 
@@ -131,11 +128,10 @@ class DR(object):
 
                     x = list()
 
-#TODO
-# Retrieves ROI values
-class ROI(object):
+# Retrieves RoI values for clustering
+class RoI(object):
     # Get samples
-    def __init__(self, sample, thresh, funcFlag=False,windowFlag=False,bbFlag=False,avgFlag=False,avgstdevFlag=False):
+    def __init__(self, sample, thresh, normalizeFN, funcFlag=False,windowFlag=False,bbFlag=False,avgFlag=False,avgstdevFlag=False):
         self.sample = sample
 
         self.funcFlag = funcFlag
@@ -145,7 +141,12 @@ class ROI(object):
         self.avgFlag = avgFlag
         self.avgstdevFlag = avgstdevFlag
 
+        self.normalizeFN = normalizeFN
         self.thresh = thresh
+
+        # If normalizing the DR feature vectors
+        if self.normalizeFN is not None:
+            self.maximum_val = np.load(self.normalizeFN)
 
     # Returns MSE values (and BB addresses) over or equal to threshold
     def parse(self, mseFN, featureFN, thresh):
@@ -153,7 +154,7 @@ class ROI(object):
         rv_mse = list()
 
         # Read data
-        mse = np.load(mseFN)[0]
+        mse = np.load(mseFN)
 
         addr = list()
 
@@ -178,6 +179,41 @@ class ROI(object):
 
         return rv_addr,rv_mse
 
+    # Retreives mapping between basic blocks and the function they belong to
+    def get_mapping(self,funcFN):
+        bb_map = dict()
+        func_map = dict()
+
+        # Get functions & bb's in binary
+        with open(funcFN,'r') as fr:
+            for line in fr:
+                line = line.strip('\n')
+                split = line.split(' ')
+
+                # Corrupted line. Most likely obfuscated function name
+                if len(split) < 4:
+                    continue
+
+                funcAddr = split[0]
+                bbAddr = split[1]
+                funcSymbolType = split[-2] # NOTE: this is because sometimes the function's name has spaces in it
+                funcSymbolTypeName = split[-1]
+
+                # If not an function symbol, ignore
+                if funcSymbolType != '0':
+                    continue
+
+                funcAddr = int(funcAddr)
+                bbAddr = int(bbAddr)
+
+                bb_map[bbAddr] = funcAddr
+
+                if funcAddr not in func_map:
+                    func_map[funcAddr] = list()
+                func_map[funcAddr].append(bbAddr)
+
+        return bb_map,func_map
+
     # Some getter functions
     def get_sample_num(self):
         return len(self.sample)
@@ -199,52 +235,22 @@ class ROI(object):
             # Get highlighted basic block addresses and corresponding MSE values
             addr,mse = self.parse(mseFN,featureFN,self.thresh)
 
-            sys.stderr.write('BB HIGHLIGHT: {0} {1}\n'.format(mseFN,addr))
+            sys.stdout.write('Number of RoIs (basic blocks): {0}\n'.format(len(addr)))
+#           sys.stderr.write('BB HIGHLIGHT: {0} {1}\n'.format(mseFN,addr))
 
             if len(addr) == 0:
-                sys.stderr.write('{0}: Note: Nothing was highlighted\n'.format(mseFN))
+                sys.stderr.write('{0}: Nothing was highlighted.\n'.format(mseFN))
                 continue
             if (len(set(addr)) == 1) and (-1 in set(addr)):
-                sys.stderr.write('{0}: Note: Only padding was highlighted\n'.format(mseFN))
+                sys.stderr.write('{0}: Only padding was highlighted.\n'.format(mseFN))
                 continue
 
-            bb_map = dict()
-            func_map = dict()
-
-            # Get functions & bb's in binary
-            with open(funcFN,'r') as fr:
-                for line in fr:
-                    line = line.strip('\n')
-                    split = line.split(' ')
-
-                    # Corrupted line. Most likely obfuscated function name
-                    if len(split) < 4:
-                        continue
-
-                    funcAddr = split[0]
-                    bbAddr = split[1]
-                    funcSymbolType = split[-2] # NOTE: this is because sometimes the function's name has spaces in it
-                    funcSymbolTypeName = split[-1]
-
-                    # If not an function symbol, ignore
-                    if funcSymbolType != '0':
-                        continue
-
-                    funcAddr = int(funcAddr)
-                    bbAddr = int(bbAddr)
-
-                    bb_map[bbAddr] = funcAddr
-
-                    if funcAddr not in func_map:
-                        func_map[funcAddr] = list()
-                    func_map[funcAddr].append(bbAddr)
+            # Get mapping between basic blocks and the functions they belong to
+            bb_map,func_map = self.get_mapping(funcFN)
 
             # Retrieve data
             x = list()
             x_func = list()
-
-            # Autoencoder (benign unpacked plus, valid, filtered)
-            maximum_val = np.array([2.18000000e+02,4.66131907e-01,1.59328500e+06,1.00820000e+04,7.68000000e+02,5.19373000e+05,1.20040000e+04,4.36000000e+02,4.10000000e+01,6.00000000e+00,7.00000000e+00,3.00000000e+00,6.00000000e+00,1.50000000e+01,2.00000000e+00,3.00000000e+00,5.00000000e+00,5.00000000e+00])
 
             funcs = set()
 
@@ -254,8 +260,8 @@ class ROI(object):
                 if bb == -1:
                     continue
 
+                # If BB not in a valid function
                 if bb not in bb_map:
-                    sys.stderr.write('{0}: Error: Highlighted BB {1} not found\n'.format(fn,hex(bb)))
                     continue
 
                 func = bb_map[bb]
@@ -271,12 +277,14 @@ class ROI(object):
                     for bb in sorted(func_map[f]):
                         # NOTE: not sure why this happened with binaryninja. maybe different/updated versions?
                         if bb not in feature_map:
-                            sys.stderr.write('{0}: Error: BB {1} in binary, but not in ACFG features\n'.format(fn,hex(bb)))
+                            sys.stderr.write('{0}: Error: BB {1} in binary, but not in features\n'.format(mseFN,hex(bb)))
+                            sys.exit()
                             continue
 
                         feature = feature_map[bb]
                         # Normalize data
-                        feature = feature / maximum_val
+                        if self.normalizeFN is not None:
+                            feature = feature / self.maximum_val
 
                         if len(tmp) == 0:
                             tmp = feature
@@ -304,12 +312,14 @@ class ROI(object):
                     for bb in sorted_bb[start_index:end_index+1]:
                         # NOTE: not sure why this happened with binaryninja. maybe different/updated versions?
                         if bb not in feature_map:
-                            sys.stderr.write('{0}: Error: BB {1} in binary, but not in ACFG features\n'.format(fn,hex(bb)))
+                            sys.stderr.write('{0}: Error: BB {1} in binary, but not in features\n'.format(mseFN,hex(bb)))
+                            sys.exit()
                             continue
 
                         feature = feature_map[bb]
                         # Normalize data
-                        feature = feature / maximum_val
+                        if self.normalizeFN is not None:
+                            feature = feature / self.maximum_val
 
                         if len(tmp) == 0:
                             tmp = feature
@@ -333,12 +343,14 @@ class ROI(object):
 
                         # NOTE: not sure why this happened with binaryninja. maybe different/updated versions?
                         if bb not in feature_map:
-                            sys.stderr.write('{0}: Error: BB {1} in binary, but not in ACFG features\n'.format(fn,hex(bb)))
+                            sys.stderr.write('{0}: Error: BB {1} in binary, but not in features\n'.format(mseFN,hex(bb)))
+                            sys.exit()
                             continue
 
                         feature = feature_map[bb]
                         # Normalize data
-                        feature = feature / maximum_val
+                        if self.normalizeFN is not None:
+                            feature = feature / self.maximum_val
 
                         if len(tmp) == 0:
                             tmp = feature
@@ -360,13 +372,15 @@ class ROI(object):
 
                     # NOTE: not sure why this happened with binaryninja. maybe different/updated versions?
                     if bb not in feature_map:
-                        sys.stderr.write('{0}: Error: BB {1} in binary, but not in ACFG features\n'.format(fn,hex(bb)))
+                        sys.stderr.write('{0}: Error: BB {1} in binary, but not in features\n'.format(mseFN,hex(bb)))
+                        sys.exit()
                         continue
 
                     func = bb_map[bb]
                     feature = feature_map[bb]
                     # Normalize data
-                    feature = feature / maximum_val
+                    if self.normalizeFN is not None:
+                        feature = feature / self.maximum_val
 
                     #print(hex(bb),hex(func),feature,len(feature))
 

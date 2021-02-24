@@ -64,7 +64,7 @@ def _main():
         out = model.predict(x=x)
 
         # Output mean-squared-error (input vs. output) for each basic block (row)
-        mse = (np.square(x - out)).mean(axis=1)
+        mse = (np.square(x[0] - out[0])).mean(axis=1)
 
         # Create folder
         fname = fn.split('/')[-1]

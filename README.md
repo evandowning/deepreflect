@@ -40,7 +40,8 @@ For technical details, please see the paper cited below.
 
 ## Usage
   - Obtain unpacked benign and malicious PE file datasets
-    - Folder layout: `benign_unpacked/benign/<binary files>` and `malicious_unpacked/<family label>/<binary files>`
+    - Benign folder layout:    `benign_unpacked/benign/<binary_files>`
+    - Malicious folder layout: `malicious_unpacked/<family_label>/<binary_files>`
   - Extract binary features & data
     ```
     (dr) $ ./extract.sh benign_unpacked/
@@ -89,6 +90,7 @@ For technical details, please see the paper cited below.
       (dr) $ time python roi.py --bndb-func malicious_unpacked_bndb_function/ \
                                 --feature malicious_unpacked_bndb_raw_feature/ \
                                 --mse malicious_unpacked_bndb_raw_feature_mse/ \
+                                --normalize normalize.npy \
                                 --output roi/ \
                                 --bb --avg --thresh 7.293461392658043e-06 > roi/stdout.txt 2> roi/stderr.txt
       ```
@@ -112,7 +114,7 @@ For technical details, please see the paper cited below.
   - Graph ROC curves
     ```
     (dr) $ cd grader/
-    (dr) $ ./roc.sh
+    (dr) $ ./roc.sh &> roc_stdout_stderr.txt
     ```
     ![rbot](grader/roc_rbot.png)
     ![pegasus](grader/roc_pegasus.png)
@@ -120,7 +122,7 @@ For technical details, please see the paper cited below.
     ![combined](grader/roc_combined.png)
   - Pick desired threshold
     ```
-    $ grep 
+    $ vim roc_stdout_stderr.txt
     ```
   - Examine FPs & FNs due to threshold
 

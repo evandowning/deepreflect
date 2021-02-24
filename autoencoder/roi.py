@@ -8,7 +8,7 @@ import time
 from collections import Counter
 
 sys.path.append('../')
-from dr_feature import ROI
+from dr_feature import RoI
 
 def _main():
     # Parse arguments
@@ -25,6 +25,7 @@ def _main():
     parser.add_argument('--avgstdev', help='calculate average standard deviation', action='store_true')
     parser.set_defaults(func=False,window=False,bb=False,avg=False,avgstdev=False)
 
+    parser.add_argument('--normalize', help='normalize features', required=False, default=None)
     parser.add_argument('--thresh', help='threshold', type=float, required=True)
     parser.add_argument('--output', help='output folder', required=True)
 
@@ -35,8 +36,8 @@ def _main():
     bndb_func_path = args.bndb_func
     feature_path = args.feature
 
+    normalizeFN = args.normalize
     thresh = float(args.thresh)
-
     outputFolder = args.output
 
     # Determine which area to use
@@ -82,7 +83,7 @@ def _main():
             sample.append((mseFN,funcFN,featureFN))
 
     # Load dataset
-    data = ROI(sample,thresh,funcFlag=funcFlag,windowFlag=windowFlag,bbFlag=bbFlag,avgFlag=avgFlag,avgstdevFlag=avgstdevFlag)
+    data = RoI(sample,thresh,normalizeFN,funcFlag=funcFlag,windowFlag=windowFlag,bbFlag=bbFlag,avgFlag=avgFlag,avgstdevFlag=avgstdevFlag)
 
     # Data for outputs
     output_x = np.array([])
@@ -109,7 +110,7 @@ def _main():
 
     sys.stdout.write('\n')
     sys.stdout.write('Number of samples which had highlights: {0}\n'.format(len(set(output_fn))))
-    sys.stdout.write('Took {0} seconds to retrieve ROI feature values\n'.format(time.time()-start))
+    sys.stdout.write('Took {0} seconds to retrieve RoI feature values\n'.format(time.time()-start))
 
     # If any data is nan, replace it with 0's
     tmp = np.isnan(output_x)
@@ -118,7 +119,7 @@ def _main():
         sys.stdout.write('Had nan values: {0},{1}: {2}\n'.format(str(i[index]),str(j[index]),output_fn[index]))
     output_x[tmp] = 0
 
-    # Save ROI feature data (to be used for clustering)
+    # Save RoI feature data (to be used for clustering)
     np.save(os.path.join(outputFolder,'x.npy'),output_x)
     np.save(os.path.join(outputFolder,'fn.npy'),np.asarray(output_fn))
     np.save(os.path.join(outputFolder,'addr.npy'),np.asarray(output_addr))

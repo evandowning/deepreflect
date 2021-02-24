@@ -1,76 +1,75 @@
 #!/bin/bash
 
-shap ()
+roc_multi()
 {
-    name="$1"
+    family="$1"
 
-    echo "$name - SHAP - ACFG"
+    root=`pwd`
+    base="${root}/malware/${family}/output/"
 
-    python roc.py --mse "../malware-gt-binja/acfg-shap-eval/${name}.txt.npy" \
-                  --acfg-feature "../malware-gt-binja/acfg-feature/acfg/${name}.txt" \
-                  --func "./rbot/${name}_function.txt" \
-                  --bndb-func "./rbot/${name}_bndb_function.txt" \
-                  --gt "./rbot/${name}_annotations.txt" \
-                  --roc "./rbot/${name}_shap_acfg_roc"
+    python roc_multi.py "${base}/rbot_roc_func_data.npz" \
+                        "DeepReflect" \
+                        "Rbot" \
+                        "${base}/combined_roc.png"
 }
 
 roc ()
 {
-    name="$1"
+    family="$1"
+    name="$2"
 
-    echo "$name - Autoencoder - ACFG"
+    root=`pwd`
+    root_input="${root}/malware/${family}/"
+    binary="${root_input}/${name}"
 
-    python roc.py --mse "../malware-gt-binja/acfg-autoencoder/${name}.npy" \
-                  --acfg-feature "../malware-gt-binja/acfg-feature/acfg/${name}.txt" \
-                  --func "./rbot/${name}_function.txt" \
-                  --bndb-func "./rbot/${name}_bndb_function.txt" \
-                  --gt "./rbot/${name}_annotations.txt" \
-                  --roc "./rbot/${name}_ae_acfg_roc"
+    root_output="${root_input}/output"
+    mkdir -p "${root_output}"
+
+    base="${root_output}/${name: 0:-4}"
+    bndb="${base}.bndb"
+    raw="${base}_raw.txt"
+
+    feature="${base}_feature.npy"
+    feature_path="${base}_feature_path.txt"
+    echo "${feature}" > "${feature_path}"
+
+    function="${base}_function.txt"
+    mse="${base}_mse"
+    annotation="${root_input}/${name: 0:-4}_annotation.txt"
+    roc_name="${base}_roc"
+    roc_out="${base}_roc_stdout_stderr.txt"
+
+    cd ../extract/
+
+    # Extract features
+    python binja.py --exe "${binary}" --output "${bndb}"
+    python extract_raw.py binja --bndb "${bndb}" --output "${raw}"
+    python extract_features.py --raw "${raw}" --output "${feature}"
+
+    # Extract function information
+    python extract_function.py --bndb "${bndb}" --output "${function}"
+
+    cd ../autoencoder/
+
+    # Extract MSE values
+    python mse.py --feature "${feature_path}" \
+                  --model "dr.h5" \
+                  --normalize "normalize.npy" \
+                  --output "${mse}"
+
+    cd "${root}"
+
+    # Graph ROC curve
+    python roc.py --mse "${mse}/output/${name: 0:-4}_feature.npy" \
+                  --feature "${feature}" \
+                  --bndb-func "${function}" \
+                  --annotation "${annotation}" \
+                  --roc "${roc_name}" &> "${roc_out}"
 }
 
-roc_plus ()
-{
-    name="$1"
+family="rbot"
+name="rbot.exe"
+roc "${family}" "${name}"
 
-    echo "$name - Autoencoder - ACFG plus"
-
-    python roc.py --mse "../malware-gt-binja/acfg-plus-autoencoder/${name}.npy" \
-                  --acfg-plus-feature "../malware-gt-binja/acfg-plus-feature/acfg-plus/${name}.txt.npy" \
-                  --func "./rbot/${name}_function.txt" \
-                  --bndb-func "./rbot/${name}_bndb_function.txt" \
-                  --gt "./rbot/${name}_annotations.txt" \
-                  --roc "./rbot/${name}_ae_acfg_plus_roc"
-}
-
-capa()
-{
-    name="$1"
-
-    echo "$name - CAPA"
-
-    cd ./capa/
-    ./output_data.sh
-    cd ../
-}
-
-name="rbot"
-shap "$name"
-roc "$name"
-roc_plus "$name"
-capa "$name"
-
-# For function average
-echo "Function MSE calculation: Average of BB MSE values"
-python separate.py "./rbot/rbot_ae_acfg_plus_roc_data_func_avg.npz" \
-                   "./rbot/rbot_ae_acfg_roc_data_func_avg.npz" \
-                   "./rbot/rbot_shap_acfg_roc_data_func_avg.npz" \
-                   "./capa/rbot_capa_data_func.npz" \
-                   "./functionsimsearch/rbot_data_func_avg.npz" \
-                   "DeepReflect" \
-                   "AE_ABB" \
-                   "SHAP_ABB" \
-                   "CAPA" \
-                   "FunctionSimSearch" \
-                   "Rbot" \
-                   "./rbot/roc_avg_all.png"
-
+# Graph ROC data
+roc_multi "${family}"
