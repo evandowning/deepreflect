@@ -135,11 +135,12 @@ For technical details, please see the paper cited below.
   - ```
     Evan Downing, Yisroel Mirsky, Kyuhong Park, Wenke Lee. "DeepReflect: Discovering Malicious Functionality through Binary Reconstruction.", USENIX Security Symposium, 2021.
 
-    @inproceedings{2021_deepreflect,
-        title = {DeepReflect: Discovering Malicious Functionality through Binary Reconstruction},
-        booktitle = {{USENIX} {Security} {Symposium}},
+    @inproceedings{deepreflect_2021,
         author = {Downing, Evan and Mirsky, Yisroel and Park, Kyuhong and Lee, Wenke},
+        title = {DeepReflect: {Discovering} {Malicious} {Functionality} through {Binary} {Reconstruction}},
+        booktitle = {{USENIX} {Security} {Symposium}},
         year = {2021}
+    }
     ```
   - Paper: link to paper
   - [Reproducing paper experiments](reproducing_paper/README.md)
