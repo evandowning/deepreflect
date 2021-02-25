@@ -4,7 +4,7 @@ import sys
 import os
 import numpy as np
 
-# Retrieves DR features for training autoencoder
+# Get DR features for training autoencoder
 class DR(object):
     # Get samples
     def __init__(self, trainFN, testFN, max_len, normalizeFN):
@@ -128,7 +128,7 @@ class DR(object):
 
                     x = list()
 
-# Retrieves RoI values for clustering
+# Extract RoIs (basic blocks) and function highlights
 class RoI(object):
     # Get samples
     def __init__(self, sample, thresh, normalizeFN, funcFlag=False,windowFlag=False,bbFlag=False,avgFlag=False,avgstdevFlag=False):
@@ -218,8 +218,8 @@ class RoI(object):
     def get_sample_num(self):
         return len(self.sample)
 
-    # Data Generator
-    def generator(self):
+    # RoI data generator for extracting feature vectors used for clustering
+    def roi_generator(self):
         for mseFN,funcFN,featureFN in self.sample:
             sys.stdout.write('{0}\n'.format(mseFN))
             sys.stdout.flush()
@@ -235,15 +235,15 @@ class RoI(object):
             # Get highlighted basic block addresses and corresponding MSE values
             addr,mse = self.parse(mseFN,featureFN,self.thresh)
 
-            sys.stdout.write('Number of RoIs (basic blocks): {0}\n'.format(len(addr)))
-#           sys.stderr.write('BB HIGHLIGHT: {0} {1}\n'.format(mseFN,addr))
-
             if len(addr) == 0:
                 sys.stderr.write('{0}: Nothing was highlighted.\n'.format(mseFN))
                 continue
             if (len(set(addr)) == 1) and (-1 in set(addr)):
                 sys.stderr.write('{0}: Only padding was highlighted.\n'.format(mseFN))
                 continue
+
+            sys.stdout.write('Number of RoIs (basic blocks): {0}\n'.format(len(addr)))
+#           sys.stderr.write('BB HIGHLIGHT: {0} {1}\n'.format(mseFN,addr))
 
             # Get mapping between basic blocks and the functions they belong to
             bb_map,func_map = self.get_mapping(funcFN)
@@ -261,7 +261,7 @@ class RoI(object):
                     continue
 
                 # If BB not in a valid function
-                if bb not in bb_map:
+                if bb not in bb_map.keys():
                     continue
 
                 func = bb_map[bb]
@@ -422,9 +422,56 @@ class RoI(object):
                 sys.stderr.write('{0}: Note, no highlights contain internal functions.\n'.format(mseFN))
                 continue
 
-            # For each array (representing each function highlighted)
+            # For each array (representing each function highlighted and its feature vector based on RoIs)
             if rv.ndim == 2:
                 for e,r in enumerate(rv):
                     yield (mseFN,hex(x_func[e]),r)
             else:
                 yield (mseFN,hex(x_func[0]),rv)
+
+    # Generator for outputting MSE values for highlighted functions
+    def function_highlight_generator(self):
+        for mseFN,funcFN,featureFN in self.sample:
+            sys.stdout.write('{0}\n'.format(mseFN))
+            sys.stdout.flush()
+
+            # Get highlighted basic block addresses and corresponding MSE values
+            addr,mse = self.parse(mseFN,featureFN,self.thresh)
+
+            if len(addr) == 0:
+                sys.stderr.write('{0}: Nothing was highlighted.\n'.format(mseFN))
+                continue
+            if (len(set(addr)) == 1) and (-1 in set(addr)):
+                sys.stderr.write('{0}: Only padding was highlighted.\n'.format(mseFN))
+                continue
+
+            sys.stdout.write('Number of RoIs (basic blocks): {0}\n'.format(len(addr)))
+
+            # Get mapping between basic blocks and the functions they belong to
+            bb_map,func_map = self.get_mapping(funcFN)
+
+            # Aggregrate MSE values for each function
+            mse_func = dict()
+
+            # Calculate average MSE score per function
+            for i,bb_addr in enumerate(addr):
+                # Ignore padding highlights
+                if bb_addr == -1:
+                    continue
+
+                # Ignore basic blocks not in relevant functions
+                if bb_addr not in bb_map.keys():
+                    continue
+
+                # Get function this basic block belongs to
+                f_addr = bb_map[bb_addr]
+
+                # Get MSE value of basic block
+                m = mse[i]
+
+                # Append MSE value of basic block to dictionary of function MSE values
+                if f_addr not in mse_func.keys():
+                    mse_func[f_addr] = list()
+                mse_func[f_addr].append((bb_addr,m))
+
+            yield (mse_func)

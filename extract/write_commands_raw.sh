@@ -1,7 +1,7 @@
 #!/bin/bash
 
-if [ $# -ne 2 ]; then
-    echo "usage: ./write_commands_raw.sh bndb/ output/"
+if (( $# != 1 )); then
+    >&2 echo "usage: ./write_commands_raw.sh bndb/ output/"
     exit 2
 fi
 

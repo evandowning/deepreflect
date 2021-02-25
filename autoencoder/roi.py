@@ -8,7 +8,7 @@ import time
 from collections import Counter
 
 sys.path.append('../')
-from dr_feature import RoI
+from dr import RoI
 
 def _main():
     # Parse arguments
@@ -94,7 +94,7 @@ def _main():
 
     # Get data from samples
     count = 0
-    for fn,bb_addr,x in data.generator():
+    for fn,bb_addr,x in data.roi_generator():
         sys.stdout.write('Number of functions highlighted: {0}\r'.format(count))
         sys.stdout.flush()
 

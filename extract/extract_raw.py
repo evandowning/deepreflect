@@ -9,6 +9,7 @@ import networkx as nx
 
 import binaryninja as binja
 
+# Extract raw data for constructing DR feature vector
 class DR:
     def __init__(self, addr, num_inst):
         self.entry_addr = addr

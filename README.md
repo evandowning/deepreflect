@@ -104,7 +104,7 @@ For technical details, please see the paper cited below.
       ```
 
 ## Grading
-  - Here we provide real malware binaries compiled from source code which have been [open-sourced or leaked](https://thezoo.morirt.com/). These are dangerous malware. **Do NOT execute these binaries. They are meant to be used for educational purposes only.**
+  - Here we provide real malware binaries compiled from source code which have been [open-sourced or leaked](https://thezoo.morirt.com/). **These are real malware. Do NOT execute these binaries. They should be used for educational purposes only.**
   - Graph ROC curves
     ```
     (dr) $ cd grader/
@@ -126,26 +126,35 @@ For technical details, please see the paper cited below.
     ```
 
 ## Post Processing
-  - To further improve results, we've added some post-processing steps to our tool.
-  - Run post-processing steps
+  - To continue improving results, we've added some post-processing steps to our tool.
+  - Run post-processing
     ```
     (dr) $ cd post-processing/
     ```
     - Reduce FPs
       - Sort functions by MSE value to list TPs before FPs
         - Our intuition is that functions more unrecognizable by the autoencoder are more likely to be malicious.
-        - 
       - Sort functions by number of basic blocks to list TPs before FPs
         - We observed that a lot of malicious functions are larger than benign functions.
-        - 
-      - Sort functions by uniqueness compared to other malware samples in population
-        - 
-    - Reduce FNs
-        - Signature-based solutions can be used to identify known functionalities
-        - 
-  - Grade each step (and combinations of steps) from above
-    ```
-    ```
+      - **TODO** - Sort functions by uniqueness compared to other malware samples in population
+        - An analyst might want to prioritize seeing *unique* functions first.
+      - Sort functions randomly
+        - This is a gut-check to make sure something naive won't work better
+      - Sort functions by address
+        - Sometimes core functionalities are implemented before others. But this is a poor assumption (obviously).
+        - This is a gut-check to make sure something naive won't work better
+      - Grade each option from above
+        ```
+        # Run "roc.sh" above first
+
+        (dr) $ ./grade_sort.sh 9.053894787328584e-08 > grade_stdout.txt
+        (dr) $ vim grade_sort_stdout.txt
+        ```
+    - **TODO** - Reduce FNs
+        - Signature-based solutions can be used to identify known functionalities, and thus could catch FNs missed by this tool.
+        - Grade each option from above
+        ```
+        ```
 
 ## FAQs
   - Why don't you release the binaries used to train and evaluate DeepReflect (other than ground-truth samples)?
@@ -154,6 +163,7 @@ For technical details, please see the paper cited below.
     - We cannot release benign binaries because of copyright rules.
       - If you're looking for benign binaries, you might consider [crawling](https://github.com/evandowning/selenium-crawler) them on [CNET](https://download.cnet.com/windows/). Make sure to verify they're not malicious via [VirusTotal](https://www.virustotal.com/).
     - We do, however, release our extracted features so models can be trained from scratch.
+      - <link to dataset>
 
 ## Citing
   ```

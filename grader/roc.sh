@@ -2,8 +2,13 @@
 
 # Graph each malware sample's ROC curve
 ./rbot.sh &> rbot_stdout_stderr.txt
+cp "./malware/rbot/output/combined_roc.png" "./roc_rbot.png"
+
 ./pegasus.sh &> pegasus_stdout_stderr.txt
+cp "./malware/pegasus/output/combined_roc.png" "./roc_pegasus.png"
+
 ./carbanak.sh &> carbanak_stdout_stderr.txt
+cp "./malware/carbanak/output/combined_roc.png" "./roc_carbanak.png"
 
 # Graph combined ROC curve
 python combine.py "./malware/rbot/output/rbot_roc_func_data.npz" \

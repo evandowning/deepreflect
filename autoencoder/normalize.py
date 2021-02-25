@@ -4,7 +4,7 @@ import sys
 import argparse
 
 sys.path.append('../')
-from dr_feature import DR
+from dr import DR
 
 def _main():
     # Parse arguments

@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 from sklearn import metrics
 
 sys.path.append('../')
-from dr_feature import RoI
+from dr import RoI
 
 # Get FPR at TPR value
 def get_fpr_at_tpr(target_tpr,tpr,fpr):
@@ -57,7 +57,7 @@ def print_details(y,score,addr,thr,f_name):
 
     # Output TPs, FPs, and FNs
     sys.stdout.write('Total: {0} | TP: {1} | FP: {2} | FN: {3} | TN: {4}\n'.format(len(tp)+len(fp)+len(fn)+len(tn),len(tp),len(fp),len(fn),len(tn)))
-    sys.stdout.write('TPR: {0} | FPR: {1}\n'.format(tpr*100,fpr*100))
+    sys.stdout.write('TPR: {0}% | FPR: {1}%\n'.format(tpr*100,fpr*100))
     for string in tp:
         sys.stdout.write(string)
     for string in fp:
@@ -94,26 +94,6 @@ def get_gt(gtFN):
 
     return gt_f_addr,gt_f_name
 
-# Read highlights
-# These are basic block addresses
-def get_highlights(highlight, all_f_addr):
-    h_f_addr = dict()
-
-    for bb in highlight:
-        # If padding, skip
-        if bb == -1:
-            continue
-
-        if bb not in all_f_addr.keys():
-            sys.stderr.write('Note: {0} not in a function.\n'.format(hex(bb)))
-            continue
-
-        f_addr = all_f_addr[bb]
-
-        h_f_addr[bb] = f_addr
-
-    return h_f_addr
-
 def _main():
     # Parse arguments
     parser = argparse.ArgumentParser()
@@ -139,6 +119,9 @@ def _main():
     if args.threshold is not None:
         optionalThreshold = float(args.threshold)
 
+    # Read in annotations
+    gt_f_addr,gt_f_name = get_gt(annotationFN)
+
     sample = [[mseFN,funcFN,featureFN]]
 
     # MSE threshold (-1 means it will highlight everything)
@@ -147,39 +130,6 @@ def _main():
     # Load dataset
     data = RoI(sample,threshold,None)
 
-    # Load MSE values for each basic block
-    addr,mse = data.parse(mseFN,featureFN,threshold)
-
-    # Get mapping between basic blocks and the functions they belong to
-    bb_map,_ = data.get_mapping(funcFN)
-
-    # Read in annotations
-    gt_f_addr,gt_f_name = get_gt(annotationFN)
-
-    # Aggregrated MSE values for each function
-    mse_func = dict()
-
-    # Calculate average MSE score per function
-    for i,bb_addr in enumerate(addr):
-        # Ignore padding highlights
-        if bb_addr == -1:
-            continue
-
-        # Ignore basic blocks not in relevant functions
-        if bb_addr not in bb_map.keys():
-            continue
-
-        # Get function this basic block belongs to
-        f_addr = bb_map[bb_addr]
-
-        # Get MSE value of basic block
-        m = mse[i]
-
-        # Append MSE value of basic block to dictionary of function MSE values
-        if f_addr not in mse_func.keys():
-            mse_func[f_addr] = list()
-        mse_func[f_addr].append(m)
-
     # Ground-truth labels
     roc_y = list()
     # MSE for each function
@@ -187,17 +137,23 @@ def _main():
     # Addresses for each function
     roc_addr = list()
 
-    # Generate datasets to pass to ROC
-    for a,m in mse_func.items():
-        if a in gt_f_addr:
-            roc_y.append(1.0)
-        else:
-            roc_y.append(0.0)
+    # Get MSE values of highlighted functions (which will be all functions)
+    # NOTE: there will only be one sample to loop through here
+    for mse_func in data.function_highlight_generator():
+        for a,t in mse_func.items():
 
-        # Calculate average BB MSE values for this function
-        roc_score.append(sum(m)/len(m))
+            if a in gt_f_addr:
+                roc_y.append(1.0)
+            else:
+                roc_y.append(0.0)
 
-        roc_addr.append(a)
+            # Calculate average BB MSE values for this function
+            s = 0
+            for bb_addr,m in t:
+                s += m
+            roc_score.append(s/len(t))
+
+            roc_addr.append(a)
 
     # Create ROC data
     fpr, tpr, thresholds = metrics.roc_curve(roc_y, roc_score)

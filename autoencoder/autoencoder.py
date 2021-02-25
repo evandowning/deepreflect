@@ -8,7 +8,7 @@ import math
 import tensorflow as tf
 
 sys.path.append('../')
-from dr_feature import DR
+from dr import DR
 
 def define_model(kernel_size,strides,max_len):
     inputs = tf.keras.Input(shape=(max_len, 18))

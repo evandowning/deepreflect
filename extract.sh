@@ -1,7 +1,7 @@
 #!/bin/bash
 
-if [ $# -ne 1 ]; then
-    echo "usage: ./extract.sh binaries/"
+if (( $# != 1 )); then
+    >&2 echo "usage: ./extract.sh binaries/"
     exit 2
 fi
 

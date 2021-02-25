@@ -30,6 +30,7 @@ def set_type():
                         self_type[k][line+'A'] = label
                         self_type[k][line+'W'] = label
 
+# Create DR feature vector
 class DR:
     def __init__(self, addr, inst, offspring, betweenness, api):
         self.entry_addr = int(addr,16)
