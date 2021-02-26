@@ -105,6 +105,12 @@ For technical details, please see the paper cited below.
 
 ## Grading
   - Here we provide real malware binaries compiled from source code which have been [open-sourced or leaked](https://thezoo.morirt.com/). **These are real malware. Do NOT execute these binaries. They should be used for educational purposes only.**
+  - [Download](https://github.com/fireeye/capa/releases) CAPA release binary and move it to `grader/capa/capa`
+  - Extract CAPA results
+    ```
+    (dr) $ cd grader/capa/
+    (dr) $ ./output_data.sh
+    ```
   - Graph ROC curves
     ```
     (dr) $ cd grader/
@@ -135,26 +141,23 @@ For technical details, please see the paper cited below.
       - Sort functions by MSE value to list TPs before FPs
         - Our intuition is that functions more unrecognizable by the autoencoder are more likely to be malicious.
       - Sort functions by number of basic blocks to list TPs before FPs
-        - We observed that a lot of malicious functions are larger than benign functions.
-      - **TODO** - Sort functions by uniqueness compared to other malware samples in population
-        - An analyst might want to prioritize seeing *unique* functions first.
-      - Sort functions randomly
+        - We observed that (on average) malicious functions from our ground-truth samples have more basic blocks than benign functions.
+      - Sort functions randomly to list TPs before FPs
         - This is a gut-check to make sure something naive won't work better
-      - Sort functions by address
-        - Sometimes core functionalities are implemented before others. But this is a poor assumption (obviously).
+      - Sort functions by address to list TPs before FPs
+        - It is *obviously* a poor assumption that malicious functionalities would appear in the binary in a specific order linearly.
         - This is a gut-check to make sure something naive won't work better
       - Grade each option from above
         ```
         # Run "roc.sh" above first
 
-        (dr) $ ./grade_sort.sh 9.053894787328584e-08 > grade_stdout.txt
-        (dr) $ vim grade_sort_stdout.txt
+        (dr) $ ./grade_fp.sh 9.053894787328584e-08 > grade_fp_stdout.txt
+        (dr) $ vim grade_fp_stdout.txt
         ```
-    - **TODO** - Reduce FNs
-        - Signature-based solutions can be used to identify known functionalities, and thus could catch FNs missed by this tool.
-        - Grade each option from above
-        ```
-        ```
+    - Reduce FNs
+        - Signature-based solutions can be used to identify *known* functionalities, and thus could catch FNs missed by DeepReflect.
+            - If CAPA identifies a function, it's marked. Else it gets a score from DeepReflect.
+        - See above grader section for this option's results
 
 ## FAQs
   - Why don't you release the binaries used to train and evaluate DeepReflect (other than ground-truth samples)?

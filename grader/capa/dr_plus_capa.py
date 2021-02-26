@@ -39,6 +39,7 @@ def get_data(capaFN, drFN):
     deepreflect_result = np.load(drFN)
     dr_addr = deepreflect_result['addr']
     dr_y = deepreflect_result['y']
+    dr_score = deepreflect_result['score']
 
 
     addr = list()
@@ -52,8 +53,9 @@ def get_data(capaFN, drFN):
         # If address in capa results, it means CAPA has flagged this function
         if a in capa_result.keys():
             s = 1.0
+        # Else, score is DR score
         else:
-            s = 0.0
+            s = dr_score[e]
 
         addr.append(a)
         score.append(s)

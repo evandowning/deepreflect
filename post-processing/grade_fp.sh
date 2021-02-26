@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if (( $# != 1 )); then
-    >&2 echo "usage: ./grade_sort.sh <threshold>"
+    >&2 echo "usage: ./grade_fp.sh <threshold>"
     exit 2
 fi
 
@@ -77,16 +77,6 @@ grade()
                    --annotation "${annotationParam}" \
                    --threshold "${threshold}" \
                    --sort-mse
-    echo ""
-
-    # Sort by uniqueness
-    echo "Sort functions by uniqueness"
-    python sort.py --mse "${mseParam}" \
-                   --feature "${featureParam}" \
-                   --bndb-func "${funcParam}" \
-                   --annotation "${annotationParam}" \
-                   --threshold "${threshold}" \
-                   --sort-unique
     echo ""
 }
 

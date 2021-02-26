@@ -25,7 +25,6 @@ def _main():
     parser.add_argument('--sort-addr', help='sort functions by address values (increasing order)', action='store_true')
     parser.add_argument('--sort-bb', help='sort functions by number of basic blocks (decreasing order)', action='store_true')
     parser.add_argument('--sort-mse', help='sort functions by MSE values (decreasing order)', action='store_true')
-    parser.add_argument('--sort-unique', help='sort functions by uniqueness', action='store_true')
 
     parser.add_argument('--annotation', help='function annotations', required=True)
 
@@ -113,10 +112,9 @@ def _main():
         # Sort decreasing MSE values for each function
         index = np.argsort(sample_score)[::-1]
 
-    #TODO
-    elif args.sort_unique is True:
-        sys.stdout.write('Not implemented yet')
-        sys.exit()
+    else:
+        sys.stderr.write('Error, no sorting option chosen\n')
+        sys.exit(1)
 
     # Calculations of top-k
     # Precision = TP/(TP+FP)
