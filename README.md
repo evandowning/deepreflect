@@ -175,7 +175,7 @@ For technical details, please see the paper cited below.
   @inproceedings{deepreflect_2021,
       author = {Downing, Evan and Mirsky, Yisroel and Park, Kyuhong and Lee, Wenke},
       title = {DeepReflect: {Discovering} {Malicious} {Functionality} through {Binary} {Reconstruction}},
-      booktitle = {{USENIX} {Security} {Symposium}},
+      booktitle = {{To} appear in {USENIX} {Security} {Symposium}},
       year = {2021}
   }
   ```
