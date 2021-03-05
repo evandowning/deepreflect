@@ -6,7 +6,7 @@ import time
 
 import binaryninja as binja
 
-#TODO
+# Treat functions with small number of basic blocks as benign
 def filter_size(dataFN,bv,thresh):
     # Load DeepReflect results
     deepreflect_result = np.load(dataFN)
@@ -46,7 +46,7 @@ def filter_size(dataFN,bv,thresh):
 
     return addr,score,label
 
-#TODO
+# Treat functions with small number of function callees as benign
 def filter_callee(dataFN,bv,thresh):
     # Load DeepReflect results
     deepreflect_result = np.load(dataFN)
@@ -135,7 +135,7 @@ def _main():
     # Filter by callees
     thresh = int(args.callee)
     outFN = args.out_callee
-    filter_callee(dataFN,bv,thresh)
+    addr,score,label = filter_callee(dataFN,bv,thresh)
     np.savez(outFN,
              y=np.asarray(label),
              score=np.asarray(score),
