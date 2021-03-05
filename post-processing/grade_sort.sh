@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if (( $# != 1 )); then
-    >&2 echo "usage: ./grade_fp.sh <threshold>"
+    >&2 echo "usage: ./grade_sort.sh <threshold>"
     exit 2
 fi
 
@@ -21,6 +21,7 @@ grade()
     mseParam=""
     featureParam=""
     funcParam=""
+    bndbParam=""
     annotationParam=""
     for i in `seq $num`; do
         name="${args[$i]}"
@@ -29,6 +30,7 @@ grade()
         feature="${base}_feature.npy"
 
         function="${base}_function.txt"
+        bndb="${base}.bndb"
         mse="${base}_mse"
         annotation="${root_input}/${name: 0:-4}_annotation.txt"
 
@@ -36,6 +38,7 @@ grade()
         mseParam="${mseParam}${mse}/output/${name: 0:-4}_feature.npy "
         featureParam="${featureParam}${feature} "
         funcParam="${funcParam}${function} "
+        bndbParam="${bndbParam}${bndb} "
         annotationParam="${annotationParam}${annotation} "
     done
 
@@ -44,6 +47,7 @@ grade()
     python sort.py --mse "${mseParam}" \
                    --feature "${featureParam}" \
                    --bndb-func "${funcParam}" \
+                   --bndb "${bndbParam}" \
                    --annotation "${annotationParam}" \
                    --threshold "${threshold}" \
                    --sort-random
@@ -54,6 +58,7 @@ grade()
     python sort.py --mse "${mseParam}" \
                    --feature "${featureParam}" \
                    --bndb-func "${funcParam}" \
+                   --bndb "${bndbParam}" \
                    --annotation "${annotationParam}" \
                    --threshold "${threshold}" \
                    --sort-addr
@@ -64,6 +69,7 @@ grade()
     python sort.py --mse "${mseParam}" \
                    --feature "${featureParam}" \
                    --bndb-func "${funcParam}" \
+                   --bndb "${bndbParam}" \
                    --annotation "${annotationParam}" \
                    --threshold "${threshold}" \
                    --sort-bb
@@ -74,9 +80,21 @@ grade()
     python sort.py --mse "${mseParam}" \
                    --feature "${featureParam}" \
                    --bndb-func "${funcParam}" \
+                   --bndb "${bndbParam}" \
                    --annotation "${annotationParam}" \
                    --threshold "${threshold}" \
                    --sort-mse
+    echo ""
+
+    # Sort by number of callees
+    echo "Sort functions by number of callees"
+    python sort.py --mse "${mseParam}" \
+                   --feature "${featureParam}" \
+                   --bndb-func "${funcParam}" \
+                   --bndb "${bndbParam}" \
+                   --annotation "${annotationParam}" \
+                   --threshold "${threshold}" \
+                   --sort-callee
     echo ""
 }
 

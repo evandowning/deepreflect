@@ -12,9 +12,13 @@ For technical details, please see the paper cited below.
 
 **Usage**: Using ground-truth malware binaries, choose an MSE threshold which gives the analyst their desired results (tune to favor increasing TPR or decreasing FPR).
 
+--------------------------------------------------------------------------------
+
 ## Coming soon
   - Dockerfile
   - BinaryNinja plugin
+
+--------------------------------------------------------------------------------
 
 ## Setup
   - Requirements:
@@ -27,9 +31,22 @@ For technical details, please see the paper cited below.
     ```
     $ git clone https://github.com/evandowning/deepreflect.git
     $ cd deepreflect/
-    $ mkvirutalenv dr --python=python3
+    $ mkvirtualenv dr --python=python3
     (dr) $ pip install -r requirements.txt
     ```
+
+## Docker Container
+Build `dr` container:
+```
+$ docker build -t dr .
+```
+
+Run `dr` container:
+```
+$ docker run --rm dr --help
+```
+
+--------------------------------------------------------------------------------
 
 ## Usage
   - Obtain unpacked benign and malicious PE file datasets
@@ -103,6 +120,8 @@ For technical details, please see the paper cited below.
                                          --output function_coverage.png > function_coverage_stdout.txt
       ```
 
+--------------------------------------------------------------------------------
+
 ## Grading
   - Here we provide real malware binaries compiled from source code which have been [open-sourced or leaked](https://thezoo.morirt.com/). **These are real malware. Do NOT execute these binaries. They should be used for educational purposes only.**
   - [Download](https://github.com/fireeye/capa/releases) CAPA release binary and move it to `grader/capa/capa`
@@ -115,7 +134,7 @@ For technical details, please see the paper cited below.
     ```
     (dr) $ cd grader/
     (dr) $ unzip malware.zip # Password is "infected"
-    (dr) $ ./roc.sh &> roc_stdout_stderr.txt
+    (dr) $ time ./roc.sh &> roc_stdout_stderr.txt
     ```
     - [roc_rbot.png](grader/roc_rbot.png)
     - [roc_pegasus.png](grader/roc_pegasus.png)
@@ -130,6 +149,11 @@ For technical details, please see the paper cited below.
     (dr) $ ./examine.sh 9.053894787328584e-08 &> examine_stdout_stderr.txt
     (dr) $ vim examine_stdout_stderr.txt
     ```
+  - Observe characteristics about benign and malicious functions
+    ```
+    (dr) $ ./info.sh > info_stdout.txt
+    (dr) $ vim info_stdout.txt
+    ```
 
 ## Post Processing
   - To continue improving results, we've added some post-processing steps to our tool.
@@ -137,11 +161,13 @@ For technical details, please see the paper cited below.
     ```
     (dr) $ cd post-processing/
     ```
-    - Reduce FPs
+    - Prioritize TPs over FPs
       - Sort functions by MSE value to list TPs before FPs
         - Our intuition is that functions more unrecognizable by the autoencoder are more likely to be malicious.
       - Sort functions by number of basic blocks to list TPs before FPs
         - We observed that (on average) malicious functions from our ground-truth samples have more basic blocks than benign functions.
+      - Sort functions by number of function callees (functions called by a function) to list TPs before FPs
+        - We observed that (on average) malicious functions from our ground-truth samples have more function callees than benign functions.
       - Sort functions randomly to list TPs before FPs
         - This is a gut-check to make sure something naive won't work better
       - Sort functions by address to list TPs before FPs
@@ -151,13 +177,21 @@ For technical details, please see the paper cited below.
         ```
         # Run "roc.sh" above first
 
-        (dr) $ ./grade_fp.sh 9.053894787328584e-08 > grade_fp_stdout.txt
-        (dr) $ vim grade_fp_stdout.txt
+        (dr) $ ./grade_sort.sh 9.053894787328584e-08 > grade_sort_stdout.txt
+        (dr) $ vim grade_sort_stdout.txt
         ```
+    - Reduce FPs
+      - Ignore functions which have few basic blocks
+          - We observed that (on average) malicious functions from our ground-truth samples have more basic blocks than benign functions.
+      - Ignore functions which have few internal/external function calls
+          - We observed that (on average) malicious functions from our ground-truth samples have more callees than benign functions.
+      - See above grader section for this option's results
     - Reduce FNs
-        - Signature-based solutions can be used to identify *known* functionalities, and thus could catch FNs missed by DeepReflect.
-            - If CAPA identifies a function, it's marked. Else it gets a score from DeepReflect.
-        - See above grader section for this option's results
+      - Signature-based solutions can be used to identify *known* functionalities, and thus could catch FNs missed by DeepReflect.
+        - If CAPA identifies a function, it's marked. Else it gets a score from DeepReflect.
+      - See above grader section for this option's results
+
+--------------------------------------------------------------------------------
 
 ## FAQs
   - Why don't you release the binaries used to train and evaluate DeepReflect (other than ground-truth samples)?

@@ -10,9 +10,13 @@ roc_multi()
     python roc_multi.py "${base}/rbot_roc_func_data.npz" \
                         "${base}/rbot_capa_func_data.npz" \
                         "${base}/rbot_dr_plus_capa_func_data.npz" \
+                        "${base}/rbot_dr_filter_size_func_data.npz" \
+                        "${base}/rbot_dr_filter_callee_func_data.npz" \
                         "DeepReflect" \
                         "CAPA" \
                         "DeepReflect+CAPA" \
+                        "Filter Size" \
+                        "Filter Callee" \
                         "Rbot" \
                         "${base}/combined_roc.png"
 }
@@ -95,7 +99,7 @@ capa ()
     roc_name="${base}_roc"
     roc_out="${base}_roc_stdout_stderr.txt"
 
-    echo "${base}/${name: 0:-4}_roc_func_data.npz"
+    echo "${base}_roc_func_data.npz"
 
     cd capa/
     python output_data.py "${family}/${name: 0:-4}.json" "${base}_roc_func_data.npz" \
@@ -127,7 +131,7 @@ dr_capa()
     roc_name="${base}_roc"
     roc_out="${base}_roc_stdout_stderr.txt"
 
-    echo "${base}/${name: 0:-4}_roc_func_data.npz"
+    echo "${base}_roc_func_data.npz"
 
     cd capa/
     python dr_plus_capa.py "${family}/${name: 0:-4}.json" "${base}_roc_func_data.npz" \
@@ -135,11 +139,37 @@ dr_capa()
     cd ../
 }
 
+dr_filter()
+{
+    family="$1"
+    name="$2"
+
+    root=`pwd`
+    root_input="${root}/malware/${family}/"
+    binary="${root_input}/${name}"
+
+    root_output="${root_input}/output"
+
+    base="${root_output}/${name: 0:-4}"
+    bndb="${base}.bndb"
+
+    echo "${base}_roc_func_data.npz"
+
+    # Graph ROC curve
+    python filter.py --data "${base}_roc_func_data.npz" \
+                     --bndb "${bndb}" \
+                     --size 7 \
+                     --out-size "${base}_dr_filter_size_func_data.npz" \
+                     --callee 5 \
+                     --out-callee "${base}_dr_filter_callee_func_data.npz"
+}
+
 family="rbot"
 name="rbot.exe"
 dr "${family}" "${name}"
 capa "${family}" "${name}"
 dr_capa "${family}" "${name}"
+dr_filter "${family}" "${name}"
 
 # Graph ROC data
 roc_multi "${family}"
