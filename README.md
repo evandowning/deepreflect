@@ -25,7 +25,8 @@ For technical details, please see the paper cited below.
     - Tested on Debian 10 (Buster)
     - Python 3 (tested with Python 3.7.3) and pip
     - virtualenvwrapper (optional, but recommended)
-    - BinaryNinja 2.2 (used to extract features and function information from binaries)
+    - BinaryNinja 2.3 (used to extract features and function information from binaries)
+    - PostgreSQL 11.10 (to store results)
     - parallel (optional, but recommended)
   - Setup:
     ```
@@ -34,6 +35,8 @@ For technical details, please see the paper cited below.
     $ mkvirtualenv dr --python=python3
     (dr) $ pip install -r requirements.txt
     ```
+
+## [BinaryNinja Plugin](./binaryninja/deepreflect/)
 
 ## Docker Container
 Build `dr` container:
@@ -104,12 +107,26 @@ $ docker run --rm dr --help
                                 --output roi/ \
                                 --bb --avg --thresh 7.293461392658043e-06 > roi/stdout.txt 2> roi/stderr.txt
       ```
+    - Create & initialize database:
+      ```
+      $ psql --list
+      $ createdb dr
+      $ psql -d dr -f ./db/create.sql
+
+      # To export/import database to another database
+      $ pg_dump -O dr -f export.sql
+      $ psql -d dr -f export.sql
+
+      # To clear database (i.e., drop tables)
+      $ psql -d dr -f ./db/drop.sql
+      # To remove database
+      $ dropdb dr
+      ```
+    - Modify `./cluster/cluster.cfg` and `./binaryninja/deepreflect/db.cfg` files
     - Cluster functions containing RoI:
       ```
       (dr) $ cd ./cluster/
-      (dr) $ time python pca_hdbscan.py --x ../autoencoder/roi/x.npy \
-                                        --fn ../autoencoder/roi/fn.npy \
-                                        --addr ../autoencoder/roi/addr.npy > pca_hdbscan_stdout.txt
+      (dr) $ time python pca_hdbscan.py --cfg cluster.cfg  > pca_hdbscan_stdout.txt
       ```
     - Graph percentage of functions highlighted:
       ```

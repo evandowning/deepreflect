@@ -5,3 +5,4 @@ tensorflow>=2.4.0
 tensorflow-gpu>=2.4.0
 scikit-learn>=0.21.0
 hdbscan>=0.8.27
+psycopg2>=2.8.5
