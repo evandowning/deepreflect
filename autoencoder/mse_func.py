@@ -37,12 +37,12 @@ def _main():
     X_addr = np.load(roiAddr)
 
     # Read in score data (for storing in database, not for clustering)
-    sample = list()
+    sample = set()
     for mseFN in X_fn:
         base = '/'.join(mseFN.split('/')[-2:])
         funcFN = os.path.join(funcFolder,base[:-3]+'txt')
         featFN = os.path.join(featFolder,base)
-        sample.append([mseFN,funcFN,featFN])
+        sample.add((mseFN,funcFN,featFN))
 
     data = RoI(sample,threshold,None)
 
@@ -50,7 +50,7 @@ def _main():
     count = 0
     func_score = dict()
     for mse_func,mseFN in data.function_highlight_generator():
-        sys.stderr.write('Processing functions: {0}/{1}\r'.format(count+1,len(X_addr)))
+        sys.stderr.write('Processing functions: {0}/{1}\r'.format(count+1,len(sample)))
         sys.stderr.flush()
 
         for f_addr,t in mse_func.items():
@@ -72,9 +72,9 @@ def _main():
     for e,mseFN in enumerate(X_fn):
         addr = int(X_addr[e],16)
 
-        #TODO - why does this happen?
+        # NOTE: not sure why this happens sometimes
         if addr not in func_score[mseFN]:
-            sys.stderr.write('{0} {1} {2}\n'.format(e, mseFN, hex(addr)))
+            sys.stderr.write('Wasn\'t found in original mse file: {0} {1} {2}\n'.format(e, mseFN, hex(addr)))
             X_score.append(-1)
             continue
 

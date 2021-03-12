@@ -116,14 +116,14 @@ def _main():
                 sample_hash = fn.split('/')[-1][:-4]
                 family = fn.split('/')[-2]
 
+                sys.stdout.write('{0} {1} {2} {3}\n'.format(fn,addr,k,p))
+
                 # Construct unique identifier
                 unique_string = str(sample_hash + family + addr).encode('utf-8')
                 unique_ID = hashlib.sha256(unique_string).hexdigest()
 
                 # If entry already exists, just update cluster ID
-                cur.execute("INSERT INTO dr(unique_ID,hash,family,func_addr,cid,score) VALUES (%s, %s, %s, %s, %s, %s) ON CONFLICT UPDATE cid=%s, score=%s", (unique_ID, sample_hash, family, addr, cid, score, cid, score))
-
-                sys.stdout.write('{0} {1} {2} {3}\n'.format(fn,addr,k,p))
+                cur.execute("INSERT INTO dr(unique_ID,hash,family,func_addr,cid,score) VALUES (%s, %s, %s, %s, %s, %s) ON CONFLICT (unique_ID) DO UPDATE SET cid=%s, score=%s", (unique_ID, sample_hash, family, addr, cid, score, cid, score))
 
         # Commit transactions
         conn.commit()

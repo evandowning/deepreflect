@@ -4,7 +4,7 @@ CREATE TABLE dr(
     /* SHA256 hash of sample */
     hash char(64),
     /* family label */
-    family varchar(64) DEFAULT 'unknown',
+    family varchar(128) DEFAULT 'unknown',
     /* function label */
     label varchar(128) DEFAULT 'unlabeled',
     /* function address */

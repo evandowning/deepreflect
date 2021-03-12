@@ -11,5 +11,3 @@ Thank you to [Scott Bergstresser](https://github.com/sab4tg) for creating the al
     ```
     $ cp -r ./binaryninja/deepreflect ~/.binaryninja/plugins/
     ```
-
-## Usage

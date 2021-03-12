@@ -30,8 +30,8 @@ def connect_db(bv):
     try:
         conn = psycopg2.connect("dbname='{0}' user='{1}' host='localhost' password='{2}'".format(dbName,dbUser,dbPass))
     except Exception as e:
-        sys.stdout.write('{0}\n'.format(str(e)))
-        sys.stdout.write('No connection made to db. See log window for details.\n')
+        sys.stderr.write('{0}\n'.format(str(e)))
+        sys.stderr.write('No connection made to db. See log window for details.\n')
 
     return conn,hash_val
 
@@ -94,15 +94,17 @@ def display_all(bv):
         # Get all functions in database
         functions = get_all_functions(cur,hash_val)
 
-        sys.stdout.write('{0} | {1} | {2} | {3}\n'.format('sample hash'.ljust(64),'sample family'.ljust(16),'function address'.ljust(18),'function label'.ljust(16)))
+        sample_hash = functions[0][1]
+        sample_family = functions[0][2]
+        sys.stdout.write('{0} | {1}\n'.format('sample hash'.ljust(64),'sample family'.ljust(16)))
+        sys.stdout.write('{0} | {1}\n'.format(sample_hash.ljust(64),sample_family.ljust(16)))
+
+        sys.stdout.write('{0} | {1}\n'.format('function address'.ljust(18),'function label'.ljust(16)))
         for row in functions:
-            sample_hash = row[1]
-            sample_family = row[2]
             func_label = row[3]
             func_addr = row[4]
-            cid = row[5]
 
-            sys.stdout.write('{0} | {1} | {2} | {3}\n'.format(sample_hash.ljust(64),sample_family.ljust(16),func_addr.ljust(18),func_label.ljust(16)))
+            sys.stdout.write('{0} | {1}\n'.format(func_addr.ljust(18),func_label.ljust(16)))
         sys.stdout.write('\n')
 
     conn.commit()
@@ -125,15 +127,17 @@ def display_highlight(bv):
         # Get highlighted functions in database
         functions = get_highlight_functions(cur,hash_val)
 
-        sys.stdout.write('{0} | {1} | {2} | {3}\n'.format('sample hash'.ljust(64),'sample family'.ljust(16),'function address'.ljust(18),'function label'.ljust(16)))
+        sample_hash = functions[0][1]
+        sample_family = functions[0][2]
+        sys.stdout.write('{0} | {1}\n'.format('sample hash'.ljust(64),'sample family'.ljust(16)))
+        sys.stdout.write('{0} | {1}\n'.format(sample_hash.ljust(64),sample_family.ljust(16)))
+
+        sys.stdout.write('{0} | {1}\n'.format('function address'.ljust(18),'function label'.ljust(16)))
         for row in functions:
-            sample_hash = row[1]
-            sample_family = row[2]
             func_label = row[3]
             func_addr = row[4]
-            cid = row[5]
 
-            sys.stdout.write('{0} | {1} | {2} | {3}\n'.format(sample_hash.ljust(64),sample_family.ljust(16),func_addr.ljust(18),func_label.ljust(16)))
+            sys.stdout.write('{0} | {1}\n'.format(func_addr.ljust(18),func_label.ljust(16)))
         sys.stdout.write('\n')
 
     conn.commit()
@@ -196,7 +200,6 @@ def modify_label(bv, function):
     # Close connection
     conn.close()
 
-#TODO
 # Sort functions by DeepReflect score
 def sort_score(bv):
     # Connect to database
@@ -220,7 +223,7 @@ def sort_score(bv):
             func_label = row[3]
             func_addr = row[4]
             cid = row[5]
-            score = row[8]
+            score = row[7]
 
             sort_func.append((sample_hash,sample_family,func_addr,func_label,score))
 
@@ -229,11 +232,13 @@ def sort_score(bv):
     # Close connection
     conn.close()
 
-    # Get function callees
+    sys.stdout.write('{0} | {1}\n'.format('sample hash'.ljust(64),'sample family'.ljust(16)))
+    sys.stdout.write('{0} | {1}\n'.format(sample_hash.ljust(64),sample_family.ljust(16)))
+
     # Sort functions by number of callees
-    sys.stdout.write('{0} | {1} | {2} | {3} | {4}\n'.format('sample hash'.ljust(64),'sample family'.ljust(16),'function address'.ljust(18),'function label'.ljust(16),'score'))
-    for func_addr in sorted(count, key=lambda x: x[-1], reverse=True):
-        sys.stdout.write('{0} | {1} | {2} | {3} | {4}\n'.format(sample_hash.ljust(64),sample_family.ljust(16),func_addr.ljust(18),func_label.ljust(16),score))
+    sys.stdout.write('{0} | {1} | {2}\n'.format('function address'.ljust(18),'function label'.ljust(16),'score'))
+    for sample_hash,sample_family,func_addr,func_label,score in sorted(sort_func, key=lambda x: x[-1], reverse=True):
+        sys.stdout.write('{0} | {1} | {2}\n'.format(func_addr.ljust(18),func_label.ljust(16),score))
     sys.stdout.write('\n')
 
 # Sort highlighted functions by number of basic blocks
@@ -279,10 +284,13 @@ def sort_size(bv):
         num_bb = len(function.basic_blocks)
         count[func_addr] = num_bb
 
+    sys.stdout.write('{0} | {1}\n'.format('sample hash'.ljust(64),'sample family'.ljust(16)))
+    sys.stdout.write('{0} | {1}\n'.format(sample_hash.ljust(64),sample_family.ljust(16)))
+
     # Sort functions by number of callees
-    sys.stdout.write('{0} | {1} | {2} | {3} | {4}\n'.format('sample hash'.ljust(64),'sample family'.ljust(16),'function address'.ljust(18),'function label'.ljust(16),'number of basic blocks'))
+    sys.stdout.write('{0} | {1} | {2}\n'.format('function address'.ljust(18),'function label'.ljust(16),'number of basic blocks'))
     for func_addr,_ in sorted(count.items(), key=lambda x: x[1], reverse=True):
-        sys.stdout.write('{0} | {1} | {2} | {3} | {4}\n'.format(sample_hash.ljust(64),sample_family.ljust(16),func_addr.ljust(18),label[func_addr].ljust(16),count[func_addr]))
+        sys.stdout.write('{0} | {1} | {2}\n'.format(func_addr.ljust(18),label[func_addr].ljust(16),count[func_addr]))
     sys.stdout.write('\n')
 
 # Sort highlighted functions by number of callees
@@ -332,10 +340,13 @@ def sort_callee(bv):
             if symbol_type in [0,1,2,4,5,6]:
                 count[func_addr] += 1
 
+    sys.stdout.write('{0} | {1}\n'.format('sample hash'.ljust(64),'sample family'.ljust(16)))
+    sys.stdout.write('{0} | {1}\n'.format(sample_hash.ljust(64),sample_family.ljust(16)))
+
     # Sort functions by number of callees
-    sys.stdout.write('{0} | {1} | {2} | {3} | {4}\n'.format('sample hash'.ljust(64),'sample family'.ljust(16),'function address'.ljust(18),'function label'.ljust(16),'number of callees'))
+    sys.stdout.write('{0} | {1} | {2}\n'.format('function address'.ljust(18),'function label'.ljust(16),'number of callees'))
     for func_addr,_ in sorted(count.items(), key=lambda x: x[1], reverse=True):
-        sys.stdout.write('{0} | {1} | {2} | {3} | {4}\n'.format(sample_hash.ljust(64),sample_family.ljust(16),func_addr.ljust(18),label[func_addr].ljust(16),count[func_addr]))
+        sys.stdout.write('{0} | {1} | {2}\n'.format(func_addr.ljust(18),label[func_addr].ljust(16),count[func_addr]))
     sys.stdout.write('\n')
 
 # Register plugin options

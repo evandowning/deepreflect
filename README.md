@@ -16,7 +16,6 @@ For technical details, please see the paper cited below.
 
 ## Coming soon
   - Dockerfile
-  - BinaryNinja plugin
 
 --------------------------------------------------------------------------------
 
@@ -24,9 +23,9 @@ For technical details, please see the paper cited below.
   - Requirements:
     - Tested on Debian 10 (Buster)
     - Python 3 (tested with Python 3.7.3) and pip
-    - virtualenvwrapper (optional, but recommended)
     - BinaryNinja 2.3 (used to extract features and function information from binaries)
     - PostgreSQL 11.10 (to store results)
+    - virtualenvwrapper (optional, but recommended)
     - parallel (optional, but recommended)
   - Setup:
     ```

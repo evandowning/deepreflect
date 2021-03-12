@@ -243,7 +243,6 @@ class RoI(object):
                 continue
 
             sys.stdout.write('Number of RoIs (basic blocks): {0}\n'.format(len(addr)))
-#           sys.stderr.write('BB HIGHLIGHT: {0} {1}\n'.format(mseFN,addr))
 
             # Get mapping between basic blocks and the functions they belong to
             bb_map,func_map = self.get_mapping(funcFN)
