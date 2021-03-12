@@ -139,7 +139,7 @@ def _main():
 
     # Get MSE values of highlighted functions (which will be all functions)
     # NOTE: there will only be one sample to loop through here
-    for mse_func in data.function_highlight_generator():
+    for mse_func,_ in data.function_highlight_generator():
         for a,t in mse_func.items():
 
             if a in gt_f_addr:
@@ -148,6 +148,7 @@ def _main():
                 roc_y.append(0.0)
 
             # Calculate average BB MSE values for this function
+            # Since threshold is -1, it'll return all BB's for this functions
             s = 0
             for bb_addr,m in t:
                 s += m

@@ -96,7 +96,7 @@ $ docker run --rm dr --help
                                 --output malicious_unpacked_bndb_raw_feature_mse/ 2> mse_stderr.txt
       ```
     - Identify desired threshold. See [Grading](#grading).
-    - Extract RoI (basic blocks):
+    - Extract RoI (basic blocks) and output average RoI feature vectors for each function:
       ```
       (dr) $ cd ./autoencoder/
       (dr) $ mkdir roi/
@@ -106,6 +106,14 @@ $ docker run --rm dr --help
                                 --normalize normalize.npy \
                                 --output roi/ \
                                 --bb --avg --thresh 7.293461392658043e-06 > roi/stdout.txt 2> roi/stderr.txt
+
+      # Extract MSE values for each highlighted function (avg RoI MSE value)
+      (dr) $ time python mse_func.py --bndb-func malicious_unpacked_bndb_function/ \
+                                     --feature malicious_unpacked_bndb_raw_feature/ \
+                                     --roiFN roi/fn.npy \
+                                     --roiFN roi/addr.npy \
+                                     --thresh 7.293461392658043e-06 \
+                                     --output roi/mse_func.npy > /dev/null
       ```
     - Create & initialize database:
       ```
@@ -179,7 +187,7 @@ $ docker run --rm dr --help
     (dr) $ cd post-processing/
     ```
     - Prioritize TPs over FPs
-      - Sort functions by MSE value to list TPs before FPs
+      - Sort functions by MSE value (calculated by avg RoI MSE value) to list TPs before FPs
         - Our intuition is that functions more unrecognizable by the autoencoder are more likely to be malicious.
       - Sort functions by number of basic blocks to list TPs before FPs
         - We observed that (on average) malicious functions from our ground-truth samples have more basic blocks than benign functions.

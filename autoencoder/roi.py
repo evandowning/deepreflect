@@ -93,8 +93,8 @@ def _main():
     start = time.time()
 
     # Get data from samples
-    count = 0
-    for fn,bb_addr,x in data.roi_generator():
+    count = 1
+    for fn,func_addr,x in data.roi_generator():
         sys.stdout.write('Number of functions highlighted: {0}\r'.format(count))
         sys.stdout.flush()
 
@@ -104,7 +104,7 @@ def _main():
             output_x = np.vstack((output_x,x))
 
         output_fn.append(fn)
-        output_addr.append(bb_addr)
+        output_addr.append(func_addr)
 
         count += 1
 
@@ -119,7 +119,7 @@ def _main():
         sys.stdout.write('Had nan values: {0},{1}: {2}\n'.format(str(i[index]),str(j[index]),output_fn[index]))
     output_x[tmp] = 0
 
-    # Save RoI feature data (to be used for clustering)
+    # Save feature vector data for each function (to be used for clustering)
     np.save(os.path.join(outputFolder,'x.npy'),output_x)
     np.save(os.path.join(outputFolder,'fn.npy'),np.asarray(output_fn))
     np.save(os.path.join(outputFolder,'addr.npy'),np.asarray(output_addr))

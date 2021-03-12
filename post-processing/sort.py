@@ -79,7 +79,7 @@ def _main():
 
         # Get MSE values of highlighted functions
         # There will only be one function returned here
-        for mse_func in data.function_highlight_generator():
+        for mse_func,_ in data.function_highlight_generator():
             # Read in annotations
             gt_f_addr,gt_f_name = get_gt(annotationSplit[i])
 
@@ -87,7 +87,7 @@ def _main():
 
             for f_addr,t in mse_func.items():
 
-                # Calculate average BB MSE values for this function
+                # Calculate average RoI MSE values for this function
                 s = 0
                 for bb_addr,m in t:
                     s += m
@@ -102,7 +102,9 @@ def _main():
 
                 sample_addr.append(f_addr)
 
-                sample_bb.append(len(t))
+                # Get number of basic blocks in this function
+                num_bb = len(bv.get_function_at(f_addr).basic_blocks)
+                sample_bb.append(num_bb)
 
                 # Get function object and function callees
                 function = bv.get_function_at(f_addr)

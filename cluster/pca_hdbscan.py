@@ -1,11 +1,15 @@
 #!/usr/bin/python3
 
 import sys
+import os
 import argparse
 import configparser
 import numpy as np
 import time
 import hashlib
+
+sys.path.append('../')
+from dr import RoI
 
 from sklearn.decomposition import PCA
 
@@ -28,6 +32,7 @@ def _main():
     xFN = config['data']['x']
     fnFN = config['data']['fn']
     addrFN = config['data']['addr']
+    scoreFN = config['data']['score']
     dbName = config['db']['name']
     dbUser = config['db']['username']
     dbPass = config['db']['password']
@@ -40,6 +45,7 @@ def _main():
     X = np.load(xFN)
     X_fn = np.load(fnFN)
     X_addr = np.load(addrFN)
+    X_score = np.load(scoreFN)
 
     sys.stdout.write('Functions highlighted: {0}\n'.format(len(X_addr)))
 
@@ -68,7 +74,7 @@ def _main():
     for i in range(len(X)):
         if label[i] not in c:
             c[label[i]] = list()
-        c[label[i]].append((X_fn[i],X_addr[i],prob[i]))
+        c[label[i]].append((X_fn[i],X_addr[i],prob[i],X_score[i]))
 
     sys.stdout.write('Number of clusters (including noise cluster): {0}\n'.format(len(c.keys())))
 
@@ -86,6 +92,18 @@ def _main():
         sys.stderr.write('No connection made to db: {0}\n'.format(str(e)))
         sys.exit(1)
 
+    # First, reset all cluster IDs
+    with conn:
+        # Cursor to create query
+        cur = conn.cursor()
+
+        cur.execute('UPDATE dr SET cid = -2')
+        cur.execute('UPDATE dr SET score = -1')
+
+        # Commit transaction
+        conn.commit()
+
+    # Insert function highlights
     with conn:
         # Cursor to create queries
         cur = conn.cursor()
@@ -93,7 +111,7 @@ def _main():
         sys.stdout.write('\n')
         sys.stdout.write('Cluster contents: filename address id probability\n')
         for k,v in sorted(c.items(), key=lambda x:len(x[1]), reverse=True):
-            for fn,addr,p in v:
+            for fn,addr,p,score in v:
                 cid = str(k)
                 sample_hash = fn.split('/')[-1][:-4]
                 family = fn.split('/')[-2]
@@ -102,12 +120,16 @@ def _main():
                 unique_string = str(sample_hash + family + addr).encode('utf-8')
                 unique_ID = hashlib.sha256(unique_string).hexdigest()
 
-                cur.execute("INSERT INTO dr(unique_ID,hash,family,func_addr,cid) VALUES (%s, %s, %s, %s, %s) ON CONFLICT DO NOTHING", (unique_ID, sample_hash, family, addr, cid))
+                # If entry already exists, just update cluster ID
+                cur.execute("INSERT INTO dr(unique_ID,hash,family,func_addr,cid,score) VALUES (%s, %s, %s, %s, %s, %s) ON CONFLICT UPDATE cid=%s, score=%s", (unique_ID, sample_hash, family, addr, cid, score, cid, score))
 
                 sys.stdout.write('{0} {1} {2} {3}\n'.format(fn,addr,k,p))
 
         # Commit transactions
         conn.commit()
+
+    # Close connect
+    conn.close()
 
 if __name__ == '__main__':
     _main()

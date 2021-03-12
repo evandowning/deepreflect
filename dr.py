@@ -453,7 +453,7 @@ class RoI(object):
             # Aggregrate MSE values for each function
             mse_func = dict()
 
-            # Calculate average MSE score per function
+            # Return each RoI MSE score for each function
             for i,bb_addr in enumerate(addr):
                 # Ignore padding highlights
                 if bb_addr == -1:
@@ -474,4 +474,4 @@ class RoI(object):
                     mse_func[f_addr] = list()
                 mse_func[f_addr].append((bb_addr,m))
 
-            yield (mse_func)
+            yield (mse_func,mseFN)

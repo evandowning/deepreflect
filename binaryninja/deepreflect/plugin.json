@@ -1,0 +1,22 @@
+{
+	"pluginmetadataversion" : 2,
+	"name": "DeepReflect",
+	"type": ["core", "ui", "architecture", "binaryview", "helper"],
+	"api": ["python3"],
+	"description": "BinaryNinja plugin to [DeepReflect](https://github.com/evandowning/deepreflect).",
+	"longdescription": "Highlights suspicious functions.",
+	"license": {
+		"name": "GNU GENERAL PUBLIC LICENSE\nVersion 3",
+		"text": "See LICENSE file."
+	},
+	"platforms" : ["Linux"],
+	"dependencies": {
+		"pip": ["psycopg2"],
+		"apt": [],
+		"installers": [],
+		"other": []
+	},
+	"version": "0.0.1",
+	"author": "Evan Downing",
+	"minimumbinaryninjaversion": 2300
+}
