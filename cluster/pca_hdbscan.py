@@ -92,13 +92,13 @@ def _main():
         sys.stderr.write('No connection made to db: {0}\n'.format(str(e)))
         sys.exit(1)
 
-    # First, reset all cluster IDs
+    # First, reset all cluster IDs and scores
     with conn:
         # Cursor to create query
         cur = conn.cursor()
 
-        cur.execute('UPDATE dr SET cid = -2')
-        cur.execute('UPDATE dr SET score = -1')
+        cur.execute('UPDATE functions SET cid = -2')
+        cur.execute('UPDATE functions SET score = -1')
 
         # Commit transaction
         conn.commit()
@@ -118,12 +118,8 @@ def _main():
 
                 sys.stdout.write('{0} {1} {2} {3}\n'.format(fn,addr,k,p))
 
-                # Construct unique identifier
-                unique_string = str(sample_hash + family + addr).encode('utf-8')
-                unique_ID = hashlib.sha256(unique_string).hexdigest()
-
-                # If entry already exists, just update cluster ID
-                cur.execute("INSERT INTO dr(unique_ID,hash,family,func_addr,cid,score) VALUES (%s, %s, %s, %s, %s, %s) ON CONFLICT (unique_ID) DO UPDATE SET cid=%s, score=%s", (unique_ID, sample_hash, family, addr, cid, score, cid, score))
+                # If entry already exists, just update cluster ID and score
+                cur.execute("INSERT INTO functions (hash,family,func_addr,cid,score) VALUES (%s, %s, %s, %s, %s) ON CONFLICT (hash,family,func_addr) DO UPDATE SET cid=%s, score=%s", (sample_hash, family, addr, cid, score, cid, score))
 
         # Commit transactions
         conn.commit()
