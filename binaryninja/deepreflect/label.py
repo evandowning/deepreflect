@@ -35,6 +35,14 @@ def get_reviews(cur,f_id):
 
     return reviews
 
+# Get label reviews belonging to this function from a specific analyst
+def get_analyst_reviews(cur,f_id,a_id):
+    # Fetch this function's reviews
+    cur.execute("SELECT r.id,l.name FROM functions AS f, reviews AS r, labels AS l WHERE f.id = %s AND r.function_id = f.id AND r.label_id = l.id AND r.analyst_id = %s", (f_id,a_id))
+    reviews = cur.fetchall()
+
+    return reviews
+
 # Get function by address
 def get_function(cur,hash_val,f_addr):
     # Fetch this sample's highlighted functions
@@ -117,9 +125,64 @@ def add_label(bv, function):
     # Close connection
     conn.close()
 
-#TODO
 # Removes function label
+def remove_label(bv, function):
+    # Connect to database
+    conn,hash_val = connect_db(bv)
+    if conn == None:
+        return
+    cur = conn.cursor()
 
-#TODO
-# Modifies/replaces function label
+    # Get this function's address
+    func_addr = function.start
+
+    with conn:
+        # Get function in database
+        row = get_function(cur,hash_val,func_addr)
+
+        if (len(row) == 0) or (row is None):
+            return
+        # If anything is returned, it will be one row
+        row = row[0]
+
+        # Get function address info
+        function_id = row[0]
+        func_addr = row[1]
+        cid = row[2]
+
+        # Get analyst id
+        analyst_id = get_analyst_id(cur)
+        analyst_id = analyst_id[0]
+
+        # Get current labels for this function, created by this analyst
+        reviews = get_analyst_reviews(cur,function_id,analyst_id)
+
+        # If no reviews, quit (you can't remove another analyst's manual label)
+        if len(reviews) == 0:
+            sys.stdout.write('Function {0}: Error. No manual labels belonging to this analyst to remove.\n'.format(func_addr))
+            return
+
+        labels = list()
+        for r,l in reviews:
+            labels.append(l)
+
+        try:
+            label_selected = ChoiceField("Labels", labels)
+
+            # Determine what label analyst chose
+            get_form_input(["Remove a label from function {0}".format(func_addr), None, label_selected], "Remove Function Label")
+            review_choice_id = reviews[label_selected.result][0]
+            label_choice = reviews[label_selected.result][1]
+
+            # Remove review entry
+            cur.execute("DELETE FROM reviews WHERE id = %s", (review_choice_id,))
+
+            sys.stdout.write('Removed function {0} label "{1}"\n'.format(func_addr,label_choice))
+
+        # If user exits out of plugin window before making a selection
+        except TypeError:
+            return
+
+    # Close connection
+    conn.close()
 
