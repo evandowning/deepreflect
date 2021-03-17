@@ -47,12 +47,8 @@ def get_function(cur,hash_val,f_addr):
 
     return function
 
-#TODO
-# Removes function label
-
-#TODO
-# Modifies function labels
-def modify_label(bv, function):
+# Add function labels
+def add_label(bv, function):
     # Connect to database
     conn,hash_val = connect_db(bv)
     if conn == None:
@@ -120,4 +116,10 @@ def modify_label(bv, function):
 
     # Close connection
     conn.close()
+
+#TODO
+# Removes function label
+
+#TODO
+# Modifies/replaces function label
 
