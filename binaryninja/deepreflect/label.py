@@ -65,7 +65,7 @@ def add_label(bv, function):
 
     # Get all labels in database
     labels = get_labels(cur)
-    labels = labels[0]
+    labels = [l[0] for l in labels]
 
     # Get this function's address
     func_addr = function.start
