@@ -3,6 +3,7 @@
 import sys
 import os
 import argparse
+import binaryninja
 
 def _main():
     # Parse arguments

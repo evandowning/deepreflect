@@ -14,11 +14,6 @@ For technical details, please see the paper cited below.
 
 --------------------------------------------------------------------------------
 
-## Coming soon
-  - Dockerfile
-
---------------------------------------------------------------------------------
-
 ## Setup
   - Requirements:
     - Tested on Debian 10 (Buster)
@@ -35,9 +30,15 @@ For technical details, please see the paper cited below.
     (dr) $ pip install -r requirements.txt
     ```
 
-## [BinaryNinja Plugin](./binaryninja/deepreflect/)
+## [BinaryNinja Plugin](./binaryninja_plugin/deepreflect/)
 
 ## Docker Container
+BinaryNinja setup:
+  * Zip Linux version of `binaryninja/` folder.
+    * `$ 7z a binaryninja.7z binaryninja/`
+  * Copy `binaryninja.7z` into `binja_setup/`.
+  * Copy `license.dat` into `binja_setup/`.
+
 Build `dr` container:
 ```
 $ docker build -t dr .
