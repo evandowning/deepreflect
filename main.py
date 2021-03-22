@@ -178,7 +178,7 @@ def _main():
         roiMSE = os.path.join(roiFolder,'mse_func.npy')
 
         # Create output folder (exit if it already exists)
-       #os.makedirs(outFolder)
+        os.makedirs(outFolder)
 
         # Create database
         sys.stdout.write('\n')
