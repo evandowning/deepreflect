@@ -95,9 +95,6 @@ def _main():
     # Get data from samples
     count = 1
     for fn,func_addr,x in data.roi_generator():
-        sys.stdout.write('Number of functions highlighted: {0}\r'.format(count))
-        sys.stdout.flush()
-
         if len(output_x) == 0:
             output_x = x
         else:
@@ -109,6 +106,7 @@ def _main():
         count += 1
 
     sys.stdout.write('\n')
+    sys.stdout.write('Number of functions highlighted: {0}\n'.format(count))
     sys.stdout.write('Number of samples which had highlights: {0}\n'.format(len(set(output_fn))))
     sys.stdout.write('Took {0} seconds to retrieve RoI feature values\n'.format(time.time()-start))
 
