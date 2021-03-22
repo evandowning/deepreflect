@@ -3,6 +3,7 @@ FROM debian:buster
 RUN apt update && apt upgrade -y && apt autoremove --purge -y
 RUN apt update && apt install -y python3 python3-pip postgresql libpq-dev
 RUN apt install -y p7zip-full gnome-shell dbus-x11 parallel
+RUN apt install -y sudo
 RUN pip3 install --upgrade pip
 
 workdir /app

@@ -113,7 +113,7 @@ $ docker run --rm dr --help
       (dr) $ time python mse_func.py --bndb-func /data/malicious_unpacked_bndb_function/ \
                                      --feature /data/malicious_unpacked_bndb_raw_feature/ \
                                      --roiFN roi/fn.npy \
-                                     --roiFN roi/addr.npy \
+                                     --roiAddr roi/addr.npy \
                                      --thresh 7.293461392658043e-06 \
                                      --output roi/mse_func.npy > /dev/null
       ```
