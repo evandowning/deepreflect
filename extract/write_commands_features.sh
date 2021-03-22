@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if (( $# != 1 )); then
+if (( $# != 2 )); then
     >&2 echo "usage: ./write_commands_features.sh raw/ output/"
     exit 2
 fi

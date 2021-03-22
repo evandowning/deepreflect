@@ -49,30 +49,32 @@ Run `dr` container:
 $ docker run --rm dr --help
 ```
 
+[Docker README](README_Docker.md)
+
 --------------------------------------------------------------------------------
 
 ## Usage
   - Obtain unpacked benign and malicious PE file datasets
-    - Benign folder layout:    `benign_unpacked/benign/<binary_files>`
-    - Malicious folder layout: `malicious_unpacked/<family_label>/<binary_files>`
+    - Benign folder layout:    `/data/benign_unpacked/benign/<binary_files>`
+    - Malicious folder layout: `/data/malicious_unpacked/<family_label>/<binary_files>`
   - Extract binary features & data
     ```
-    (dr) $ ./extract.sh benign_unpacked/
-    (dr) $ ./extract.sh malicious_unpacked/
+    (dr) $ ./extract.sh /data/benign_unpacked/
+    (dr) $ ./extract.sh /data/malicious_unpacked/
     ```
   - Train autoencoder:
     ```
     (dr) $ cd ./autoencoder/
 
     # Split & shuffle benign dataset
-    (dr) $ python split.py benign_unpacked_bndb_raw_feature/ train.txt test.txt > split_stdout.txt
+    (dr) $ python split.py /data/benign_unpacked_bndb_raw_feature/ train.txt test.txt > split_stdout.txt
     (dr) $ for fn in 'train.txt' 'test.txt'; do shuf $fn > tmp.txt; mv tmp.txt $fn; done
 
     # Check that benign samples use all features:
     (dr) $ python feature_check.py train.txt
     (dr) $ python feature_check.py test.txt
     # Check that malicious samples use all features:
-    (dr) $ find malicious_unpacked_bndb_raw_feature/ -type f > malicious.txt
+    (dr) $ find /data/malicious_unpacked_bndb_raw_feature/ -type f > malicious.txt
     (dr) $ python feature_check.py malicious.txt
 
     # Get max values (for normalizing)
@@ -93,23 +95,23 @@ $ docker run --rm dr --help
       (dr) $ time python mse.py --feature malicious.txt \
                                 --model dr.h5 \
                                 --normalize normalize.npy \
-                                --output malicious_unpacked_bndb_raw_feature_mse/ 2> mse_stderr.txt
+                                --output /data/malicious_unpacked_bndb_raw_feature_mse/ 2> mse_stderr.txt
       ```
     - Identify desired threshold. See [Grading](#grading).
     - Extract RoI (basic blocks) and output average RoI feature vectors for each function:
       ```
       (dr) $ cd ./autoencoder/
       (dr) $ mkdir roi/
-      (dr) $ time python roi.py --bndb-func malicious_unpacked_bndb_function/ \
-                                --feature malicious_unpacked_bndb_raw_feature/ \
-                                --mse malicious_unpacked_bndb_raw_feature_mse/ \
+      (dr) $ time python roi.py --bndb-func /data/malicious_unpacked_bndb_function/ \
+                                --feature /data/malicious_unpacked_bndb_raw_feature/ \
+                                --mse /data/malicious_unpacked_bndb_raw_feature_mse/ \
                                 --normalize normalize.npy \
                                 --output roi/ \
                                 --bb --avg --thresh 7.293461392658043e-06 > roi/stdout.txt 2> roi/stderr.txt
 
       # Extract MSE values for each highlighted function (avg RoI MSE value)
-      (dr) $ time python mse_func.py --bndb-func malicious_unpacked_bndb_function/ \
-                                     --feature malicious_unpacked_bndb_raw_feature/ \
+      (dr) $ time python mse_func.py --bndb-func /data/malicious_unpacked_bndb_function/ \
+                                     --feature /data/malicious_unpacked_bndb_raw_feature/ \
                                      --roiFN roi/fn.npy \
                                      --roiFN roi/addr.npy \
                                      --thresh 7.293461392658043e-06 \
@@ -139,7 +141,7 @@ $ docker run --rm dr --help
     - Graph percentage of functions highlighted:
       ```
       (dr) $ cd ./cluster/
-      (dr) $ python function_coverage.py --functions malicious_unpacked_bndb_function/ \
+      (dr) $ python function_coverage.py --functions /data/malicious_unpacked_bndb_function/ \
                                          --fn ../autoencoder/roi/fn.npy \
                                          --addr ../autoencoder/roi/addr.npy \
                                          --output function_coverage.png > function_coverage_stdout.txt
