@@ -1,7 +1,11 @@
 from binaryninja import *
 
 import sys
-from .db import connect_db, get_analyst_id
+import datetime
+from .db import connect_db, sha256_checksum, get_analyst_id
+
+# Global dictionary to hold function start times
+start_time = dict()
 
 # Get label id associated with name
 def get_label_id(cur,name):
@@ -55,8 +59,26 @@ def get_function(cur,hash_val,f_addr):
 
     return function
 
+# Add start time for this function
+def start_time_label(bv, function):
+    global start_time
+
+    # Get hash of this binary
+    hash_val = sha256_checksum(bv)
+
+    # Get this function's address
+    func_addr = function.start
+
+    # Get current time
+    current = datetime.datetime.now()
+
+    # Store time and hash
+    start_time[hash_val] = current
+
 # Add function labels
 def add_label(bv, function):
+    global start_time
+
     # Connect to database
     conn,hash_val = connect_db(bv)
     if conn == None:
@@ -112,9 +134,14 @@ def add_label(bv, function):
             label_id = get_label_id(cur,label_final)
             label_id = label_id[0]
 
+            # Get timestamp of the start of the analysis of this function
+            if hash_val in start_time.keys():
+                ts_start = str(start_time[hash_val])
+            else:
+                ts_start = '1970-01-01 00:00'
 
             # Add review
-            cur.execute("INSERT INTO reviews (function_id, label_id, analyst_id, ts_start) VALUES (%s, %s, %s, %s)", (function_id,label_id,analyst_id, '1970-01-01 00:00'))
+            cur.execute("INSERT INTO reviews (function_id, label_id, analyst_id, ts_start) VALUES (%s, %s, %s, %s)", (function_id,label_id,analyst_id, ts_start))
 
             sys.stdout.write('Updating function {0} with label "{1}"\n'.format(func_addr,label_final))
 

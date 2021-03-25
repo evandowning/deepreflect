@@ -107,7 +107,8 @@ def display_all(bv):
         functions = get_all_functions(cur,hash_val)
 
         # Print function information
-        print_functions(bv,functions)
+        if functions is not None:
+            print_functions(bv,functions)
 
     conn.commit()
 
@@ -130,7 +131,8 @@ def display_highlight(bv):
         functions = get_highlight_functions(cur,hash_val)
 
         # Print function information
-        print_functions(bv,functions)
+        if functions is not None:
+            print_functions(bv,functions)
 
     conn.commit()
 
