@@ -9,7 +9,7 @@ Thank you to [Scott Bergstresser](https://github.com/sab4tg) for creating the al
     - psycopg2
   - Setup:
     ```
-    $ cp -r ./binaryninja/deepreflect ~/.binaryninja/plugins/
+    $ cp -r ./binaryninja_plugin/deepreflect ~/.binaryninja/plugins/
     ```
 
 ## Usage
