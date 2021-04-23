@@ -240,6 +240,6 @@ $ docker run --rm dr --help
       year = {2021}
   }
   ```
-  - Paper: link to paper
+  - [Paper](https://www.usenix.org/conference/usenixsecurity21/presentation/downing)
   - [Reproducing paper experiments](reproducing_paper/README.md)
 
