@@ -227,7 +227,7 @@ $ docker run --rm dr --help
     - We cannot release benign binaries because of copyright rules.
       - If you're looking for benign binaries, you might consider [crawling](https://github.com/evandowning/selenium-crawler) them on [CNET](https://download.cnet.com/windows/). Make sure to verify they're not malicious via [VirusTotal](https://www.virustotal.com/).
     - We do, however, release our extracted features so models can be trained from scratch.
-      - [DeepReflect Dataset](https://s3.console.aws.amazon.com/s3/buckets/deepreflect-usenix21-dataset)
+      - [DeepReflect Dataset](Dataset.md)
 
 ## Citing
   ```
