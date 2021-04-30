@@ -9,10 +9,7 @@ $ git checkout tags/v0.0.1
 ```
 
 ## Download & extract dataset
-```
-$ wget <link>
-$ <extract>
-```
+  - [DeepReflect Dataset](https://s3.console.aws.amazon.com/s3/buckets/deepreflect-usenix21-dataset)
 
 ## Train baseline models
 ```
