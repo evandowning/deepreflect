@@ -10,5 +10,7 @@
   - [malicious_unipacker_bndb_function.tar.gz](https://deepreflect-usenix21-dataset.s3.us-east-2.amazonaws.com/malicious_unipacker_bndb_function.tar.gz)
   - [malicious-unipacker-hashes.txt](https://deepreflect-usenix21-dataset.s3.us-east-2.amazonaws.com/malicious-unipacker-hashes.txt)
   - [malware-gt-binja.tar.gz](https://deepreflect-usenix21-dataset.s3.us-east-2.amazonaws.com/malware-gt-binja.tar.gz)
+  - [malware-gt-src.zip](https://deepreflect-usenix21-dataset.s3.us-east-2.amazonaws.com/malware-gt-src.zip)
+  - [malware-gt.zip](https://deepreflect-usenix21-dataset.s3.us-east-2.amazonaws.com/malware-gt.zip)
   - [models.tar.gz](https://deepreflect-usenix21-dataset.s3.us-east-2.amazonaws.com/models.tar.gz)
   - [sorting.tar.gz](https://deepreflect-usenix21-dataset.s3.us-east-2.amazonaws.com/sorting.tar.gz)
