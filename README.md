@@ -231,13 +231,12 @@ $ docker run --rm dr --help
 
 ## Citing
   ```
-  To appear in USENIX Security Symposium 2021.
-
-  @inproceedings{deepreflect_2021,
-      author = {Downing, Evan and Mirsky, Yisroel and Park, Kyuhong and Lee, Wenke},
-      title = {DeepReflect: {Discovering} {Malicious} {Functionality} through {Binary} {Reconstruction}},
-      booktitle = {{To} appear in {USENIX} {Security} {Symposium}},
-      year = {2021}
+  @inproceedings{downing_deepreflect_2021,
+    title = {{DeepReflect}: {Discovering} {Malicious} {Functionality} through {Binary} {Reconstruction}},
+    shorttitle = {{DeepReflect}},
+    booktitle = {30th \$\{\${USENIX}\$\}\$ {Security} {Symposium} (\$\{\${USENIX}\$\}\$ {Security} 21)},
+    author = {Downing, Evan and Mirsky, Yisroel and Park, Kyuhong and Lee, Wenke},
+    year = {2021}
   }
   ```
   - [Paper](https://www.usenix.org/conference/usenixsecurity21/presentation/downing)
